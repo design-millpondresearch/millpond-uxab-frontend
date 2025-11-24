@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from './Mill Pond Research Logo - Horizontal - 100.png';
+import './Navbar.css'; 
 
 const Navbar = () => {
     return (
