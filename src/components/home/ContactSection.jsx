@@ -4,6 +4,11 @@ function ContactSection() {
   useEffect(() => {
     const scriptId = "hs-form-script";
 
+    function showFallback() {
+      const btn = document.getElementById("fallback-button");
+      if (btn) btn.style.display = "block";
+    }
+
     function createForm() {
       if (window.hbspt && window.hbspt.forms) {
         try {
@@ -15,14 +20,16 @@ function ContactSection() {
           });
         } catch (err) {
           console.error("Error creating HubSpot form", err);
+          showFallback();
         }
       } else {
         console.warn("HubSpot script not ready.");
+        showFallback();
       }
     }
 
-    // If script not yet added, inject it
     const existingScript = document.getElementById(scriptId);
+
     if (!existingScript) {
       const script = document.createElement("script");
       script.id = scriptId;
@@ -34,45 +41,37 @@ function ContactSection() {
       };
       document.body.appendChild(script);
     } else {
-      // Script already loaded on this page, just create the form
       createForm();
     }
   }, []);
 
   return (
-    <section
-      className="py-20"
-      style={{ backgroundColor: "var(--charcoal-dark)" }}
-    >
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div
-            id="contact"
-            className="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto"
+    <section className="regular-banner-white px-6 py-20">
+      <div className="mx-auto flex max-w-4xl flex-col items-center gap-8">
+        <div className="text-center">
+          <h2 className="section-header" style={{ color: "#1F4E79" }}>
+            Ready to Take Control of Your AI Future?
+          </h2>
+          <p
+            className="mt-2 text-base leading-relaxed"
+            style={{ color: "#4B4B4B" }}
           >
-            <h3 className="section-header mb-4" style={{ color: "#1F4E79" }}>
-              Ready to Take Control of Your AI Future?
-            </h3>
-            <p
-              className="subheader mb-6"
-              style={{ color: "#4B4B4B", fontSize: "20px" }}
-            >
-              Contact us today to discover how Mill Pond Research can evolve
-              your organization&apos;s approach to AI security and orchestration.
-            </p>
+            Contact us to discover how Mill Pond Research can evolve your
+            organization&apos;s approach to AI security and orchestration.
+          </p>
+        </div>
 
-            {/* HubSpot will replace this div with the form */}
-            <div id="hubspot-form-main" data-hs-forms-root="true" />
+        <div className="w-full rounded-2xl bg-[#E2ECF4] p-8 text-left shadow-sm">
+          <div id="hubspot-form-main" data-hs-forms-root="true" />
 
-            {/* Optional fallback if the script fails */}
-            <button
-              id="fallback-button"
-              className="button-secondary mt-6"
-              style={{ display: "none" }}
-            >
-              Email us directly
-            </button>
-          </div>
+          <button
+            id="fallback-button"
+            className="button-primary mt-6"
+            style={{ display: "none" }}
+            type="button"
+          >
+            Email us directly
+          </button>
         </div>
       </div>
     </section>
