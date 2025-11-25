@@ -5,11 +5,11 @@ const workbenchFeatures = [
   "Robust AI security governance baked into every workflow.",
 ];
 
-const aipaHighlights = [
-  "Single assistant that connects to your enterprise data and tools.",
-  "Context-aware responses with governed, approved prompts.",
-  "Streamlined workflows for revenue, operations, and support teams.",
-];
+// const aipaHighlights = [
+//   "Single assistant that connects to your enterprise data and tools.",
+//   "Context-aware responses with governed, approved prompts.",
+//   "Streamlined workflows for revenue, operations, and support teams.",
+// ];
 
 const xliosPoints = [
   "Deploy across your AI ecosystem with centralized guardrails.",
@@ -65,7 +65,7 @@ function SolutionsSection() {
             <button className="mt-5 button-primary">Learn More</button>
           </div>
 
-          <div className="flex flex-col gap-3 rounded-2xl bg-[#0F3C5F] p-6 text-left text-white shadow-sm">
+          {/* <div className="flex flex-col gap-3 rounded-2xl bg-[#0F3C5F] p-6 text-left text-white shadow-sm">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A8D1F0]">
               AI Productivity Assistant
             </p>
@@ -82,7 +82,7 @@ function SolutionsSection() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid gap-8 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-[#E5E7EB] md:grid-cols-2">
