@@ -57,6 +57,7 @@ html, body {
   transition: background-color 0.3s;
   border: none;
   cursor: pointer;
+  display: inline-block;
 }
 .button-primary:hover {
   background-color: #466A7B;
@@ -72,6 +73,7 @@ html, body {
   transition: all 0.3s;
   border: 1px solid #567C8D;
   cursor: pointer;
+  display: inline-block;
 }
 .button-secondary:hover {
   background-color: rgba(86, 124, 141, 0.1);
@@ -112,6 +114,35 @@ html, body {
   font-family: 'Sora', sans-serif;
   font-weight: 500;
   letter-spacing: 2%;
+}
+
+.large-font {
+  font-size: 18px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2%;
+}
+
+.large-font-bold {
+  font-size: 18px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2%;
+}
+
+.small-font {
+  font-size: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0%;
+}
+
+.small-font-bold {
+  font-size: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0%;
+  font-weight: 500;
 }
 
 .hero-banner {

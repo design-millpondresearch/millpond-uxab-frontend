@@ -41,28 +41,26 @@ function StrategyRisksSection() {
       </div>
 
       {/* 2x2 grid */}
-      <div className="mt-12 w-full max-w-5xl">
-        <div className="grid gap-12 grid-cols-2">
+      <div className="mx-24 my-12 w-full max-w-4xl">
+        <div className="grid gap-12 grid-cols-2" style={{ gap: '5rem', margin: '0 auto', width: '100%' }}>
           {risks.map((risks) => (
-            <div
-              key={risks.title}
-              className="flex flex-col items-center text-center"
-            >
+            <div key={risks.title} className="flex flex-col items-center text-center">
+              
+              {/* icon */}
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">
                 <img src={risks.icon} alt={risks.title} className="h-10 w-10" />
               </div>
-              <h4
-                className="mb-2 text-xl font-semibold"
-                style={{ color: "#1F4E79" }}
-              >
+
+              {/* title */}
+              <h4 className="mb-2 text-xl font-semibold" style={{ color: "#1F4E79" }}>
                 {risks.title}
               </h4>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: "#4B4B4B" }}
-              >
+
+              {/* description */}
+              <p className="text-sm leading-relaxed" style={{ color: "#4B4B4B" }}>
                 {risks.body}
               </p>
+
             </div>
           ))}
         </div>

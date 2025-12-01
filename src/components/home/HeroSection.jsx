@@ -6,12 +6,12 @@ function HeroSection() {
           Secure the Future for Enterprise AI.
         </h1>
 
-        <h3 className="subheader" style={{ color: "#4B4B4B" }}>
+        <h3 className="subheader" style={{ color: "#4B4B4B", marginBottom:'6rem'}}>
           Prompt-based protection that empowers safe, efficient AI adoption.
         </h3>
 
-        <div className="mt-4 flex flex-wrap justify-center gap-6">
-          <button className="button-primary">Request a Demo</button>
+        <div className="mt-8 flex flex-wrap justify-center" style={{ gap: '1rem' }}>
+          <button className="button-primary" style={{ marginRight: '1.5rem' }}>Request a Demo</button>
           <button className="button-secondary">Explore Solutions</button>
         </div>
       </div>

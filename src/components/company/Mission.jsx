@@ -37,7 +37,7 @@ function Mission() {
 
       {/* grid */}
       <div className="mt-12 w-full">
-        <div className="grid grid-cols-3 justify-items-center gap-6">
+        <div className="grid grid-cols-3 justify-items-center gap-6" style={{ gap: '3.5rem' }}>
           {ideals.map((ideals) => (
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">

@@ -30,34 +30,28 @@ function LeadershipTeam() {
       </div>
 
       {/* grid */}
-      <div className="mt-12 w-full">
-        <div className="grid grid-cols-2 justify-items-center gap-6">
-          {team.map((team) => (
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-[#1F4E79]">
-                <img src={team.icon} alt={team.name} className="h-10 w-10" />
-              </div>
+      <div className="flex flex-row gap-48 justify-center items-start w-full mt-12 max-w-6xl" style={{ gap: '5rem' }}>
+        {team.map((member) => (
+          <div key={member.name} className="flex flex-col items-center text-center px-4 w-56 max-w-xs">
 
-                <h3>
-                   {team.name} 
-                </h3>
-
-              <h4
-                className="mb-2 text-xl"
-                style={{ color: "#567C8D" }}
-              >
-                {team.title}
-              </h4>
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: "#4B4B4B" }}
-              >
-                {team.body}
-              </p>
+            {/* image */}
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-[#1F4E79]">
+              <img src={member.icon} alt={member.name} className="h-10 w-10" />
             </div>
-          ))}
-        </div>
+
+            {/* name */}
+            <p className="subheader">{member.name}</p>
+
+            {/* title */}
+            <h4 className="large-font mb-4" style={{ color: "#567C8D" }}> {member.title} </h4>
+            
+            {/* description */}
+            <p className="small-font mx-4" style={{ color: "#4B4B4B" }}> {member.body} </p>
+          
+          </div>
+        ))}
       </div>
+
     </section>
   );
 }
