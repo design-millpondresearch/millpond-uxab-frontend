@@ -1,23 +1,29 @@
+import eye from "../../assets/eye.svg";
+import shieldoff from "../../assets/shield-off.svg";
+import users from "../../assets/users.svg";
+import lock from "../../assets/lock.svg";
+
+
 const risks = [
   {
     title: "Invisible AI Agents",
     body: "Invisible AI agents operating across your network, accessing sensitive data without your knowledge.",
-    icon: "eye", 
+    icon: eye, 
   },
   {
     title: "Security Gaps",
     body: "Security gaps that put your organization at risk as AI tools proliferate beyond IT oversight.",
-    icon: "shield",
+    icon: shieldoff,
   },
   {
     title: "Departmental AI Silos",
     body: "Departmental AI silos that prevent you from realizing the full ROI of your technology investments.",
-    icon: "people",
+    icon: users,
   },
   {
     title: "Data Exposure",
     body: "Customer and proprietary data exposure that could damage trust and compliance.",
-    icon: "lock",
+    icon: lock,
   },
 ];
 
@@ -36,28 +42,26 @@ function StrategyRisksSection() {
 
       {/* 2x2 grid */}
       <div className="mt-12 w-full max-w-5xl">
-        <div className="grid gap-12 md:grid-cols-2">
-          {risks.map((risk) => (
+        <div className="grid gap-12 grid-cols-2">
+          {risks.map((risks) => (
             <div
-              key={risk.title}
+              key={risks.title}
               className="flex flex-col items-center text-center"
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-[#1F4E79]">
-                <span className="t-2xl" aria-hidden="true">
-                  {risk.icon}
-                </span>
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">
+                <img src={risks.icon} alt={risks.title} className="h-10 w-10" />
               </div>
               <h4
                 className="mb-2 text-xl font-semibold"
                 style={{ color: "#1F4E79" }}
               >
-                {risk.title}
+                {risks.title}
               </h4>
               <p
                 className="text-sm leading-relaxed"
                 style={{ color: "#4B4B4B" }}
               >
-                {risk.body}
+                {risks.body}
               </p>
             </div>
           ))}

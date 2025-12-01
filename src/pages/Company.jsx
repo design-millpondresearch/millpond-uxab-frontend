@@ -1,11 +1,16 @@
+import HeroSection from "../components/company/HeroSection.jsx";
+import LeadershipTeam from "../components/company/LeadershipTeam.jsx";
+import Mission from "../components/company/Mission.jsx";
+
 function Company() {
   return (
-    <main className="pt-20 flex items-center justify-center px-4 py-20 min-h-screen">
-      <div>
-        <h1>Company</h1>
-        <p>Company page content</p>
-      </div>
-    </main>
+    <>
+      <main className="flex flex-col">
+        <HeroSection />
+        <LeadershipTeam />
+        <Mission />
+      </main>
+    </>
   );
 }
 

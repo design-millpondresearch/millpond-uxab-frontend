@@ -1,7 +1,9 @@
 #root {
-  max-width: 1440px;
+  max-width: none;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -114,20 +116,28 @@ html, body {
 
 .hero-banner {
   text-align: center;
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-top: 125px;
-  padding-bottom: 125px;
+  padding: 8rem 2rem;
   background-color: #F5EFE7;
   width: 100%;
-  
+  box-sizing: border-box;
 }
 
-.regular-banner-white {
+.hero-banner-surface {
   text-align: center;
-  padding: 50px;
-  background-color: white;
+  padding: 8rem 2rem;
+  background-color: #FBFAF8;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.regular-banner-white,
+.regular-banner-sand, 
+.regular-banner-blue,
+.regular-banner-surface {
+  text-align: center;
+  padding: 3rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .regular-banner-sand {
@@ -137,12 +147,27 @@ html, body {
   width: 100%;
 }
 
+.regular-banner-blue {
+  text-align: center;
+  padding: 50px;
+  background-color: #FBFAF8;
+  width: 100%;
+}
+
+.regular-banner-blue {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(200, 217, 230, 0.3);
+  width: 100%;
+}
+
 .risks-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 48px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .risk-item {
@@ -173,4 +198,9 @@ html, body {
   color: #4B4B4B;
 }
 
-
+.hero-banner,
+.regular-banner-white,
+.regular-banner-sand {
+  width: 100%;
+  box-sizing: border-box; /* include padding */
+}
