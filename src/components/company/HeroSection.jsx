@@ -1,6 +1,6 @@
 function HeroSection() {
   return (
-    <section className="regular-banner-surface flex items-center justify-center px-6 py-20">
+    <section className="regular-banner-surface flex items-center justify-center px-4 pt-24 pb-6 md:px-6 md:py-12">
       <div className="hero-banner-surface flex max-w-4xl flex-col items-center gap-6 text-center">
         <h1 className="hero-title" style={{ color: "#1F4E79" }}>
           Secure the Bridge to Your AI Future.

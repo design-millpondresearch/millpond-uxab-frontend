@@ -18,7 +18,7 @@ const team = [
 
 function LeadershipTeam() {
   return (
-    <section className="regular-banner-blue px-6 py-20 flex flex-col items-center">
+    <section className="regular-banner-blue px-6 py-4 md:py-6 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center">
         <h2 className="section-header mb-4" style={{ color: "#1F4E79" }}>
@@ -30,7 +30,7 @@ function LeadershipTeam() {
       </div>
 
       {/* grid */}
-      <div className="flex flex-wrap justify-center gap-24 items-start w-full mt-12 max-w-6xl">
+      <div className="flex flex-wrap justify-center gap-24 items-start w-full mt-6 md:mt-8 max-w-6xl">
         {team.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-80 lg:max-w-sm">
 

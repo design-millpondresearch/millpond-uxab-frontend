@@ -22,13 +22,13 @@ const ideals = [
 
 function Mission() {
   return (
-    <section className="regular-banner-white flex flex-col items-center">
+    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-4 md:py-6">
       {/* Heading */}
-      <div className="text-center">
-        <h2 className="section-header mb-4" style={{ color: "#1F4E79" }}>
+      <div className="text-center w-full max-w-4xl">
+        <h2 className="section-header mb-4 text-2xl md:text-3xl lg:text-4xl mx-4 md:mx-0" style={{ color: "#1F4E79" }}>
           Uniting Power, Protection, and Performance.
         </h2>
-        <h3 className="subheader mx-6" style={{ color: "#4B4B4B" }}>
+        <h3 className="subheader mx-2 md:mx-6 text-base md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
           We envision a world where organizations harness the revolutionary power of AI with complete confidence, 
           where innovation and security strengthen rather than oppose each other, and where AI systems operate as 
           a unified intelligence network that continuously enhances business performance while protecting what matters most.
@@ -36,22 +36,22 @@ function Mission() {
       </div>
 
       {/* grid */}
-      <div className="mt-12 w-full max-w-6xl">
-        <div className="grid grid-cols-3 justify-items-center gap-6" style={{ gap: '3.5rem' }}>
+      <div className="mt-6 md:mt-8 w-full max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8 md:gap-14 mx-4 md:mx-0">
           {ideals.map((ideals) => (
-            <div className="flex flex-col items-center text-center">
+            <div key={ideals.title} className="flex flex-col items-center text-center px-4">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">
                 <img src={ideals.icon} alt={ideals.title} className="h-10 w-10" />
               </div>
 
               <h3
-                className="subheader"
+                className="subheader text-lg md:text-xl lg:text-2xl mb-2"
                 style={{ color: "#567C8D" }}
               >
                 {ideals.title}
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="small-font"
                 style={{ color: "#4B4B4B" }}
               >
                 {ideals.body}

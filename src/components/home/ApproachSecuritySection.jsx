@@ -73,9 +73,10 @@ function ApproachSecuritySection() {
           Our Approach to AI Security.
         </h2>
 
-        <div className="rounded-3xl bg-white py-8 px-12 shadow-sm" style={{ backgroundColor: '#FFFFFF', borderRadius: '1.5rem' }}>
+        <div className="rounded-3xl bg-white py-6 px-6 md:py-8 md:px-12 shadow-sm" style={{ backgroundColor: '#FFFFFF', borderRadius: '1.5rem' }}>
+          {/* Header - hidden on mobile, shown on desktop */}
           <div
-            className="mb-6 flex items-center gap-6 border-b border-[#E5E7EB] pb-6 text-base font-semibold"
+            className="hidden md:flex mb-6 items-center gap-6 border-b border-[#E5E7EB] pb-6 text-base font-semibold"
             style={{ color: "black" }}
           >
             <span className="flex-1 text-left px-2"></span>
@@ -84,8 +85,30 @@ function ApproachSecuritySection() {
           </div>
           <div className="divide-y divide-[#E5E7EB]">
             {comparisonRows.map((row) => (
-              <div key={row.title} className="py-6">
-                <div className="mb-2 flex items-start gap-6">
+              <div key={row.title} className="py-6 md:py-6">
+                {/* Mobile layout - stacked */}
+                <div className="md:hidden flex flex-col gap-3">
+                  <div className="text-left">
+                    <h4 className="small-font-bold mb-2 text-sm font-bold" style={{ color: "#1F4E79" }}>
+                      {row.title}
+                    </h4>
+                    <p className="small-font text-sm leading-relaxed text-left" style={{ color: "#4B4B4B" }}>
+                      {row.description}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4 justify-start">
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold" style={{ color: "#1F4E79" }}>Prompt-Based:</span>
+                      <Indicator type={row.promptBased} />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold" style={{ color: "#1F4E79" }}>Model-Based:</span>
+                      <Indicator type={row.modelBased} />
+                    </div>
+                  </div>
+                </div>
+                {/* Desktop layout - horizontal */}
+                <div className="hidden md:flex mb-2 items-center gap-6">
                   <div className="flex-1 text-left px-2">
                     <h4 className="small-font-bold mb-2 text-sm font-bold" style={{ color: "#1F4E79" }}>
                       {row.title}
