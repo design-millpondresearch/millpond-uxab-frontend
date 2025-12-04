@@ -13,8 +13,38 @@ function HeroSection() {
         </h3>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-          <Link to="/contactus" className="button-primary">Request a Demo</Link>
-          <Link to="/solutions/xilos" className="button-secondary">Explore Solutions</Link>
+          <button 
+            onClick={() => {
+              const contactSection = document.getElementById('contact-section');
+              if (contactSection) {
+                const elementPosition = contactSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - 80;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="button-primary"
+          >
+            Request a Demo
+          </button>
+          <button 
+            onClick={() => {
+              const solutionsSection = document.getElementById('solutions-section');
+              if (solutionsSection) {
+                const elementPosition = solutionsSection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - 80;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="button-secondary"
+          >
+            Explore Solutions
+          </button>
         </div>
       </div>
     </section>
