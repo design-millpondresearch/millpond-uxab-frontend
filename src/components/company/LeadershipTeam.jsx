@@ -21,7 +21,7 @@ function LeadershipTeam() {
     <section className="regular-banner-blue px-6 py-4 md:py-6 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center">
-        <h2 className="section-header mb-4" style={{ color: "#1F4E79" }}>
+        <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Meet Our Leadership Team.
         </h2>
         <h3 className="subheader mx-4" style={{ color: "#4B4B4B" }}>

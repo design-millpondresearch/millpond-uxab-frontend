@@ -58,7 +58,7 @@ function PartnersSection() {
     <section className="regular-banner-white px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <h2 className="section-header" style={{ color: "#1F4E79" }}>
+          <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Our Partners.
           </h2>
         </div>
@@ -67,14 +67,14 @@ function PartnersSection() {
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="flex items-center justify-center rounded-xl bg-white px-3 py-4 text-sm font-semibold text-[#1F4E79] shadow-sm ring-1 ring-[#E5E7EB]"
+              className="flex items-center justify-center rounded-xl bg-white px-3 py-4 text-sm font-semibold text-[#1F4E79] shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
             >
               <img src={partner.logo} alt={partner.name} className="max-h-12 max-w-full object-contain" />
             </div>
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-2 rounded-2xl bg-[#F5EFE7] p-6 text-center shadow-sm mx-4 md:mx-12 lg:mx-24 xl:mx-48">
+        <div className="mt-10 flex flex-col items-center gap-2 rounded-2xl bg-[#F5EFE7] p-6 text-center shadow-sm mx-4 md:mx-12 lg:mx-24 xl:mx-48 drop-shadow hover:drop-shadow-lg transition-all duration-300">
           <img src={aws} alt="AWS Logo" className="h-12 w-12" />
           <p className="subheader" style={{ color: "#1F4E79" }}>
             AWS genAI partnership announced

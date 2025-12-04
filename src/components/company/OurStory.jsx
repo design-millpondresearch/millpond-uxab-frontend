@@ -43,7 +43,7 @@ function OurStory() {
   return (
     <section className="regular-banner-sand px-6 py-4 md:py-6 flex flex-col items-center">
       <div className="text-center">
-        <h2 className="section-header mb-4" style={{ color: "#1F4E79" }}>
+        <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Our Story
         </h2>
       </div>
@@ -75,7 +75,7 @@ function OurStory() {
 
       {/* team image */}
       <div className="w-full max-w-6xl my-8 flex justify-center items-center">
-        <img src={teampic} alt="team" className="w-128 h-auto" />
+        <img src={teampic} alt="team" className="w-128 h-auto drop-shadow hover:drop-shadow-lg transition-all duration-300" />
       </div>
 
       {/* traits */}

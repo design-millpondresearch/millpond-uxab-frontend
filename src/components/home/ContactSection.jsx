@@ -49,7 +49,7 @@ function ContactSection() {
     <section className="regular-banner-white px-6 py-20">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8">
         <div className="text-center">
-          <h2 className="section-header" style={{ color: "#1F4E79" }}>
+          <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Ready to Take Control of Your AI Future?
           </h2>
           <p className="subheader mx-2">

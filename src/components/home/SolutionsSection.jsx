@@ -46,7 +46,7 @@ function SolutionsSection() {
     <section className="regular-banner-white px-6 py-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 items-center">
         <div className="text-center">
-          <h2 className="section-header" style={{ color: "#1F4E79" }}>
+          <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Our Solutions
           </h2>
           <h3 className="subheader" style={{ color: "#4B4B4B" }}>
@@ -66,7 +66,7 @@ function SolutionsSection() {
                   Built AI Solutions.
                 </p>
 
-                <h2 className="section-header" style={{ color: "#1F4E79" }}>
+                <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
                   WorkBench: AI That Understands Your Business
                 </h2>
 
@@ -123,7 +123,7 @@ function SolutionsSection() {
                   AI Security & Orchestration
                 </p>
 
-                <h2 className="section-header" style={{ color: "#1F4E79" }}>
+                <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
                   Xilos: Your AI Command Center
                 </h2>
 

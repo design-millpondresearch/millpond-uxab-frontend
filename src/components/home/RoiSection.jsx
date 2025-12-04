@@ -19,7 +19,7 @@ function RoiSection() {
   return (
     <section className="regular-banner-sand px-6 py-16">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="section-header" style={{ color: "#1F4E79" }}>
+        <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           ROI Metrics.
         </h2>
         <p className="subheader mt-2" style={{ color: "#4B4B4B" }}>
@@ -30,7 +30,7 @@ function RoiSection() {
           {metrics.map((metric) => (
             <div
               key={metric.label}
-              className="flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base font-semibold text-[#1F4E79] shadow-sm ring-1 ring-[#E5E7EB]"
+              className="flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base font-semibold text-[#1F4E79] shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
             >
               <img src={metric.icon} alt={metric.label} className="h-6 w-6" />
               <p className="text-base font-semibold text-[#1F4E79]">{metric.label}</p>

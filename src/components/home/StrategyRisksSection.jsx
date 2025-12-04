@@ -32,7 +32,7 @@ function StrategyRisksSection() {
     <section className="regular-banner-white flex flex-col items-center px-4 md:px-6">
       {/* Heading */}
       <div className="max-w-4xl text-center">
-        <h2 className="section-header mb-4 text-2xl md:text-3xl lg:text-4xl" style={{ color: "#1F4E79" }}>
+        <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Evolve Your AI Strategy with Complete Control.
         </h2>
         <h3 className="subheader text-base md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>

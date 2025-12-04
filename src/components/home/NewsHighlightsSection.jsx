@@ -18,7 +18,7 @@ function NewsHighlightsSection() {
     <section className="regular-banner-sand px-6 py-16">
       <div className="mx-auto max-w-5xl">
         <div className="mb-8 text-center">
-          <h2 className="section-header" style={{ color: "#1F4E79" }}>
+          <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             News and Highlights
           </h2>
         </div>
@@ -27,7 +27,7 @@ function NewsHighlightsSection() {
           {stories.map((story) => (
             <article
               key={story.title}
-              className="flex h-full flex-col justify-between rounded-2xl bg-white p-6 text-left shadow-sm ring-1 ring-[#E5E7EB]"
+              className="flex h-full flex-col justify-between rounded-2xl bg-white p-6 text-left shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
             >
               <div className="flex items-center justify-between text-sm font-semibold">
                 <span className="rounded-full bg-[#E9F3FB] px-3 py-1 text-[#1F4E79]">{story.source}</span>

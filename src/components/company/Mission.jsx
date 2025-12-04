@@ -25,7 +25,7 @@ function Mission() {
     <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-4 md:py-6">
       {/* Heading */}
       <div className="text-center w-full max-w-4xl">
-        <h2 className="section-header mb-4 text-2xl md:text-3xl lg:text-4xl mx-4 md:mx-0" style={{ color: "#1F4E79" }}>
+        <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl mx-4 md:mx-0" style={{ color: "#1F4E79" }}>
           Uniting Power, Protection, and Performance.
         </h2>
         <h3 className="subheader mx-2 md:mx-6 text-base md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>

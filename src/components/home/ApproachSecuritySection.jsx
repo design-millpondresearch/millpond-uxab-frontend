@@ -69,7 +69,7 @@ function ApproachSecuritySection() {
   return (
     <section className="regular-banner-sand px-6 py-20">
       <div className="mx-auto flex max-w-4xl flex-col gap-10">
-        <h2 className="section-header text-center" style={{ color: "#1F4E79" }}>
+        <h2 className="section-header text-center text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Our Approach to AI Security.
         </h2>
 

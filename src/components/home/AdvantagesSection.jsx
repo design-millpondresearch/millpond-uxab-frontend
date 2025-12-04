@@ -45,7 +45,7 @@ function AdvantagesSection() {
     <section className="regular-banner-sand px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
-          <h2 className="section-header" style={{ color: "#1F4E79" }}>
+          <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Essential AI Governance Advantages.
           </h2>
         </div>
@@ -54,7 +54,7 @@ function AdvantagesSection() {
           {advantages.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center gap-3 rounded-2xl bg-white p-6 text-center shadow-sm ring-1 ring-[#E5E7EB]"
+              className="flex flex-col items-center gap-3 rounded-2xl bg-white p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
             >
               <div className="h-10 w-10 rounded-full mt-2">
                 <img src={item.icon} alt={item.title} className="h-10 w-10" />
