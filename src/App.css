@@ -135,6 +135,40 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.button-filter {
+  background-color: #C8D9E6;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-filter:hover {
+  background-color: #C8D9E6;
+  transform: translateY(-1px);
+}
+
+.button-filter.selected {
+  background-color: #1F4E79;
+  padding-right: 12px;
+  color: var(--color-white);
+}
+
+.button-filter.selected::after {
+  content: "×";
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-left: 4px;
+}
+
 /* TYPOGRAPHY */
 
 .hero-title {
