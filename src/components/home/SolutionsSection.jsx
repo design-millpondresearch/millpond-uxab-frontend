@@ -87,7 +87,17 @@ function SolutionsSection() {
                   ))}
                 </div>
 
-                <Link to="/solutions/workbench" className="mt-5 button-primary inline-block">Explore WorkBench</Link>
+                <Link 
+                  to="/solutions/workbench#top" 
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: 'auto' });
+                    }, 0);
+                  }}
+                  className="mt-5 button-primary inline-block"
+                >
+                  Explore WorkBench
+                </Link>
               </div>
 
               {/* Right Column */}
@@ -145,7 +155,17 @@ function SolutionsSection() {
                 </div>
 
                 <div className="flex flex-wrap gap-3 justify-end mt-5">
-                  <Link to="/solutions/xilos" className="button-primary">Explore Xilos</Link>
+                  <Link 
+                    to="/solutions/xilos#top" 
+                    onClick={() => {
+                      setTimeout(() => {
+                        window.scrollTo({ top: 0, behavior: 'auto' });
+                      }, 0);
+                    }}
+                    className="button-primary"
+                  >
+                    Explore Xilos
+                  </Link>
                 </div>
               </div>
 

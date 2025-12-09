@@ -1,18 +1,27 @@
+import { Link } from "react-router-dom";
+import shield from "../../assets/shield.svg";
+import monitor from "../../assets/monitor.svg";
+import home from "../../assets/home.svg";
+
+
 const roles = [
   {
-    title: "For the CISO & GRC teams",
+    title: "For Security Leaders",
     description:
-      "Create AI policy guardrails that ensure workforce safety across assistants and agents.",
+      "Protect every AI interaction.",
+      logo: shield,
   },
   {
-    title: "For Policy Leadership",
+    title: "For Technology Teams",
     description:
-      "Create industry-relevant data and content guidelines that keep prompts compliant.",
+      "Streamline and control your AI stack.",
+    logo: monitor,
   },
   {
-    title: "For IT Leadership & GovOps",
+    title: "For Department Heads",
     description:
-      "Provide visibility into AI agent behavior across systems with actionable insights.",
+      "Empower teams to use AI safely and efficiently. ",
+    logo: home,
   },
 ];
 
@@ -33,14 +42,29 @@ function RoleCardsSection() {
           {roles.map((role) => (
             <div
               key={role.title}
-              className="rounded-2xl bg-white p-6 text-left shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
+              className="rounded-2xl bg-[#F5EFE7] hover:bg-[#C8D9E6] p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300 flex flex-col items-center"
             >
-              <h4 className="mb-2 text-xl font-semibold" style={{ color: "#1F4E79" }}>
+              <div className="mb-4 flex items-center justify-center">
+                <img src={role.logo} alt={role.title} className="h-12 w-12" />
+              </div>
+              <h4 className="large-font-bold mb-2 text-xl font-semibold" style={{ color: "#1F4E79", fontSize: "24px" }}>
                 {role.title}
               </h4>
-              <p className="text-sm leading-relaxed" style={{ color: "#4B4B4B" }}>
+              <p className="small-font text-sm leading-relaxed mb-4" style={{ color: "#4B4B4B", fontSize: "14px" }}>
                 {role.description}
               </p>
+              <Link 
+                to="/solutions/xilos#top" 
+                onClick={() => {
+                  setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'auto' });
+                  }, 0);
+                }}
+                className="inline-flex items-center gap-2 text-sm font-medium text-[#1F4E79] hover:text-[#1F4E79] transition-all duration-300 hover:translate-x-1"
+                style={{ textDecoration: 'none' }}
+              >
+                See tailored path →
+              </Link>
             </div>
           ))}
         </div>

@@ -67,7 +67,7 @@ function PartnersSection() {
           {partners.map((partner) => (
             <div
               key={partner.name}
-              className="flex items-center justify-center rounded-xl bg-white px-3 py-4 text-sm font-semibold text-[#1F4E79] shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
+              className="flex items-center justify-center rounded-xl bg-white px-3 py-4 text-sm font-semibold text-[#1F4E79] shadow-sm drop-shadow hover:drop-shadow-lg transition-all duration-300"
             >
               <img src={partner.logo} alt={partner.name} className="max-h-12 max-w-full object-contain" />
             </div>
