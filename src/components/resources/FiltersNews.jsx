@@ -393,14 +393,10 @@ function FiltersNews() {
             columnClassName="pl-12 space-y-6"
           >
             {filteredResources.map((resource) => (
-              <Link
+              <article
                 key={resource.id}
-                to={`/item/${resource.id}`}
-                className="block"
+                className="flex flex-col shadow-sm ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
               >
-                <article
-                  className="flex flex-col shadow-sm ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
-                >
                   <div className="p-6 text-left">
                     <div className="flex gap-3 text-sm font-semibold flex-wrap">
                       <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
@@ -435,9 +431,9 @@ function FiltersNews() {
                             Read More →
                           </button>
                         ) : resource.link.startsWith('/') ? (
-                          <Link to={resource.link} className="readmore-btn" onClick={(e) => e.stopPropagation()}>Read More →</Link>
+                          <Link to={resource.link} className="readmore-btn">Read More →</Link>
                         ) : (
-                          <a href={resource.link} target="_blank" rel="noopener noreferrer" className="readmore-btn" onClick={(e) => e.stopPropagation()}>
+                          <a href={resource.link} target="_blank" rel="noopener noreferrer" className="readmore-btn">
                             Read More →
                           </a>
                         )
@@ -445,7 +441,6 @@ function FiltersNews() {
                     </div>
                   )}
                 </article>
-              </Link>
             ))}
           </Masonry>
         ) : (

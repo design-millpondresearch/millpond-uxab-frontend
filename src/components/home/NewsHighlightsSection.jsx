@@ -32,7 +32,7 @@ function NewsHighlightsSection() {
           {stories.map((story) => (
             <article
               key={story.title}
-              className="flex h-full flex-col rounded-2xl bg-white p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
+              className="flex h-full flex-col rounded-2xl bg-white p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300 cursor-default"
             >
               <div className="flex-1 flex flex-col items-center justify-center mb-4">
                 <img src={story.logo} alt={story.source} className="object-contain mb-2" style={{ width: '55px', height: '28px' }} />
