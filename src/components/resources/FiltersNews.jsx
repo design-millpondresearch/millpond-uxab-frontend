@@ -23,6 +23,13 @@ import TheDataHarvestTheBiggestThreatinAI from '../../assets/TheDataHarvestTheBi
 import DataSovereigntyinTheAIEraNavigatingtheParadigmShift from '../../assets/DataSovereigntyinTheAIEraNavigatingtheParadigmShift.png';
 import TheIntelligenceSolution from '../../assets/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/AnImportantLimitationofAI.svg';
+import Masonry from "react-masonry-css";
+
+const breakpointColumnsObj = {
+  default: 3,
+  1024: 2,
+  640: 1
+};
 
 function FiltersNews() {
   const [resources] = useState([
@@ -377,22 +384,32 @@ function FiltersNews() {
       )}
 
       {/* Masonry layout */}
-      <div className="px-6 pt-12 pb-36 max-w-7xl mx-auto">
-        <div className="columns-1 md:columns-2 lg:columns-3" style={{ columnGap: '1.5rem' }}>
-          {filteredResources.map((resource) => (
-            <div key={resource.id} className="mb-6 break-inside-avoid">
-              <article
-                className="flex flex-col shadow-sm ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
+      <div className="px-6 pt-12 pb-36 max-w-7xl mx-auto flex justify-center">
+        <div className="mx-4">
+        {filteredResources.length > 0 ? (
+          <Masonry
+            breakpointCols={breakpointColumnsObj}
+            className="flex w-full -ml-8"
+            columnClassName="pl-12 space-y-6"
+          >
+            {filteredResources.map((resource) => (
+              <Link
+                key={resource.id}
+                to={`/item/${resource.id}`}
+                className="block"
               >
-                <div className="p-6 text-left">
-                  <div className="flex gap-3 text-sm font-semibold flex-wrap">
-                    <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
-                      {resource.category}
-                    </span>
-                    <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
-                      {resource.topic}
-                    </span>
-                  </div>
+                <article
+                  className="flex flex-col shadow-sm ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
+                >
+                  <div className="p-6 text-left">
+                    <div className="flex gap-3 text-sm font-semibold flex-wrap">
+                      <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
+                        {resource.category}
+                      </span>
+                      <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
+                        {resource.topic}
+                      </span>
+                    </div>
 
                   <p className="subheader mt-4 text-sm leading-relaxed text-[#4B4B4B] text-left">
                     {resource.title}
@@ -401,39 +418,42 @@ function FiltersNews() {
                   <p className="small-font mt-4 text-[#4B4B4B] text-left">{resource.description}</p>
                 </div>
 
-                {resource.image && (
-                  <div className="relative">
-                    <img src={resource.image} alt={resource.title} className="w-full" />
+                  {resource.image && (
+                    <div className="relative">
+                      <img src={resource.image} alt={resource.title} className="w-full" />
 
-                    {/* Read More button */}
-                    {resource.link && (
-                      resource.link === '#top' ? (
-                        <button
-                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                          className="readmore-btn"
-                        >
-                          Read More →
-                        </button>
-                      ) : resource.link.startsWith('/') ? (
-                        <Link to={resource.link} className="readmore-btn">Read More →</Link>
-                      ) : (
-                        <a href={resource.link} target="_blank" rel="noopener noreferrer" className="readmore-btn">
-                          Read More →
-                        </a>
-                      )
-                    )}
-                  </div>
-                )}
-              </article>
-            </div>
-          ))}
-        </div>
-
-        {filteredResources.length === 0 && (
+                      {/* Read More button */}
+                      {resource.link && (
+                        resource.link === '#top' ? (
+                          <button
+                            onClick={(e) => {
+                              e.preventDefault();
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                            className="readmore-btn"
+                          >
+                            Read More →
+                          </button>
+                        ) : resource.link.startsWith('/') ? (
+                          <Link to={resource.link} className="readmore-btn" onClick={(e) => e.stopPropagation()}>Read More →</Link>
+                        ) : (
+                          <a href={resource.link} target="_blank" rel="noopener noreferrer" className="readmore-btn" onClick={(e) => e.stopPropagation()}>
+                            Read More →
+                          </a>
+                        )
+                      )}
+                    </div>
+                  )}
+                </article>
+              </Link>
+            ))}
+          </Masonry>
+        ) : (
           <p className="text-center py-12 text-gray-500">
             No resources match the selected filters.
           </p>
         )}
+        </div>
       </div>
     </>
   );
