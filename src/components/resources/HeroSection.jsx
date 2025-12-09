@@ -6,7 +6,7 @@ function HeroSection() {
           Resources
         </h1>
         <h3 className="subheader" style={{ color: "#4B4B4B" }}>
-          Gain insights from Mill Pond Research experts.
+            Gain insights from Mill Pond Research experts.
         </h3>
       </div>
     </section>

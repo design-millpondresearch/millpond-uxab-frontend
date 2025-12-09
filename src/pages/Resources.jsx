@@ -4,7 +4,7 @@ import ResourcesSection from "../components/resources/FiltersNews.jsx";
 function Resources() {
   return (
     <main className="min-h-screen">
-      <HeroSection />
+        <HeroSection />
       <ResourcesSection />
     </main>
   );

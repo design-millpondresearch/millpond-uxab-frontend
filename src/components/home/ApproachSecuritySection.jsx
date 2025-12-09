@@ -58,9 +58,9 @@ function Indicator({ type }) {
       <img src={x} alt="x" className="h-7 w-7" />
     );
   } else if (type === "question") {
-    return (
+  return (
       <img src={question} alt="question" className="h-7 w-7" />
-    );
+  );
   }
   return null;
 }
@@ -78,13 +78,13 @@ function ApproachSecuritySection() {
           <div
             className="hidden md:flex mb-6 items-center gap-6 border-b border-[#E5E7EB] pb-6 text-base font-semibold"
             style={{ color: "black" }}
-          >
+            >
             <span className="flex-1 text-left px-2"></span>
             <span className="large-font-bold text-center flex-shrink-0 px-2 w-32">Prompt-Based AI security</span>
             <span className="large-font-bold text-center flex-shrink-0 px-2 w-32">Model-Based</span>
-          </div>
-          <div className="divide-y divide-[#E5E7EB]">
-            {comparisonRows.map((row) => (
+            </div>
+            <div className="divide-y divide-[#E5E7EB]">
+              {comparisonRows.map((row) => (
               <div key={row.title} className="py-3 md:py-5">
                 {/* Mobile layout - stacked */}
                 <div className="md:hidden flex flex-col gap-3">
@@ -115,7 +115,7 @@ function ApproachSecuritySection() {
                     </h4>
                     <p className="small-font text-sm leading-relaxed text-left" style={{ color: "#4B4B4B" }}>
                       {row.description}
-                    </p>
+                  </p>
                   </div>
                   <div className="flex w-32 items-center justify-center flex-shrink-0 px-2">
                     <Indicator type={row.promptBased} />
@@ -123,9 +123,9 @@ function ApproachSecuritySection() {
                   <div className="flex w-32 items-center justify-center flex-shrink-0 px-2">
                     <Indicator type={row.modelBased} />
                   </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
 

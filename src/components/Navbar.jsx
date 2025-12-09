@@ -61,7 +61,7 @@ const Navbar = () => {
                                     <li>
                                         <Link to="/solutions/xilos" className="dropdown-link">
                                             Secure your AI interactions in real-time.
-                                        </Link>
+                        </Link>
                                     </li>
                                 </ul>
                             </>

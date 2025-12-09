@@ -57,7 +57,7 @@ function SolutionsSection() {
         <div className="flex flex-col gap-24 mb-12">
 
           {/* WorkBench Grid */}
-          <div className="px-2 md:px-4 my-2">
+          <div className="px-2 md:px-4">
             <div className="max-w-9xl mx-auto grid gap-12 grid-cols-1 md:grid-cols-2">
               
               {/* Left Column */}
@@ -115,7 +115,7 @@ function SolutionsSection() {
           <div className="border-t border-gray-200" style={{ borderColor: 'rgba(0, 0, 0, 0.1)' }}></div>
 
           {/* Xilos Grid */}
-          <div className="px-2 md:px-4 my-2">
+          <div className="px-2 md:px-4">
             <div className="max-w-9xl mx-auto grid gap-12 grid-cols-1 md:grid-cols-2">
                   
               {/* Left Column */}

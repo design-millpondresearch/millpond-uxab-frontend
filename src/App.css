@@ -258,7 +258,7 @@ body {
 
 @media (min-width: 1024px) {
   .hero-banner {
-    padding: 8rem 2rem;
+  padding: 8rem 2rem;
   }
 }
 
@@ -352,7 +352,7 @@ body {
     padding-bottom: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
+}
 }
 
 .regular-banner-surface {
@@ -378,7 +378,7 @@ body {
 .hero-banner-blue,
 .hero-banner-clear,
 .regular-banner-white,
-.regular-banner-sand,
+.regular-banner-sand, 
 .regular-banner-blue,
 .regular-banner-surface {
   width: 100%;

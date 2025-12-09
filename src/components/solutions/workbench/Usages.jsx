@@ -24,7 +24,7 @@ function Usages() {
                     {usages.map((usage) => (
                         <div key={usage.title} className="flex flex-col items-center text-center px-4 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
                             <div className="min-h-[60px] flex items-center justify-center mb-4">
-                                <h4 className="large-font-bold" style={{ color: "#1F4E79" }}>{usage.title}</h4>
+                            <h4 className="large-font-bold" style={{ color: "#1F4E79" }}>{usage.title}</h4>
                             </div>
                             <p className="small-font" style={{ color: "#4B4B4B" }}>{usage.description}</p>
 
