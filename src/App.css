@@ -424,4 +424,49 @@ body {
   color: var(--color-slate);
 }
 
+/* Masonry layout for resources */
+.columns-1 > div,
+.columns-2 > div,
+.columns-3 > div {
+  display: inline-block !important;
+  width: 100% !important;
+  vertical-align: top;
+  break-inside: avoid;
+}
+
+.columns-1 > div > article,
+.columns-2 > div > article,
+.columns-3 > div > article {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.break-inside-avoid {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.readmore-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: var(--color-primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.readmore-btn:hover {
+  background: #F5EFE7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: translateX(2px);
+}
+
 

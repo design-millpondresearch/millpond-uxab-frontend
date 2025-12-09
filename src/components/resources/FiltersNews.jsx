@@ -309,140 +309,130 @@ function FiltersNews() {
 
   return (
     <>
+      {/* Top buttons */}
       <div className="flex justify-start gap-4 px-6 pt-6 pb-4 max-w-7xl mx-auto">
-        <button 
+        <button
           className={`button-filter ${showFilters ? 'selected' : ''}`}
-          style={showFilters ? { backgroundColor: '#4B4B4B', color: '#FFFFFF', border: 'none' } : { backgroundColor: 'transparent', color: '#4B4B4B', border: '1px solid #4B4B4B' }}
+          style={showFilters ? { backgroundColor: '#4B4B4B', color: '#FFFFFF' } : {}}
           onClick={() => setShowFilters(!showFilters)}
         >
-          <img 
-            src={filtersIcon} 
-            alt="Filters" 
-            className="w-4 h-4" 
-            style={showFilters ? { filter: 'brightness(0) invert(1)' } : { filter: 'brightness(0) saturate(100%)', color: '#4B4B4B' }}
-          />
+          <img src={filtersIcon} alt="Filters" className="w-4 h-4" />
           Filters
         </button>
-        <button 
+
+        <button
           className="button-filter"
-          style={{ backgroundColor: 'transparent', color: '#4B4B4B', border: '1px solid #4B4B4B' }}
+          style={{ backgroundColor: 'transparent', border: '1px solid #4B4B4B' }}
           onClick={clearAll}
         >
           Clear All
         </button>
       </div>
-      
+
       {/* Filters */}
       {showFilters && (
-      <div className="flex flex-col gap-2 px-6 pt-4 pb-6 max-w-7xl mx-auto">
-        <div className="flex flex-col gap-2">
-          <p className="small-font font-medium text-left">By Category</p>
-          <div className="flex justify-start items-center gap-4 flex-wrap">
-            <button 
-              className={`button-filter ${showAllCategories ? 'selected' : ''}`}
-              onClick={() => toggleCategory('All')}
-            >
-              All
-            </button>
-            {categories.map(category => (
+        <div className="flex flex-col gap-6 px-6 max-w-7xl mx-auto pb-6">
+          <div>
+            <p className="small-font font-medium text-left">By Category</p>
+            <div className="flex flex-wrap gap-3 mt-2">
               <button
-                key={category}
-                className={`button-filter ${selectedCategories.has(category) ? 'selected' : ''}`}
-                onClick={() => toggleCategory(category)}
+                className={`button-filter ${showAllCategories ? 'selected' : ''}`}
+                onClick={() => toggleCategory('All')}
               >
-                {category}
+                All
               </button>
-            ))}
+              {categories.map((c) => (
+                <button
+                  key={c}
+                  className={`button-filter ${selectedCategories.has(c) ? 'selected' : ''}`}
+                  onClick={() => toggleCategory(c)}
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="flex flex-col gap-2">
-          <p className="small-font font-medium text-left">By Topic</p>
-          <div className="flex justify-start items-center gap-4 flex-wrap">
-            <button 
-              className={`button-filter ${showAllTopics ? 'selected' : ''}`}
-              onClick={() => toggleTopic('All')}
-            >
-              All
-            </button>
-            {topics.map(topic => (
+          <div>
+            <p className="small-font font-medium text-left">By Topic</p>
+            <div className="flex flex-wrap gap-3 mt-2">
               <button
-                key={topic}
-                className={`button-filter ${selectedTopics.has(topic) ? 'selected' : ''}`}
-                onClick={() => toggleTopic(topic)}
+                className={`button-filter ${showAllTopics ? 'selected' : ''}`}
+                onClick={() => toggleTopic('All')}
               >
-                {topic}
+                All
               </button>
-            ))}
+              {topics.map((t) => (
+                <button
+                  key={t}
+                  className={`button-filter ${selectedTopics.has(t) ? 'selected' : ''}`}
+                  onClick={() => toggleTopic(t)}
+                >
+                  {t}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
       )}
 
-      {/* Display filtered resources */}
+      {/* Masonry layout */}
       <div className="px-6 pt-12 pb-36 max-w-7xl mx-auto">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {filteredResources.map(resource => (
-            <article
-              key={resource.id}
-              className="flex h-full flex-col justify-between bg-[#FBFAF8] text-left shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300 overflow-hidden"
-              style={{ borderRadius: '2rem' }}
-            >
-              <div className="p-6">
-                <div className="flex items-center justify-left text-sm font-semibold gap-4">
-                  <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">{resource.category}</span>
-                  <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">{resource.topic}</span>
+        <div className="columns-1 md:columns-2 lg:columns-3" style={{ columnGap: '1.5rem' }}>
+          {filteredResources.map((resource) => (
+            <div key={resource.id} className="mb-6 break-inside-avoid">
+              <article
+                className="flex flex-col shadow-sm ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
+              >
+                <div className="p-6 text-left">
+                  <div className="flex gap-3 text-sm font-semibold flex-wrap">
+                    <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
+                      {resource.category}
+                    </span>
+                    <span className="rounded-full bg-white px-3 py-1 text-[#4B4B4B]">
+                      {resource.topic}
+                    </span>
+                  </div>
+
+                  <p className="subheader mt-4 text-sm leading-relaxed text-[#4B4B4B] text-left">
+                    {resource.title}
+                  </p>
+                  <p className="small-font text-[#567C8D] text-left">{resource.date}</p>
+                  <p className="small-font mt-4 text-[#4B4B4B] text-left">{resource.description}</p>
                 </div>
-                <p className="subheader mt-4 text-sm leading-relaxed" style={{ color: "#4B4B4B" }}>{resource.title}</p>
-                <p className="small-font" style={{ color: "#567C8D" }}>{resource.date}</p>
-                <p className="small-font mt-4" style={{ color: "#4B4B4B" }}>{resource.description}</p>
-              </div>
-              {resource.image && (
-                <div className="relative">
-                  <img 
-                    src={resource.image} 
-                    alt={resource.title}
-                    className="w-full h-auto"
-                  />
-                  {resource.link && (
-                    resource.link === '#top' ? (
-                      <button
-                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="absolute bottom-4 right-4 bg-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-all duration-300 shadow-md hover:shadow-lg hover:bg-[#F5EFE7] group"
-                        style={{ color: 'var(--color-primary)', textDecoration: 'none', border: 'none', cursor: 'pointer' }}
-                      >
-                        Read More
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                      </button>
-                    ) : resource.link.startsWith('/') ? (
-                      <Link 
-                        to={resource.link}
-                        className="absolute bottom-4 right-4 bg-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-all duration-300 shadow-md hover:shadow-lg hover:bg-[#F5EFE7] group"
-                        style={{ color: 'var(--color-primary)', textDecoration: 'none' }}
-                      >
-                        Read More
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                      </Link>
-                    ) : (
-                      <a 
-                        href={resource.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="absolute bottom-4 right-4 bg-white px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2 transition-all duration-300 shadow-md hover:shadow-lg hover:bg-[#F5EFE7] group"
-                        style={{ color: 'var(--color-primary)', textDecoration: 'none' }}
-                      >
-                        Read More
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                      </a>
-                    )
-                  )}
-                </div>
-              )}
-            </article>
+
+                {resource.image && (
+                  <div className="relative">
+                    <img src={resource.image} alt={resource.title} className="w-full" />
+
+                    {/* Read More button */}
+                    {resource.link && (
+                      resource.link === '#top' ? (
+                        <button
+                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                          className="readmore-btn"
+                        >
+                          Read More →
+                        </button>
+                      ) : resource.link.startsWith('/') ? (
+                        <Link to={resource.link} className="readmore-btn">Read More →</Link>
+                      ) : (
+                        <a href={resource.link} target="_blank" rel="noopener noreferrer" className="readmore-btn">
+                          Read More →
+                        </a>
+                      )
+                    )}
+                  </div>
+                )}
+              </article>
+            </div>
           ))}
         </div>
+
         {filteredResources.length === 0 && (
-          <p className="text-center py-12" style={{ color: 'var(--color-slate)' }}>No resources match the selected filters.</p>
+          <p className="text-center py-12 text-gray-500">
+            No resources match the selected filters.
+          </p>
         )}
       </div>
     </>
@@ -450,4 +440,3 @@ function FiltersNews() {
 }
 
 export default FiltersNews;
-
