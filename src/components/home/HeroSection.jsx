@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
-    <section className="regular-banner-sand flex items-center justify-center px-4 pt-24 pb-12 md:px-6 md:py-20">
+    <section className="regular-banner-sand flex items-center justify-center px-4 md:px-6">
       <div className="hero-banner flex max-w-4xl flex-col items-center gap-4 md:gap-6 text-center">
         <h1 className="hero-title" style={{ color: "#1F4E79" }}>
           Secure the Future for Enterprise AI.

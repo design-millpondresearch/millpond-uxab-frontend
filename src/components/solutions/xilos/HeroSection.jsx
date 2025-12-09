@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function HeroSection() {
     return (
-      <section className="regular-banner-blue flex items-center justify-center px-4 pt-24 pb-2 md:px-6 md:pt-24 md:pb-4">
+      <section className="regular-banner-blue flex items-center justify-center px-4 md:px-6">
         <div className="hero-banner-clear flex max-w-7xl flex-col items-center gap-12 text-center">
           <h1 className="hero-title text-5xl md:text-6xl lg:text-7xl" style={{ color: "#567C8D" }}>
             Xilos

@@ -272,45 +272,69 @@ body {
 
 .regular-banner-white {
   background-color: var(--color-white);
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
   .regular-banner-white {
-    padding: 3rem 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 .regular-banner-sand {
   background-color: var(--color-sand);
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
   .regular-banner-sand {
-    padding: 3rem 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 .regular-banner-blue {
   background-color: rgba(200, 217, 230, 0.35);
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
   .regular-banner-blue {
-    padding: 3rem 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 .regular-banner-surface {
   background-color: var(--color-surface);
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
   .regular-banner-surface {
-    padding: 3rem 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

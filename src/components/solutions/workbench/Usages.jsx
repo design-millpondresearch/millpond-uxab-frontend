@@ -15,7 +15,7 @@ const usages = [
 
 function Usages() {
     return (
-        <section className="regular-banner-sand px-6 py-4 md:py-6 flex flex-col items-center">
+        <section className="regular-banner-sand px-6 flex flex-col items-center">
             <div className="text-center">
                 <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
                     Harness the power of agentic AI without sacrificing security.

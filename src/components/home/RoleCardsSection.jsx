@@ -18,7 +18,7 @@ const roles = [
 
 function RoleCardsSection() {
   return (
-    <section className="regular-banner-white px-6 py-20">
+    <section className="regular-banner-white px-6">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>

@@ -18,7 +18,7 @@ const team = [
 
 function LeadershipTeam() {
   return (
-    <section className="regular-banner-blue px-6 py-4 md:py-6 flex flex-col items-center">
+    <section className="regular-banner-blue px-6 flex flex-col items-center">
       {/* Heading */}
       <div className="text-center">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>

@@ -67,8 +67,8 @@ function Indicator({ type }) {
 
 function ApproachSecuritySection() {
   return (
-    <section className="regular-banner-sand px-6 py-20">
-      <div className="mx-auto flex max-w-4xl flex-col gap-10">
+    <section className="regular-banner-sand px-6">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10">
         <h2 className="section-header text-center text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Our Approach to AI Security.
         </h2>
@@ -85,7 +85,7 @@ function ApproachSecuritySection() {
           </div>
           <div className="divide-y divide-[#E5E7EB]">
             {comparisonRows.map((row) => (
-              <div key={row.title} className="py-6 md:py-6">
+              <div key={row.title} className="py-3 md:py-5">
                 {/* Mobile layout - stacked */}
                 <div className="md:hidden flex flex-col gap-3">
                   <div className="text-left">

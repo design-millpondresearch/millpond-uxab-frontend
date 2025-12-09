@@ -22,7 +22,7 @@ const traits = [
 
 function TameShadowStorm() {
     return (
-        <section className="regular-banner-white px-6 py-4 md:py-6 flex flex-col items-center">
+        <section className="regular-banner-white px-6 flex flex-col items-center">
             <div className="text-center">
                 <h2 className="section-header mb-4 text-3xl md:text-5xl lg:text-6xl" style={{ color: "#1F4E79" }}>
                     Tame the Shadow AI Storm

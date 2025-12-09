@@ -22,7 +22,7 @@ const ideals = [
 
 function Mission() {
   return (
-    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-4 md:py-6">
+    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6">
       {/* Heading */}
       <div className="text-center w-full max-w-4xl">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl mx-4 md:mx-0" style={{ color: "#1F4E79" }}>

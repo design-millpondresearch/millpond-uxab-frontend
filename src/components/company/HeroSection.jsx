@@ -1,6 +1,6 @@
 function HeroSection() {
   return (
-    <section className="regular-banner-surface flex items-center justify-center px-4 pt-24 pb-6 md:px-6 md:py-12">
+    <section className="regular-banner-surface flex items-center justify-center px-4 md:px-6">
       <div className="hero-banner-surface flex max-w-4xl flex-col items-center gap-6 text-center">
         <h1 className="hero-title" style={{ color: "#1F4E79" }}>
           Secure the Bridge to Your AI Future.
@@ -10,7 +10,7 @@ function HeroSection() {
           We're on a mission to help every organization convert their shadow AI into their most powerful competitive advantage.
         </h3>
 
-        <div className="mt-4 flex justify-center">
+        <div className="flex justify-center">
           <button className="button-primary">Learn More</button>
         </div>
       </div>

@@ -17,7 +17,7 @@ const metrics = [
 
 function RoiSection() {
   return (
-    <section className="regular-banner-sand px-6 py-16">
+    <section className="regular-banner-sand px-6">
       <div className="mx-auto max-w-5xl text-center">
         <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           ROI Metrics.

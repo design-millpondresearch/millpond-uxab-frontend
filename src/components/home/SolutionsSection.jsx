@@ -43,7 +43,7 @@ const xilosFeatures = [
 
 function SolutionsSection() {
   return (
-    <section id="solutions-section" className="regular-banner-white px-6 py-10">
+    <section id="solutions-section" className="regular-banner-white px-6">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 items-center">
         <div className="text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
