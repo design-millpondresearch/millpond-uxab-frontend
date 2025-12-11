@@ -1,88 +1,152 @@
-import anthropic from "../../assets/anthropic-logo.svg";
-import openai from "../../assets/openai_logo.svg";
-import meta from "../../assets/meta-logo.svg";
-import google from "../../assets/Google_logo.svg";
-import groq from "../../assets/Groq_logo.svg";
-import aws from "../../assets/aws_logo.svg";
-import azure from "../../assets/Microsoft_Azure_Logo.svg";
-import nist from "../../assets/nist_logo_black.svg";
-import ccc from "../../assets/ccc.svg";
-import invokeai from "../../assets/invokeai.svg";
+import { useState } from "react";
 
+import anthropic from "../../assets/partners/anthropic_logo.svg";
+import openai from "../../assets/partners/openai_logo.svg";
+import meta from "../../assets/partners/meta-logo.svg";
+import google from "../../assets/partners/Google_logo.svg";
+import groq from "../../assets/partners/Groq_logo.svg";
+import aws from "../../assets/partners/aws_logo.svg";
+import azure from "../../assets/partners/Microsoft_Azure_Logo.svg";
+import nist from "../../assets/partners/nist_logo_black.svg";
+import ccc from "../../assets/partners/ccc.svg";
+import invokeai from "../../assets/partners/invokeai.svg";
 
 const partners = [
+  { name: "Anthropic", logo: anthropic },
+  { name: "OpenAI", logo: openai },
+  { name: "Meta", logo: meta },
+  { name: "Google", logo: google },
+  { name: "Groq", logo: groq },
+  { name: "AWS", logo: aws },
+  { name: "Azure", logo: azure },
+  { name: "NIST", logo: nist },
+  { name: "CCC", logo: ccc },
+  { name: "InvokeAI", logo: invokeai },
+];
+
+// duplicate list so the marquee can scroll seamlessly
+const marqueePartners = [...partners, ...partners];
+
+const testimonials = [
   {
-    name: "Anthropic",
-    logo: anthropic,
+    company: "JLINC",
+    logo: null,
+    title: "Security insight beyond anything we have seen",
+    body:
+      "While building protocols to audit AI data, we have seen under the hood of many orchestration technologies. Mill Pond Research's insight into the security implications of AI are well beyond anything we have seen so far.",
+    speaker: "Jim Fournier, CEO, JLINC",
   },
   {
-    name: "OpenAI",
-    logo: openai,
-  },
-  {
-    name: "Meta",
-    logo: meta,
-  },
-  {
-    name: "Google",
-    logo: google,
-  },
-  {
-    name: "Groq",
-    logo: groq,
-  },
-  {
-    name: "AWS",
-    logo: aws,
-  },
-  {
-    name: "Azure",
-    logo: azure,
-  },
-  {
-    name: "NIST",
-    logo: nist,
-  },
-  {
-    name: "CCC",
-    logo: ccc,
-  },
-  {
-    name: "InvokeAI",
-    logo: invokeai,
+    company: "ZealStrat",
+    logo: null,
+    title: "Speed with control, innovation with accountability",
+    body:
+      "Security and compliance are like the heart and lungs of responsible AI, each essential, each reinforcing the other. That is why I am excited about our partnership with Mill Pond Research. With XILOS orchestrating safe, scalable AI workflows and RESA ensuring that every output faithfully follows client policies, we give organizations the balance they need.",
+    speaker: "Ganesan Keerthivasan, CEO, ZealStrat",
   },
 ];
 
 function PartnersSection() {
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
+  const currentTestimonial = testimonials[testimonialIndex];
+
+  const goNext = () =>
+    setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+
+  const goPrev = () =>
+    setTestimonialIndex((prev) =>
+      (prev - 1 + testimonials.length) % testimonials.length
+    );
+
   return (
-    <section className="regular-banner-white px-6">
+    <section className="regular-banner-white px-6 py-16">
       <div className="mx-auto max-w-6xl">
+        {/* Heading */}
         <div className="text-center">
-          <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
+          <h2
+            className="section-header text-3xl md:text-4xl lg:text-5xl"
+            style={{ color: "#1F4E79" }}
+          >
             Our Partners.
           </h2>
         </div>
 
-        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
-          {partners.map((partner) => (
-            <div
-              key={partner.name}
-              className="flex items-center justify-center rounded-xl bg-white px-3 py-4 text-sm font-semibold text-[#1F4E79] transition-all duration-300"
-            >
-              <img src={partner.logo} alt={partner.name} className="max-h-12 max-w-full object-contain" />
-            </div>
-          ))}
+        {/* PARTNER LOGO MARQUEE – continuous, no arrows */}
+        <div className="mt-12 overflow-hidden px-2 md:px-12">
+          <div className="partners-marquee-track flex gap-12 md:gap-20">
+            {marqueePartners.map((partner, idx) => (
+              <div
+                key={`${partner.name}-${idx}`}
+                className="flex h-16 flex-none items-center justify-center"
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="max-h-12 md:max-h-14 max-w-[150px] object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-2 rounded-2xl bg-[#F5EFE7] p-6 text-center shadow-sm mx-4 md:mx-12 lg:mx-24 xl:mx-48 drop-shadow hover:drop-shadow-lg transition-all duration-300">
-          <img src={aws} alt="AWS Logo" className="h-12 w-12" />
-          <p className="subheader" style={{ color: "#1F4E79" }}>
-            AWS genAI partnership announced
-          </p>
-          <p className="small-font" style={{ color: "#4B4B4B" }}>
-            Malesuada facilisi libero, nam eu. Quis pellentesque tortor a elementum ut blandit sed pellentesque arcu. 
-            Malesuada in faucibus risus velit diam. Non, massa ut a arcu, fermentum, vel interdum.
-          </p>
+        {/* TESTIMONIAL CARD – arrows only here */}
+        <div className="mt-16 mx-2 md:mx-12 lg:mx-24 xl:mx-32">
+          <div className="flex items-center gap-4">
+            {/* Left arrow */}
+            <button
+              type="button"
+              onClick={goPrev}
+              className="hidden md:flex h-10 w-10 items-center justify-center rounded-full border border-[#C8D9E6] text-[#1F4E79] hover:bg-[#F5EFE7] transition"
+              aria-label="Previous testimonial"
+            >
+              ‹
+            </button>
+
+            {/* Card */}
+            <div className="flex-1 flex flex-col items-center gap-3 rounded-2xl bg-[#F5EFE7] px-6 py-8 md:px-10 md:py-10 text-center shadow-sm transition-all duration-500">
+              {currentTestimonial.logo ? (
+                <img
+                  src={currentTestimonial.logo}
+                  alt={currentTestimonial.company}
+                  className="mb-1 h-10 w-auto"
+                />
+              ) : (
+                <div className="mb-1 h-10 px-4 flex items-center justify-center rounded-full bg-white text-xs md:text-sm font-semibold text-[#1F4E79]">
+                  {currentTestimonial.company}
+                </div>
+              )}
+
+              <p
+                className="subheader text-xl md:text-2xl"
+                style={{ color: "#1F4E79" }}
+              >
+                {currentTestimonial.title}
+              </p>
+
+              <p
+                className="small-font max-w-3xl"
+                style={{ color: "#4B4B4B" }}
+              >
+                {currentTestimonial.body}
+              </p>
+
+              {currentTestimonial.speaker && (
+                <p className="small-font font-semibold mt-2 text-[#567C8D]">
+                  {currentTestimonial.speaker}
+                </p>
+              )}
+            </div>
+
+            {/* Right arrow */}
+            <button
+              type="button"
+              onClick={goNext}
+              className="hidden md:flex h-10 w-10 items-center justify-center rounded-full border border-[#C8D9E6] text-[#1F4E79] hover:bg-[#F5EFE7] transition"
+              aria-label="Next testimonial"
+            >
+              ›
+            </button>
+          </div>
         </div>
       </div>
     </section>
