@@ -2,47 +2,53 @@ import check from "../../assets/check.svg";
 import x from "../../assets/x.svg";
 import question from "../../assets/unknown.svg";
 
-
 const comparisonRows = [
   {
     title: "Approach",
-    description: "Adaptive, real-time filtering that analyzes both user intent and model output to maintain safety without restricting productivity.",
+    description:
+      "Adaptive, real-time filtering that analyzes both user intent and model output to maintain safety without restricting productivity.",
     promptBased: "check",
     modelBased: "x",
   },
   {
     title: "Flexibility",
-    description: "Instantly updated policies without retraining, allowing organizations to react quickly to new threats, regulations, or internal requirements.",
+    description:
+      "Instantly updated policies without retraining, allowing organizations to react quickly to new threats, regulations, or internal requirements.",
     promptBased: "check",
     modelBased: "question",
   },
   {
     title: "Implementation",
-    description: "Compatible with any LLM and integrates directly into existing workflows, avoiding vendor lock-in and long deployment cycles.",
+    description:
+      "Compatible with any LLM and integrates directly into existing workflows, avoiding vendor lock-in and long deployment cycles.",
     promptBased: "check",
     modelBased: "question",
   },
   {
     title: "Cost Efficiency",
-    description: "Cuts operational overhead by eliminating retraining costs and minimizing model calls through optimized filtering.",
+    description:
+      "Cuts operational overhead by eliminating retraining costs and minimizing model calls through optimized filtering.",
     promptBased: "check",
     modelBased: "x",
   },
   {
     title: "Transparency",
-    description: "Real-time insights into what's being blocked, allowed, or modified, building trust and ensuring compliance.",
+    description:
+      "Real-time insights into what's being blocked, allowed, or modified, building trust and ensuring compliance.",
     promptBased: "check",
     modelBased: "question",
   },
   {
     title: "Security Coverage",
-    description: "Monitors prompts, outputs, and context continuously, protecting against injection attacks, data leaks, and unauthorized usage.",
+    description:
+      "Monitors prompts, outputs, and context continuously, protecting against injection attacks, data leaks, and unauthorized usage.",
     promptBased: "check",
     modelBased: "question",
   },
   {
     title: "Innovation",
-    description: "Allows safe experimentation with new models and tools by ensuring everything is governed at the prompt layer.",
+    description:
+      "Allows safe experimentation with new models and tools by ensuring everything is governed at the prompt layer.",
     promptBased: "check",
     modelBased: "x",
   },
@@ -50,88 +56,136 @@ const comparisonRows = [
 
 function Indicator({ type }) {
   if (type === "check") {
+    return <img src={check} alt="check" className="h-8 w-8 md:h-9 md:w-9" />;
+  }
+  if (type === "x") {
+    return <img src={x} alt="x" className="h-8 w-8 md:h-9 md:w-9" />;
+  }
+  if (type === "question") {
     return (
-      <img src={check} alt="check" className="h-7 w-7" />
+      <img
+        src={question}
+        alt="question"
+        className="h-8 w-8 md:h-9 md:w-9"
+      />
     );
-  } else if (type === "x") {
-    return (
-      <img src={x} alt="x" className="h-7 w-7" />
-    );
-  } else if (type === "question") {
-  return (
-      <img src={question} alt="question" className="h-7 w-7" />
-  );
   }
   return null;
 }
 
 function ApproachSecuritySection() {
   return (
-    <section className="regular-banner-sand px-6">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10">
-        <h2 className="section-header text-center text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
+    <section className="regular-banner-sand px-4 md:px-8 py-16">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-10">
+        {/* Title */}
+        <h2
+          className="section-header text-center text-3xl md:text-4xl lg:text-5xl"
+          style={{ color: "#1F4E79" }}
+        >
           Our Approach to AI Security.
         </h2>
 
-        <div className="rounded-3xl bg-white py-6 px-6 md:py-8 md:px-12 shadow-sm" style={{ backgroundColor: '#FFFFFF', borderRadius: '1.5rem' }}>
-          {/* Header - hidden on mobile, shown on desktop */}
+        {/* Gradient “faded” background + sharp content */}
+        <div className="relative w-full max-w-4xl mx-auto">
+          {/* Faded white background: NO blur, just radial gradient */}
           <div
-            className="hidden md:flex mb-6 items-center gap-6 border-b border-[#E5E7EB] pb-6 text-base font-semibold"
-            style={{ color: "black" }}
-            >
-            <span className="flex-1 text-left px-2"></span>
-            <span className="large-font-bold text-center flex-shrink-0 px-2 w-32">Prompt-Based AI security</span>
-            <span className="large-font-bold text-center flex-shrink-0 px-2 w-32">Model-Based</span>
+            className="
+              pointer-events-none
+              absolute inset-0
+              rounded-[32px]
+              bg-white/80 blur-[20px]
+              "
+          />
+
+
+          {/* Content (transparent) */}
+          <div className="relative px-6 py-8 md:px-12 md:py-10">
+            {/* Header row – using your spacing: gap-20, ml-[110px] */}
+            <div className="hidden md:flex justify-center gap-20 ml-[440px] mb-8 text-sm font-semibold text-[#4B4B4B]">
+              <span>Prompt-Based AI security</span>
+              <span>Model-Based</span>
             </div>
-            <div className="divide-y divide-[#E5E7EB]">
+
+            {/* Rows */}
+            <div className="space-y-10">
               {comparisonRows.map((row) => (
-              <div key={row.title} className="py-3 md:py-5">
-                {/* Mobile layout - stacked */}
-                <div className="md:hidden flex flex-col gap-3">
-                  <div className="text-left">
-                    <h4 className="small-font-bold mb-2 text-sm font-bold" style={{ color: "#1F4E79" }}>
-                      {row.title}
-                    </h4>
-                    <p className="small-font text-sm leading-relaxed text-left" style={{ color: "#4B4B4B" }}>
-                      {row.description}
-                    </p>
+                <div key={row.title}>
+                  {/* Mobile layout */}
+                  <div className="flex flex-col gap-3 md:hidden">
+                    <div className="text-left">
+                      <h4
+                        className="mb-2 text-sm font-semibold"
+                        style={{ color: "#1F4E79" }}
+                      >
+                        {row.title}
+                      </h4>
+                      <p
+                        className="text-sm leading-relaxed"
+                        style={{ color: "#4B4B4B" }}
+                      >
+                        {row.description}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="text-xs font-semibold"
+                          style={{ color: "#1F4E79" }}
+                        >
+                          Prompt-Based:
+                        </span>
+                        <Indicator type={row.promptBased} />
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="text-xs font-semibold"
+                          style={{ color: "#1F4E79" }}
+                        >
+                          Model-Based:
+                        </span>
+                        <Indicator type={row.modelBased} />
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-4 justify-start">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-semibold" style={{ color: "#1F4E79" }}>Prompt-Based:</span>
+
+                  {/* Desktop layout */}
+                  <div className="hidden md:grid md:grid-cols-[minmax(0,_440px)_minmax(0,_120px)_minmax(0,_120px)] md:gap-x-20 items-center">
+                    <div className="text-left max-w-[440px]">
+                      <h4
+                        className="mb-2 text-sm font-semibold"
+                        style={{ color: "#1F4E79" }}
+                      >
+                        {row.title}
+                      </h4>
+                      <p
+                        className="text-sm leading-relaxed"
+                        style={{ color: "#4B4B4B" }}
+                      >
+                        {row.description}
+                      </p>
+                    </div>
+
+                    <div className="flex items-center justify-center">
                       <Indicator type={row.promptBased} />
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-semibold" style={{ color: "#1F4E79" }}>Model-Based:</span>
+                    <div className="flex items-center justify-center">
                       <Indicator type={row.modelBased} />
                     </div>
                   </div>
                 </div>
-                {/* Desktop layout - horizontal */}
-                <div className="hidden md:flex mb-2 items-center gap-6">
-                  <div className="flex-1 text-left px-2">
-                    <h4 className="small-font-bold mb-2 text-sm font-bold" style={{ color: "#1F4E79" }}>
-                      {row.title}
-                    </h4>
-                    <p className="small-font text-sm leading-relaxed text-left" style={{ color: "#4B4B4B" }}>
-                      {row.description}
-                  </p>
-                  </div>
-                  <div className="flex w-32 items-center justify-center flex-shrink-0 px-2">
-                    <Indicator type={row.promptBased} />
-                  </div>
-                  <div className="flex w-32 items-center justify-center flex-shrink-0 px-2">
-                    <Indicator type={row.modelBased} />
-                  </div>
-                  </div>
-                </div>
               ))}
+            </div>
           </div>
         </div>
 
-        <p className="subheader" style={{ color: "#4B4B4B" }}>
-          Mill Pond Research uses a prompt-based layer that secures AI use without slowing innovation, offering
-          security, speed, and cost savings.
+        {/* Tagline */}
+        <p
+          className="subheader max-w-6xl text-center"
+          style={{ color: "#4B4B4B" }}
+        >
+          Mill Pond Research uses a prompt-based layer that secures AI use
+          without slowing innovation, offering security, speed, and cost
+          savings.
         </p>
       </div>
     </section>
