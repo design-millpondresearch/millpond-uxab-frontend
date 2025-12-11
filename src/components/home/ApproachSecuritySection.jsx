@@ -76,7 +76,7 @@ function Indicator({ type }) {
 function ApproachSecuritySection() {
   return (
     <section className="regular-banner-sand px-4 md:px-8 py-16">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-10">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-10">
         {/* Title */}
         <h2
           className="section-header text-center text-3xl md:text-4xl lg:text-5xl"
@@ -180,7 +180,7 @@ function ApproachSecuritySection() {
 
         {/* Tagline */}
         <p
-          className="subheader max-w-6xl text-center"
+          className="subheader max-w-7xl text-center"
           style={{ color: "#4B4B4B" }}
         >
           Mill Pond Research uses a prompt-based layer that secures AI use

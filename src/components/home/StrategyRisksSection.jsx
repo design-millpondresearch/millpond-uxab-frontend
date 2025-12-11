@@ -3,12 +3,11 @@ import shieldoff from "../../assets/shield-off.svg";
 import users from "../../assets/users.svg";
 import lock from "../../assets/lock.svg";
 
-
 const risks = [
   {
     title: "Invisible AI Agents",
     body: "Invisible AI agents operating across your network, accessing sensitive data without your knowledge.",
-    icon: eye, 
+    icon: eye,
   },
   {
     title: "Security Gaps",
@@ -29,38 +28,60 @@ const risks = [
 
 function StrategyRisksSection() {
   return (
-    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6">
+    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-16">
       {/* Heading */}
-      <div className="max-w-4xl text-center">
-        <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl max-w-[1280]" style={{ color: "#1F4E79" }}>
+      <div className="max-w-7xl text-center mx-auto">
+        <h2
+          className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
+          style={{ color: "#1F4E79" }}
+        >
           Evolve Your AI Strategy with Complete Control.
         </h2>
-        <h3 className="subheader text-base md:text-xl lg:text-2xl max-w-[1280]" style={{ color: "#4B4B4B" }}>
+        <h3
+          className="subheader text-base md:text-xl lg:text-2xl"
+          style={{ color: "#4B4B4B" }}
+        >
           Traditional AI management creates hidden risks. Mill Pond turns them into insight.
         </h3>
       </div>
 
-      {/* 2x2 grid */}
-      <div className="mx-4 md:mx-12 lg:mx-24 my-8 md:my-12 w-full max-w-4xl">
-        <div className="grid gap-8 md:gap-12 lg:gap-20 grid-cols-1 md:grid-cols-2" style={{ margin: '0 auto', width: '100%' }}>
-          {risks.map((risks) => (
-            <div key={risks.title} className="flex flex-col items-center text-center px-4">
-              
-              {/* icon */}
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">
-                <img src={risks.icon} alt={risks.title} className="h-10 w-10" />
-              </div>
+      {/* Grid with radial glow */}
+      <div className="relative w-full max-w-6xl mx-auto mt-16">
+        {/* subtle background glow */}
+        <div
+          className="
+            pointer-events-none absolute inset-0
+            bg-[radial-gradient(circle_at_center,_rgba(225,233,243,0.35)_0%,_rgba(255,255,255,0)_70%)]
+          "
+        />
 
-              {/* title */}
-              <h4 className="mb-2 text-lg md:text-xl font-semibold" style={{ color: "#1F4E79" }}>
-                {risks.title}
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-24 px-4 md:px-8">
+          {risks.map((risk) => (
+            <div
+              key={risk.title}
+              className="flex flex-col items-center text-center max-w-md mx-auto"
+            >
+              {/* Icon 48x48px per Figma */}
+              <img
+                src={risk.icon}
+                alt={risk.title}
+                className="w-12 h-12 mb-6"  // 48px = 12 tailwind units
+              />
+
+              {/* Subheader — EXACT Figma size 28px */}
+              <h4
+                className="font-semibold text-[28px] leading-[34px] mb-3 text-center"
+                style={{ color: "#1F4E79" }}
+              >
+                {risk.title}
               </h4>
 
-              {/* description */}
-              <p className="text-sm md:text-base leading-relaxed" style={{ color: "#4B4B4B" }}>
-                {risks.body}
+              {/* Body text */}
+              <p
+                className="text-sm md:text-base leading-relaxed text-[#4B4B4B]"
+              >
+                {risk.body}
               </p>
-
             </div>
           ))}
         </div>
