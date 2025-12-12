@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import heroVideo from '../../assets/videos/HomeBGVL.mp4';
+import heroVideo from '../../assets/videos/HomeBGVL2.mp4';
 
 function HeroSection() {
   return (
@@ -10,8 +10,9 @@ function HeroSection() {
         className="absolute inset-0 w-full h-full object-cover"
         autoPlay
         loop
-        muted
         playsInline
+        preload="auto"
+        muted="muted"
       >
         <source src={heroVideo} type="video/mp4" />
       </video>

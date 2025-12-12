@@ -116,7 +116,16 @@ function PartnersSection() {
             </button>
 
             {/* Card */}
-            <div className="flex-1 flex flex-col items-center gap-3 rounded-2xl bg-[#F5EFE7] px-6 py-8 md:px-10 md:py-10 text-center shadow-sm transition-all duration-500">
+            <div
+              className="
+                flex-1 flex flex-col items-center justify-center gap-3
+                rounded-2xl bg-[#F5EFE7]
+                px-6 py-8 md:px-10 md:py-10
+                text-center shadow-sm
+                transition-all duration-500
+                min-h-[260px] md:min-h-[300px]
+              "
+            >
               {currentTestimonial.logo ? (
                 <img
                   src={currentTestimonial.logo}
@@ -146,6 +155,7 @@ function PartnersSection() {
                 </p>
               )}
             </div>
+
 
             {/* Right arrow */}
             <button
