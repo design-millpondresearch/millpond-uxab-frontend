@@ -15,6 +15,12 @@ import invokeai from "../../assets/partners/invokeai.svg";
 import jlinc from "../../assets/testimonials/JLINC Logo H White.svg";
 import zealstrat from "../../assets/testimonials/ZealStrat.svg";
 
+
+//arrows
+import arrowLeft from "../../assets/icons/arrow-left.svg";
+import arrowRight from "../../assets/icons/arrow-right.svg";
+
+
 const partners = [
   { name: "Anthropic", logo: anthropic },
   { name: "OpenAI", logo: openai },
@@ -100,10 +106,13 @@ function PartnersSection() {
             <button
               type="button"
               onClick={goPrev}
-              className="hidden md:flex h-10 w-10 items-center justify-center rounded-full border border-[#C8D9E6] text-[#1F4E79] hover:bg-[#F5EFE7] transition"
+              className="
+                h-10 w-10 flex items-center justify-center rounded-full
+                transition-transform duration-200 hover:-translate-x-1
+              "
               aria-label="Previous testimonial"
             >
-              ‹
+              <img src={arrowLeft} className="h-6 w-6" />
             </button>
 
             {/* Card */}
@@ -127,10 +136,7 @@ function PartnersSection() {
                 {currentTestimonial.title}
               </p>
 
-              <p
-                className="small-font max-w-3xl"
-                style={{ color: "#4B4B4B" }}
-              >
+              <p className="small-font max-w-3xl" style={{ color: "#4B4B4B" }}>
                 {currentTestimonial.body}
               </p>
 
@@ -145,10 +151,13 @@ function PartnersSection() {
             <button
               type="button"
               onClick={goNext}
-              className="hidden md:flex h-10 w-10 items-center justify-center rounded-full border border-[#C8D9E6] text-[#1F4E79] hover:bg-[#F5EFE7] transition"
+              className="
+                h-10 w-10 flex items-center justify-center rounded-full
+                transition-transform duration-200 hover:translate-x-1
+              "
               aria-label="Next testimonial"
             >
-              ›
+              <img src={arrowRight} className="h-6 w-6" />
             </button>
           </div>
         </div>
