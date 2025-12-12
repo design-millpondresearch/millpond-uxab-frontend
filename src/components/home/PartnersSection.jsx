@@ -15,11 +15,9 @@ import invokeai from "../../assets/partners/invokeai.svg";
 import jlinc from "../../assets/testimonials/JLINC Logo H White.svg";
 import zealstrat from "../../assets/testimonials/ZealStrat.svg";
 
-
 //arrows
 import arrowLeft from "../../assets/icons/arrow-left.svg";
 import arrowRight from "../../assets/icons/arrow-right.svg";
-
 
 const partners = [
   { name: "Anthropic", logo: anthropic },
@@ -34,8 +32,14 @@ const partners = [
   { name: "InvokeAI", logo: invokeai },
 ];
 
-// duplicate list so the marquee can scroll 
-const marqueePartners = [...partners, ...partners];
+// split into 2 rows for a 2-row marquee
+const ROW_SIZE = Math.ceil(partners.length / 2);
+const row1 = partners.slice(0, ROW_SIZE);
+const row2 = partners.slice(ROW_SIZE);
+
+// duplicate per-row so each row loops seamlessly
+const marqueeRow1 = [...row1, ...row1];
+const marqueeRow2 = [...row2, ...row2];
 
 const testimonials = [
   {
@@ -64,8 +68,8 @@ function PartnersSection() {
     setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
 
   const goPrev = () =>
-    setTestimonialIndex((prev) =>
-      (prev - 1 + testimonials.length) % testimonials.length
+    setTestimonialIndex(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
 
   return (
@@ -81,21 +85,44 @@ function PartnersSection() {
           </h2>
         </div>
 
-        {/* PARTNER LOGO MARQUEE – continuous, no arrows */}
+        {/* PARTNER LOGO MARQUEE – continuous, 2 rows, no arrows */}
         <div className="mt-12 overflow-hidden px-2 md:px-12">
-          <div className="partners-marquee-track flex gap-12 md:gap-20">
-            {marqueePartners.map((partner, idx) => (
-              <div
-                key={`${partner.name}-${idx}`}
-                className="flex h-16 flex-none items-center justify-center"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="max-h-12 md:max-h-14 max-w-[150px] object-contain"
-                />
+          <div className="flex flex-col gap-6">
+            {/* Row 1 */}
+            <div className="overflow-hidden">
+              <div className="partners-marquee-track flex gap-12 md:gap-20">
+                {marqueeRow1.map((partner, idx) => (
+                  <div
+                    key={`row1-${partner.name}-${idx}`}
+                    className="flex h-16 w-[160px] flex-none items-center justify-center"
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-12 md:max-h-14 object-contain"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Row 2 */}
+            <div className="overflow-hidden">
+              <div className="partners-marquee-track flex gap-12 md:gap-20">
+                {marqueeRow2.map((partner, idx) => (
+                  <div
+                    key={`row2-${partner.name}-${idx}`}
+                    className="flex h-16 w-[160px] flex-none items-center justify-center"
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-12 md:max-h-14 object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -118,44 +145,43 @@ function PartnersSection() {
             {/* Card */}
             <div
               className="
-                flex-1 flex flex-col items-center justify-center gap-3
+                flex-1
                 rounded-2xl bg-[#F5EFE7]
                 px-6 py-8 md:px-10 md:py-10
                 text-center shadow-sm
                 transition-all duration-500
-                min-h-[260px] md:min-h-[300px]
+                h-[420px] md:h-[340px]
               "
             >
-              {currentTestimonial.logo ? (
+              <div className="flex h-full flex-col items-center gap-3">
+                {/* Logo */}
                 <img
                   src={currentTestimonial.logo}
                   alt={currentTestimonial.company}
-                  className="mb-1 h-10 w-auto"
+                  className="mb-2 h-10 w-auto"
                 />
-              ) : (
-                <div className="mb-1 h-10 px-4 flex items-center justify-center rounded-full bg-white text-xs md:text-sm font-semibold text-[#1F4E79]">
-                  {currentTestimonial.company}
-                </div>
-              )}
 
-              <p
-                className="subheader text-xl md:text-2xl"
-                style={{ color: "#1F4E79" }}
-              >
-                {currentTestimonial.title}
-              </p>
-
-              <p className="small-font max-w-3xl" style={{ color: "#4B4B4B" }}>
-                {currentTestimonial.body}
-              </p>
-
-              {currentTestimonial.speaker && (
-                <p className="small-font font-semibold mt-2 text-[#567C8D]">
-                  {currentTestimonial.speaker}
+                {/* Title */}
+                <p
+                  className="subheader text-xl md:text-2xl"
+                  style={{ color: "#1F4E79" }}
+                >
+                  {currentTestimonial.title}
                 </p>
-              )}
-            </div>
 
+                {/* Body */}
+                <p className="small-font max-w-3xl" style={{ color: "#4B4B4B" }}>
+                  {currentTestimonial.body}
+                </p>
+
+                {/* Speaker — pushed to bottom consistently */}
+                <div className="mt-auto">
+                  <p className="small-font font-semibold text-[#567C8D]">
+                    {currentTestimonial.speaker}
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Right arrow */}
             <button
