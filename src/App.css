@@ -470,3 +470,17 @@ body {
 }
 
 
+@keyframes partners-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-marquee-track {
+  display: inline-flex;
+  animation: partners-marquee 40s linear infinite;
+}
+

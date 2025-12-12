@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+//partner logos
 import anthropic from "../../assets/partners/anthropic_logo.svg";
 import openai from "../../assets/partners/openai_logo.svg";
 import meta from "../../assets/partners/meta-logo.svg";
@@ -10,6 +10,10 @@ import azure from "../../assets/partners/Microsoft_Azure_Logo.svg";
 import nist from "../../assets/partners/nist_logo_black.svg";
 import ccc from "../../assets/partners/ccc.svg";
 import invokeai from "../../assets/partners/invokeai.svg";
+
+//testimonial logos
+import jlinc from "../../assets/testimonials/JLINC Logo H White.svg";
+import zealstrat from "../../assets/testimonials/ZealStrat.svg";
 
 const partners = [
   { name: "Anthropic", logo: anthropic },
@@ -24,13 +28,13 @@ const partners = [
   { name: "InvokeAI", logo: invokeai },
 ];
 
-// duplicate list so the marquee can scroll seamlessly
+// duplicate list so the marquee can scroll 
 const marqueePartners = [...partners, ...partners];
 
 const testimonials = [
   {
     company: "JLINC",
-    logo: null,
+    logo: jlinc,
     title: "Security insight beyond anything we have seen",
     body:
       "While building protocols to audit AI data, we have seen under the hood of many orchestration technologies. Mill Pond Research's insight into the security implications of AI are well beyond anything we have seen so far.",
@@ -38,7 +42,7 @@ const testimonials = [
   },
   {
     company: "ZealStrat",
-    logo: null,
+    logo: zealstrat,
     title: "Speed with control, innovation with accountability",
     body:
       "Security and compliance are like the heart and lungs of responsible AI, each essential, each reinforcing the other. That is why I am excited about our partnership with Mill Pond Research. With XILOS orchestrating safe, scalable AI workflows and RESA ensuring that every output faithfully follows client policies, we give organizations the balance they need.",
@@ -89,7 +93,7 @@ function PartnersSection() {
           </div>
         </div>
 
-        {/* TESTIMONIAL CARD – arrows only here */}
+        {/* TESTIMONIAL CARD */}
         <div className="mt-16 mx-2 md:mx-12 lg:mx-24 xl:mx-32">
           <div className="flex items-center gap-4">
             {/* Left arrow */}
