@@ -17,8 +17,8 @@ function HeroSection() {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      {/* GLASS LAYER*/}
-      <div className="absolute inset-0 bg-white/60 "></div>
+      {/* SOFT SAND OVERLAY LAYER*/}
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(245, 239, 231, 0.85)' }}></div>
 
       {/* FOREGROUND CONTENT */}
       <div className="relative z-10 flex flex-col items-center text-center gap-4 md:gap-6 px-4">

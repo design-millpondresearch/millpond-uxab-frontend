@@ -317,7 +317,7 @@ function FiltersNews() {
   return (
     <>
       {/* Top buttons */}
-      <div className="flex justify-start gap-4 px-6 pt-6 pb-4 max-w-7xl mx-auto">
+      <div className="flex justify-left gap-4 px-10 pt-4 pb-4 max-w-7xl mx-auto">
         <button
           className={`button-filter ${showFilters ? 'selected' : ''}`}
           style={showFilters ? { backgroundColor: '#4B4B4B', color: '#FFFFFF' } : {}}
@@ -327,18 +327,20 @@ function FiltersNews() {
           Filters
         </button>
 
-        <button
-          className="button-filter"
-          style={{ backgroundColor: 'transparent', border: '1px solid #4B4B4B' }}
-          onClick={clearAll}
-        >
-          Clear All
-        </button>
+        {showFilters && (
+          <button
+            className="button-filter"
+            style={{ backgroundColor: 'transparent', border: '1px solid #4B4B4B' }}
+            onClick={clearAll}
+          >
+            Clear All
+          </button>
+        )}
       </div>
 
       {/* Filters */}
       {showFilters && (
-        <div className="flex flex-col gap-6 px-6 max-w-7xl mx-auto pb-6">
+        <div className="flex flex-col gap-6 px-10 max-w-7xl mx-auto pb-6">
           <div>
             <p className="small-font font-medium text-left">By Category</p>
             <div className="flex flex-wrap gap-3 mt-2">
@@ -384,18 +386,18 @@ function FiltersNews() {
       )}
 
       {/* Masonry layout */}
-      <div className="px-6 pt-12 pb-36 max-w-7xl mx-auto flex justify-center">
+      <div className="px-6 pt-6 pb-36 max-w-7xl mx-auto flex justify-center">
         <div className="mx-4">
         {filteredResources.length > 0 ? (
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="flex w-full -ml-8"
-            columnClassName="pl-12 space-y-6"
+            columnClassName="pl-8 space-y-8"
           >
             {filteredResources.map((resource) => (
               <article
                 key={resource.id}
-                className="flex flex-col shadow-sm ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
+                className="flex flex-col shadow-md ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
               >
                   <div className="p-6 text-left">
                     <div className="flex gap-3 text-sm font-semibold flex-wrap">

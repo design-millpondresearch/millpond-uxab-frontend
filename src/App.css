@@ -304,6 +304,34 @@ body {
   }
 }
 
+.resources-hero-banner {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .resources-hero-banner {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.resources-hero-banner-clear {
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .resources-hero-banner-clear {
+    padding: 6rem 2rem 1rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .resources-hero-banner-clear {
+    padding: 8rem 2rem 1rem 2rem;
+  }
+}
+
 .regular-banner-white {
   background-color: var(--color-white);
   padding-top: 4rem;
@@ -352,7 +380,7 @@ body {
     padding-bottom: 5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-}
+  }
 }
 
 .regular-banner-surface {

@@ -1,7 +1,7 @@
 function HeroSection() {
   return (
-    <section className="regular-banner-blue flex items-center justify-center">
-      <div className="hero-banner-clear flex max-w-4xl flex-col items-center gap-6 text-center">
+    <section className="regular-banner-blue flex items-center justify-center resources-hero-banner">
+      <div className="resources-hero-banner-clear flex max-w-4xl flex-col items-center gap-6 text-center">
         <h1 className="hero-title" style={{ color: "#1F4E79" }}>
           Resources
         </h1>
