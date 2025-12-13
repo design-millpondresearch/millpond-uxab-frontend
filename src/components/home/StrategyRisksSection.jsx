@@ -70,7 +70,7 @@ function StrategyRisksSection() {
 
               {/* Subheader — EXACT Figma size 28px */}
               <h4
-                className="font-semibold text-[28px] leading-[34px] mb-3 text-center"
+                className="subheader mb-3 text-center"
                 style={{ color: "#1F4E79" }}
               >
                 {risk.title}
@@ -78,7 +78,7 @@ function StrategyRisksSection() {
 
               {/* Body text */}
               <p
-                className="text-sm md:text-base leading-relaxed text-[#4B4B4B]"
+                className="small-font md:text-base leading-relaxed text-[#4B4B4B]"
               >
                 {risk.body}
               </p>
