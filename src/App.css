@@ -1,5 +1,5 @@
 :root {
-  /* COLOR TOKENS */
+  /* COLOR TOKENS -------------------------------------------------------------------------------------------------------------------------------------------------- */
   --color-primary: #1F4E79;     /* Classic Blue */
   --color-primary-alt: #567C8D; /* Teal / CTA */
   --color-sky: #C8D9E6;         /* Sky Blue */
@@ -8,7 +8,7 @@
   --color-white: #FFFFFF;
   --color-slate: #4B4B4B;       /* Body text */
 
-  /* TYPE TOKENS */
+  /* TYPE TOKENS ---------------------------------------------------------------------------------------------------------------------------------------------------- */
   --font-sora: "Sora", sans-serif;
   --font-geist: "Geist", sans-serif;
 
@@ -20,7 +20,7 @@
   --fs-caption: 14px;  /* Meta text */
 }
 
-/* ROOT LAYOUT */
+/* ROOT LAYOUT ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #root {
   max-width: none;
@@ -42,7 +42,7 @@ body {
   box-sizing: border-box;
 }
 
-/* VITE BOILERPLATE (SAFE TO IGNORE VISUALLY) */
+/* VITE BOILERPLATE (SAFE TO IGNORE VISUALLY) ---------------------------------------------------------------------------------------------------------------------- */
 
 .logo {
   height: 6em;
@@ -82,7 +82,7 @@ body {
   color: #888;
 }
 
-/* BUTTONS */
+/* BUTTONS --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .button-primary {
   background-color: var(--color-primary-alt);
@@ -117,6 +117,63 @@ body {
 
 .button-secondary:hover {
   background-color: rgba(86, 124, 141, 0.1);
+}
+
+/* HERO BUTTONS --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.hero-button-primary {
+  background-color: var(--color-primary-alt);
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: var(--font-geist);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero-button-primary:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.hero-button-secondary {
+  background-color: transparent;
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: var(--color-primary-alt);
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: var(--font-geist);
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-primary-alt);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero-button-secondary:hover {
+  background-color: rgba(86, 124, 141, 0.1);
+}
+
+.hero-button-tertiary {
+  background-color: rgba(200, 217, 230, 0.45);
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: #1F4E79;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: var(--font-geist);
+  transition: all 0.3s ease;
+  border: 1px solid #1F4E79;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero-button-tertiary:hover {
+  background-color: rgba(200, 217, 230, 0.65);
+  transform: translateY(-1px);
 }
 
 .button-ghost {
@@ -169,7 +226,7 @@ body {
   margin-left: 4px;
 }
 
-/* TYPOGRAPHY */
+/* TYPOGRAPHY ----------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .hero-title {
   font-size: 2rem;
@@ -242,65 +299,95 @@ body {
   color: var(--color-slate);
 }
 
-/* SECTION BACKGROUNDS / BANNERS */
+/* SECTION BACKGROUNDS / BANNERS ---------------------------------------------------------------------------------------------------------------------------------- */
 
 .hero-banner {
   text-align: center;
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   background-color: var(--color-sand);
 }
 
 @media (min-width: 768px) {
   .hero-banner {
-    padding: 6rem 2rem;
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-banner {
-  padding: 8rem 2rem;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .hero-banner-surface {
   text-align: center;
-  padding: 8rem 2rem;
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  padding-left: 0;
+  padding-right: 0;
   background-color: var(--color-surface);
 }
 
 .hero-banner-blue {
   text-align: center;
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   background-color: rgba(200, 217, 230, 0.35);
 }
 
 @media (min-width: 768px) {
   .hero-banner-blue {
-    padding: 6rem 2rem;
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-banner-blue {
-    padding: 8rem 2rem;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .hero-banner-clear {
   text-align: center;
-  padding: 3rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   background-color: transparent;
 }
 
 @media (min-width: 768px) {
   .hero-banner-clear {
-    padding: 6rem 2rem;
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-banner-clear {
-    padding: 8rem 2rem;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -316,19 +403,28 @@ body {
 
 .resources-hero-banner-clear {
   text-align: center;
-  padding: 3rem 1rem 1rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
   background-color: transparent;
 }
 
 @media (min-width: 768px) {
   .resources-hero-banner-clear {
-    padding: 6rem 2rem 1rem 2rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .resources-hero-banner-clear {
-    padding: 8rem 2rem 1rem 2rem;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -336,16 +432,16 @@ body {
   background-color: var(--color-white);
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
   .regular-banner-white {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -353,16 +449,16 @@ body {
   background-color: var(--color-sand);
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
   .regular-banner-sand {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -370,16 +466,16 @@ body {
   background-color: rgba(200, 217, 230, 0.35);
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
   .regular-banner-blue {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -387,16 +483,16 @@ body {
   background-color: var(--color-surface);
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
   .regular-banner-surface {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -452,7 +548,7 @@ body {
   color: var(--color-slate);
 }
 
-/* Masonry layout for resources */
+/* Masonry layout for resources ------------------------------------------------------------------------------------------------------------------------------------*/
 .columns-1 > div,
 .columns-2 > div,
 .columns-3 > div {

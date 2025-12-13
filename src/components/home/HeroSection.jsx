@@ -21,7 +21,7 @@ function HeroSection() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(245, 239, 231, 0.85)' }}></div>
 
       {/* FOREGROUND CONTENT */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-4 md:gap-6 px-4">
+      <div className="relative z-10 flex flex-col items-center text-center gap-4 md:gap-6 px-6 md:px-8 lg:px-12">
       {/* Light Spot Behind Text
       <div className="absolute z-10 top-1/3 w-[60%] h-[40%] 
           bg-[radial-gradient(circle,rgba(255,255,255,0.6)_0%,rgba(255,255,255,0)_70%)]
@@ -37,8 +37,8 @@ function HeroSection() {
         </h3>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-          <button className="button-primary">Request a Demo</button>
-          <button className="button-secondary">Explore Solutions</button>
+          <button className="hero-button-primary">Request a Demo</button>
+          <button className="hero-button-tertiary">Explore Solutions</button>
         </div>
 
       </div>
