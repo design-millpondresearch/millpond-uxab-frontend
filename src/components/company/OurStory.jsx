@@ -84,7 +84,11 @@ function OurStory() {
           <div key={item.title} className="flex flex-col items-center text-center">
             {/* Icon in white circle */}
             <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white">
-              <img src={item.icon} alt={item.title} className="h-10 w-10" />
+              <img 
+                src={item.icon} 
+                alt={item.title} 
+                className="h-10 w-10" 
+              />
             </div>
             
             <h3 className="subheader mb-2" style={{ color: "#1F4E79" }}>{item.title}</h3>

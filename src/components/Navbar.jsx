@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/Mill Pond Research Logo - Horizontal - 100.png';
+import workbenchLogo from '../assets/workbench_logo.svg';
+import xilosLogo from '../assets/xilos_logo.svg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -55,13 +57,15 @@ const Navbar = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link to="/solutions/workbench" className="dropdown-link">
+                                            <img src={workbenchLogo} alt="Workbench" className="dropdown-logo" />
                                             Build AI solutions without technical overhead.
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/solutions/xilos" className="dropdown-link">
+                                            <img src={xilosLogo} alt="Xilos" className="dropdown-logo" />
                                             Secure your AI interactions in real-time.
-                        </Link>
+                                        </Link>
                                     </li>
                                 </ul>
                             </>
@@ -102,11 +106,13 @@ const Navbar = () => {
                                 <ul className="mobile-dropdown">
                                     <li>
                                         <Link to="/solutions/workbench" className="mobile-dropdown-link" onClick={closeMobileMenu}>
+                                            <img src={workbenchLogo} alt="Workbench" className="dropdown-logo" />
                                             Build AI solutions without technical overhead.
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/solutions/xilos" className="mobile-dropdown-link" onClick={closeMobileMenu}>
+                                            <img src={xilosLogo} alt="Xilos" className="dropdown-logo" />
                                             Secure your AI interactions in real-time.
                                         </Link>
                                     </li>
