@@ -146,11 +146,13 @@ function PartnersSection() {
             <div
               className="
                 flex-1
+                flex-1 flex flex-col items-center justify-center gap-2
                 rounded-2xl bg-[#F5EFE7]
-                px-6 py-8 md:px-10 md:py-10
+                px-6 py-6 md:px-8 md:py-6
                 text-center shadow-sm
                 transition-all duration-500
                 h-[420px] md:h-[340px]
+                h-[320px] md:h-[340px]
               "
             >
               <div className="flex h-full flex-col items-center gap-3">
@@ -167,6 +169,28 @@ function PartnersSection() {
                   style={{ color: "#1F4E79" }}
                 >
                   {currentTestimonial.title}
+                  className="mb-1 h-8 w-auto"
+                />
+              ) : (
+                <div className="mb-1 h-8 px-4 flex items-center justify-center rounded-full bg-white text-xs md:text-sm font-semibold text-[#1F4E79]">
+                  {currentTestimonial.company}
+                </div>
+              )}
+
+              <p
+                className="subheader text-lg md:text-xl"
+                style={{ color: "#1F4E79" }}
+              >
+                {currentTestimonial.title}
+              </p>
+
+              <p className="small-font max-w-3xl text-sm" style={{ color: "#4B4B4B" }}>
+                {currentTestimonial.body}
+              </p>
+
+              {currentTestimonial.speaker && (
+                <p className="small-font font-semibold text-sm text-[#567C8D]">
+                  {currentTestimonial.speaker}
                 </p>
 
                 {/* Body */}

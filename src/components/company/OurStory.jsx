@@ -54,19 +54,19 @@ function OurStory() {
           <div key={item.year} className="flex flex-col items-start w-full">
             {/* Year with line */}
             <div className="flex items-center mb-4 w-full">
-              <h3 className="subheader mr-4" style={{ color: "#1F4E79" }}>
+              <h3 className="subheader mr-4" style={{ color: "#567C8D" }}>
                 {item.year}
               </h3>
-              <div className="flex-1 h-px bg-[#1F4E79]"></div>
+              <div className="flex-1 h-px bg-[#567C8D]"></div>
             </div>
             
             {/* Title */}
-            <h4 className="text-lg md:text-xl font-semibold mb-2 text-left" style={{ color: "#1F4E79" }}>
+            <h4 className="subheader md:text-xl font-semibold mb-2 text-left" style={{ color: "#4B4B4B" }}>
               {item.title}
             </h4>
             
             {/* Description */}
-            <p className="text-sm md:text-base leading-relaxed text-left" style={{ color: "#4B4B4B" }}>
+            <p className="large-font md:text-base leading-relaxed text-left" style={{ color: "#4B4B4B" }}>
               {item.body}
             </p>
           </div>
@@ -84,7 +84,11 @@ function OurStory() {
           <div key={item.title} className="flex flex-col items-center text-center">
             {/* Icon in white circle */}
             <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white">
-              <img src={item.icon} alt={item.title} className="h-10 w-10" />
+              <img 
+                src={item.icon} 
+                alt={item.title} 
+                className="h-10 w-10" 
+              />
             </div>
             
             <h3 className="subheader mb-2" style={{ color: "#1F4E79" }}>{item.title}</h3>

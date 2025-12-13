@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function HeroSection() {
     return (
-      <section className="regular-banner-blue flex items-center justify-center px-4 md:px-6">
+      <section className="regular-banner-blue flex items-center justify-center px-6 md:px-8 lg:px-12">
         <div className="hero-banner-clear flex max-w-7xl flex-col items-center gap-12 text-center">
           <h1 className="hero-title text-5xl md:text-6xl lg:text-7xl" style={{ color: "#567C8D" }}>
             WorkBench
@@ -17,7 +17,7 @@ function HeroSection() {
           </h3>
   
           <div className="mt-4 flex justify-center">
-            <Link to="/contactus" className="button-primary">Learn More</Link>
+            <Link to="/contactus" className="hero-button-primary">Learn More</Link>
           </div>
         </div>
       </section>

@@ -54,12 +54,12 @@ function AdvantagesSection() {
           {advantages.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center gap-3 rounded-2xl bg-white p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300"
+              className="flex flex-col items-center gap-3 rounded-2xl p-6 text-center"
             >
               <div className="h-10 w-10 rounded-full mt-2">
                 <img src={item.icon} alt={item.title} className="h-10 w-10" />
               </div>
-              <h4 className="subheader" style={{ color: "#1F4E79", fontWeight: '350' }}>
+              <h4 className="subheader" style={{ color: "#1F4E79"}}>
                 {item.title}
               </h4>
               <p className="small-font mx-4 mb-2" style={{ color: "#4B4B4B" }}>

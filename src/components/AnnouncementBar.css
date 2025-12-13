@@ -1,0 +1,45 @@
+.announcement-bar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  width: 100%;
+  background-color: #1F4E79;
+  --announcement-bar-height: 48px;
+}
+
+.announcement-bar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'Sora', sans-serif;
+  font-size: 14px;
+  min-height: 48px;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.announcement-link {
+  color: #567C8D;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.announcement-link:hover {
+  opacity: 0.8;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .announcement-bar-container {
+    padding: 0.75rem 1rem;
+    font-size: 12px;
+  }
+}
+
