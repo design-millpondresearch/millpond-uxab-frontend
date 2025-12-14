@@ -33,10 +33,8 @@ function HeroSection() {
         autoPlay
         loop
         playsInline
-        playsinline
         preload="auto"
         muted
-        muted="muted"
       >
         <source src={heroVideo} type="video/mp4" />
       </video>
@@ -45,20 +43,7 @@ function HeroSection() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(245, 239, 231, 0.85)' }}></div>
 
       {/* FOREGROUND CONTENT */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-4 md:gap-6 px-4">
-        {/* Light Spot Behind Text
-        <div
-          className="absolute z-10 top-1/3 w-[60%] h-[40%] 
-            bg-[radial-gradient(circle,rgba(255,255,255,0.6)_0%,rgba(255,255,255,0)_70%)]
-            blur-2xl pointer-events-none"
-        >
-        </div> */}
       <div className="relative z-10 flex flex-col items-center text-center gap-4 md:gap-6 px-6 md:px-8 lg:px-12">
-      {/* Light Spot Behind Text
-      <div className="absolute z-10 top-1/3 w-[60%] h-[40%] 
-          bg-[radial-gradient(circle,rgba(255,255,255,0.6)_0%,rgba(255,255,255,0)_70%)]
-          blur-2xl pointer-events-none">
-      </div> */}
 
         <h1
           className="hero-title max-w-[638px] leading-tight"

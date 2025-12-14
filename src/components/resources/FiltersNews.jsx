@@ -312,18 +312,6 @@ function FiltersNews() {
   return (
     <>
       {/* Top buttons */}
-      <div className="max-w-7xl mx-auto pt-6 pb-4 px-6">
-        {/* Match Masonry left gutter: container uses -ml-8, columns use pl-12 => net +4rem */}
-        <div className="flex justify-start gap-4 pl-16">
-          <button
-            className={`button-filter ${showFilters ? 'selected' : ''}`}
-            style={showFilters ? { backgroundColor: '#4B4B4B', color: '#FFFFFF' } : {}}
-            onClick={() => setShowFilters(!showFilters)}
-          >
-            <img src={filtersIcon} alt="Filters" className="w-4 h-4" />
-            Filters
-          </button>
-
       <div className="flex justify-left gap-4 px-10 pt-4 pb-4 max-w-7xl mx-auto">
         <button
           className={`button-filter ${showFilters ? 'selected' : ''}`}
@@ -342,7 +330,6 @@ function FiltersNews() {
           >
             Clear All
           </button>
-        </div>
         )}
       </div>
 
@@ -394,7 +381,6 @@ function FiltersNews() {
       )}
 
       {/* Masonry layout */}
-      <div className="px-6 pt-12 pb-36 max-w-7xl mx-auto flex justify-center">
       <div className="px-6 pt-6 pb-36 max-w-7xl mx-auto flex justify-center">
         <div className="mx-4">
         {filteredResources.length > 0 ? (
@@ -458,6 +444,7 @@ function FiltersNews() {
             No resources match the selected filters.
           </p>
         )}
+        </div>
       </div>
     </>
   );

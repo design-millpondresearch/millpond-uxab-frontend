@@ -26,7 +26,6 @@ function RoiSection() {
           See measurable impact across your entire AI ecosystem.
         </p>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-6 md:gap-8">
         <div className="mt-8 flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
           {metrics.map((metric) => (
             <div
