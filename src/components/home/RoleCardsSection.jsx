@@ -27,8 +27,26 @@ const roles = [
 
 function RoleCardsSection() {
   return (
-    <section className="regular-banner-white px-6">
-      <div className="mx-auto max-w-6xl">
+    <section className="regular-banner-white px-6 relative">
+      {/* Right side ellipse gradient */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 800px 100% at right center, rgba(86, 124, 141, 0.3) 0%, transparent 70%)',
+          right: 0,
+        }}
+      />
+      
+      {/* Bottom ellipse gradient */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 100% 400px at center bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          bottom: 0,
+        }}
+      />
+      
+      <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Every Role Faces a Different Challenge.

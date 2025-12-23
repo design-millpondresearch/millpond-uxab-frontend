@@ -59,18 +59,29 @@ function StrategyRisksSection() {
           {risks.map((risk) => (
             <div
               key={risk.title}
-              className="flex flex-col items-center text-center max-w-md mx-auto"
+              className="relative flex flex-col items-center text-center max-w-md mx-auto"
             >
-              {/* Icon 48x48px per Figma */}
-              <img
-                src={risk.icon}
-                alt={risk.title}
-                className="w-12 h-12 mb-6"  // 48px = 12 tailwind units
+              {/* Radial glow behind each option */}
+              <div
+                className="pointer-events-none absolute inset-0 rounded-full"
+                style={{
+                  background: 'radial-gradient(circle at center, rgba(86, 124, 141, 0.15) 0%, rgba(86, 124, 141, 0) 40%)',
+                  transform: 'scale(1.0)',
+                }}
               />
+              
+              {/* Icon 48x48px per Figma */}
+              <div className="relative z-10">
+                <img
+                  src={risk.icon}
+                  alt={risk.title}
+                  className="w-12 h-12 mb-6"  // 48px = 12 tailwind units
+                />
+              </div>
 
               {/* Subheader — EXACT Figma size 28px */}
               <h4
-                className="subheader mb-3 text-center"
+                className="subheader mb-3 text-center relative z-10"
                 style={{ color: "#1F4E79" }}
               >
                 {risk.title}
@@ -78,7 +89,7 @@ function StrategyRisksSection() {
 
               {/* Body text */}
               <p
-                className="small-font md:text-base leading-relaxed text-[#4B4B4B]"
+                className="small-font md:text-base leading-relaxed text-[#4B4B4B] relative z-10"
               >
                 {risk.body}
               </p>
