@@ -16,6 +16,39 @@ const team = [
   },
 ];
 
+const team2 = [
+  {
+    name: "Pete Shimshock", 
+    title: "Co-founder, CAIO",
+    body: "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+    icon: pete,
+  },
+  {
+    name: "Pete Shimshock", 
+    title: "Co-founder, CAIO",
+    body: "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+    icon: pete,
+  },
+  {
+    name: "Pete Shimshock", 
+    title: "Co-founder, CAIO",
+    body: "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+    icon: pete,
+  },
+  {
+    name: "Pete Shimshock", 
+    title: "Co-founder, CAIO",
+    body: "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+    icon: pete,
+  },
+  {
+    name: "Pete Shimshock", 
+    title: "Co-founder, CAIO",
+    body: "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+    icon: pete,
+  },
+];
+
 function LeadershipTeam() {
   return (
     <section className="regular-banner-blue px-6 flex flex-col items-center">
@@ -29,7 +62,7 @@ function LeadershipTeam() {
         </h3>
       </div>
 
-      {/* grid */}
+      {/* First grid */}
       <div className="flex flex-wrap justify-center gap-24 items-start w-full mt-6 md:mt-8 max-w-6xl">
         {team.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-80 lg:max-w-sm">
@@ -47,6 +80,29 @@ function LeadershipTeam() {
             
             {/* description */}
             <p className="small-font" style={{ color: "#4B4B4B" }}> {member.body} </p>
+          
+          </div>
+        ))}
+      </div>
+
+      {/* Second grid - 5 smaller elements */}
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-start w-full mt-12 md:mt-16 max-w-6xl">
+        {team2.map((member, index) => (
+          <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[160px] max-w-[200px]">
+
+            {/* image */}
+            <div className="mb-3 flex h-32 w-32 items-center justify-center rounded-full border-2 border-[#1F4E79] overflow-hidden">
+              <img src={member.icon} alt={member.name} className="h-full w-full object-cover" />
+            </div>
+
+            {/* name */}
+            <p className="subheader text-sm md:text-base">{member.name}</p>
+
+            {/* title */}
+            <h4 className="large-font mb-2 text-sm md:text-base" style={{ color: "#567C8D" }}> {member.title} </h4>
+            
+            {/* description */}
+            <p className="small-font text-xs md:text-sm" style={{ color: "#4B4B4B" }}> {member.body} </p>
           
           </div>
         ))}
