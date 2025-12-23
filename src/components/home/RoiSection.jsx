@@ -1,6 +1,6 @@
-import coinstack from "../../assets/coin-stack.svg";
-import warning from "../../assets/alert-triangle.svg";
-import shield from "../../assets/shield.svg";
+import coinstack from "../../assets/logos-general/coin-stack.svg";
+import warning from "../../assets/logos-general/alert-triangle.svg";
+import shield from "../../assets/logos-general/shield.svg";
 
 const metrics = [
   { label: "30% ↓ AI Cost", icon: coinstack },

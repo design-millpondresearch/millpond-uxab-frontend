@@ -1,7 +1,7 @@
 import workbenchSamplePic from "../../../assets/WorkBenchSample.svg";
-import share from "../../../assets/share.svg";
-import watch from "../../../assets/watch.svg";
-import usercheck from "../../../assets/usercheck.svg";
+import share from "../../../assets/logos-general/share.svg";
+import watch from "../../../assets/logos-general/watch.svg";
+import usercheck from "../../../assets/logos-general/usercheck.svg";
 
 const traits = [
     {

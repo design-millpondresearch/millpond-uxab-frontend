@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import shield from "../../assets/shield.svg";
-import monitor from "../../assets/monitor.svg";
-import home from "../../assets/home.svg";
+import shield from "../../assets/logos-general/shield.svg";
+import monitor from "../../assets/logos-general/monitor.svg";
+import home from "../../assets/logos-general/home.svg";
 
 
 const roles = [

@@ -1,7 +1,7 @@
-import eye from "../../assets/eye.svg";
-import shieldoff from "../../assets/shield-off.svg";
-import users from "../../assets/users.svg";
-import lock from "../../assets/lock.svg";
+import eye from "../../assets/logos-general/eye.svg";
+import shieldoff from "../../assets/logos-general/shield-off.svg";
+import users from "../../assets/logos-general/users.svg";
+import lock from "../../assets/logos-general/lock.svg";
 
 const risks = [
   {

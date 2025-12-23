@@ -1,6 +1,6 @@
-import rocket from "../../assets/rocket.svg";
-import shield from "../../assets/shield.svg";
-import target from "../../assets/target.svg";
+import rocket from "../../assets/logos-general/rocket.svg";
+import shield from "../../assets/logos-general/shield.svg";
+import target from "../../assets/logos-general/target.svg";
 
 const ideals = [
   {

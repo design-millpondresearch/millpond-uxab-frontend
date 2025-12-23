@@ -1,28 +1,28 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import TheShadowAICrisis from '../../assets/TheShadowAICrisis.svg';
+import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
-import CompanyOverviewMillPondResearch from '../../assets/CompanyOverviewMillPondResearch.svg';
-import XilosDataSheet from '../../assets/XilosDataSheet.svg';
-import TheSecretWarofBigToken from '../../assets/TheSecretWarofBigToken.svg';
-import TheEmergenceofaShadowAICrisis from '../../assets/TheEmergenceofaShadowAICrisis.svg';
-import MillPondResearchCapabilityStatement from '../../assets/MillPondResearchCapabilityStatement.svg';
-import XilosQuickIntroduction from '../../assets/XilosQuickIntroduction.svg';
-import XilosDefinitiveAnswer from '../../assets/XilosDefinitiveAnswer.svg';
-import MillPondResearch1MinutePitchTechCrunchDisrupt2025 from '../../assets/MillPondResearch1MinutePitchTechCrunchDisrupt2025.svg';
-import WorkBenchBrochure from '../../assets/WorkBenchBrochure.svg';
-import XilosBrochure from '../../assets/XilosBrochure.svg';
-import SoWhatHappensAfterAGI from '../../assets/SoWhatHappensAfterAGI.svg';
-import HowEnterprisesCanSecurelyUnlockAIsPower from '../../assets/HowEnterprisesCanSecurelyUnlockAIsPower.svg';
-import TheCanaryLeavingTheCoalMine from '../../assets/TheCanaryLeavingTheCoalMine.svg';
-import TheContextDilemma from '../../assets/TheContextDilemma.svg';
-import NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines from '../../assets/NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines.svg';
-import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/HarnessingthePowerofAIwithSecureInfrastructure.svg';
-import XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld from '../../assets/XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld.svg';
-import TheDataHarvestTheBiggestThreatinAI from '../../assets/TheDataHarvestTheBiggestThreatinAI.svg';
-import DataSovereigntyinTheAIEraNavigatingtheParadigmShift from '../../assets/DataSovereigntyinTheAIEraNavigatingtheParadigmShift.png';
-import TheIntelligenceSolution from '../../assets/TheIntelligenceSolution.svg';
-import AnImportantLimitationofAI from '../../assets/AnImportantLimitationofAI.svg';
+import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
+import XilosDataSheet from '../../assets/logos-resources/XilosDataSheet.svg';
+import TheSecretWarofBigToken from '../../assets/logos-resources/TheSecretWarofBigToken.svg';
+import TheEmergenceofaShadowAICrisis from '../../assets/logos-resources/TheEmergenceofaShadowAICrisis.svg';
+import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
+import XilosQuickIntroduction from '../../assets/logos-resources/XilosQuickIntroduction.svg';
+import XilosDefinitiveAnswer from '../../assets/logos-resources/XilosDefinitiveAnswer.svg';
+import MillPondResearch1MinutePitchTechCrunchDisrupt2025 from '../../assets/logos-resources/MillPondResearch1MinutePitchTechCrunchDisrupt2025.svg';
+import WorkBenchBrochure from '../../assets/logos-resources/WorkBenchBrochure.svg';
+import XilosBrochure from '../../assets/logos-resources/XilosBrochure.svg';
+import SoWhatHappensAfterAGI from '../../assets/logos-resources/SoWhatHappensAfterAGI.svg';
+import HowEnterprisesCanSecurelyUnlockAIsPower from '../../assets/logos-resources/HowEnterprisesCanSecurelyUnlockAIsPower.svg';
+import TheCanaryLeavingTheCoalMine from '../../assets/logos-resources/TheCanaryLeavingTheCoalMine.svg';
+import TheContextDilemma from '../../assets/logos-resources/TheContextDilemma.svg';
+import NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines from '../../assets/logos-resources/NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines.svg';
+import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-resources/HarnessingthePowerofAIwithSecureInfrastructure.svg';
+import XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld from '../../assets/logos-resources/XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld.svg';
+import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
+import DataSovereigntyinTheAIEraNavigatingtheParadigmShift from '../../assets/logos-resources/DataSovereigntyinTheAIEraNavigatingtheParadigmShift.png';
+import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
+import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
 
 const breakpointColumnsObj = {
@@ -392,7 +392,7 @@ function FiltersNews() {
             {filteredResources.map((resource) => (
               <article
                 key={resource.id}
-                className="flex flex-col shadow-md ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-3xl overflow-hidden bg-[#FBFAF8] text-left"
+                className="flex flex-col shadow-md ring-1 ring-gray-200 hover:shadow-lg transition-all rounded-[3rem] overflow-hidden bg-[#FBFAF8] text-left"
               >
                   <div className="p-6 text-left">
                     <div className="flex gap-3 text-sm font-semibold flex-wrap">
@@ -413,7 +413,7 @@ function FiltersNews() {
 
                   {resource.image && (
                     <div className="relative">
-                      <img src={resource.image} alt={resource.title} className="w-full" />
+                      <img src={resource.image} alt={resource.title} className="w-full min-h-[200px] object-cover" />
 
                       {resource.link && (
                         resource.link === '#top' ? (

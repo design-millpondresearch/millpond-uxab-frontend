@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/Mill Pond Research Logo - Horizontal - 100.png';
-import facebook from '../assets/Facebook.svg';
-import instagram from '../assets/Instagram.svg';
-import github from '../assets/Github.svg';
-import youtube from '../assets/Youtube.svg';
+import facebook from '../assets/logos-footer/Facebook.svg';
+import instagram from '../assets/logos-footer/Instagram.svg';
+import github from '../assets/logos-footer/Github.svg';
+import youtube from '../assets/logos-footer/Youtube.svg';
+import linkedin from '../assets/logos-footer/Linkedin.svg';
 import './Footer.css'; 
 
 const Footer = () => {
@@ -21,32 +22,27 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li className="footer-item">
-                        <Link to="/Company" className="footer-link">
-                            Blog
-                        </Link>
-                    </li>
-                    <li className="footer-item">
                         <Link to="/Resources" className="footer-link">
                             Resources
                         </Link>
                     </li>
                     <li className="footer-item">
-                        <Link to="/Solutions" className="footer-link">
+                        <Link to="/solutions/workbench" className="footer-link">
                             WorkBench
                         </Link>
                     </li>
                     <li className="footer-item">
-                        <Link to="/Solutions" className="footer-link">
-                            Xlios
+                        <Link to="/solutions/xilos" className="footer-link">
+                            Xilos
                         </Link>
                     </li>
                     <li className="footer-item">
-                        <Link to="/Solutions" className="footer-link">
+                        <Link to="/contactus" className="footer-link">
                             Contact
                         </Link>
                     </li>
                     <li className="footer-item">
-                        <Link to="/Solutions" className="footer-link">
+                        <Link to="/contactus" className="footer-link">
                             Support
                         </Link>
                     </li>
@@ -64,6 +60,9 @@ const Footer = () => {
                     </Link>
                     <Link to="https://www.youtube.com/@millpondresearch" className="navbar-logo-social-media">
                         <img src={youtube} alt="Millpond Reseach Youtube" style={{ height: '24px', width: 'auto'}} />
+                    </Link>
+                    <Link to="https://www.linkedin.com/company/mill-pond-research" className="navbar-logo-social-media">
+                        <img src={linkedin} alt="Millpond Reseach Linkedin" style={{ height: '24px', width: 'auto'}} />
                     </Link>
                 </div>
 

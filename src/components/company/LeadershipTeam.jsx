@@ -1,5 +1,5 @@
-import andrew from "../../assets/Andrew.svg";
-import pete from "../../assets/Pete.svg";
+import andrew from "../../assets/logos-headshots/Andrew.svg";
+import pete from "../../assets/logos-headshots/Pete.svg";
 
 const team = [
   {

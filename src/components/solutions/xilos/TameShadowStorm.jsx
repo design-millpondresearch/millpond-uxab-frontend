@@ -1,6 +1,6 @@
-import shield from "../../../assets/shield.svg";
-import share from "../../../assets/share.svg";
-import pencil from "../../../assets/pencil.svg";
+import shield from "../../../assets/logos-general/shield.svg";
+import share from "../../../assets/logos-general/share.svg";
+import pencil from "../../../assets/logos-general/pencil.svg";
 
 const traits = [
     {

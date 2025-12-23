@@ -1,6 +1,6 @@
-import vision from "../../assets/eye.svg";
-import barchart from "../../assets/barchart.svg";
-import users from "../../assets/users.svg";
+import vision from "../../assets/logos-general/eye.svg";
+import barchart from "../../assets/logos-general/barchart.svg";
+import users from "../../assets/logos-general/users.svg";
 import teampic from "../../assets/teamimage.svg";
 
 const story = [

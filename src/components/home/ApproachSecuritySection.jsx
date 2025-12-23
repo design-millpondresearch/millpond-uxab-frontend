@@ -1,6 +1,6 @@
-import check from "../../assets/check.svg";
+import check from "../../assets/logos-general/check.svg";
 import x from "../../assets/x.svg";
-import question from "../../assets/unknown.svg";
+import question from "../../assets/logos-general/unknown.svg";
 
 const comparisonRows = [
   {

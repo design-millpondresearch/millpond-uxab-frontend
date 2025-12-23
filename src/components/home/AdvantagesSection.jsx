@@ -1,9 +1,9 @@
-import visibility from "../../assets/eye.svg";
-import protection from "../../assets/shield.svg";
-import unify from "../../assets/share.svg";
-import compliance from "../../assets/lock.svg"; 
-import ecosystem from "../../assets/users.svg";
-import optimize from "../../assets/coin-stack.svg";
+import visibility from "../../assets/logos-general/eye.svg";
+import protection from "../../assets/logos-general/shield.svg";
+import unify from "../../assets/logos-general/share.svg";
+import compliance from "../../assets/logos-general/lock.svg"; 
+import ecosystem from "../../assets/logos-general/users.svg";
+import optimize from "../../assets/logos-general/coin-stack.svg";
 
 
 

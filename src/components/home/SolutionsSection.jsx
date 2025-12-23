@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import workbenchPic from "../../assets/WorkBenchPhoto.svg";
 import xilosPic from "../../assets/XilosPhoto.svg";
-import link from "../../assets/link.svg";
-import users from "../../assets/users.svg";
-import rocket from "../../assets/rocket.svg";
+import link from "../../assets/logos-general/link.svg";
+import users from "../../assets/logos-general/users.svg";
+import rocket from "../../assets/logos-general/rocket.svg";
 
 const workbenchFeatures = [
   {
