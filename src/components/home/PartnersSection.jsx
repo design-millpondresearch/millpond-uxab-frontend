@@ -90,19 +90,19 @@ function PartnersSection() {
           <div className="flex flex-col gap-6">
             {/* Row 1 */}
             <div className="overflow-hidden">
-              <div className="partners-marquee-track flex gap-12 md:gap-20">
+          <div className="partners-marquee-track flex gap-12 md:gap-20">
                 {marqueeRow1.map((partner, idx) => (
-                  <div
+              <div
                     key={`row1-${partner.name}-${idx}`}
                     className="flex h-16 w-[160px] flex-none items-center justify-center"
-                  >
-                    <img
-                      src={partner.logo}
-                      alt={partner.name}
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
                       className="max-h-12 md:max-h-14 object-contain"
-                    />
-                  </div>
-                ))}
+                />
+              </div>
+            ))}
               </div>
             </div>
 
@@ -154,35 +154,35 @@ function PartnersSection() {
               "
             >
               <div className="flex h-full flex-col items-center justify-center gap-2">
-                {currentTestimonial.logo ? (
-                  <img
-                    src={currentTestimonial.logo}
-                    alt={currentTestimonial.company}
+              {currentTestimonial.logo ? (
+                <img
+                  src={currentTestimonial.logo}
+                  alt={currentTestimonial.company}
                     className="mb-1 h-8 w-auto"
-                  />
-                ) : (
+                />
+              ) : (
                   <div className="mb-1 h-8 px-4 flex items-center justify-center rounded-full bg-white text-xs md:text-sm font-semibold text-[#1F4E79]">
-                    {currentTestimonial.company}
-                  </div>
-                )}
+                  {currentTestimonial.company}
+                </div>
+              )}
 
-                <p
+              <p
                   className="subheader text-lg md:text-xl"
-                  style={{ color: "#1F4E79" }}
-                >
-                  {currentTestimonial.title}
-                </p>
+                style={{ color: "#1F4E79" }}
+              >
+                {currentTestimonial.title}
+              </p>
 
                 <p className="small-font max-w-3xl text-sm" style={{ color: "#4B4B4B" }}>
-                  {currentTestimonial.body}
-                </p>
+                {currentTestimonial.body}
+              </p>
 
-                {currentTestimonial.speaker && (
+              {currentTestimonial.speaker && (
                   <p className="small-font font-semibold text-sm text-[#567C8D]">
-                    {currentTestimonial.speaker}
-                  </p>
-                )}
-              </div>
+                  {currentTestimonial.speaker}
+                </p>
+              )}
+            </div>
             </div>
 
             {/* Right arrow */}

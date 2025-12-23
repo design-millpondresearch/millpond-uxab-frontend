@@ -45,7 +45,7 @@ function HeroSection() {
     }
   }, []);
 
-  return (
+    return (
     <main className="regular-banner-sand flex flex-col items-center px-6 md:px-8 lg:px-12 pb-12" style={{ paddingTop: '128px' }}>
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 w-full mt-22">
         <div className="text-center mb-22">
@@ -67,9 +67,9 @@ function HeroSection() {
             Email us directly
           </button>
         </div>
-      </div>
-    </main>
-  );
+            </div>
+        </main>
+    );
 }
 
 export default HeroSection;
