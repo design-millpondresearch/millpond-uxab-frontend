@@ -41,11 +41,6 @@ const Footer = () => {
                             Contact
                         </Link>
                     </li>
-                    <li className="footer-item">
-                        <Link to="/contactus" className="footer-link">
-                            Support
-                        </Link>
-                    </li>
                 </ul>
 
                 <div style={{ display:'flex', marginBottom: '36px', gap:'50px'}}>
