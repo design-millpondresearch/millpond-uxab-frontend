@@ -49,7 +49,7 @@ function OurStory() {
       </div>
 
       {/* story */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 lg:gap-20 w-full max-w-6xl mt-8 justify-items-start">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 lg:gap-20 w-full max-w-7xl mt-8 justify-items-start">
         {story.map((item) => (
           <div key={item.year} className="flex flex-col items-start w-full">
             {/* Year with line */}
@@ -79,7 +79,7 @@ function OurStory() {
       </div>
 
       {/* traits */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mx-2 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mx-2 mt-8 max-w-7xl">
         {traits.map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center">
             {/* Icon in white circle */}

@@ -4,7 +4,6 @@ import AnnouncementBar from './components/AnnouncementBar';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 import Home from './pages/Home';
-import Solutions from './pages/Solutions';
 import Workbench from './components/solutions/Workbench';
 import Xilos from './components/solutions/Xilos';
 import Resources from './pages/Resources';
@@ -21,7 +20,6 @@ function App() {
         <AnnouncementBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/solutions" element={<Solutions />} />
           <Route path="/solutions/workbench" element={<Workbench />} />
           <Route path="/solutions/xilos" element={<Xilos />} />
           <Route path="/resources" element={<Resources />} />

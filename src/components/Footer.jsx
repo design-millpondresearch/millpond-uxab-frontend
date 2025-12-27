@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/Mill Pond Research Logo - Horizontal - 100.png';
+import logo from '../assets/millpond-research-logo-square.svg';
 import facebook from '../assets/logos-footer/Facebook.svg';
 import instagram from '../assets/logos-footer/Instagram.svg';
 import github from '../assets/logos-footer/Github.svg';
@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
         <div className="footer-container flex flex-col items-center gap-6">
             <Link to="/" className="footer-logo">
-                <img src={logo} alt="Millpond Research" style={{ height: '80px', width: 'auto', marginBottom: '48px'}} />
+                <img src={logo} alt="Millpond Research" style={{ height: '150px', width: 'auto'}} />
             </Link>
 
             <ul className="footer-menu">

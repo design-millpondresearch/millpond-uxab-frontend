@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/Mill Pond Research Logo - Horizontal - 100.png';
+import logo from '../assets/millpond-research-logo-square.svg';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    <img src={logo} alt="Millpond Research" style={{ height: '40px', width: 'auto' }} />
+                    <img src={logo} alt="Millpond Research" style={{ height: '70px', width: 'auto' }} />
                 </Link>
                 
                 {/* Hamburger menu button */}
