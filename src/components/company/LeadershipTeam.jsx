@@ -5,7 +5,7 @@ import zacharygolden from "../../assets/logos-headshots/zach-golden.webp";
 import bradgarsten from "../../assets/logos-headshots/brad-garsten.webp";
 import jeffaboud from "../../assets/logos-headshots/jeff-aboud.webp";
 import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
-import linkedin from "../../assets/logos-footer/linkedin.svg";
+import linkedin from "../../assets/logos-footer/Linkedin.svg";
 
 const team = [
   {
