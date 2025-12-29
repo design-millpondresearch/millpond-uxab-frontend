@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* Base styling for the footer reflecting the original design */
 .footer {
   background-color: #F5EFE7;
   width: 100%;
@@ -7,7 +8,7 @@
   padding-bottom: 48px;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .footer-logo {
@@ -15,6 +16,12 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+/* Default height for the logo image (desktop) */
+.footer-logo-img {
+  height: 150px;
+  width: auto;
 }
 
 .footer-menu {
@@ -45,15 +52,47 @@
 }
 
 .footer-rights {
-    color: black;
-    font-size: 14px;
-    font-family: 'Roboto', serif;
+  color: black;
+  font-size: 14px;
+  font-family: 'Roboto', serif;
 }
 
 .footer-logo-social-media {
-    flex-shrink: 0;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
+/* Social icons container replicating the original inline style */
+.footer-socials {
+  display: flex;
+  margin-bottom: 36px;
+  gap: 50px;
+}
+
+/* Responsive overrides for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 32px;
+  }
+
+  /* Reduce logo height on mobile */
+  .footer-logo-img {
+    height: 120px;
+  }
+
+  /* Adjust social icons spacing on mobile */
+  .footer-socials {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
