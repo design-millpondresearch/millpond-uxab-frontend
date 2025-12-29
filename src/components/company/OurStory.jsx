@@ -64,7 +64,7 @@ const traits = [
  */
 function OurStory() {
   return (
-    <section className="regular-banner-sand px-6 flex flex-col items-center relative overflow-hidden">
+    <section className="regular-banner-sand px-6 py-16 flex flex-col items-center relative overflow-hidden">
       {/* Decorative backdrop */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         {/* Large beige gradient washing across the background */}
@@ -105,9 +105,18 @@ function OurStory() {
       {/* Timeline */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 lg:gap-20 w-full max-w-7xl mt-8 justify-items-start">
         {story.map((item) => (
-          <div key={item.year} className="flex flex-col items-start w-full">
+          <div key={item.year} className="relative flex flex-col items-start w-full">
+            {/* Blob gradient behind story */}
+            <div
+              className="pointer-events-none absolute inset-0 rounded-lg"
+              style={{
+                background: 'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
+                zIndex: 0,
+              }}
+            />
+            
             {/* Year with line */}
-            <div className="flex items-center mb-4 w-full">
+            <div className="flex items-center mb-4 w-full relative z-10">
               <h3 className="subheader mr-4" style={{ color: "#567C8D" }}>
                 {item.year}
               </h3>
@@ -115,14 +124,14 @@ function OurStory() {
             </div>
             {/* Title */}
             <h4
-              className="subheader md:text-xl font-semibold mb-2 text-left"
+              className="subheader md:text-xl font-semibold mb-2 text-left relative z-10"
               style={{ color: "#4B4B4B" }}
             >
               {item.title}
             </h4>
             {/* Description */}
             <p
-              className="large-font md:text-base leading-relaxed text-left"
+              className="large-font md:text-base leading-relaxed text-left relative z-10"
               style={{ color: "#4B4B4B" }}
             >
               {item.body}
@@ -143,15 +152,35 @@ function OurStory() {
       {/* Traits */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mx-2 mt-8 max-w-7xl">
         {traits.map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center">
-            {/* Icon in white circle */}
-            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white">
-              <img src={item.icon} alt={item.title} className="h-10 w-10" />
+          <div key={item.title} className="relative flex flex-col items-center text-center">
+            {/* Blob gradient behind trait */}
+            <div
+              className="pointer-events-none absolute inset-0 rounded-lg"
+              style={{
+                background: 'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
+                zIndex: 0,
+              }}
+            />
+            
+            {/* Icon with white gradient circular blob */}
+            <div className="mb-4 relative flex items-center justify-center">
+              {/* White gradient circular blob */}
+              <div
+                className="pointer-events-none absolute rounded-full"
+                style={{
+                  background: 'radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 18%, rgba(255, 255, 255, 0.75) 32%, rgba(255, 255, 255, 0.6) 42%, rgba(255, 255, 255, 0.45) 52%, rgba(255, 255, 255, 0.3) 62%, rgba(255, 255, 255, 0.2) 68%, rgba(255, 255, 255, 0.1) 73%, rgba(255, 255, 255, 0.05) 78%, transparent 82%)',
+                  width: '100px',
+                  height: '100px',
+                  zIndex: 9,
+                }}
+              />
+              {/* Icon */}
+              <img src={item.icon} alt={item.title} className="h-10 w-10 relative z-10" />
             </div>
-            <h3 className="subheader mb-2" style={{ color: "#1F4E79" }}>
+            <h3 className="subheader mb-2 relative z-10" style={{ color: "#1F4E79" }}>
               {item.title}
             </h3>
-            <p className="large-font" style={{ color: "#4B4B4B" }}>
+            <p className="large-font relative z-10" style={{ color: "#4B4B4B" }}>
               {item.body}
             </p>
           </div>

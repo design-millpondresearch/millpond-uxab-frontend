@@ -24,14 +24,23 @@ import beigeGlow from "../../../assets/elements/element10.svg";
 
 function Usages() {
   return (
-    <section className="relative regular-banner-sand px-6 flex flex-col items-center">
+    <section className="relative regular-banner-sand px-6 flex flex-col items-center overflow-hidden">
+      {/* Large centered gradient blob */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 800px 500px at center, rgba(86, 124, 141, 0.1) 0%, rgba(86, 124, 141, 0.07) 40%, rgba(86, 124, 141, 0.04) 60%, transparent 80%)',
+          zIndex: 0,
+        }}
+      />
+      
       {/* Background elements behind the usages cards */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
         <img src={beigeGlow} alt="" className="absolute top-0 right-0 w-64 md:w-80" />
         <img src={greyBlob} alt="" className="absolute bottom-0 left-0 w-56 md:w-72" />
         <img src={blueBlob} alt="" className="absolute top-1/3 left-1/3 w-48 md:w-64" />
       </div>
-      <div className="text-center">
+      <div className="text-center relative z-10">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Harness the power of agentic AI without sacrificing security.
         </h2>

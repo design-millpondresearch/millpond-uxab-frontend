@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import shield from "../../assets/logos-general/shield.svg";
 import monitor from "../../assets/logos-general/monitor.svg";
 import home from "../../assets/logos-general/home.svg";
+import element4 from "../../assets/elements/element4.svg";
 
 
 const roles = [
@@ -27,7 +28,16 @@ const roles = [
 
 function RoleCardsSection() {
   return (
-    <section className="regular-banner-white px-6 relative">
+    <section className="regular-banner-white px-6 py-16 relative overflow-hidden">
+      {/* Background decorative element */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <img
+          src={element4}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        />
+      </div>
+      
       {/* Right side ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"

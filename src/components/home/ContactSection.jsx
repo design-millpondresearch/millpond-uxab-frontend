@@ -8,7 +8,7 @@ function ContactSection() {
   });
 
   return (
-    <section id="contact-section" className="regular-banner-white px-6">
+    <section id="contact-section" className="regular-banner-white px-6 py-16">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8">
         <div className="text-center">
           <h2
