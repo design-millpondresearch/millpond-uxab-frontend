@@ -381,7 +381,7 @@ function FiltersNews() {
       )}
 
       {/* Masonry layout */}
-      <div className="px-6 pt-6 pb-36 max-w-7xl mx-auto flex justify-center">
+      <div className="relative px-6 pt-6 pb-36 max-w-7xl mx-auto flex justify-center">
         <div className="mx-4">
         {filteredResources.length > 0 ? (
           <Masonry
