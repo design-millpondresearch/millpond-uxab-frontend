@@ -37,13 +37,13 @@ const traits = [
     icon: vision,
     title: "The Vision",
     body:
-      "Founded by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a bold vision to empower businesses to build their own AI systems. Challenging \u201cBig Token\u201d models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.",
+      "Founded by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a bold vision to empower businesses to build their own AI systems. Challenging “Big Token” models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.",
   },
   {
     icon: barchart,
     title: "The Evolution",
     body:
-      "As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. Their flagship product, Xilos, addresses the critical \u201cshadow AI crisis\u201d facing organizations by providing infrastructure that observes, secures, and orchestrates AI agents across networks.",
+      "As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. Their flagship product, Xilos, addresses the critical “shadow AI crisis” facing organizations by providing infrastructure that observes, secures, and orchestrates AI agents across networks.",
   },
   {
     icon: users,
@@ -64,7 +64,7 @@ const traits = [
  */
 function OurStory() {
   return (
-    <section className="regular-banner-sand px-6 py-16 flex flex-col items-center relative overflow-hidden">
+    <section className="regular-banner-sand px-4 md:px-6 py-12 md:py-16 flex flex-col items-center relative overflow-hidden">
       {/* Decorative backdrop */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         {/* Large beige gradient washing across the background */}
@@ -103,18 +103,19 @@ function OurStory() {
       </div>
 
       {/* Timeline */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 lg:gap-20 w-full max-w-7xl mt-8 justify-items-start">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16 lg:gap-20 w-full max-w-7xl mt-6 md:mt-8 justify-items-start">
         {story.map((item) => (
           <div key={item.year} className="relative flex flex-col items-start w-full">
             {/* Blob gradient behind story */}
             <div
               className="pointer-events-none absolute inset-0 rounded-lg"
               style={{
-                background: 'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
+                background:
+                  'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
                 zIndex: 0,
               }}
             />
-            
+
             {/* Year with line */}
             <div className="flex items-center mb-4 w-full relative z-10">
               <h3 className="subheader mr-4" style={{ color: "#567C8D" }}>
@@ -141,7 +142,7 @@ function OurStory() {
       </div>
 
       {/* Team image */}
-      <div className="w-full max-w-6xl my-8 flex justify-center items-center">
+      <div className="w-full max-w-6xl my-6 md:my-8 flex justify-center items-center">
         <img
           src={teampic}
           alt="team"
@@ -150,25 +151,27 @@ function OurStory() {
       </div>
 
       {/* Traits */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mx-2 mt-8 max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 lg:gap-16 mx-2 mt-6 md:mt-8 max-w-7xl">
         {traits.map((item) => (
           <div key={item.title} className="relative flex flex-col items-center text-center">
             {/* Blob gradient behind trait */}
             <div
               className="pointer-events-none absolute inset-0 rounded-lg"
               style={{
-                background: 'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
+                background:
+                  'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
                 zIndex: 0,
               }}
             />
-            
+
             {/* Icon with white gradient circular blob */}
             <div className="mb-4 relative flex items-center justify-center">
               {/* White gradient circular blob */}
               <div
                 className="pointer-events-none absolute rounded-full"
                 style={{
-                  background: 'radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 18%, rgba(255, 255, 255, 0.75) 32%, rgba(255, 255, 255, 0.6) 42%, rgba(255, 255, 255, 0.45) 52%, rgba(255, 255, 255, 0.3) 62%, rgba(255, 255, 255, 0.2) 68%, rgba(255, 255, 255, 0.1) 73%, rgba(255, 255, 255, 0.05) 78%, transparent 82%)',
+                  background:
+                    'radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 18%, rgba(255, 255, 255, 0.75) 32%, rgba(255, 255, 255, 0.6) 42%, rgba(255, 255, 255, 0.45) 52%, rgba(255, 255, 255, 0.3) 62%, rgba(255, 255, 255, 0.2) 68%, rgba(255, 255, 255, 0.1) 73%, rgba(255, 255, 255, 0.05) 78%, transparent 82%)',
                   width: '100px',
                   height: '100px',
                   zIndex: 9,

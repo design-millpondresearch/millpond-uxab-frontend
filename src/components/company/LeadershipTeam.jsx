@@ -9,16 +9,18 @@ import linkedin from "../../assets/logos-footer/Linkedin.svg";
 
 const team = [
   {
-    name: "Andrew Shimshock", 
+    name: "Andrew Shimshock",
     title: "Co-founder, CTO",
-    body: "Leading Mill Pond Research's technical vision and product development, Andrew brings deep expertise in AI systems architecture and security.",
+    body:
+      "Leading Mill Pond Research's technical vision and product development, Andrew brings deep expertise in AI systems architecture and security.",
     icon: andrewshimshock,
     linkedinUrl: "https://www.linkedin.com/in/andrewshimshock/",
   },
   {
-    name: "Pete Shimshock", 
+    name: "Pete Shimshock",
     title: "Co-founder, CAIO",
-    body: "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+    body:
+      "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
     icon: peteshimshock,
     linkedinUrl: "https://www.linkedin.com/in/pete-shimshock/",
   },
@@ -26,35 +28,35 @@ const team = [
 
 const team2 = [
   {
-    name: "Christopher Caen", 
+    name: "Christopher Caen",
     title: "CEO",
     body: "--Add Description--",
     icon: christophercaen,
     linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
   },
   {
-    name: "Zachary Golden", 
+    name: "Zachary Golden",
     title: "Director of Government Relations & Federal Strategy",
     body: "--Add Description--",
     icon: zacharygolden,
     linkedinUrl: "https://www.linkedin.com/in/zachgoldenbd/",
   },
   {
-    name: "Brad Garsten", 
+    name: "Brad Garsten",
     title: "Strategic Partnership Advisor",
     body: "--Add Description--",
     icon: bradgarsten,
     linkedinUrl: "https://www.linkedin.com/in/bradgarsten/",
   },
   {
-    name: "Jeff Aboud", 
+    name: "Jeff Aboud",
     title: "Marketing Advisor, CMO",
     body: "--Add Description--",
     icon: jeffaboud,
     linkedinUrl: "https://www.linkedin.com/in/jaboud/",
   },
   {
-    name: "Trevor Curwin", 
+    name: "Trevor Curwin",
     title: "Advisor, Financial Services, Energy and Mobility",
     body: "--Add Description--",
     icon: trevorcurwin,
@@ -64,12 +66,13 @@ const team2 = [
 
 function LeadershipTeam() {
   return (
-    <section className="regular-banner-blue px-6 py-16 flex flex-col items-center relative">
+    <section className="regular-banner-blue px-4 md:px-6 py-12 md:py-16 flex flex-col items-center relative">
       {/* Gradient coming down from top */}
       <div
         className="pointer-events-none absolute inset-x-0 top-0 h-96"
         style={{
-          background: 'linear-gradient(to bottom, rgba(200, 217, 230, 0.8) 0%, rgba(200, 217, 230, 0.6) 50%, rgba(200, 217, 230, 0.3) 80%, transparent 100%)',
+          background:
+            'linear-gradient(to bottom, rgba(200, 217, 230, 0.8) 0%, rgba(200, 217, 230, 0.6) 50%, rgba(200, 217, 230, 0.3) 80%, transparent 100%)',
           zIndex: 0,
         }}
       />
@@ -84,7 +87,7 @@ function LeadershipTeam() {
       </div>
 
       {/* First grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-18 items-start w-full mt-6 md:mt-8 max-w-7xl mx-auto justify-items-center relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-18 items-start w-full mt-4 md:mt-8 max-w-7xl mx-auto justify-items-center relative z-10">
         {team.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-96 lg:w-[500px]">
 
@@ -123,7 +126,7 @@ function LeadershipTeam() {
       </div>
 
       {/* Second grid - 5 smaller elements */}
-      <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-start w-full mt-12 md:mt-16 max-w-6xl relative z-10">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-12 items-start w-full mt-8 md:mt-16 max-w-6xl relative z-10">
         {team2.map((member, index) => (
           <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[160px] max-w-[200px]">
 
@@ -163,7 +166,6 @@ function LeadershipTeam() {
           </div>
         ))}
       </div>
-
     </section>
   );
 }

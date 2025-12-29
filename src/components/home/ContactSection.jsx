@@ -21,7 +21,7 @@ function ContactSection() {
   });
 
   return (
-    <section id="contact-section" className="regular-banner-white px-6 py-16">
+    <section id="contact-section" className="regular-banner-white px-4 md:px-6 py-12 md:py-16">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8">
         <div className="text-center">
           <h2
@@ -38,7 +38,7 @@ function ContactSection() {
 
         {/* HubSpot form wrapper.  We center all content and use a blue background so
             the fallback matches the form container. */}
-        <div className="w-full max-w-4xl rounded-2xl bg-[#E2ECF4] p-8 text-center shadow-sm">
+        <div className="w-full max-w-4xl rounded-2xl bg-[#E2ECF4] p-6 md:p-8 text-center shadow-sm">
           <div id="hubspot-form-main" data-hs-forms-root="true" />
 
           {/* Fallback email button.  Hidden by default; shown via useHubspotForm. */}

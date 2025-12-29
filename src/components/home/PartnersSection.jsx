@@ -73,12 +73,13 @@ function PartnersSection() {
     );
 
   return (
-    <section className="regular-banner-white px-6 py-16 relative overflow-hidden">
+    <section className="regular-banner-white px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
       {/* Top right ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 1500px 150% at right top, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 1500px 150% at right top, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
           right: 0,
           top: 0,
         }}
@@ -88,7 +89,8 @@ function PartnersSection() {
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 1500px 150% at left bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 1500px 150% at left bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
           left: 0,
           bottom: 0,
         }}
@@ -106,26 +108,26 @@ function PartnersSection() {
         </div>
 
         {/* PARTNER LOGO MARQUEE – continuous, 2 rows, no arrows */}
-        <div className="mt-12 overflow-hidden px-2 md:px-12">
+        <div className="mt-8 md:mt-12 overflow-hidden px-2 md:px-8">
           <div className="flex flex-col gap-6">
             {/* Row 1 */}
             <div className="overflow-hidden">
-          <div className="partners-marquee-track flex gap-12 md:gap-20">
+              <div className="partners-marquee-track flex gap-12 md:gap-20">
                 {marqueeRow1.map((partner, idx) => (
-              <div
+                  <div
                     key={`row1-${partner.name}-${idx}`}
                     className="flex h-16 w-[160px] flex-none items-center justify-center"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
+                  >
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
                       className="max-h-12 md:max-h-14 object-contain"
-                />
-              </div>
-            ))}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
-
+            
             {/* Row 2 */}
             <div className="overflow-hidden">
               <div className="partners-marquee-track flex gap-12 md:gap-20">
@@ -147,7 +149,7 @@ function PartnersSection() {
         </div>
 
         {/* TESTIMONIAL CARD */}
-        <div className="mt-16 mx-2 md:mx-12 lg:mx-24 xl:mx-32">
+        <div className="mt-12 md:mt-16 mx-2 md:mx-8 lg:mx-16 xl:mx-24">
           <div className="flex items-center gap-4">
             {/* Left arrow */}
             <button
@@ -167,44 +169,44 @@ function PartnersSection() {
               className="
                 flex-1 flex flex-col items-center justify-center gap-2
                 rounded-2xl bg-[#F5EFE7]
-                px-6 py-6 md:px-8 md:py-6
+                px-4 py-4 md:px-6 md:py-6
                 text-center shadow-sm
                 transition-all duration-500
                 h-[320px] md:h-[340px]
               "
             >
               <div className="flex h-full flex-col items-center justify-center gap-2">
-              {currentTestimonial.logo ? (
-                <img
-                  src={currentTestimonial.logo}
-                  alt={currentTestimonial.company}
+                {currentTestimonial.logo ? (
+                  <img
+                    src={currentTestimonial.logo}
+                    alt={currentTestimonial.company}
                     className="mb-1 h-8 w-auto"
-                />
-              ) : (
+                  />
+                ) : (
                   <div className="mb-1 h-8 px-4 flex items-center justify-center rounded-full bg-white text-xs md:text-sm font-semibold text-[#1F4E79]">
-                  {currentTestimonial.company}
-                </div>
-              )}
-
-              <p
+                    {currentTestimonial.company}
+                  </div>
+                )}
+                
+                <p
                   className="subheader text-lg md:text-xl"
-                style={{ color: "#1F4E79" }}
-              >
-                {currentTestimonial.title}
-              </p>
-
-                <p className="small-font max-w-3xl text-sm" style={{ color: "#4B4B4B" }}>
-                {currentTestimonial.body}
-              </p>
-
-              {currentTestimonial.speaker && (
-                  <p className="small-font font-semibold text-sm text-[#567C8D]">
-                  {currentTestimonial.speaker}
+                  style={{ color: "#1F4E79" }}
+                >
+                  {currentTestimonial.title}
                 </p>
-              )}
+                
+                <p className="small-font max-w-3xl text-sm" style={{ color: "#4B4B4B" }}>
+                  {currentTestimonial.body}
+                </p>
+                
+                {currentTestimonial.speaker && (
+                  <p className="small-font font-semibold text-sm text-[#567C8D]">
+                    {currentTestimonial.speaker}
+                  </p>
+                )}
+              </div>
             </div>
-            </div>
-
+            
             {/* Right arrow */}
             <button
               type="button"

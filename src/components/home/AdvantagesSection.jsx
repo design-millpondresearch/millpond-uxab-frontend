@@ -1,11 +1,9 @@
 import visibility from "../../assets/logos-general/eye.svg";
 import protection from "../../assets/logos-general/shield.svg";
 import unify from "../../assets/logos-general/share.svg";
-import compliance from "../../assets/logos-general/lock.svg"; 
+import compliance from "../../assets/logos-general/lock.svg";
 import ecosystem from "../../assets/logos-general/users.svg";
 import optimize from "../../assets/logos-general/coin-stack.svg";
-
-
 
 const advantages = [
   {
@@ -42,14 +40,15 @@ const advantages = [
 
 function AdvantagesSection() {
   return (
-    <section className="regular-banner-sand px-6 py-16 relative overflow-hidden">
+    <section className="regular-banner-sand px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
       {/* Outer ring gradient - top right */}
       <div
         className="pointer-events-none absolute"
         style={{
           width: '800px',
           height: '800px',
-          background: 'radial-gradient(circle, transparent 30%, rgba(86, 124, 141, 0.1) 40%, rgba(86, 124, 141, 0.15) 45%, rgba(86, 124, 141, 0.1) 50%, rgba(86, 124, 141, 0.05) 55%, transparent 70%)',
+          background:
+            'radial-gradient(circle, transparent 30%, rgba(86, 124, 141, 0.1) 40%, rgba(86, 124, 141, 0.15) 45%, rgba(86, 124, 141, 0.1) 50%, rgba(86, 124, 141, 0.05) 55%, transparent 70%)',
           borderRadius: '50%',
           right: '15%',
           top: '15%',
@@ -63,7 +62,8 @@ function AdvantagesSection() {
         style={{
           width: '550px',
           height: '550px',
-          background: 'radial-gradient(circle, transparent 25%, rgba(86, 124, 141, 0.1) 35%, rgba(86, 124, 141, 0.15) 40%, rgba(86, 124, 141, 0.1) 45%, rgba(86, 124, 141, 0.05) 50%, transparent 65%)',
+          background:
+            'radial-gradient(circle, transparent 25%, rgba(86, 124, 141, 0.1) 35%, rgba(86, 124, 141, 0.15) 40%, rgba(86, 124, 141, 0.1) 45%, rgba(86, 124, 141, 0.05) 50%, transparent 65%)',
           borderRadius: '50%',
           right: '15%',
           top: '15%',
@@ -71,14 +71,15 @@ function AdvantagesSection() {
           transform: 'translate(50%, -50%)',
         }}
       />
-      
+
       {/* Outer ring gradient - bottom left */}
       <div
         className="pointer-events-none absolute"
         style={{
           width: '800px',
           height: '800px',
-          background: 'radial-gradient(circle, transparent 30%, rgba(86, 124, 141, 0.1) 40%, rgba(86, 124, 141, 0.15) 45%, rgba(86, 124, 141, 0.1) 50%, rgba(86, 124, 141, 0.05) 55%, transparent 70%)',
+          background:
+            'radial-gradient(circle, transparent 30%, rgba(86, 124, 141, 0.1) 40%, rgba(86, 124, 141, 0.15) 45%, rgba(86, 124, 141, 0.1) 50%, rgba(86, 124, 141, 0.05) 55%, transparent 70%)',
           borderRadius: '50%',
           left: '15%',
           bottom: '15%',
@@ -92,7 +93,8 @@ function AdvantagesSection() {
         style={{
           width: '550px',
           height: '550px',
-          background: 'radial-gradient(circle, transparent 25%, rgba(86, 124, 141, 0.1) 35%, rgba(86, 124, 141, 0.15) 40%, rgba(86, 124, 141, 0.1) 45%, rgba(86, 124, 141, 0.05) 50%, transparent 65%)',
+          background:
+            'radial-gradient(circle, transparent 25%, rgba(86, 124, 141, 0.1) 35%, rgba(86, 124, 141, 0.15) 40%, rgba(86, 124, 141, 0.1) 45%, rgba(86, 124, 141, 0.05) 50%, transparent 65%)',
           borderRadius: '50%',
           left: '15%',
           bottom: '15%',
@@ -100,9 +102,9 @@ function AdvantagesSection() {
           transform: 'translate(-50%, 50%)',
         }}
       />
-      
+
       <div className="mx-auto max-w-6xl relative z-10">
-        <div className="mb-10 text-center">
+        <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Essential AI Governance Advantages.
           </h2>
@@ -112,12 +114,12 @@ function AdvantagesSection() {
           {advantages.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center gap-3 rounded-2xl p-6 text-center"
+              className="flex flex-col items-center gap-3 rounded-2xl p-4 md:p-6 text-center"
             >
               <div className="h-10 w-10 rounded-full mt-2">
                 <img src={item.icon} alt={item.title} className="h-10 w-10" />
               </div>
-              <h4 className="subheader" style={{ color: "#1F4E79"}}>
+              <h4 className="subheader" style={{ color: "#1F4E79" }}>
                 {item.title}
               </h4>
               <p className="small-font mx-4 mb-2" style={{ color: "#4B4B4B" }}>

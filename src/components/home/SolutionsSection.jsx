@@ -70,7 +70,7 @@ function SolutionsSection() {
   };
 
   return (
-    <section id="solutions-section" className="regular-banner-white px-6 py-16 relative overflow-hidden">
+    <section id="solutions-section" className="regular-banner-white px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
       {/* Top right ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"
@@ -107,13 +107,13 @@ function SolutionsSection() {
           </h3>
         </div>
 
-        <div className="mb-12 flex flex-col gap-24">
+        <div className="mb-12 flex flex-col gap-16 md:gap-24">
           {/* WorkBench block */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
               {/* Left column */}
               <div
-                className="rounded-2xl px-4 py-6 text-left"
+                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left"
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
@@ -177,7 +177,7 @@ function SolutionsSection() {
               </div>
 
               {/* Right column */}
-              <div className="flex items-center justify-center rounded-2xl p-4">
+              <div className="flex items-center justify-center rounded-2xl p-4 md:p-6">
                 <img
                   src={workbenchPic}
                   alt="WorkBench Product Shot"
@@ -194,7 +194,7 @@ function SolutionsSection() {
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
               {/* Left column (image) */}
-              <div className="flex items-center justify-center rounded-2xl p-4">
+              <div className="flex items-center justify-center rounded-2xl p-4 md:p-6">
                 <img
                   src={xilosPic}
                   alt="Xilos Product Shot"
@@ -204,7 +204,7 @@ function SolutionsSection() {
 
               {/* Right column */}
               <div
-                className="rounded-2xl px-4 py-6 text-left md:text-right"
+                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left md:text-right"
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>

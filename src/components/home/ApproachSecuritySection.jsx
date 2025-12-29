@@ -75,8 +75,8 @@ function Indicator({ type }) {
 
 function ApproachSecuritySection() {
   return (
-    <section className="regular-banner-sand px-4 md:px-8 py-16">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-10">
+    <section className="regular-banner-sand px-4 md:px-8 py-12 md:py-16">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 md:gap-10">
         {/* Title */}
         <h2
           className="section-header text-center text-3xl md:text-4xl lg:text-5xl"
@@ -97,9 +97,8 @@ function ApproachSecuritySection() {
               "
           />
 
-
           {/* Content (transparent) */}
-          <div className="relative px-6 py-8 md:px-12 md:py-10">
+          <div className="relative px-4 py-6 md:px-10 md:py-8">
             {/* Header row – using your spacing: gap-20, ml-[110px] */}
             <div className="hidden md:flex justify-center gap-20 ml-[440px] mb-8 text-sm font-semibold text-[#4B4B4B]">
               <span>Prompt-Based AI security</span>

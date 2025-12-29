@@ -28,7 +28,7 @@ const risks = [
 
 function StrategyRisksSection() {
   return (
-    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-16">
+    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-12 md:py-16">
       {/* Heading */}
       <div className="max-w-7xl text-center mx-auto">
         <h2
@@ -46,16 +46,16 @@ function StrategyRisksSection() {
       </div>
 
       {/* Grid with radial glow */}
-      <div className="relative w-full max-w-6xl mx-auto mt-16">
+      <div className="relative w-full max-w-6xl mx-auto mt-12 md:mt-16">
         {/* subtle background glow */}
         <div
-          className="
-            pointer-events-none absolute inset-0
-            bg-[radial-gradient(circle_at_center,_rgba(225,233,243,0.35)_0%,_rgba(255,255,255,0)_70%)]
-          "
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background: 'radial-gradient(circle_at_center,_rgba(225,233,243,0.35)_0%,_rgba(255,255,255,0)_70%)',
+          }}
         />
 
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-24 px-4 md:px-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-20 gap-x-12 md:gap-x-24 px-4 md:px-8">
           {risks.map((risk) => (
             <div
               key={risk.title}
@@ -69,13 +69,13 @@ function StrategyRisksSection() {
                   transform: 'scale(1.0)',
                 }}
               />
-              
+
               {/* Icon 48x48px per Figma */}
               <div className="relative z-10">
                 <img
                   src={risk.icon}
                   alt={risk.title}
-                  className="w-12 h-12 mb-6"  // 48px = 12 tailwind units
+                  className="w-12 h-12 mb-6"
                 />
               </div>
 

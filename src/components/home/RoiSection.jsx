@@ -10,15 +10,16 @@ const metrics = [
 
 function RoiSection() {
   return (
-    <section className="regular-banner-sand px-6 py-16 relative overflow-hidden">
+    <section className="regular-banner-sand px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
       {/* Center blob gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 1500px 150% at center center, rgba(86, 124, 141, 0.12) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 1500px 150% at center center, rgba(86, 124, 141, 0.12) 0%, transparent 70%)',
         }}
       />
-      
+
       <div className="mx-auto max-w-6xl text-center relative z-10">
         <h2
           className="section-header text-3xl md:text-4xl lg:text-5xl"
@@ -34,14 +35,14 @@ function RoiSection() {
           See measurable impact across your entire AI ecosystem.
         </p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
+        <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-4 md:gap-6 max-w-7xl mx-auto">
           {metrics.map((metric) => (
             <div
               key={metric.label}
               className="
                 flex items-center justify-center gap-4
                 bg-white
-                px-10 py-5
+                px-6 md:px-10 py-4 md:py-5
                 rounded-2xl
                 shadow-sm
                 ring-1 ring-[#E5E7EB]

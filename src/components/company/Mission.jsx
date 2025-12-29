@@ -11,17 +11,20 @@ import element10 from "../../assets/elements/element10.svg";
 const ideals = [
   {
     title: "Revolutionary Power",
-    body: "Unleash AI's transformative capabilities with complete organizational confidence and control.",
+    body:
+      "Unleash AI's transformative capabilities with complete organizational confidence and control.",
     icon: rocket,
   },
   {
     title: "Unified Security",
-    body: "Innovation and security work together as complementary forces, not opposing constraints.",
+    body:
+      "Innovation and security work together as complementary forces, not opposing constraints.",
     icon: shield,
   },
   {
     title: "Network Intelligence",
-    body: "AI systems that collaborate as a unified network, enhancing performance while maintaining protection.",
+    body:
+      "AI systems that collaborate as a unified network, enhancing performance while maintaining protection.",
     icon: target,
   },
 ];
@@ -36,7 +39,7 @@ const ideals = [
  */
 function Mission() {
   return (
-    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-16 relative overflow-hidden">
+    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
       {/* Decorative backdrop */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         {/* Soft grey glow top left */}
@@ -79,7 +82,7 @@ function Mission() {
 
       {/* Grid of ideals */}
       <div className="mt-6 md:mt-8 w-full max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8 md:gap-14 mx-4 md:mx-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6 md:gap-14 mx-4 md:mx-0">
           {ideals.map((item) => (
             <div
               key={item.title}
@@ -89,11 +92,12 @@ function Mission() {
               <div
                 className="pointer-events-none absolute inset-0 rounded-lg"
                 style={{
-                  background: 'radial-gradient(ellipse 200px 120px at center, rgba(245, 239, 231, 0.8) 0%, rgba(245, 239, 231, 0.6) 40%, rgba(245, 239, 231, 0.4) 60%, transparent 85%)',
+                  background:
+                    'radial-gradient(ellipse 200px 120px at center, rgba(245, 239, 231, 0.8) 0%, rgba(245, 239, 231, 0.6) 40%, rgba(245, 239, 231, 0.4) 60%, transparent 85%)',
                   zIndex: 0,
                 }}
               />
-              
+
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full relative z-10">
                 <img src={item.icon} alt={item.title} className="h-10 w-10" />
               </div>

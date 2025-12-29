@@ -1,5 +1,13 @@
 import { useEffect } from "react";
 
+/*
+ * The contact page hero includes a HubSpot form and fallback button. This
+ * revision adjusts padding, margins and spacing for smaller screens, and
+ * applies responsive padding to the form container so it remains
+ * comfortable on mobile. The radial background and HubSpot script loading
+ * remain unchanged from the original implementation.
+ */
+
 function HeroSection() {
   useEffect(() => {
     const scriptId = "hs-form-script";
@@ -45,40 +53,53 @@ function HeroSection() {
     }
   }, []);
 
-    return (
-    <main className="relative regular-banner-sand flex flex-col items-center px-6 md:px-8 lg:px-12 py-16 overflow-hidden" style={{ paddingTop: '128px' }}>
+  return (
+    <main
+      className="relative regular-banner-sand flex flex-col items-center px-4 md:px-6 lg:px-12 py-12 md:py-16 overflow-hidden"
+      style={{ paddingTop: '128px' }}
+    >
       {/* Ellipse gradient blob in background */}
       <div
         className="absolute pointer-events-none inset-0"
         style={{
-          background: 'radial-gradient(ellipse 600px 300px at center 17%, rgba(200, 217, 230, 0.5) 0%, rgba(200, 217, 230, 0.3) 30%, rgba(200, 217, 230, 0.2) 50%, rgba(200, 217, 230, 0.1) 70%, transparent 90%)',
+          background:
+            'radial-gradient(ellipse 600px 300px at center 17%, rgba(200, 217, 230, 0.5) 0%, rgba(200, 217, 230, 0.3) 30%, rgba(200, 217, 230, 0.2) 50%, rgba(200, 217, 230, 0.1) 70%, transparent 90%)',
           zIndex: 0,
         }}
       />
-      
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 w-full mt-22 relative z-10">
-        <div className="text-center mb-22">
-          <h1 className="hero-title mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>Get Started</h1>
-          <p className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
-            Ready to take control of your AI future? Get in touch with our team to discover how Mill Pond Research can transform your organization's approach to AI security and orchestration.
+
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 md:gap-8 w-full mt-16 md:mt-22 relative z-10">
+        <div className="text-center mb-12 md:mb-18">
+          <h1
+            className="hero-title mb-4 text-3xl md:text-4xl lg:text-5xl"
+            style={{ color: '#1F4E79' }}
+          >
+            Get Started
+          </h1>
+          <p
+            className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl"
+            style={{ color: '#4B4B4B' }}
+          >
+            Ready to take control of your AI future? Get in touch with our team to discover how Mill Pond Research can
+            transform your organization's approach to AI security and orchestration.
           </p>
         </div>
 
-        <div className="w-full rounded-2xl bg-[#E2ECF4] p-8 text-left shadow-sm max-w-4xl">
+        <div className="w-full rounded-2xl bg-[#E2ECF4] p-6 md:p-8 text-left shadow-sm max-w-4xl">
           <div id="hubspot-form-main" data-hs-forms-root="true" />
 
           <button
             id="fallback-button"
-            className="button-primary mt-6"
-            style={{ display: "none" }}
+            className="button-primary mt-4 md:mt-6"
+            style={{ display: 'none' }}
             type="button"
           >
             Email us directly
           </button>
         </div>
-            </div>
-        </main>
-    );
+      </div>
+    </main>
+  );
 }
 
 export default HeroSection;

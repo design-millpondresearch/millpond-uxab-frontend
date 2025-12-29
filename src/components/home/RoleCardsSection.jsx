@@ -4,31 +4,27 @@ import monitor from "../../assets/logos-general/monitor.svg";
 import home from "../../assets/logos-general/home.svg";
 import element4 from "../../assets/elements/element4.svg";
 
-
 const roles = [
   {
     title: "For Security Leaders",
-    description:
-      "Protect every AI interaction.",
-      logo: shield,
+    description: "Protect every AI interaction.",
+    logo: shield,
   },
   {
     title: "For Technology Teams",
-    description:
-      "Streamline and control your AI stack.",
+    description: "Streamline and control your AI stack.",
     logo: monitor,
   },
   {
     title: "For Department Heads",
-    description:
-      "Empower teams to use AI safely and efficiently. ",
+    description: "Empower teams to use AI safely and efficiently. ",
     logo: home,
   },
 ];
 
 function RoleCardsSection() {
   return (
-    <section className="regular-banner-white px-6 py-16 relative overflow-hidden">
+    <section className="regular-banner-white px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
       {/* Background decorative element */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <img
@@ -42,7 +38,8 @@ function RoleCardsSection() {
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 800px 100% at right center, rgba(86, 124, 141, 0.3) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 800px 100% at right center, rgba(86, 124, 141, 0.3) 0%, transparent 70%)',
           right: 0,
         }}
       />
@@ -51,13 +48,14 @@ function RoleCardsSection() {
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 100% 400px at center bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 100% 400px at center bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
           bottom: 0,
         }}
       />
       
       <div className="mx-auto max-w-6xl relative z-10">
-        <div className="mb-10 text-center">
+        <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Every Role Faces a Different Challenge.
           </h2>
@@ -70,7 +68,7 @@ function RoleCardsSection() {
           {roles.map((role) => (
             <div
               key={role.title}
-              className="rounded-2xl bg-[#F5EFE7] hover:bg-[#C8D9E6] p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300 flex flex-col items-center"
+              className="rounded-2xl bg-[#F5EFE7] hover:bg-[#C8D9E6] p-4 md:p-6 text-center shadow-sm ring-1 ring-[#E5E7EB] drop-shadow hover:drop-shadow-lg transition-all duration-300 flex flex-col items-center"
             >
               <div className="mb-4 flex items-center justify-center">
                 <img src={role.logo} alt={role.title} className="h-12 w-12" />
