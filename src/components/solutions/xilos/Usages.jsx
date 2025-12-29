@@ -15,8 +15,17 @@ const usages = [
 
 function Usages() {
     return (
-        <section className="regular-banner-sand px-6 flex flex-col items-center">
-            <div className="text-center">
+        <section className="relative regular-banner-sand px-6 flex flex-col items-center overflow-hidden">
+            {/* Large centered gradient blob */}
+            <div
+                className="pointer-events-none absolute inset-0"
+                style={{
+                    background: 'radial-gradient(ellipse 800px 500px at center, rgba(86, 124, 141, 0.1) 0%, rgba(86, 124, 141, 0.07) 40%, rgba(86, 124, 141, 0.04) 60%, transparent 80%)',
+                    zIndex: 0,
+                }}
+            />
+            
+            <div className="text-center relative z-10">
                 <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
                     Harness the power of agentic AI without sacrificing security.
                 </h2>

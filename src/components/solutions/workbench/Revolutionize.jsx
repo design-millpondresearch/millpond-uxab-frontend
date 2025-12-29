@@ -46,7 +46,7 @@ function Revolutionize() {
           className="w-full max-w-[320px] md:max-w-xl lg:max-w-2xl h-auto my-12 mx-auto"
         />
         <h3
-          className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl mb-18"
+          className="subheader mx-4 w-full max-w-7xl mb-18"
           style={{ color: "#4B4B4B" }}
         >
           WorkBench gives teams one powerful platform to access every AI model without limits. Build agents tailored to
@@ -57,15 +57,24 @@ function Revolutionize() {
           {traits.map((trait) => (
             <div
               key={trait.title}
-              className="flex flex-col items-center text-center px-4 py-6 bg-white rounded-lg"
+              className="flex flex-col items-center text-center px-4 py-6 bg-white rounded-lg relative"
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">
+              {/* Blob gradient behind trait */}
+              <div
+                className="pointer-events-none absolute inset-0 rounded-lg"
+                style={{
+                  background: 'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
+                  zIndex: 0,
+                }}
+              />
+              
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full relative z-10">
                 <img src={trait.icon} alt={trait.title} className="h-10 w-10" />
               </div>
-              <div className="min-h-[40px] flex items-center justify-center mb-4">
-                <h4 className="large-font-bold" style={{ color: "#1F4E79" }}>{trait.title}</h4>
+              <div className="min-h-[40px] flex items-center justify-center mb-4 relative z-10">
+                <h3 className="subheader" style={{ color: "#1F4E79" }}>{trait.title}</h3>
               </div>
-              <p className="small-font" style={{ color: "#4B4B4B" }}>{trait.description}</p>
+              <p className="large-font relative z-10" style={{ color: "#4B4B4B" }}>{trait.description}</p>
             </div>
           ))}
         </div>
