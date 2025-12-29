@@ -5,21 +5,34 @@ import link from "../../assets/logos-general/link.svg";
 import users from "../../assets/logos-general/users.svg";
 import rocket from "../../assets/logos-general/rocket.svg";
 
+// A small utility to build the glass effect.  Many browsers (Safari and some
+// older Android browsers) do not fully support the backdrop-filter CSS
+// property used by Tailwind's `backdrop-blur` classes.  Instead of relying on
+// Tailwind for this effect, we explicitly set both the standard
+// `backdropFilter` and the vendor-prefixed `WebkitBackdropFilter` on the
+// component.  If the browser doesn’t support backdrop filters, the opaque
+// background color still provides good contrast on top of the page’s
+// gradient backgrounds.  See the README for details on cross‑browser
+// compatibility.
+
 const workbenchFeatures = [
   {
     icon: link,
     title: "Intuitive AI Builder.",
-    body: "Build sophisticated AI solutions without specialized expertise using our visual, drag-and-drop interface.",
+    body:
+      "Build sophisticated AI solutions without specialized expertise using our visual, drag-and-drop interface.",
   },
   {
     icon: users,
     title: "No-Code Development.",
-    body: "Deploy AI solutions rapidly with our no-code platform that empowers business users to innovate independently.",
+    body:
+      "Deploy AI solutions rapidly with our no-code platform that empowers business users to innovate independently.",
   },
   {
     icon: rocket,
     title: "Rapid Deployment.",
-    body: "Go from concept to deployment in days, not months, with automated testing and deployment pipelines.",
+    body:
+      "Go from concept to deployment in days, not months, with automated testing and deployment pipelines.",
   },
 ];
 
@@ -27,43 +40,59 @@ const xilosFeatures = [
   {
     icon: link,
     title: "Real-Time Security.",
-    body: "Monitor and protect every AI interaction across your organization with intelligent threat detection and automated response.",
+    body:
+      "Monitor and protect every AI interaction across your organization with intelligent threat detection and automated response.",
   },
   {
     icon: users,
     title: "AI Orchestration.",
-    body: "Enable controlled collaboration between AI systems, creating a unified knowledge network that grows smarter with every interaction.",
+    body:
+      "Enable controlled collaboration between AI systems, creating a unified knowledge network that grows smarter with every interaction.",
   },
   {
     icon: rocket,
     title: "Complete Visibility.",
-    body: "Gain comprehensive oversight of your AI ecosystem with intuitive dashboards and detailed analytics on usage, performance, and security.",
+    body:
+      "Gain comprehensive oversight of your AI ecosystem with intuitive dashboards and detailed analytics on usage, performance, and security.",
   },
 ];
 
 function SolutionsSection() {
+  // Common inline style for glass cards.  These styles ensure the cards are
+  // visually translucent on modern browsers while falling back to a solid
+  // background when backdrop filters aren’t supported.  Do not modify
+  // `backdropFilter` or `WebkitBackdropFilter` outside of this helper to
+  // guarantee consistent cross‑browser behaviour.
+  const glassCardStyle = {
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    backdropFilter: "blur(12px)",
+    WebkitBackdropFilter: "blur(12px)",
+  };
+
   return (
     <section id="solutions-section" className="regular-banner-white px-6 py-16 relative overflow-hidden">
       {/* Top right ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 1500px 150% at right top, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 1500px 150% at right top, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
           right: 0,
           top: 0,
         }}
       />
-      
+
       {/* Bottom left ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 1500px 150% at left bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          background:
+            'radial-gradient(ellipse 1500px 150% at left bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
           left: 0,
           bottom: 0,
         }}
       />
-      
+
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 relative z-10">
         {/* Section header */}
         <div className="text-center">
@@ -83,7 +112,10 @@ function SolutionsSection() {
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
               {/* Left column */}
-              <div className="rounded-2xl bg-white/80 backdrop-blur-md px-4 py-6 text-left">
+              <div
+                className="rounded-2xl px-4 py-6 text-left"
+                style={glassCardStyle}
+              >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
                   Build AI Solutions.
                 </p>
@@ -171,7 +203,10 @@ function SolutionsSection() {
               </div>
 
               {/* Right column */}
-              <div className="rounded-2xl bg-white/80 backdrop-blur-md px-4 py-6 text-left md:text-right">
+              <div
+                className="rounded-2xl px-4 py-6 text-left md:text-right"
+                style={glassCardStyle}
+              >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
                   AI Security &amp; Orchestration
                 </p>

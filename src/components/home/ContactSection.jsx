@@ -1,6 +1,19 @@
 import { useHubspotForm } from "../../hooks/useHubspotForm";
 
+/**
+ * ContactSection
+ *
+ * This component wraps the HubSpot form in a styled card so that the fallback
+ * experience (shown when the HubSpot script fails to load) matches the same
+ * container size and colour as the form.  The card uses a blue background and
+ * centers its contents to mirror the design of the embedded form.  When the
+ * hubspot script fails, the button with id `fallback-button` is displayed by
+ * the `useHubspotForm` hook.  This layout ensures the fallback remains
+ * visually consistent across devices and browsers.
+ */
 function ContactSection() {
+  // Initialise HubSpot form loading.  This hook will display the fallback
+  // button if the form fails to render.
   useHubspotForm({
     portalId: "48049833",
     formId: "541e8dc3-144b-4cbe-9a09-ccd0807f3095",
@@ -23,12 +36,15 @@ function ContactSection() {
           </p>
         </div>
 
-        <div className="w-full max-w-4xl rounded-2xl bg-[#E2ECF4] p-8 text-left shadow-sm">
+        {/* HubSpot form wrapper.  We center all content and use a blue background so
+            the fallback matches the form container. */}
+        <div className="w-full max-w-4xl rounded-2xl bg-[#E2ECF4] p-8 text-center shadow-sm">
           <div id="hubspot-form-main" data-hs-forms-root="true" />
 
+          {/* Fallback email button.  Hidden by default; shown via useHubspotForm. */}
           <button
             id="fallback-button"
-            className="button-primary mt-6"
+            className="button-primary mt-6 mx-auto"
             style={{ display: "none" }}
             type="button"
           >
