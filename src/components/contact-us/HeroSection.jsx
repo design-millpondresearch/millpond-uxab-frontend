@@ -46,8 +46,17 @@ function HeroSection() {
   }, []);
 
     return (
-    <main className="regular-banner-sand flex flex-col items-center px-6 md:px-8 lg:px-12 py-16" style={{ paddingTop: '128px' }}>
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 w-full mt-22">
+    <main className="relative regular-banner-sand flex flex-col items-center px-6 md:px-8 lg:px-12 py-16 overflow-hidden" style={{ paddingTop: '128px' }}>
+      {/* Ellipse gradient blob in background */}
+      <div
+        className="absolute pointer-events-none inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 600px 150px at center 17%, rgba(200, 217, 230, 0.5) 0%, rgba(200, 217, 230, 0.3) 30%, rgba(200, 217, 230, 0.2) 50%, rgba(200, 217, 230, 0.1) 70%, transparent 90%)',
+          zIndex: 0,
+        }}
+      />
+      
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 w-full mt-22 relative z-10">
         <div className="text-center mb-22">
           <h1 className="hero-title mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>Get Started</h1>
           <p className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
