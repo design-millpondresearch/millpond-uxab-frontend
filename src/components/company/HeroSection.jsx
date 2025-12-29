@@ -16,7 +16,7 @@ import element8 from "../../assets/elements/element8.svg";
 function HeroSection() {
   return (
     <section
-      className="regular-banner-surface flex items-center justify-center px-6 md:px-8 lg:px-12 relative overflow-hidden"
+      className="regular-banner-surface flex items-center justify-center px-6 md:px-8 lg:px-12 py-16 relative overflow-hidden"
       style={{ marginTop: "128px" }}
     >
       {/* Decorative backdrop */}

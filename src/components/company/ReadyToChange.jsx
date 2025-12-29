@@ -16,7 +16,7 @@ import element13 from "../../assets/elements/element13.svg";
  */
 function ReadyToChange() {
   return (
-    <section className="regular-banner-white px-6 flex flex-col items-center relative overflow-hidden">
+    <section className="regular-banner-white px-6 py-16 flex flex-col items-center relative overflow-hidden">
       {/* Decorative backdrop */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         {/* Warm beige gradient across the bottom half */}

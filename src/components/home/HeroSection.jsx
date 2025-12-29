@@ -22,7 +22,7 @@ function HeroSection() {
 
   return (
     <section
-      className="relative w-full min-h-[90vh] overflow-hidden flex items-center justify-center"
+      className="relative w-full min-h-[90vh] overflow-hidden flex items-center justify-center pb-16"
       style={{ marginTop: '65px'}}
       onTouchStart={tryPlay}
       onClick={tryPlay}

@@ -10,8 +10,16 @@ const metrics = [
 
 function RoiSection() {
   return (
-    <section className="regular-banner-sand px-6 py-16">
-      <div className="mx-auto max-w-6xl text-center">
+    <section className="regular-banner-sand px-6 py-16 relative overflow-hidden">
+      {/* Center blob gradient */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 1500px 150% at center center, rgba(86, 124, 141, 0.12) 0%, transparent 70%)',
+        }}
+      />
+      
+      <div className="mx-auto max-w-6xl text-center relative z-10">
         <h2
           className="section-header text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}

@@ -20,7 +20,7 @@ const stories = [
 
 function NewsHighlightsSection() {
   return (
-    <section className="regular-banner-sand px-6">
+    <section className="regular-banner-sand px-6 py-16">
       <div className="mx-auto max-w-5xl">
         <div className="mb-8 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>

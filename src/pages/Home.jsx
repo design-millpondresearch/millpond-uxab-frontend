@@ -25,7 +25,7 @@ import ContactSection from "../components/home/ContactSection.jsx";
 // simple beige footer band.  To better match that design, we avoid
 // overlaying numerous abstract shapes here and just apply a warm
 // gradient at the bottom of the page.
-import deco13 from "../assets/decorative/element13.svg";
+import deco13 from "../assets/elements/element13.svg";
 
 function Home() {
   return (

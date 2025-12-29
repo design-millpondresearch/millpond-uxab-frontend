@@ -73,8 +73,28 @@ function PartnersSection() {
     );
 
   return (
-    <section className="regular-banner-white px-6 py-16">
-      <div className="mx-auto max-w-6xl">
+    <section className="regular-banner-white px-6 py-16 relative overflow-hidden">
+      {/* Top right ellipse gradient */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 1500px 150% at right top, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          right: 0,
+          top: 0,
+        }}
+      />
+      
+      {/* Bottom left ellipse gradient */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 1500px 150% at left bottom, rgba(86, 124, 141, 0.15) 0%, transparent 70%)',
+          left: 0,
+          bottom: 0,
+        }}
+      />
+      
+      <div className="mx-auto max-w-6xl relative z-10">
         {/* Heading */}
         <div className="text-center">
           <h2

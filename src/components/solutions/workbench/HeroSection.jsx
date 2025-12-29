@@ -8,7 +8,7 @@ import beigeGlow from "../../../assets/elements/element10.svg";
 
 function HeroSection() {
   return (
-    <section className="relative regular-banner-blue flex items-center justify-center px-6 md:px-8 lg:px-12">
+    <section className="relative regular-banner-blue flex items-center justify-center px-6 md:px-8 lg:px-12 py-16">
       {/* Decorative shapes behind the hero content */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
         {/* Large grey radial glow on the left and warm beige glow on the right mimic the two

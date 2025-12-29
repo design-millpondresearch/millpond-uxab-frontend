@@ -36,7 +36,7 @@ const ideals = [
  */
 function Mission() {
   return (
-    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 relative overflow-hidden">
+    <section className="regular-banner-white flex flex-col items-center px-4 md:px-6 py-16 relative overflow-hidden">
       {/* Decorative backdrop */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         {/* Soft grey glow top left */}

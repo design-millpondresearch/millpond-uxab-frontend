@@ -42,8 +42,66 @@ const advantages = [
 
 function AdvantagesSection() {
   return (
-    <section className="regular-banner-sand px-6">
-      <div className="mx-auto max-w-6xl">
+    <section className="regular-banner-sand px-6 py-16 relative overflow-hidden">
+      {/* Outer ring gradient - top right */}
+      <div
+        className="pointer-events-none absolute"
+        style={{
+          width: '800px',
+          height: '800px',
+          background: 'radial-gradient(circle, transparent 30%, rgba(86, 124, 141, 0.1) 40%, rgba(86, 124, 141, 0.15) 45%, rgba(86, 124, 141, 0.1) 50%, rgba(86, 124, 141, 0.05) 55%, transparent 70%)',
+          borderRadius: '50%',
+          right: '15%',
+          top: '15%',
+          zIndex: 0,
+          transform: 'translate(50%, -50%)',
+        }}
+      />
+      {/* Inner ring gradient - top right */}
+      <div
+        className="pointer-events-none absolute"
+        style={{
+          width: '550px',
+          height: '550px',
+          background: 'radial-gradient(circle, transparent 25%, rgba(86, 124, 141, 0.1) 35%, rgba(86, 124, 141, 0.15) 40%, rgba(86, 124, 141, 0.1) 45%, rgba(86, 124, 141, 0.05) 50%, transparent 65%)',
+          borderRadius: '50%',
+          right: '15%',
+          top: '15%',
+          zIndex: 0,
+          transform: 'translate(50%, -50%)',
+        }}
+      />
+      
+      {/* Outer ring gradient - bottom left */}
+      <div
+        className="pointer-events-none absolute"
+        style={{
+          width: '800px',
+          height: '800px',
+          background: 'radial-gradient(circle, transparent 30%, rgba(86, 124, 141, 0.1) 40%, rgba(86, 124, 141, 0.15) 45%, rgba(86, 124, 141, 0.1) 50%, rgba(86, 124, 141, 0.05) 55%, transparent 70%)',
+          borderRadius: '50%',
+          left: '15%',
+          bottom: '15%',
+          zIndex: 0,
+          transform: 'translate(-50%, 50%)',
+        }}
+      />
+      {/* Inner ring gradient - bottom left */}
+      <div
+        className="pointer-events-none absolute"
+        style={{
+          width: '550px',
+          height: '550px',
+          background: 'radial-gradient(circle, transparent 25%, rgba(86, 124, 141, 0.1) 35%, rgba(86, 124, 141, 0.15) 40%, rgba(86, 124, 141, 0.1) 45%, rgba(86, 124, 141, 0.05) 50%, transparent 65%)',
+          borderRadius: '50%',
+          left: '15%',
+          bottom: '15%',
+          zIndex: 0,
+          transform: 'translate(-50%, 50%)',
+        }}
+      />
+      
+      <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
             Essential AI Governance Advantages.
