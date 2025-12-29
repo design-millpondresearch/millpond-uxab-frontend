@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700">
+  <!--
+    This teal radial gradient circle is inspired by the design’s large blurred
+    circle (paint0_linear) found near the top-left of the exported Figma
+    SVG. The gradient transitions from a muted teal (#567C8D) at the centre
+    with 20 % opacity to a dark navy (#2F4156) at the edges with 10 % opacity.
+  -->
+  <defs>
+    <radialGradient id="grad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#567C8D" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#2F4156" stop-opacity="0.1" />
+    </radialGradient>
+  </defs>
+  <circle cx="350" cy="350" r="350" fill="url(#grad)" />
+</svg>

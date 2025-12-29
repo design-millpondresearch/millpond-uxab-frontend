@@ -7,6 +7,7 @@ import ReadyToChange from "../components/company/ReadyToChange.jsx";
 function Company() {
   return (
     <>
+      {/* Wrap the entire page in a flex column to maintain vertical flow */}
       <main className="flex flex-col">
         <HeroSection />
         <LeadershipTeam />
@@ -19,4 +20,3 @@ function Company() {
 }
 
 export default Company;
-
