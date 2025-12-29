@@ -83,18 +83,27 @@ function Mission() {
           {ideals.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col items-center text-center px-4"
+              className="relative flex flex-col items-center text-center px-4"
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full">
+              {/* #F5EFE7 ellipse blob gradient behind ideal */}
+              <div
+                className="pointer-events-none absolute inset-0 rounded-lg"
+                style={{
+                  background: 'radial-gradient(ellipse 200px 120px at center, rgba(245, 239, 231, 0.8) 0%, rgba(245, 239, 231, 0.6) 40%, rgba(245, 239, 231, 0.4) 60%, transparent 85%)',
+                  zIndex: 0,
+                }}
+              />
+              
+              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full relative z-10">
                 <img src={item.icon} alt={item.title} className="h-10 w-10" />
               </div>
               <h3
-                className="subheader text-lg md:text-xl lg:text-2xl mb-2"
+                className="subheader text-lg md:text-xl lg:text-2xl mb-2 relative z-10"
                 style={{ color: "#1F4E79" }}
               >
                 {item.title}
               </h3>
-              <p className="small-font" style={{ color: "#4B4B4B" }}>
+              <p className="small-font relative z-10" style={{ color: "#4B4B4B" }}>
                 {item.body}
               </p>
             </div>

@@ -64,9 +64,17 @@ const team2 = [
 
 function LeadershipTeam() {
   return (
-    <section className="regular-banner-blue px-6 py-16 flex flex-col items-center">
+    <section className="regular-banner-blue px-6 py-16 flex flex-col items-center relative">
+      {/* Gradient coming down from top */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-96"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(200, 217, 230, 0.8) 0%, rgba(200, 217, 230, 0.6) 50%, rgba(200, 217, 230, 0.3) 80%, transparent 100%)',
+          zIndex: 0,
+        }}
+      />
       {/* Heading */}
-      <div className="text-center">
+      <div className="text-center relative z-10">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
           Meet Our Leadership Team.
         </h2>
@@ -76,7 +84,7 @@ function LeadershipTeam() {
       </div>
 
       {/* First grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-18 items-start w-full mt-6 md:mt-8 max-w-7xl mx-auto justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-18 items-start w-full mt-6 md:mt-8 max-w-7xl mx-auto justify-items-center relative z-10">
         {team.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-96 lg:w-[500px]">
 
@@ -115,7 +123,7 @@ function LeadershipTeam() {
       </div>
 
       {/* Second grid - 5 smaller elements */}
-      <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-start w-full mt-12 md:mt-16 max-w-6xl">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-start w-full mt-12 md:mt-16 max-w-6xl relative z-10">
         {team2.map((member, index) => (
           <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[160px] max-w-[200px]">
 
