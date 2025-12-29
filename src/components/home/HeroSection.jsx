@@ -66,8 +66,8 @@ function HeroSection() {
           Prompt-based protection that empowers safe, efficient AI adoption.
         </h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-          <button className="hero-button-primary">Request a Demo</button>
-          <button className="hero-button-tertiary">Explore Solutions</button>
+          <Link to="/contactus" className="hero-button-primary">Request a Demo</Link>
+          <Link to="/solutions/xilos" className="hero-button-tertiary">Explore Solutions</Link>
         </div>
       </div>
     </section>
