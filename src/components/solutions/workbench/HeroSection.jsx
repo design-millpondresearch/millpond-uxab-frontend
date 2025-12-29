@@ -53,13 +53,6 @@ function HeroSection() {
         }}
       />
       
-      {/* Decorative shapes behind the hero content */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
-        {/* Large grey radial glow on the left and warm beige glow on the right mimic the two
-            soft circles in the Figma hero without introducing additional motifs. */}
-        <img src={greyBlob} alt="" className="absolute top-0 left-0 w-60 md:w-80" />
-        <img src={beigeGlow} alt="" className="absolute top-12 left-1/3 w-72 md:w-96" />
-      </div>
       <div className="hero-banner-clear flex max-w-7xl flex-col items-center gap-12 text-center relative z-10">
         <h1 className="hero-title text-5xl md:text-6xl lg:text-7xl" style={{ color: "#567C8D" }}>
           WorkBench
