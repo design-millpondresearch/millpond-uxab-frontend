@@ -15,8 +15,10 @@ import './Navbar.css';
  */
 const Navbar = () => {
     const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+    const [isProductsOpen, setIsProductsOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isMobileSolutionsOpen, setIsMobileSolutionsOpen] = useState(false);
+    const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
 
     // Toggles the visibility of the mobile navigation drawer
     const toggleMobileMenu = () => {
@@ -28,10 +30,16 @@ const Navbar = () => {
         setIsMobileSolutionsOpen(!isMobileSolutionsOpen);
     };
 
+    // Toggles the mobile Products submenu
+    const toggleMobileProducts = () => {
+        setIsMobileProductsOpen(!isMobileProductsOpen);
+    };
+
     // Closes the mobile menu and any open submenus
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
         setIsMobileSolutionsOpen(false);
+        setIsMobileProductsOpen(false);
     };
 
     return (
@@ -54,6 +62,32 @@ const Navbar = () => {
 
                 {/* Desktop menu */}
                 <ul className="navbar-menu">
+                    <li
+                        className="navbar-item dropdown-container"
+                        onMouseEnter={() => setIsProductsOpen(true)}
+                        onMouseLeave={() => setIsProductsOpen(false)}
+                    >
+                        <span className="navbar-link" style={{ cursor: 'pointer' }}>
+                            Products
+                        </span>
+                        {isProductsOpen && (
+                            <>
+                                <div className="dropdown-bridge"></div>
+                                <ul className="dropdown-menu">
+                                    <li>
+                                        <Link to="/solutions/xilos" className="dropdown-link">
+                                            Xilos
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/solutions/workbench" className="dropdown-link">
+                                            WorkBench
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </>
+                        )}
+                    </li>
                     <li
                         className="navbar-item dropdown-container"
                         onMouseEnter={() => setIsSolutionsOpen(true)}
@@ -104,6 +138,34 @@ const Navbar = () => {
                             <Link to="/" className="mobile-menu-link" onClick={closeMobileMenu}>
                                 Home
                             </Link>
+                        </li>
+                        <li className="mobile-menu-item">
+                            <button className="mobile-menu-link" onClick={toggleMobileProducts}>
+                                Products
+                                <span className={`mobile-arrow ${isMobileProductsOpen ? 'open' : ''}`}>▼</span>
+                            </button>
+                            {isMobileProductsOpen && (
+                                <ul className="mobile-dropdown">
+                                    <li>
+                                        <Link
+                                            to="/solutions/xilos"
+                                            className="mobile-dropdown-link"
+                                            onClick={closeMobileMenu}
+                                        >
+                                            Xilos
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/solutions/workbench"
+                                            className="mobile-dropdown-link"
+                                            onClick={closeMobileMenu}
+                                        >
+                                            WorkBench
+                                        </Link>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
                         <li className="mobile-menu-item">
                             <button className="mobile-menu-link" onClick={toggleMobileSolutions}>
