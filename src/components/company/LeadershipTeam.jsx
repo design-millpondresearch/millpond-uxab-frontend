@@ -5,7 +5,7 @@ import zacharygolden from "../../assets/logos-headshots/zach-golden.webp";
 import bradgarsten from "../../assets/logos-headshots/brad-garsten.webp";
 import jeffaboud from "../../assets/logos-headshots/jeff-aboud.webp";
 import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
-import linkedin from "../../assets/logos-footer/Linkedin.svg";
+import linkedin from "../../assets/logos-headshots/reverse-linkedin-logo.svg";
 
 const team1 = [
   {
@@ -89,7 +89,7 @@ function LeadershipTeam() {
       {/* First grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-18 md:gap-40 lg:gap-48 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto justify-items-center relative z-10">
         {team1.map((member) => (
-          <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-96 lg:w-[500px]">
+          <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-72 lg:w-80">
 
             {/* image */}
             <div className="mb-4 flex h-48 w-48 items-start justify-center rounded-full border-2 border-[#1F4E79] overflow-hidden">
@@ -110,12 +110,19 @@ function LeadershipTeam() {
                 href={member.linkedinUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center ml-1.5 hover:opacity-70 transition-opacity"
+                className="inline-block ml-1.5 hover:opacity-70 transition-opacity"
+                style={{ verticalAlign: 'text-bottom', marginTop: '-2px' }}
               >
                 <img 
                   src={linkedin} 
                   alt={`${member.name} LinkedIn`} 
-                  className="h-5 w-5"
+                  className="h-5 w-5 inline-block"
+                  style={{ 
+                    filter: 'brightness(0) saturate(100%) invert(47%) sepia(12%) saturate(1200%) hue-rotate(170deg) brightness(0.95) contrast(1)',
+                    objectFit: 'contain',
+                    verticalAlign: 'text-bottom',
+                    marginTop: '2px'
+                  }}
                 />
               </a>
             </h4>
@@ -130,7 +137,7 @@ function LeadershipTeam() {
       {/* Second grid - 4 smaller elements */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 items-start w-full mt-8 md:mt-16 max-w-7xl justify-items-center mx-auto relative z-10">
         {team2.map((member, index) => (
-          <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[160px] max-w-[200px]">
+          <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[200px] max-w-[280px]">
 
             {/* image */}
             <div className="mb-3 flex h-32 w-32 items-start justify-center rounded-full border-2 border-[#1F4E79] overflow-hidden">
@@ -154,12 +161,19 @@ function LeadershipTeam() {
                 href={member.linkedinUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center ml-1.5 hover:opacity-70 transition-opacity"
+                className="inline-block ml-1.5 hover:opacity-70 transition-opacity"
+                style={{ verticalAlign: 'text-bottom', marginTop: '-2px' }}
               >
                 <img 
                   src={linkedin} 
                   alt={`${member.name} LinkedIn`} 
-                  className="h-4 w-4 md:h-5 md:w-5"
+                  className="h-4 w-4 md:h-5 md:w-5 inline-block"
+                  style={{ 
+                    filter: 'brightness(0) saturate(100%) invert(47%) sepia(12%) saturate(1200%) hue-rotate(170deg) brightness(0.95) contrast(1)',
+                    objectFit: 'contain',
+                    verticalAlign: 'text-bottom',
+                    marginTop: '2px'
+                  }}
                 />
               </a>
             </h4>
