@@ -87,7 +87,23 @@ function HeroSection() {
           We're on a mission to help every organization convert their shadow AI into their most powerful competitive advantage.
         </h3>
         <div className="flex justify-center">
-          <button className="hero-button-primary">Learn More</button>
+          <button 
+            className="hero-button-primary"
+            onClick={() => {
+              const ourStorySection = document.getElementById('our-story');
+              if (ourStorySection) {
+                const offset = 75;
+                const elementPosition = ourStorySection.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </section>
