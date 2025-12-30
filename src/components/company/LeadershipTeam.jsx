@@ -7,12 +7,12 @@ import jeffaboud from "../../assets/logos-headshots/jeff-aboud.webp";
 import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
 import linkedin from "../../assets/logos-footer/Linkedin.svg";
 
-const team = [
+const team1 = [
   {
     name: "Andrew Shimshock",
     title: "Co-founder, CTO",
     body:
-      "Leading Mill Pond Research's technical vision and product development, Andrew brings deep expertise in AI systems architecture and security.",
+      "Andrew Shimshock, CTO and Co-Founder, leads our engineering teams and drives our technology vision and strategy for our cybersecurity and governance solutions.",
     icon: andrewshimshock,
     linkedinUrl: "https://www.linkedin.com/in/andrewshimshock/",
   },
@@ -20,47 +20,47 @@ const team = [
     name: "Pete Shimshock",
     title: "Co-founder, CAIO",
     body:
-      "As Chief AI Officer, Pete drives Mill Pond Research's AI strategy and innovation, focusing on practical implementations that solve real business challenges.",
+      "Pete Shimshock, Chief AI Officer and Co-Founder, leads our AI and policies practice, covering our model deployment, compliance and regulation frameworks, and our professional services group.",
     icon: peteshimshock,
     linkedinUrl: "https://www.linkedin.com/in/pete-shimshock/",
+  },
+  {
+    name: "Christopher Caen",
+    title: "CEO",
+    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
+    icon: christophercaen,
+    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
   },
 ];
 
 const team2 = [
   {
-    name: "Christopher Caen",
-    title: "CEO",
-    body: "--Add Description--",
-    icon: christophercaen,
-    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
-  },
-  {
-    name: "Zachary Golden",
-    title: "Director of Government Relations & Federal Strategy",
-    body: "--Add Description--",
-    icon: zacharygolden,
-    linkedinUrl: "https://www.linkedin.com/in/zachgoldenbd/",
-  },
-  {
-    name: "Brad Garsten",
-    title: "Strategic Partnership Advisor",
-    body: "--Add Description--",
-    icon: bradgarsten,
-    linkedinUrl: "https://www.linkedin.com/in/bradgarsten/",
-  },
-  {
     name: "Jeff Aboud",
-    title: "Marketing Advisor, CMO",
-    body: "--Add Description--",
+    title: "CMO",
+    body: "Jeff Aboud develops and manages our marketing strategy to drive brand awareness and customer acquisition, as well as to highlight the impact we deliver by deploying effective and secure enterprise AI.",
     icon: jeffaboud,
     linkedinUrl: "https://www.linkedin.com/in/jaboud/",
   },
   {
+    name: "Brad Garsten",
+    title: "Managing SVP, Partnerships",
+    body: "Brad Garsten manages our technology partner relationships and programs to ensure that our customers benefit from our security and governance ecosystem, across our market verticals",
+    icon: bradgarsten,
+    linkedinUrl: "https://www.linkedin.com/in/bradgarsten/",
+  },
+  {
     name: "Trevor Curwin",
-    title: "Advisor, Financial Services, Energy and Mobility",
-    body: "--Add Description--",
+    title: "Director of Industry Partnerships",
+    body: "Trevor Curwin is responsible for our strategic partnerships in the financial services, mobility, and energy sectors.",
     icon: trevorcurwin,
     linkedinUrl: "https://www.linkedin.com/in/trevor-curwin-8267a01/",
+  },
+  {
+    name: "Zachary Golden",
+    title: "Director of Government Relations",
+    body: "Zach Golden runs our federal programs and manages relationships with U.S. government entities.",
+    icon: zacharygolden,
+    linkedinUrl: "https://www.linkedin.com/in/zachgoldenbd/",
   },
 ];
 
@@ -87,8 +87,8 @@ function LeadershipTeam() {
       </div>
 
       {/* First grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-18 items-start w-full mt-4 md:mt-8 max-w-7xl mx-auto justify-items-center relative z-10">
-        {team.map((member) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-18 md:gap-40 lg:gap-48 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto justify-items-center relative z-10">
+        {team1.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-96 lg:w-[500px]">
 
             {/* image */}
@@ -97,15 +97,20 @@ function LeadershipTeam() {
             </div>
 
             {/* name */}
-            <div className="subheader flex items-center justify-center gap-1.5">
+            <div className="subheader">
               <span>
                 {member.name.split(' ').slice(0, -1).join(' ')} {member.name.split(' ').slice(-1)[0]}
               </span>
+            </div>
+
+            {/* title */}
+            <h4 className="large-font mb-4 text-center" style={{ color: "#567C8D" }}>
+              {member.title}
               <a 
                 href={member.linkedinUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex-shrink-0 hover:opacity-70 transition-opacity"
+                className="inline-flex items-center ml-1.5 hover:opacity-70 transition-opacity"
               >
                 <img 
                   src={linkedin} 
@@ -113,10 +118,7 @@ function LeadershipTeam() {
                   className="h-5 w-5"
                 />
               </a>
-            </div>
-
-            {/* title */}
-            <h4 className="large-font mb-4" style={{ color: "#567C8D" }}> {member.title} </h4>
+            </h4>
             
             {/* description */}
             <p className="small-font" style={{ color: "#4B4B4B" }}> {member.body} </p>
@@ -125,8 +127,8 @@ function LeadershipTeam() {
         ))}
       </div>
 
-      {/* Second grid - 5 smaller elements */}
-      <div className="flex flex-wrap justify-center gap-6 md:gap-12 items-start w-full mt-8 md:mt-16 max-w-6xl relative z-10">
+      {/* Second grid - 4 smaller elements */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 items-start w-full mt-8 md:mt-16 max-w-7xl justify-items-center mx-auto relative z-10">
         {team2.map((member, index) => (
           <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[160px] max-w-[200px]">
 
@@ -140,25 +142,27 @@ function LeadershipTeam() {
               <div>
                 {member.name.split(' ').slice(0, -1).join(' ')}
               </div>
-              <div className="flex items-center justify-center gap-1.5">
+              <div>
                 {member.name.split(' ').slice(-1)[0]}
-                <a 
-                  href={member.linkedinUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 hover:opacity-70 transition-opacity"
-                >
-                  <img 
-                    src={linkedin} 
-                    alt={`${member.name} LinkedIn`} 
-                    className="h-4 w-4 md:h-5 md:w-5"
-                  />
-                </a>
               </div>
             </div>
 
             {/* title */}
-            <h4 className="large-font mb-2 text-sm md:text-base" style={{ color: "#567C8D" }}> {member.title} </h4>
+            <h4 className="large-font mb-2 text-sm md:text-base text-center" style={{ color: "#567C8D" }}>
+              {member.title}
+              <a 
+                href={member.linkedinUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center ml-1.5 hover:opacity-70 transition-opacity"
+              >
+                <img 
+                  src={linkedin} 
+                  alt={`${member.name} LinkedIn`} 
+                  className="h-4 w-4 md:h-5 md:w-5"
+                />
+              </a>
+            </h4>
             
             {/* description */}
             <p className="small-font text-xs md:text-sm" style={{ color: "#4B4B4B" }}> {member.body} </p>
