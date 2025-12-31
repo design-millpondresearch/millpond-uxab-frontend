@@ -82,7 +82,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://github.com/Mill-Pond-Research/captains-log"
+            href="https://github.com/Mill-Pond-Research"
             className="navbar-logo-social-media"
             target="_blank"
             rel="noopener noreferrer"
