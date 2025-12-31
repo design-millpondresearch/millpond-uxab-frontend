@@ -57,56 +57,66 @@ const Footer = () => {
         </ul>
 
         <div className="footer-socials">
-          <Link
-            to="https://www.facebook.com/p/Mill-Pond-Research-61554640073099/"
+          <a
+            href="https://www.facebook.com/p/Mill-Pond-Research-61554640073099/"
             className="navbar-logo-social-media"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={facebook}
               alt="Millpond Research Facebook"
               style={{ height: '24px', width: 'auto' }}
             />
-          </Link>
-          <Link
-            to="https://www.instagram.com/millpondresearch/"
+          </a>
+          <a
+            href="https://www.instagram.com/millpondresearch/"
             className="navbar-logo-social-media"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={instagram}
               alt="Millpond Research Instagram"
               style={{ height: '24px', width: 'auto' }}
             />
-          </Link>
-          <Link
-            to="https://github.com/Mill-Pond-Research/captains-log"
+          </a>
+          <a
+            href="https://github.com/Mill-Pond-Research/captains-log"
             className="navbar-logo-social-media"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={github}
               alt="Millpond Research GitHub"
               style={{ height: '24px', width: 'auto' }}
             />
-          </Link>
-          <Link
-            to="https://www.youtube.com/@millpondresearch"
+          </a>
+          <a
+            href="https://www.youtube.com/@millpondresearch"
             className="navbar-logo-social-media"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={youtube}
               alt="Millpond Research YouTube"
               style={{ height: '24px', width: 'auto' }}
             />
-          </Link>
-          <Link
-            to="https://www.linkedin.com/company/mill-pond-research"
+          </a>
+          <a
+            href="https://www.linkedin.com/company/mill-pond-research"
             className="navbar-logo-social-media"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={linkedin}
               alt="Millpond Research LinkedIn"
               style={{ height: '24px', width: 'auto' }}
             />
-          </Link>
+          </a>
         </div>
 
         <p className="footer-rights">© 2025 Mill Pond Research, Inc. All rights reserved.</p>

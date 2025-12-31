@@ -87,9 +87,9 @@ function LeadershipTeam() {
       </div>
 
       {/* First grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-18 md:gap-40 lg:gap-48 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto justify-items-center relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto px-4 md:px-6 justify-items-center relative z-10">
         {team1.map((member) => (
-          <div key={member.name} className="flex flex-col items-center text-center px-4 w-full md:w-72 lg:w-80">
+          <div key={member.name} className="flex flex-col items-center text-center px-2 md:px-4 w-full max-w-full md:max-w-[280px] lg:max-w-[320px]">
 
             {/* image */}
             <div className="mb-4 flex h-48 w-48 items-start justify-center rounded-full border-2 border-[#1F4E79] overflow-hidden">
@@ -135,9 +135,9 @@ function LeadershipTeam() {
       </div>
 
       {/* Second grid - 4 smaller elements */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 items-start w-full mt-8 md:mt-16 max-w-7xl justify-items-center mx-auto relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 items-start w-full mt-8 md:mt-16 max-w-7xl mx-auto px-4 md:px-6 relative z-10">
         {team2.map((member, index) => (
-          <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full sm:w-auto flex-1 min-w-[200px] max-w-[280px]">
+          <div key={`${member.name}-${index}`} className="flex flex-col items-center text-center px-2 w-full max-w-full sm:max-w-[240px] md:max-w-[280px]">
 
             {/* image */}
             <div className="mb-3 flex h-32 w-32 items-start justify-center rounded-full border-2 border-[#1F4E79] overflow-hidden">
