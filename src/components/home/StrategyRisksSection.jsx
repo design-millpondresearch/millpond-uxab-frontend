@@ -35,13 +35,13 @@ function StrategyRisksSection() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Evolve Your AI Strategy with Complete Control.
+          Evolve Your AI Strategy with Complete Control
         </h2>
         <h3
           className="subheader text-base md:text-xl lg:text-2xl"
           style={{ color: "#4B4B4B" }}
         >
-          Traditional AI management creates hidden risks. Mill Pond turns them into insight.
+          Supercharge your AI initiatives with streamlined management and robust compliance. Mill Pond Research makes AI management complexity a thing of the past:
         </h3>
       </div>
 

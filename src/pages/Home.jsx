@@ -4,8 +4,7 @@ import Footer from "../components/Footer";
 // Section components for the home page
 import HeroSection from "../components/home/HeroSection.jsx";
 import StrategyRisksSection from "../components/home/StrategyRisksSection.jsx";
-import ApproachSecuritySection from "../components/home/ApproachSecuritySection.jsx";
-import RoleCardsSection from "../components/home/RoleCardsSection.jsx";
+import EndToEndAgenticSection from "../components/home/EndToEndAgenticSection.jsx";
 import NewsHighlightsSection from "../components/home/NewsHighlightsSection.jsx";
 import SolutionsSection from "../components/home/SolutionsSection.jsx";
 import AdvantagesSection from "../components/home/AdvantagesSection.jsx";
@@ -39,8 +38,7 @@ function Home() {
         {/* Home page content sections */}
         <HeroSection />
         <StrategyRisksSection />
-        <ApproachSecuritySection />
-        <RoleCardsSection />
+        <EndToEndAgenticSection />
         <NewsHighlightsSection />
         <SolutionsSection />
         <AdvantagesSection />
