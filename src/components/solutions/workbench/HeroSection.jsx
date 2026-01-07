@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // them here we avoid duplicating assets across different pages.
 import greyBlob from "../../../assets/elements/element2.svg";
 import beigeGlow from "../../../assets/elements/element10.svg";
+import workbenchLogo from "../../../assets/workbench-logo-name-blue.svg";
 
 /*
  * This modified WorkBench hero section tweaks the layout and decorative orb
@@ -73,12 +74,11 @@ function HeroSection() {
       />
 
       <div className="hero-banner-clear flex max-w-7xl flex-col items-center gap-8 md:gap-12 text-center relative z-10">
-        <h1
-          className="hero-title text-5xl md:text-6xl lg:text-7xl"
-          style={{ color: '#567C8D' }}
-        >
-          WorkBench
-        </h1>
+        <img
+          src={workbenchLogo}
+          alt="WorkBench"
+          className="hero-logo h-16 md:h-20 lg:h-24 mx-auto"
+        />
         <h1
           className="hero-title text-5xl md:text-7xl lg:text-8xl"
           style={{ color: '#1F4E79' }}
