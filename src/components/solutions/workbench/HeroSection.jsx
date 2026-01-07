@@ -77,7 +77,7 @@ function HeroSection() {
         <img
           src={workbenchLogo}
           alt="WorkBench"
-          className="hero-logo h-16 md:h-20 lg:h-24 mx-auto"
+          className="hero-logo h-40 mx-auto"
         />
         <h1
           className="hero-title text-5xl md:text-7xl lg:text-8xl"

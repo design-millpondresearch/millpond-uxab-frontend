@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import xilosLogo from "../../../assets/xilos-logo-name-blue.svg";
 
 function HeroSection() {
     return (
@@ -47,9 +48,11 @@ function HeroSection() {
         />
         
         <div className="hero-banner-clear flex max-w-7xl flex-col items-center gap-12 text-center relative z-10">
-          <h1 className="hero-title text-5xl md:text-6xl lg:text-7xl" style={{ color: "#567C8D" }}>
-            Xilos
-          </h1>
+          <img
+          src={xilosLogo}
+          alt="Xilos"
+          className="hero-logo h-40 mx-auto"
+        />
 
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl" style={{ color: "#1F4E79" }}>
             Extraordinary Efficiency. Real-Time Decisions. Safe and Secure.
