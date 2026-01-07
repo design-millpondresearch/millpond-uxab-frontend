@@ -229,7 +229,7 @@ function SolutionsSection() {
                   {xilosFeatures.map((feature, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-4 md:flex-row-reverse"
+                      className="flex items-center gap-4 md:flex-row"
                     >
                       <img
                         src={feature.icon}
