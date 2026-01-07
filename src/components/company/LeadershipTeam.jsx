@@ -8,6 +8,13 @@ import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
 import linkedin from "../../assets/logos-headshots/reverse-linkedin-logo.svg";
 
 const team1 = [
+    {
+    name: "Christopher Caen",
+    title: "CEO",
+    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
+    icon: christophercaen,
+    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
+  },
   {
     name: "Andrew Shimshock",
     title: "Co-founder, CTO",
@@ -23,13 +30,6 @@ const team1 = [
       "Pete Shimshock, Chief AI Officer and Co-Founder, leads our AI and policies practice, covering our model deployment, compliance and regulation frameworks, and our professional services group.",
     icon: peteshimshock,
     linkedinUrl: "https://www.linkedin.com/in/pete-shimshock/",
-  },
-  {
-    name: "Christopher Caen",
-    title: "CEO",
-    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
-    icon: christophercaen,
-    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
   },
 ];
 
