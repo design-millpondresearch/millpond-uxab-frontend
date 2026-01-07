@@ -204,7 +204,7 @@ function SolutionsSection() {
 
               {/* Right column */}
               <div
-                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left md:text-right"
+                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left"
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
