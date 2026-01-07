@@ -55,7 +55,7 @@ function Revolutionize() {
         <img
           src={workbenchSamplePic}
           alt="Workbench Sample Picture"
-          className="w-full max-w-[320px] md:max-w-xl lg:max-w-2xl h-auto my-8 md:my-12 mx-auto"
+          className="w-full max-w-[320px] md:max-w-xl lg:max-w-2xl h-auto my-8 md:my-12 mx-auto rounded-xl"
         />
         <h3
           className="subheader mx-4 w-full max-w-7xl mb-8 md:mb-18"
