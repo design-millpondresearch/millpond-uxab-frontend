@@ -1,28 +1,28 @@
-import eye from "../../assets/logos-general/eye.svg";
-import shieldoff from "../../assets/logos-general/shield-off.svg";
-import users from "../../assets/logos-general/users.svg";
-import lock from "../../assets/logos-general/lock.svg";
+import unified_policies from "../../assets/icons/unified_policies.svg";
+import connected_intelligence from "../../assets/icons/connected_intelligence.svg";
+import simplified_security from "../../assets/icons/simplified_security.svg";
+import future_proof from "../../assets/icons/future-proof.svg";
 
 const risks = [
   {
-    title: "Invisible AI Agents",
-    body: "Invisible AI agents operating across your network, accessing sensitive data without your knowledge.",
-    icon: eye,
+    title: "Unified Policies",
+    body: "Delivers a single source of truth for AI governance and compliance",
+    icon: unified_policies,
   },
   {
-    title: "Security Gaps",
-    body: "Security gaps that put your organization at risk as AI tools proliferate beyond IT oversight.",
-    icon: shieldoff,
+    title: "Connected Intelligence",
+    body: "Breaks down AI silos to create seamless auditing and governance flows",
+    icon: connected_intelligence,
   },
   {
     title: "Departmental AI Silos",
     body: "Departmental AI silos that prevent you from realizing the full ROI of your technology investments.",
-    icon: users,
+    icon: simplified_security,
   },
   {
-    title: "Data Exposure",
-    body: "Customer and proprietary data exposure that could damage trust and compliance.",
-    icon: lock,
+    title: "Future-Proof Management",
+    body: "Purpose-built for tomorrow's agent-driven enterprise environment",
+    icon: future_proof,
   },
 ];
 
