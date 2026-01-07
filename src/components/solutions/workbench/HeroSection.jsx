@@ -83,14 +83,13 @@ function HeroSection() {
           className="hero-title text-5xl md:text-7xl lg:text-8xl"
           style={{ color: '#1F4E79' }}
         >
-          Unified Workspace. Efficient Authoring. Tailored Agents.
+          From AI Chaos to Competitive Advantage
         </h1>
         <h3
           className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          The ultimate AI authoring platform that unifies all models in one customizable,
-          enterprise‑ready workspace.
+          The unified AI platform that actually delivers results
         </h3>
         <div className="mt-4 flex justify-center">
           <Link to="/contactus" className="hero-button-primary">
