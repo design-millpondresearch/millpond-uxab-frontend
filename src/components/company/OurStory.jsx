@@ -1,7 +1,6 @@
 import vision from "../../assets/logos-general/eye.svg";
 import barchart from "../../assets/logos-general/barchart.svg";
 import users from "../../assets/logos-general/users.svg";
-import teampic from "../../assets/teamimage.svg";
 import brothersImage from "../../assets/brothers-v1.png";
 
 // Decorative elements
@@ -29,28 +28,6 @@ const story = [
     title: "Patented Xilos, Launched Xilos",
     body:
       "Successfully patented and launched our flagship AI security orchestration platform, addressing the critical shadow AI crisis.",
-  },
-];
-
-// Traits data
-const traits = [
-  {
-    icon: vision,
-    title: "The Vision",
-    body:
-      "Founded by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a bold vision to empower businesses to build their own AI systems. Challenging “Big Token” models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.",
-  },
-  {
-    icon: barchart,
-    title: "The Evolution",
-    body:
-      "As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. Their flagship product, Xilos, addresses the critical “shadow AI crisis” facing organizations by providing infrastructure that observes, secures, and orchestrates AI agents across networks.",
-  },
-  {
-    icon: users,
-    title: "The Commitment",
-    body:
-      "As US AI Safety Institute Consortium members, they're committed to developing frameworks that enable companies to harness AI's powerful capabilities while maintaining control and security. This partnership reinforces their dedication to responsible AI innovation.",
   },
 ];
 
@@ -166,46 +143,6 @@ function OurStory() {
               className="large-font md:text-base leading-relaxed text-left relative z-10"
               style={{ color: "#4B4B4B" }}
             >
-              {item.body}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* Traits */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 lg:gap-16 mx-2 mt-6 md:mt-8 max-w-7xl">
-        {traits.map((item) => (
-          <div key={item.title} className="relative flex flex-col items-center text-center">
-            {/* Blob gradient behind trait */}
-            <div
-              className="pointer-events-none absolute inset-0 rounded-lg"
-              style={{
-                background:
-                  'radial-gradient(ellipse 240px 180px at center, rgba(86, 124, 141, 0.18) 0%, rgba(86, 124, 141, 0.12) 40%, rgba(86, 124, 141, 0.06) 60%, transparent 85%)',
-                zIndex: 0,
-              }}
-            />
-
-            {/* Icon with white gradient circular blob */}
-            <div className="mb-4 relative flex items-center justify-center">
-              {/* White gradient circular blob */}
-              <div
-                className="pointer-events-none absolute rounded-full"
-                style={{
-                  background:
-                    'radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 18%, rgba(255, 255, 255, 0.75) 32%, rgba(255, 255, 255, 0.6) 42%, rgba(255, 255, 255, 0.45) 52%, rgba(255, 255, 255, 0.3) 62%, rgba(255, 255, 255, 0.2) 68%, rgba(255, 255, 255, 0.1) 73%, rgba(255, 255, 255, 0.05) 78%, transparent 82%)',
-                  width: '100px',
-                  height: '100px',
-                  zIndex: 9,
-                }}
-              />
-              {/* Icon */}
-              <img src={item.icon} alt={item.title} className="h-10 w-10 relative z-10" />
-            </div>
-            <h3 className="subheader mb-2 relative z-10" style={{ color: "#1F4E79" }}>
-              {item.title}
-            </h3>
-            <p className="large-font relative z-10" style={{ color: "#4B4B4B" }}>
               {item.body}
             </p>
           </div>
