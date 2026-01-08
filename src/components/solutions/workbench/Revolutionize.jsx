@@ -12,13 +12,13 @@ const traits = [
     icon: share,
     title: "Unified",
     description:
-      "WorkBench seamlessly consolidates every AI model into one intuitive interface, future-proofed for tomorrow's breakthroughs",
+      "Seamlessly consolidates every AI model into one intuitive interface, future-proofed for tomorrow's breakthroughs",
   },
   {
     icon: watch,
     title: "Efficient",
     description:
-      "WorkBench saves you time and resources by unifying all AI models in one platform, eliminating token limits and redundant queries",
+      "Saves time and resources by unifying all AI models in one platform, eliminating token limits and redundant queries",
   },
   {
     icon: usercheck,
