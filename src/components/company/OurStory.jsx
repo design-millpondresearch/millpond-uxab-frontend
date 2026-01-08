@@ -110,7 +110,7 @@ function OurStory() {
       </div>
 
       {/* Story content */}
-      <div className="w-full max-w-6xl mx-auto mb-12 md:mb-16 px-4">
+      <div className="w-full max-w-6xl mx-auto mb-12 md:mb-16 px-4 text-left">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left column - Image */}
           <div className="flex justify-center lg:justify-end">
