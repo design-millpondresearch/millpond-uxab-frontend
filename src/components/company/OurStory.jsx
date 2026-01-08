@@ -101,12 +101,12 @@ function OurStory() {
         >
           Our Story
         </h2>
-        <h2
+        <h3
           className="section-header mb-8 text-2xl md:text-3xl lg:text-4xl"
           style={{ color: "#1F4E79" }}
         >
           Securing the Future of Agentic AI
-        </h2>
+        </h3>
       </div>
 
       {/* Story content */}
