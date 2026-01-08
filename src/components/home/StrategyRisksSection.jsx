@@ -15,8 +15,8 @@ const risks = [
     icon: connected_intelligence,
   },
   {
-    title: "Departmental AI Silos",
-    body: "Departmental AI silos that prevent you from realizing the full ROI of your technology investments.",
+    title: "Simplified Security",
+    body: "Transforms complex AI security management into streamlined confidence",
     icon: simplified_security,
   },
   {

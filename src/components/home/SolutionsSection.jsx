@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import workbenchPic from "../../assets/workbench-screenshot-v1-2026.PNG";
 import xilosPic from "../../assets/XilosPhoto.svg";
-import link from "../../assets/logos-general/link.svg";
-import users from "../../assets/logos-general/users.svg";
-import rocket from "../../assets/logos-general/rocket.svg";
+import create from "../../assets/icons/create.svg";
+import test from "../../assets/icons/test.svg";
+import deploy from "../../assets/icons/deploy.svg";
 import eye from "../../assets/icons/eye.svg";
 import secure from "../../assets/icons/enhanced_security.svg";
 import orchestrate from "../../assets/icons/orchestrate1.svg";
@@ -20,19 +20,19 @@ import orchestrate from "../../assets/icons/orchestrate1.svg";
 
 const workbenchFeatures = [
   {
-    icon: link,
+    icon: create,
     title: "Create.",
     body:
       "Enables teams to rapidly develop and customize agents in days instead of weeks.",
   },
   {
-    icon: users,
+    icon: test,
     title: "Test.",
     body:
       "Validates agent performance across all available internal and public models.",
   },
   {
-    icon: rocket,
+    icon: deploy,
     title: "Deploy.",
     body:
       "Delivers seamless deployment across all platform models and native integrations.",
@@ -120,14 +120,14 @@ function SolutionsSection() {
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  Build AI Solutions.
+                  WorkBench
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  WorkBench: From AI Chaos to Competitive Advantage in Days, Not Weeks
+                  From AI Chaos to Competitive Advantage in Days, Not Weeks
                 </h2>
 
                 <p
@@ -208,14 +208,14 @@ function SolutionsSection() {
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  AI Security &amp; Orchestration
+                  Xilos
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Xilos: Your AI Security and Orchestration Command Center
+                  Your AI Security and Orchestration Command Center
                 </h2>
 
                 <p
