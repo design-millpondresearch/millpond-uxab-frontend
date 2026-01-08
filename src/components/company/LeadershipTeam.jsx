@@ -79,11 +79,8 @@ function LeadershipTeam() {
       {/* Heading */}
       <div className="text-center relative z-10">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-          Meet Our Leadership Team.
+          Meet Our Leadership Team
         </h2>
-        <h3 className="subheader mx-4 max-w-7xl" style={{ color: "#4B4B4B" }}>
-          Our passionate team is dedicated to empowering organizations with secure AI governance solutions that turn shadow AI into competitive advantage.
-        </h3>
       </div>
 
       {/* First grid */}

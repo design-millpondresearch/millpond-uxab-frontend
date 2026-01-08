@@ -100,6 +100,22 @@ function OurStory() {
         >
           Our Story
         </h2>
+        <h2
+          className="section-header mb-8 text-2xl md:text-3xl lg:text-4xl"
+          style={{ color: "#1F4E79" }}
+        >
+          Securing the Future of Agentic AI
+        </h2>
+      </div>
+
+      {/* Story content */}
+      <div className="w-full max-w-4xl mx-auto mb-12 md:mb-16 px-4">
+        <p className="large-font text-lg md:text-xl leading-relaxed text-center" style={{ color: "#4B4B4B" }}>
+          Founded in 2023 by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a vision to empower businesses to build their own AI systems. Challenging "Big Token" models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.
+        </p>
+        <p className="large-font text-lg md:text-xl leading-relaxed text-center mt-6" style={{ color: "#4B4B4B" }}>
+          As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. Their flagship product, Xilos, addresses the critical "shadow AI crisis" facing organizations by providing infrastructure that observes, secures, and orchestrates AI agents across networks. As US AI Safety Institute Consortium members, they're committed to developing frameworks that enable companies to harness AI's powerful capabilities while maintaining control and security.
+        </p>
       </div>
 
       {/* Timeline */}
@@ -139,15 +155,6 @@ function OurStory() {
             </p>
           </div>
         ))}
-      </div>
-
-      {/* Team image */}
-      <div className="w-full max-w-6xl my-6 md:my-8 flex justify-center items-center">
-        <img
-          src={teampic}
-          alt="team"
-          className="w-128 h-auto drop-shadow hover:drop-shadow-lg transition-all duration-300"
-        />
       </div>
 
       {/* Traits */}

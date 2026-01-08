@@ -68,7 +68,7 @@ function Mission() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl mx-4 md:mx-0 max-w-7xl"
           style={{ color: "#1F4E79" }}
         >
-          Uniting Power, Protection, and Performance.
+          Uniting Power, Protection, and Performance
         </h2>
         <h3
           className="subheader mx-2 md:mx-6 text-base md:text-xl lg:text-2xl max-w-7xl"
