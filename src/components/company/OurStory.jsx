@@ -122,7 +122,7 @@ function OurStory() {
           </div>
           
           {/* Right column - Text */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col">
             <p className="large-font text-lg md:text-xl leading-relaxed" style={{ color: "#4B4B4B" }}>
               Founded in 2023 by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a vision to empower businesses to build their own AI systems. Challenging "Big Token" models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.
             </p>
