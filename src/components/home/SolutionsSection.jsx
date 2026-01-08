@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import workbenchPic from "../../assets/workbench-screenshot-v1-2026.PNG";
-import xilosPic from "../../assets/XilosPhoto.svg";
+import xilosPic from "../../assets/xilos-dashboard.PNG";
 import create from "../../assets/icons/create.svg";
 import test from "../../assets/icons/test.svg";
 import deploy from "../../assets/icons/deploy.svg";
