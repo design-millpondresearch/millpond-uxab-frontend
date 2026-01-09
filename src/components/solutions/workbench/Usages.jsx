@@ -1,19 +1,19 @@
 // Cards content for usage section
 const usages = [
   {
-    title: "One Workspace. Every Model.",
+    title: "Rapid Agent Development",
     description:
-      "Experience unlimited AI with no token caps, constant updates, parallel generation, and seamless integration with 500+ platforms.",
+      "Access leading AI models and professional authoring tools with extensive prompt libraries — all unified in one powerful platform",
   },
   {
-    title: "Unlimited AI Power at Your Fingertips.",
+    title: "Intelligent Model Optimization",
     description:
-      "Accelerate workflows and drive innovation with boundless AI capabilities, zero limitations, and seamless integration across your tools.",
+      "Test agents across all models to make data-driven selection decisions to ensure optimal performance",
   },
   {
-    title: "AI Solutions as Unique as Your Business.",
+    title: "Universal Compatibility & Integration",
     description:
-      "Develop specialized agents and custom knowledge bases that deliver results perfectly aligned with your organization's exact needs.",
+      "Deploy anywhere with universal compatibility, native integrations, and zero vendor lock-in for rapid production scaling",
   },
 ];
 
@@ -54,7 +54,7 @@ function Usages() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Harness the power of agentic AI without sacrificing security.
+          From Fragmented AI Tools to Unified Competitive Advantage
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 my-8 md:my-12 max-w-6xl mx-auto">
           {usages.map((usage) => (

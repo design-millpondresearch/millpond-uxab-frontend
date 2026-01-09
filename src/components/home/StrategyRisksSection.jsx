@@ -1,28 +1,28 @@
-import eye from "../../assets/logos-general/eye.svg";
-import shieldoff from "../../assets/logos-general/shield-off.svg";
-import users from "../../assets/logos-general/users.svg";
-import lock from "../../assets/logos-general/lock.svg";
+import unified_policies from "../../assets/icons/unified_policies.svg";
+import connected_intelligence from "../../assets/icons/connected_intelligence.svg";
+import simplified_security from "../../assets/icons/simplified_security.svg";
+import future_proof from "../../assets/icons/future-proof.svg";
 
 const risks = [
   {
-    title: "Invisible AI Agents",
-    body: "Invisible AI agents operating across your network, accessing sensitive data without your knowledge.",
-    icon: eye,
+    title: "Unified Policies",
+    body: "Delivers a single source of truth for AI governance and compliance",
+    icon: unified_policies,
   },
   {
-    title: "Security Gaps",
-    body: "Security gaps that put your organization at risk as AI tools proliferate beyond IT oversight.",
-    icon: shieldoff,
+    title: "Connected Intelligence",
+    body: "Breaks down AI silos to create seamless auditing and governance flows",
+    icon: connected_intelligence,
   },
   {
-    title: "Departmental AI Silos",
-    body: "Departmental AI silos that prevent you from realizing the full ROI of your technology investments.",
-    icon: users,
+    title: "Simplified Security",
+    body: "Transforms complex AI security management into streamlined confidence",
+    icon: simplified_security,
   },
   {
-    title: "Data Exposure",
-    body: "Customer and proprietary data exposure that could damage trust and compliance.",
-    icon: lock,
+    title: "Future-Proof Management",
+    body: "Purpose-built for tomorrow's agent-driven enterprise environment",
+    icon: future_proof,
   },
 ];
 
@@ -35,13 +35,13 @@ function StrategyRisksSection() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Evolve Your AI Strategy with Complete Control.
+          Evolve Your AI Strategy with Complete Control
         </h2>
         <h3
           className="subheader text-base md:text-xl lg:text-2xl"
           style={{ color: "#4B4B4B" }}
         >
-          Traditional AI management creates hidden risks. Mill Pond turns them into insight.
+          Supercharge your AI initiatives with streamlined management and robust compliance. Mill Pond Research makes AI management complexity a thing of the past:
         </h3>
       </div>
 

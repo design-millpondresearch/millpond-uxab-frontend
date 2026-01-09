@@ -12,7 +12,7 @@ import ccc from "../../assets/partners/ccc.svg";
 import invokeai from "../../assets/partners/invokeai.svg";
 
 //testimonial logos
-import jlinc from "../../assets/testimonials/JLINC Logo H White.svg";
+import jlinc from "../../assets/testimonials/JLINC Logo H Black.svg";
 import zealstrat from "../../assets/testimonials/ZealStrat.svg";
 
 //arrows

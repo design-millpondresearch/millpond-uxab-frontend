@@ -75,13 +75,13 @@ const Navbar = () => {
                                 <div className="dropdown-bridge"></div>
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <Link to="/solutions/xilos" className="dropdown-link">
-                                            Xilos
+                                        <Link to="/solutions/workbench" className="dropdown-link">
+                                            WorkBench
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/solutions/workbench" className="dropdown-link">
-                                            WorkBench
+                                        <Link to="/solutions/xilos" className="dropdown-link">
+                                            Xilos
                                         </Link>
                                     </li>
                                 </ul>
@@ -148,20 +148,20 @@ const Navbar = () => {
                                 <ul className="mobile-dropdown">
                                     <li>
                                         <Link
-                                            to="/solutions/xilos"
-                                            className="mobile-dropdown-link"
-                                            onClick={closeMobileMenu}
-                                        >
-                                            Xilos
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
                                             to="/solutions/workbench"
                                             className="mobile-dropdown-link"
                                             onClick={closeMobileMenu}
                                         >
                                             WorkBench
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/solutions/xilos"
+                                            className="mobile-dropdown-link"
+                                            onClick={closeMobileMenu}
+                                        >
+                                            Xilos
                                         </Link>
                                     </li>
                                 </ul>

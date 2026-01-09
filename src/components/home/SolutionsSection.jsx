@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import workbenchPic from "../../assets/WorkBenchPhoto.svg";
-import xilosPic from "../../assets/XilosPhoto.svg";
-import link from "../../assets/logos-general/link.svg";
-import users from "../../assets/logos-general/users.svg";
-import rocket from "../../assets/logos-general/rocket.svg";
+import workbenchPic from "../../assets/workbench-screenshot-v1-2026.PNG";
+import xilosPic from "../../assets/xilos-dashboard.PNG";
+import create from "../../assets/icons/create.svg";
+import test from "../../assets/icons/test.svg";
+import deploy from "../../assets/icons/deploy.svg";
+import eye from "../../assets/icons/eye.svg";
+import secure from "../../assets/icons/enhanced_security.svg";
+import orchestrate from "../../assets/icons/orchestrate1.svg";
 
 // A small utility to build the glass effect.  Many browsers (Safari and some
 // older Android browsers) do not fully support the backdrop-filter CSS
@@ -17,43 +20,43 @@ import rocket from "../../assets/logos-general/rocket.svg";
 
 const workbenchFeatures = [
   {
-    icon: link,
-    title: "Intuitive AI Builder.",
+    icon: create,
+    title: "Create.",
     body:
-      "Build sophisticated AI solutions without specialized expertise using our visual, drag-and-drop interface.",
+      "Enables teams to rapidly develop and customize agents in days instead of weeks.",
   },
   {
-    icon: users,
-    title: "No-Code Development.",
+    icon: test,
+    title: "Test.",
     body:
-      "Deploy AI solutions rapidly with our no-code platform that empowers business users to innovate independently.",
+      "Validates agent performance across all available internal and public models.",
   },
   {
-    icon: rocket,
-    title: "Rapid Deployment.",
+    icon: deploy,
+    title: "Deploy.",
     body:
-      "Go from concept to deployment in days, not months, with automated testing and deployment pipelines.",
+      "Delivers seamless deployment across all platform models and native integrations.",
   },
 ];
 
 const xilosFeatures = [
   {
-    icon: link,
-    title: "Real-Time Security.",
+    icon: eye,
+    title: "Observe.",
     body:
-      "Monitor and protect every AI interaction across your organization with intelligent threat detection and automated response.",
+      "Detects agentic AI activity across the network to monitor, assess, and manage usage.",
   },
   {
-    icon: users,
-    title: "AI Orchestration.",
+    icon: secure,
+    title: "Secure.",
     body:
-      "Enable controlled collaboration between AI systems, creating a unified knowledge network that grows smarter with every interaction.",
+      "Invokes rules and policies to ensure safe AI usage and protect sensitive data.",
   },
   {
-    icon: rocket,
-    title: "Complete Visibility.",
+    icon: orchestrate,
+    title: "Orchestrate.",
     body:
-      "Gain comprehensive oversight of your AI ecosystem with intuitive dashboards and detailed analytics on usage, performance, and security.",
+      "Breaks down AI silos to deliver the most contextually relevant results.",
   },
 ];
 
@@ -117,24 +120,21 @@ function SolutionsSection() {
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  Build AI Solutions.
+                  WorkBench
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  WorkBench: AI That Understands Your Business
+                  From AI Chaos to Competitive Advantage in Days, Not Weeks
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Your teams need AI that speaks your industry's language and
-                  understands your unique processes. WorkBench puts that power
-                  directly in your hands with an intuitive environment to build
-                  AI solutions that deliver immediate value.
+                 WorkBench enables teams to rapidly prototype, test, and deploy agents in days. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets across all models.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -204,35 +204,32 @@ function SolutionsSection() {
 
               {/* Right column */}
               <div
-                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left md:text-right"
+                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left"
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  AI Security &amp; Orchestration
+                  Xilos
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Xilos: Your AI Command Center
+                  Your AI Security and Orchestration Command Center
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Benefit from AI without compromising security. Xilos acts as
-                  your intelligent guardian and conductor, working with all your
-                  AI systems to enhance security while breaking down information
-                  barriers.
+                  Benefit from AI without compromising security. Xilos works with all your AI systems to enhance security while making your organization smarter, faster, and more efficient with every interaction.
                 </p>
 
                 <div className="mt-4 space-y-3">
                   {xilosFeatures.map((feature, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-4 md:flex-row-reverse"
+                      className="flex items-center gap-4 md:flex-row"
                     >
                       <img
                         src={feature.icon}

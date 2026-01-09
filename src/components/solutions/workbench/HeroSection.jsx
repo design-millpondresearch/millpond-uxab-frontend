@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // them here we avoid duplicating assets across different pages.
 import greyBlob from "../../../assets/elements/element2.svg";
 import beigeGlow from "../../../assets/elements/element10.svg";
+import workbenchLogo from "../../../assets/workbench-logo-name-blue.svg";
 
 /*
  * This modified WorkBench hero section tweaks the layout and decorative orb
@@ -73,24 +74,22 @@ function HeroSection() {
       />
 
       <div className="hero-banner-clear flex max-w-7xl flex-col items-center gap-8 md:gap-12 text-center relative z-10">
-        <h1
-          className="hero-title text-5xl md:text-6xl lg:text-7xl"
-          style={{ color: '#567C8D' }}
-        >
-          WorkBench
-        </h1>
+        <img
+          src={workbenchLogo}
+          alt="WorkBench"
+          className="hero-logo h-40 mx-auto"
+        />
         <h1
           className="hero-title text-5xl md:text-7xl lg:text-8xl"
           style={{ color: '#1F4E79' }}
         >
-          Unified Workspace. Efficient Authoring. Tailored Agents.
+          From AI Chaos to Competitive Advantage
         </h1>
         <h3
           className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          The ultimate AI authoring platform that unifies all models in one customizable,
-          enterprise‑ready workspace.
+          The unified AI platform that actually delivers results
         </h3>
         <div className="mt-4 flex justify-center">
           <Link to="/contactus" className="hero-button-primary">
