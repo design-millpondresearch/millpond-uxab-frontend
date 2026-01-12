@@ -119,7 +119,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <p className="footer-rights">© 2026 Mill Pond Research, Inc. All rights reserved.</p>
+        <p className="footer-rights">© 2024-2026 Mill Pond Research, Inc. All rights reserved.</p>
       </div>
     </footer>
   );
