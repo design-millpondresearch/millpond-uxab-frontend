@@ -81,10 +81,10 @@ function HeroSection() {
       {/* Content */}
       <div className="hero-banner-surface flex max-w-4xl flex-col items-center gap-8 md:gap-12 text-center z-10">
         <h1 className="hero-title" style={{ color: '#1F4E79' }}>
-          Secure the Bridge to Your AI Future.
+          Secure the Bridge to Your AI Future
         </h1>
         <h3 className="subheader" style={{ color: '#4B4B4B' }}>
-          We're on a mission to help every organization convert their shadow AI into their most powerful competitive advantage.
+          We're on a mission to help every organization convert their shadow AI into their most powerful competitive advantage
         </h3>
         <div className="flex justify-center">
           <button 

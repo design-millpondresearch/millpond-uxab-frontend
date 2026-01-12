@@ -8,6 +8,13 @@ import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
 import linkedin from "../../assets/logos-headshots/reverse-linkedin-logo.svg";
 
 const team1 = [
+    {
+    name: "Christopher Caen",
+    title: "CEO",
+    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
+    icon: christophercaen,
+    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
+  },
   {
     name: "Andrew Shimshock",
     title: "Co-founder, CTO",
@@ -23,13 +30,6 @@ const team1 = [
       "Pete Shimshock, Chief AI Officer and Co-Founder, leads our AI and policies practice, covering our model deployment, compliance and regulation frameworks, and our professional services group.",
     icon: peteshimshock,
     linkedinUrl: "https://www.linkedin.com/in/pete-shimshock/",
-  },
-  {
-    name: "Christopher Caen",
-    title: "CEO",
-    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
-    icon: christophercaen,
-    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
   },
 ];
 
@@ -79,11 +79,8 @@ function LeadershipTeam() {
       {/* Heading */}
       <div className="text-center relative z-10">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-          Meet Our Leadership Team.
+          Meet Our Leadership Team
         </h2>
-        <h3 className="subheader mx-4 max-w-7xl" style={{ color: "#4B4B4B" }}>
-          Our passionate team is dedicated to empowering organizations with secure AI governance solutions that turn shadow AI into competitive advantage.
-        </h3>
       </div>
 
       {/* First grid */}

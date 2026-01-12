@@ -1,40 +1,40 @@
-import visibility from "../../assets/logos-general/eye.svg";
-import protection from "../../assets/logos-general/shield.svg";
-import unify from "../../assets/logos-general/share.svg";
-import compliance from "../../assets/logos-general/lock.svg";
-import ecosystem from "../../assets/logos-general/users.svg";
-import optimize from "../../assets/logos-general/coin-stack.svg";
+import rapid_development from "../../assets/icons/rapid_development.svg";
+import eye from "../../assets/icons/eye.svg";
+import enhanced_security from "../../assets/icons/enhanced_security.svg";
+import organizational_intelligence from "../../assets/icons/organizational_intelligence.svg";
+import regulatory_compliance from "../../assets/icons/regulatory_compliance.svg";
+import ai_gov_ecosystem from "../../assets/icons/ai_gov_ecosystem.svg";
 
 const advantages = [
   {
-    title: "Visibility",
-    body: "Full oversight of assistant activity and data movement across your environment.",
-    icon: visibility,
+    title: "Rapid Development",
+    body: "Accelerate production cycles to minimize time-to-value",
+    icon: rapid_development,
   },
   {
-    title: "Protection",
-    body: "Enforce data masking, prompt guardrails, and policy compliance in real time.",
-    icon: protection,
+    title: "Complete Visibility",
+    body: "Know exactly what's happening in your AI ecosystem",
+    icon: eye,
   },
   {
-    title: "Unify",
-    body: "Connect AI governance with your existing enterprise security stack and workflows.",
-    icon: unify,
+    title: "Enhanced Security",
+    body: "Automatically protect your most valuable information",
+    icon: enhanced_security,
   },
   {
-    title: "Compliance",
-    body: "Continuous controls to meet industry and regulatory requirements with confidence.",
-    icon: compliance,
+    title: "Organizational Intelligence",
+    body: "Convert isolated tools into a unified knowledge network",
+    icon: organizational_intelligence,
   },
   {
-    title: "Ecosystem",
-    body: "Works across assistants, agents, and data sources to keep teams aligned.",
-    icon: ecosystem,
+    title: "Regulatory Compliance",
+    body: "Simplify governance with automatic policy enforcement",
+    icon: regulatory_compliance,
   },
   {
-    title: "Optimize",
-    body: "Insights to reduce AI cost while improving usage quality and safety.",
-    icon: optimize,
+    title: "AI Governance Ecosystem",
+    body: "Maximize security, compliance, and business outcomes",
+    icon: ai_gov_ecosystem,
   },
 ];
 

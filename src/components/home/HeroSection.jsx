@@ -57,13 +57,13 @@ function HeroSection() {
           className="hero-title max-w-[638px] leading-tight"
           style={{ color: '#1F4E79' }}
         >
-          Secure the Future for Enterprise AI.
+          Deploy, Secure, and Orchestrate Enterprise AI
         </h1>
         <h3
           className="subheader max-w-[623px] mb-4 md:mb-10 text-lg md:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          Prompt-based protection that empowers safe, efficient AI adoption.
+          Reduce your AI risk while maximizing operational efficiency
         </h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           <Link to="/contactus" className="hero-button-primary">Request a Demo</Link>
