@@ -21,7 +21,6 @@ import NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines from '../../ass
 import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-resources/HarnessingthePowerofAIwithSecureInfrastructure.svg';
 import XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld from '../../assets/logos-resources/XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld.svg';
 import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
-import DataSovereigntyinTheAIEraNavigatingtheParadigmShift from '../../assets/logos-resources/DataSovereigntyinTheAIEraNavigatingtheParadigmShift.png';
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
@@ -262,17 +261,6 @@ function FiltersNews() {
     },
     {
       id: 21,
-      title: 'Data Sovereignty in the AI Era: Navigating the Paradigm Shift',
-      category: 'Blog',
-      topic: 'Data Governance',
-      date: 'February 17, 2025',
-      description:
-        'Over the past few years, Data has become the lifeblood of business operations. The focus is moving away from the indiscriminate…',
-      image: DataSovereigntyinTheAIEraNavigatingtheParadigmShift,
-      link: 'https://blog.millpondresearch.com/data-sovereignty-in-the-ai-era-navigating-the-paradigm-shift-94cd368cf055',
-    },
-    {
-      id: 22,
       title: 'The Intelligence Solution',
       category: 'Whitepaper',
       topic: 'eBook',
@@ -283,7 +271,7 @@ function FiltersNews() {
       link: 'https://www.theintelligencesolution.com',
     },
     {
-      id: 23,
+      id: 22,
       title: 'An Important Limitation of AI',
       category: 'Blog',
       topic: 'AI Fundamentals',
