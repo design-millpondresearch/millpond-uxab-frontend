@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import WorkbenchDatasheet from '../../assets/logos-resources/WorkbenchDatasheet.PNG';
+import WorkbenchDatasheet from '../../assets/logos-resources/workbench-datasheet.PNG';
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
