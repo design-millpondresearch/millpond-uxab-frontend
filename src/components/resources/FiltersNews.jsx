@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import WorkbenchDatasheet from '../../assets/logos-resources/workbench-datasheet.PNG';
+import WorkBenchDatasheet from '../../assets/logos-resources/workbench-datasheet.PNG';
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
@@ -64,7 +64,7 @@ function FiltersNews() {
       date: 'January 26, 2025',
       description:
         "Workbench: Mill Pond Research's universal LLM workspace - a frontend for using LLM models, creating agents, writing and sharing prompts, built on your context.",
-      image: WorkbenchDatasheet,
+      image: WorkBenchDatasheet,
       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/WorkBench%20-%20Data%20Sheet%20-%2020260114.pdf',
     },
     {
