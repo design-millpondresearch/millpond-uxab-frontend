@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import WorkBenchDatasheet from '../../assets/logos-resources/workbench-datasheet.PNG';
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
@@ -20,7 +21,6 @@ import NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines from '../../ass
 import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-resources/HarnessingthePowerofAIwithSecureInfrastructure.svg';
 import XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld from '../../assets/logos-resources/XilosTheMissingPieceforSecureEnterpriseAIinanAgenticWorld.svg';
 import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
-import DataSovereigntyinTheAIEraNavigatingtheParadigmShift from '../../assets/logos-resources/DataSovereigntyinTheAIEraNavigatingtheParadigmShift.png';
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
@@ -44,8 +44,30 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-    {
+        {
       id: 1,
+      title: 'Xilos - Data Sheet',
+      category: 'Collateral',
+      topic: 'Product Collateral',
+      date: 'January 26, 2025',
+      description:
+        "Xilos: Mill Pond Research's comprehensive AI governance platform that provides complete visibility, security, and orchestration for enterprise agentic AI systems while preventing data leakage, reducing costs, and enabling secure cross-departmental collaboration.",
+      image: XilosDataSheet,
+      link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Data%20Sheet%20-%2020260114.pdf',
+    },
+    {
+      id: 2,
+      title: 'Workbench - Data Sheet',
+      category: 'Collateral',
+      topic: 'Product Collateral',
+      date: 'January 26, 2025',
+      description:
+        "Workbench: Mill Pond Research's universal LLM workspace - a frontend for using LLM models, creating agents, writing and sharing prompts, built on your context.",
+      image: WorkBenchDatasheet,
+      link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/WorkBench%20-%20Data%20Sheet%20-%2020260114.pdf',
+    },
+    {
+      id: 3,
       title: 'The Shadow AI Crisis',
       category: 'Collateral',
       topic: 'Product Collateral',
@@ -56,7 +78,7 @@ function FiltersNews() {
       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Shadow%20AI%20Crisis%20-%20Xilos%20-%20Mill%20Pond%20Research.pdf',
     },
     {
-      id: 2,
+      id: 4,
       title: 'Company Overview - Mill Pond Research Inc',
       category: 'Collateral',
       topic: 'Product Collateral',
@@ -67,18 +89,7 @@ function FiltersNews() {
       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Company%20Overview%20-%20Mill%20Pond%20Research%20Inc.pdf',
     },
     {
-      id: 3,
-      title: 'Xilos - Data Sheet',
-      category: 'Collateral',
-      topic: 'Product Collateral',
-      date: 'October 26, 2025',
-      description:
-        "Xilos: Mill Pond Research's comprehensive AI governance platform that provides complete visibility, security, and orchestration for enterprise agentic AI systems while preventing data leakage, reducing costs, and enabling secure cross-departmental collaboration.",
-      image: XilosDataSheet,
-      link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Data%20Sheet%20-%20Mill%20Pond%20Research.pdf',
-    },
-    {
-      id: 4,
+      id: 5,
       title: 'The Secret War or "Big Token"',
       category: 'Blog',
       topic: 'AI Strategy',
@@ -89,7 +100,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/the-rise-of-big-token-a700f967edac',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Mill Pond Research Capability Statement',
       category: 'Case Study',
       topic: 'Company Overview',
@@ -100,7 +111,7 @@ function FiltersNews() {
       link: 'https://www.millpondresearch.com/resources/files/Mill%20Pond%20Research%20Capability%20Statement.pdf',
     },
     {
-      id: 6,
+      id: 7,
       title: 'The Emergence of a Shadow AI Crisis',
       category: 'Whitepaper',
       topic: 'Security',
@@ -111,7 +122,7 @@ function FiltersNews() {
       link: '#top',
     },
     {
-      id: 7,
+      id: 8,
       title: 'Xilos - Quick Introduction',
       category: 'Video',
       topic: 'Xilos',
@@ -122,7 +133,7 @@ function FiltersNews() {
       link: 'https://www.youtube.com/watch?v=nJ1YIbrTL3s&feature=youtu.be',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Xilos: A Definitive Answer to the Shadow AI Crisis',
       category: 'Blog',
       topic: 'Security',
@@ -133,7 +144,7 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/xilos-a-definitive-answer-to-the-shadow-ai-crisis-4793463779ec',
     },
     {
-      id: 9,
+      id: 10,
       title: 'Mill Pond Research 1-Minute Pitch TechCrunch Disrupt 2025',
       category: 'Video',
       topic: 'Company Overview',
@@ -144,7 +155,7 @@ function FiltersNews() {
       link: 'https://www.youtube.com/watch?v=IvWfC_ELe-w',
     },
     {
-      id: 10,
+      id: 11,
       title: 'WorkBench Brochure',
       category: 'Collateral',
       topic: 'WorkBench',
@@ -155,7 +166,7 @@ function FiltersNews() {
       link: 'https://www.millpondresearch.com/resources/files/Workbench%20-%20Brochure.pdf',
     },
     {
-      id: 11,
+      id: 12,
       title: 'Xilos Brochure',
       category: 'Collateral',
       topic: 'Xilos',
@@ -166,7 +177,7 @@ function FiltersNews() {
       link: 'https://www.millpondresearch.com/resources/files/Xilos%20-%20Brochure.pdf',
     },
     {
-      id: 12,
+      id: 13,
       title: 'So, What Happens After AGI?',
       category: 'Blog',
       topic: 'Future of AI',
@@ -177,7 +188,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/so-what-happens-after-agi-a6aecac21b6a',
     },
     {
-      id: 13,
+      id: 14,
       title: "How Enterprises Can Securely Unlock AI's Power",
       category: 'Blog',
       topic: 'Enterprise AI',
@@ -188,7 +199,7 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/how-enterprises-can-securely-unlock-ais-power-aa2e02329852',
     },
     {
-      id: 14,
+      id: 15,
       title: 'The Canary Leaving the Coal Mine',
       category: 'Blog',
       topic: 'Business Strategy',
@@ -198,7 +209,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/the-canary-leaving-the-coal-mine-7e589d8822d0',
     },
     {
-      id: 15,
+      id: 16,
       title: 'The Context Dilemma',
       category: 'Blog',
       topic: 'Technology',
@@ -208,7 +219,7 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/the-context-dilemma-2c53a8a9a68f',
     },
     {
-      id: 16,
+      id: 17,
       title: 'Navigating AI Copyright Compliance Under the New USPTO Guidelines',
       category: 'Blog',
       topic: 'Legal & Compliance',
@@ -218,7 +229,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/how-to-navigate-ai-copyright-compliance-under-the-new-uspto-guidelines-25bc63505549',
     },
     {
-      id: 17,
+      id: 18,
       title: 'Harnessing the Power of AI with Secure Infrastructure',
       category: 'Whitepaper',
       topic: 'Enterprise AI',
@@ -229,7 +240,7 @@ function FiltersNews() {
       link: '#top',
     },
     {
-      id: 18,
+      id: 19,
       title: 'Xilos: The Missing Piece for Secure Enterprise AI in an Agentic World',
       category: 'Blog',
       topic: 'Security',
@@ -239,7 +250,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/xilos-the-missing-piece-for-secure-enterprise-ai-in-an-agentic-world-a631f714347f',
     },
     {
-      id: 19,
+      id: 20,
       title: 'The Data Harvest: The Biggest Threat in AI',
       category: 'Blog',
       topic: 'Data Privacy',
@@ -247,17 +258,6 @@ function FiltersNews() {
       description: 'State of the User + Provider Agreement.',
       image: TheDataHarvestTheBiggestThreatinAI,
       link: 'https://devsecopsai.today/the-data-harvest-how-llm-providers-leverage-user-interactions-for-model-improvement-75384c878b69',
-    },
-    {
-      id: 20,
-      title: 'Data Sovereignty in the AI Era: Navigating the Paradigm Shift',
-      category: 'Blog',
-      topic: 'Data Governance',
-      date: 'February 17, 2025',
-      description:
-        'Over the past few years, Data has become the lifeblood of business operations. The focus is moving away from the indiscriminate…',
-      image: DataSovereigntyinTheAIEraNavigatingtheParadigmShift,
-      link: 'https://blog.millpondresearch.com/data-sovereignty-in-the-ai-era-navigating-the-paradigm-shift-94cd368cf055',
     },
     {
       id: 21,
