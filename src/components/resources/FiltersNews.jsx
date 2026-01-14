@@ -8,10 +8,7 @@ import XilosDataSheet from '../../assets/logos-resources/XilosDataSheet.svg';
 import TheSecretWarofBigToken from '../../assets/logos-resources/TheSecretWarofBigToken.svg';
 import TheEmergenceofaShadowAICrisis from '../../assets/logos-resources/TheEmergenceofaShadowAICrisis.svg';
 import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
-import XilosQuickIntroduction from '../../assets/logos-resources/XilosQuickIntroduction.svg';
-import XilosDefinitiveAnswer from '../../assets/logos-resources/XilosDefinitiveAnswer.svg';
 import MillPondResearch1MinutePitchTechCrunchDisrupt2025 from '../../assets/logos-resources/MillPondResearch1MinutePitchTechCrunchDisrupt2025.svg';
-import WorkBenchBrochure from '../../assets/logos-resources/WorkBenchBrochure.svg';
 import SoWhatHappensAfterAGI from '../../assets/logos-resources/SoWhatHappensAfterAGI.svg';
 import HowEnterprisesCanSecurelyUnlockAIsPower from '../../assets/logos-resources/HowEnterprisesCanSecurelyUnlockAIsPower.svg';
 import TheCanaryLeavingTheCoalMine from '../../assets/logos-resources/TheCanaryLeavingTheCoalMine.svg';
@@ -20,6 +17,8 @@ import NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines from '../../ass
 import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-resources/HarnessingthePowerofAIwithSecureInfrastructure.svg';
 import xilos1 from '../../assets/logos-resources/xilos-1.png';
 import xilos2 from '../../assets/logos-resources/xilos-2.png';
+import xilos3 from '../../assets/logos-resources/xilos-3.png';
+import workbench1 from '../../assets/logos-resources/workbench-6.png';
 import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
@@ -129,7 +128,7 @@ function FiltersNews() {
       date: 'Augest 4, 2025',
       description:
         'A quick introduction to Xilos, the AI security and orchestration platform that gives you complete control over your AI agents.',
-      image: XilosQuickIntroduction,
+      image: xilos3,
       link: 'https://www.youtube.com/watch?v=nJ1YIbrTL3s&feature=youtu.be',
     },
     {
@@ -140,7 +139,7 @@ function FiltersNews() {
       date: 'July 31, 2025',
       description:
         'The $670,000 Question: Why Shadow AI Is the Fastest-Growing Line Item in Your Next Breach.',
-      image: XilosDefinitiveAnswer,
+      image: xilo4,
       link: 'https://devsecopsai.today/xilos-a-definitive-answer-to-the-shadow-ai-crisis-4793463779ec',
     },
     {
@@ -162,7 +161,7 @@ function FiltersNews() {
       date: 'July 30, 2025',
       description:
         'Detailed product information for WorkBench, the unified AI authoring platform for enterprise teams.',
-      image: WorkBenchBrochure,
+      image: workbench1,
       link: 'https://www.millpondresearch.com/resources/files/Workbench%20-%20Brochure.pdf',
     },
     {
