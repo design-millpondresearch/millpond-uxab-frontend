@@ -18,6 +18,7 @@ import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-r
 import xilos1 from '../../assets/logos-resources/xilos-1.png';
 import xilos2 from '../../assets/logos-resources/xilos-2.png';
 import xilos3 from '../../assets/logos-resources/xilos-3.png';
+import xilos4 from '../../assets/logos-resources/xilos-4.png';
 import workbench6 from '../../assets/logos-resources/workbench-6.png';
 import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
@@ -139,7 +140,7 @@ function FiltersNews() {
       date: 'July 31, 2025',
       description:
         'The $670,000 Question: Why Shadow AI Is the Fastest-Growing Line Item in Your Next Breach.',
-      image: xilo4,
+      image: xilos4,
       link: 'https://devsecopsai.today/xilos-a-definitive-answer-to-the-shadow-ai-crisis-4793463779ec',
     },
     {
