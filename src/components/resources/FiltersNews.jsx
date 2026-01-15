@@ -18,7 +18,7 @@ import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-r
 import xilos1 from '../../assets/logos-resources/xilos-1.png';
 import xilos2 from '../../assets/logos-resources/xilos-2.png';
 import xilos3 from '../../assets/logos-resources/xilos-3.png';
-import workbench1 from '../../assets/logos-resources/workbench-6.png';
+import workbench6 from '../../assets/logos-resources/workbench-6.png';
 import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
@@ -161,7 +161,7 @@ function FiltersNews() {
       date: 'July 30, 2025',
       description:
         'Detailed product information for WorkBench, the unified AI authoring platform for enterprise teams.',
-      image: workbench1,
+      image: workbench6,
       link: 'https://www.millpondresearch.com/resources/files/Workbench%20-%20Brochure.pdf',
     },
     {
