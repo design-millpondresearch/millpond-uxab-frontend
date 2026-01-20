@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import WorkBenchDatasheet from '../../assets/logos-resources/workbench-datasheet.PNG';
+import WorkBenchDatasheet from '../../assets/logos-resources/workbench-datasheet.png';
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
@@ -26,7 +26,7 @@ import Masonry from "react-masonry-css";
 import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-securing-the-autonomous-enterprise.png';
 import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
 import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
-import XilosDataSheet from '../../assets/logos-resources/xilos-data-sheet.PNG';
+import XilosDataSheet from '../../assets/logos-resources/xilos-data-sheet.png';
 
 
 // Define responsive breakpoints for Masonry columns.
