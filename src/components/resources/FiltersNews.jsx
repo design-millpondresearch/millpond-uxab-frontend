@@ -25,7 +25,7 @@ import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantL
 import Masonry from "react-masonry-css";
 import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-securing-the-autonomous-enterprise.png';
 import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
-import BreakingFreePOC from '../../assets/logos-resources/wb-breaking-free.jpeg';
+import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
 
 
 // Define responsive breakpoints for Masonry columns.
