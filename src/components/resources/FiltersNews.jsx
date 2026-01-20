@@ -4,7 +4,6 @@ import WorkBenchDatasheet from '../../assets/logos-resources/workbench-datasheet
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
-import XilosDataSheet from '../../assets/logos-resources/XilosDataSheet.svg';
 import TheSecretWarofBigToken from '../../assets/logos-resources/TheSecretWarofBigToken.svg';
 import TheEmergenceofaShadowAICrisis from '../../assets/logos-resources/TheEmergenceofaShadowAICrisis.svg';
 import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
@@ -24,6 +23,10 @@ import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/The
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
+import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-securing-the-autonomous-enterprise.png';
+import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
+import BreakingFreePOC from '../../assets/logos-resources/wb-breaking-free.jpeg';
+
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -44,19 +47,41 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-        {
+      {
       id: 1,
-      title: 'Xilos - Data Sheet',
-      category: 'Collateral',
-      topic: 'Product Collateral',
-      date: 'January 26, 2025',
+      title: 'Securing the Autonomous Enterprise',
+      category: 'White Paper',
+      topic: 'AI Security & Governance',
+      date: 'January 2026',
       description:
-        "Xilos: Mill Pond Research's comprehensive AI governance platform that provides complete visibility, security, and orchestration for enterprise agentic AI systems while preventing data leakage, reducing costs, and enabling secure cross-departmental collaboration.",
-      image: XilosDataSheet,
-      link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Data%20Sheet%20-%2020260114.pdf',
-    },
-    {
+      'A field-guide for CIOs and CISOs to deploy agentic AI without falling victim to shadow-AI sprawl, data leakage, or compliance violations.',
+      image: SecuringTheAutonomousEnterprise,
+      link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Securing%20the%20Autonomous%20Enterprise.pdf',
+      },
+      {
       id: 2,
+      title: 'The Agentic Imperative',
+      category: 'White Paper',
+      topic: 'AI Strategy & Deployment',
+      date: 'January 2026',
+      description:
+      'Why 40 % of agentic-AI projects will be canceled by 2027 and how to build the unified tooling that moves enterprises from pilot purgatory to production at pace.',
+      image: TheAgenticImperative,
+      link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Agentic%20Imperative.pdf',
+      },
+      {
+      id: 3,
+      title: 'Breaking Free from Perpetual Proof-of-Concept Purgatory',
+      category: 'Blog',
+      topic: 'AI Development Practices',
+      date: 'January 2026',
+      description:
+      'Stop rebuilding agents from scratch every time you swap a model—use authoring tools that turn weeks of tinkering into days of systematic, production-ready development.',
+      image: BreakingFreePOC,
+      link: 'https://blog.millpondresearch.com/breaking-free-from-perpetual-proof-of-concept-purgatory',
+      },
+        {
+      id: 5,
       title: 'Workbench - Data Sheet',
       category: 'Collateral',
       topic: 'Product Collateral',
@@ -67,7 +92,7 @@ function FiltersNews() {
       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/WorkBench%20-%20Data%20Sheet%20-%2020260114.pdf',
     },
     {
-      id: 3,
+      id: 6,
       title: 'The Shadow AI Crisis',
       category: 'Collateral',
       topic: 'Product Collateral',
@@ -78,7 +103,7 @@ function FiltersNews() {
       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Shadow%20AI%20Crisis%20-%20Xilos%20-%20Mill%20Pond%20Research.pdf',
     },
     {
-      id: 4,
+      id: 7,
       title: 'Company Overview - Mill Pond Research Inc',
       category: 'Collateral',
       topic: 'Product Collateral',
@@ -89,7 +114,7 @@ function FiltersNews() {
       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Company%20Overview%20-%20Mill%20Pond%20Research%20Inc.pdf',
     },
     {
-      id: 5,
+      id: 8,
       title: 'The Secret War or "Big Token"',
       category: 'Blog',
       topic: 'AI Strategy',
@@ -100,7 +125,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/the-rise-of-big-token-a700f967edac',
     },
     {
-      id: 6,
+      id: 9,
       title: 'Mill Pond Research Capability Statement',
       category: 'Case Study',
       topic: 'Company Overview',
@@ -111,18 +136,18 @@ function FiltersNews() {
       link: 'https://www.millpondresearch.com/resources/files/Mill%20Pond%20Research%20Capability%20Statement.pdf',
     },
     {
-      id: 7,
+      id: 10,
       title: 'The Emergence of a Shadow AI Crisis',
-      category: 'Whitepaper',
+      category: 'White Paper',
       topic: 'Security',
       date: 'Augest 5, 2025',
       description:
-        'A comprehensive whitepaper examining the growing challenge of shadow AI in enterprise environments and strategies for mitigation.',
+        'A comprehensive White Paper examining the growing challenge of shadow AI in enterprise environments and strategies for mitigation.',
       image: TheEmergenceofaShadowAICrisis,
       link: '#top',
     },
     {
-      id: 8,
+      id: 11,
       title: 'Xilos - Quick Introduction',
       category: 'Video',
       topic: 'Xilos',
@@ -133,7 +158,7 @@ function FiltersNews() {
       link: 'https://www.youtube.com/watch?v=nJ1YIbrTL3s&feature=youtu.be',
     },
     {
-      id: 9,
+      id: 12,
       title: 'Xilos: A Definitive Answer to the Shadow AI Crisis',
       category: 'Blog',
       topic: 'Security',
@@ -144,7 +169,7 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/xilos-a-definitive-answer-to-the-shadow-ai-crisis-4793463779ec',
     },
     {
-      id: 10,
+      id: 13,
       title: 'Mill Pond Research 1-Minute Pitch TechCrunch Disrupt 2025',
       category: 'Video',
       topic: 'Company Overview',
@@ -155,7 +180,7 @@ function FiltersNews() {
       link: 'https://www.youtube.com/watch?v=IvWfC_ELe-w',
     },
     {
-      id: 11,
+      id: 14,
       title: 'WorkBench Brochure',
       category: 'Collateral',
       topic: 'WorkBench',
@@ -166,7 +191,7 @@ function FiltersNews() {
       link: 'https://www.millpondresearch.com/resources/files/Workbench%20-%20Brochure.pdf',
     },
     {
-      id: 12,
+      id: 15,
       title: 'Xilos Brochure',
       category: 'Collateral',
       topic: 'Xilos',
@@ -177,7 +202,7 @@ function FiltersNews() {
       link: 'https://www.millpondresearch.com/resources/files/Xilos%20-%20Brochure.pdf',
     },
     {
-      id: 13,
+      id: 16,
       title: 'So, What Happens After AGI?',
       category: 'Blog',
       topic: 'Future of AI',
@@ -188,7 +213,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/so-what-happens-after-agi-a6aecac21b6a',
     },
     {
-      id: 14,
+      id: 17,
       title: "How Enterprises Can Securely Unlock AI's Power",
       category: 'Blog',
       topic: 'Enterprise AI',
@@ -199,7 +224,7 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/how-enterprises-can-securely-unlock-ais-power-aa2e02329852',
     },
     {
-      id: 15,
+      id: 18,
       title: 'The Canary Leaving the Coal Mine',
       category: 'Blog',
       topic: 'Business Strategy',
@@ -209,7 +234,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/the-canary-leaving-the-coal-mine-7e589d8822d0',
     },
     {
-      id: 16,
+      id: 19,
       title: 'The Context Dilemma',
       category: 'Blog',
       topic: 'Technology',
@@ -219,7 +244,7 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/the-context-dilemma-2c53a8a9a68f',
     },
     {
-      id: 17,
+      id: 20,
       title: 'Navigating AI Copyright Compliance Under the New USPTO Guidelines',
       category: 'Blog',
       topic: 'Legal & Compliance',
@@ -229,18 +254,18 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/how-to-navigate-ai-copyright-compliance-under-the-new-uspto-guidelines-25bc63505549',
     },
     {
-      id: 18,
+      id: 21,
       title: 'Harnessing the Power of AI with Secure Infrastructure',
-      category: 'Whitepaper',
+      category: 'White Paper',
       topic: 'Enterprise AI',
       date: 'May 9, 2025',
       description:
-        'A detailed whitepaper exploring how organizations can leverage AI capabilities while maintaining robust security and intelligent orchestration.',
+        'A detailed White Paper exploring how organizations can leverage AI capabilities while maintaining robust security and intelligent orchestration.',
       image: HarnessingthePowerofAIwithSecureInfrastructure,
       link: '#top',
     },
     {
-      id: 19,
+      id: 22,
       title: 'Xilos: The Missing Piece for Secure Enterprise AI in an Agentic World',
       category: 'Blog',
       topic: 'Security',
@@ -250,7 +275,7 @@ function FiltersNews() {
       link: 'https://blog.millpondresearch.com/xilos-the-missing-piece-for-secure-enterprise-ai-in-an-agentic-world-a631f714347f',
     },
     {
-      id: 20,
+      id: 23,
       title: 'The Data Harvest: The Biggest Threat in AI',
       category: 'Blog',
       topic: 'Data Privacy',
@@ -260,9 +285,9 @@ function FiltersNews() {
       link: 'https://devsecopsai.today/the-data-harvest-how-llm-providers-leverage-user-interactions-for-model-improvement-75384c878b69',
     },
     {
-      id: 21,
+      id: 24,
       title: 'The Intelligence Solution',
-      category: 'Whitepaper',
+      category: 'White Paper',
       topic: 'eBook',
       date: 'March 13, 2025',
       description:
@@ -271,7 +296,7 @@ function FiltersNews() {
       link: 'https://www.theintelligencesolution.com',
     },
     {
-      id: 22,
+      id: 25,
       title: 'An Important Limitation of AI',
       category: 'Blog',
       topic: 'AI Fundamentals',
@@ -283,7 +308,7 @@ function FiltersNews() {
     },
   ]);
 
-  const categories = ['Collateral', 'Blog', 'Case Study', 'eBook', 'Whitepaper', 'Video'];
+  const categories = ['Collateral', 'Blog', 'Case Study', 'eBook', 'White Paper', 'Video'];
   const topics = [
     'AI Fundamentals',
     'AI Strategy',
