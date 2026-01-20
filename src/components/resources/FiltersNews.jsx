@@ -86,7 +86,7 @@ function FiltersNews() {
        title: 'Xilos - Data Sheet',
        category: 'Collateral',
        topic: 'Product Collateral',
-       date: 'January 26, 2026',
+       date: 'January 2026',
        description:
          "Xilos: Mill Pond Research's comprehensive AI governance platform that provides complete visibility, security, and orchestration for enterprise agentic AI systems while preventing data leakage, reducing costs, and enabling secure cross-departmental collaboration.",
        image: XilosDataSheet,
@@ -97,7 +97,7 @@ function FiltersNews() {
        title: 'Workbench - Data Sheet',
        category: 'Collateral',
        topic: 'Product Collateral',
-       date: 'January 26, 2025',
+       date: 'January 2025',
        description:
          "Workbench: Mill Pond Research's universal LLM workspace - a frontend for using LLM models, creating agents, writing and sharing prompts, built on your context.",
        image: WorkBenchDatasheet,
@@ -108,7 +108,7 @@ function FiltersNews() {
        title: 'The Shadow AI Crisis',
        category: 'Collateral',
        topic: 'Product Collateral',
-       date: 'October 26, 2025',
+       date: 'November 2025',
        description:
          "Mill Pond Research's comprehensive analysis of the shadow AI crisis, revealing critical enterprise vulnerabilities and introducing Xilos.AI as an integrated governance platform that observes, secures, and orchestrates AI deployments across organizations.",
        image: TheShadowAICrisis,
@@ -119,7 +119,7 @@ function FiltersNews() {
        title: 'Company Overview - Mill Pond Research Inc',
        category: 'Collateral',
        topic: 'Product Collateral',
-       date: 'October 26, 2025',
+       date: 'October 2025',
        description:
          "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through WorkBench and Xilos—patented solutions that enable CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
        image: CompanyOverviewMillPondResearch,
@@ -130,7 +130,7 @@ function FiltersNews() {
        title: 'The Secret War or "Big Token"',
        category: 'Blog',
        topic: 'AI Strategy',
-       date: 'September 1, 2025',
+       date: 'September 2025',
        description:
          'The arrival of "Big Token" AI models has revolutionized enterprise capabilities, enabling unprecedented efficiency and insight extraction…',
        image: TheSecretWarofBigToken,
@@ -141,7 +141,7 @@ function FiltersNews() {
        title: 'Mill Pond Research Capability Statement',
        category: 'Case Study',
        topic: 'Company Overview',
-       date: 'Augest 24, 2025',
+       date: 'August 2025',
        description:
          "Comprehensive overview of Mill Pond Research's capabilities, expertise, and proven track record in AI security and orchestration.",
        image: MillPondResearchCapabilityStatement,
@@ -152,7 +152,7 @@ function FiltersNews() {
        title: 'The Emergence of a Shadow AI Crisis',
        category: 'White Paper',
        topic: 'Security',
-       date: 'Augest 5, 2025',
+       date: 'August 2025',
        description:
          'A comprehensive White Paper examining the growing challenge of shadow AI in enterprise environments and strategies for mitigation.',
        image: TheEmergenceofaShadowAICrisis,
@@ -163,7 +163,7 @@ function FiltersNews() {
        title: 'Xilos - Quick Introduction',
        category: 'Video',
        topic: 'Xilos',
-       date: 'Augest 4, 2025',
+       date: 'August2025',
        description:
          'A quick introduction to Xilos, the AI security and orchestration platform that gives you complete control over your AI agents.',
        image: xilos3,
@@ -174,7 +174,7 @@ function FiltersNews() {
        title: 'Xilos: A Definitive Answer to the Shadow AI Crisis',
        category: 'Blog',
        topic: 'Security',
-       date: 'July 31, 2025',
+       date: 'July 2025',
        description:
          'The $670,000 Question: Why Shadow AI Is the Fastest-Growing Line Item in Your Next Breach.',
        image: xilos4,
@@ -185,7 +185,7 @@ function FiltersNews() {
        title: 'Xilos: The Missing Piece for Secure Enterprise AI in an Agentic World',
        category: 'Blog',
        topic: 'Security',
-       date: 'July 30, 2025',
+       date: 'July 2025',
        description: 'The Unseen Crisis in Enterprise AI Adoption.',
        image: xilos1,
        link: 'https://blog.millpondresearch.com/xilos-the-missing-piece-for-secure-enterprise-ai-in-an-agentic-world-a631f714347f',
@@ -195,7 +195,7 @@ function FiltersNews() {
        title: 'Mill Pond Research 1-Minute Pitch TechCrunch Disrupt 2025',
        category: 'Video',
        topic: 'Company Overview',
-       date: 'July 30, 2025',
+       date: 'July 2025',
        description:
          "Watch Mill Pond Research's 1-minute pitch presentation from TechCrunch Disrupt 2025, showcasing our AI security and orchestration solutions.",
        image: MillPondResearch1MinutePitchTechCrunchDisrupt2025,
@@ -206,7 +206,7 @@ function FiltersNews() {
        title: 'WorkBench Brochure',
        category: 'Collateral',
        topic: 'WorkBench',
-       date: 'July 30, 2025',
+       date: 'July 2025',
        description:
          'Detailed product information for WorkBench, the unified AI authoring platform for enterprise teams.',
        image: workbench6,
@@ -217,7 +217,7 @@ function FiltersNews() {
        title: 'Xilos Brochure',
        category: 'Collateral',
        topic: 'Xilos',
-       date: 'July 29, 2025',
+       date: 'July 2025',
        description:
          'Comprehensive overview of Xilos features, capabilities, and enterprise security solutions for AI orchestration.',
        image: xilos2,
@@ -228,7 +228,7 @@ function FiltersNews() {
        title: 'So, What Happens After AGI?',
        category: 'Blog',
        topic: 'Future of AI',
-       date: 'June 5, 2025',
+       date: 'June 2025',
        description:
          "The digital landscape is transforming before our eyes. AI isn't merely a passing trend; it's the foundation upon which every application…",
        image: SoWhatHappensAfterAGI,
@@ -239,7 +239,7 @@ function FiltersNews() {
        title: "How Enterprises Can Securely Unlock AI's Power",
        category: 'Blog',
        topic: 'Enterprise AI',
-       date: 'May 22, 2025',
+       date: 'May 2025',
        description:
          "Navigating the complexities of AI governance isn't just about avoiding pitfalls; it's about building a foundation for innovation. Here's a…",
        image: HowEnterprisesCanSecurelyUnlockAIsPower,
@@ -250,7 +250,7 @@ function FiltersNews() {
        title: 'The Canary Leaving the Coal Mine',
        category: 'Blog',
        topic: 'Business Strategy',
-       date: 'May 20, 2025',
+       date: 'May 2025',
        description: "The Existential Threat That Most Businesses Won't Survive.",
        image: TheCanaryLeavingTheCoalMine,
        link: 'https://blog.millpondresearch.com/the-canary-leaving-the-coal-mine-7e589d8822d0',
@@ -260,7 +260,7 @@ function FiltersNews() {
        title: 'The Context Dilemma',
        category: 'Blog',
        topic: 'Technology',
-       date: 'May 12, 2025',
+       date: 'May 2025',
        description: 'How Fragmented Digital Experiences Are Undermining Our AI Future.',
        image: TheContextDilemma,
        link: 'https://devsecopsai.today/the-context-dilemma-2c53a8a9a68f',
@@ -270,7 +270,7 @@ function FiltersNews() {
        title: 'Navigating AI Copyright Compliance Under the New USPTO Guidelines',
        category: 'Blog',
        topic: 'Legal & Compliance',
-       date: 'May 11, 2025',
+       date: 'May 2025',
        description: 'The New AI Copyright Landscape.',
        image: NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines,
        link: 'https://blog.millpondresearch.com/how-to-navigate-ai-copyright-compliance-under-the-new-uspto-guidelines-25bc63505549',
@@ -280,7 +280,7 @@ function FiltersNews() {
        title: 'Harnessing the Power of AI with Secure Infrastructure',
        category: 'White Paper',
        topic: 'Enterprise AI',
-       date: 'May 9, 2025',
+       date: 'May 2025',
        description:
          'A detailed White Paper exploring how organizations can leverage AI capabilities while maintaining robust security and intelligent orchestration.',
        image: HarnessingthePowerofAIwithSecureInfrastructure,
@@ -291,7 +291,7 @@ function FiltersNews() {
        title: 'The Data Harvest: The Biggest Threat in AI',
        category: 'Blog',
        topic: 'Data Privacy',
-       date: 'April 22, 2025',
+       date: 'April 2025',
        description: 'State of the User + Provider Agreement.',
        image: TheDataHarvestTheBiggestThreatinAI,
        link: 'https://devsecopsai.today/the-data-harvest-how-llm-providers-leverage-user-interactions-for-model-improvement-75384c878b69',
@@ -301,7 +301,7 @@ function FiltersNews() {
        title: 'The Intelligence Solution',
        category: 'White Paper',
        topic: 'eBook',
-       date: 'March 13, 2025',
+       date: 'March 2025',
        description:
          'A comprehensive eBook exploring the future of artificial intelligence and how organizations can harness its transformative power.',
        image: TheIntelligenceSolution,
@@ -312,7 +312,7 @@ function FiltersNews() {
        title: 'An Important Limitation of AI',
        category: 'Blog',
        topic: 'AI Fundamentals',
-       date: 'February 13, 2025',
+       date: 'February 2025',
        description:
          'In the pursuit of understanding artificial intelligence (AI) and its limitations, we must properly frame AI in our collective…',
        image: AnImportantLimitationofAI,
