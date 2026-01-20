@@ -79,7 +79,7 @@ function FiltersNews() {
        description:
        'Stop rebuilding agents from scratch every time you swap a model—use authoring tools that turn weeks of tinkering into days of systematic, production-ready development.',
        image: BreakingFreePOC,
-       link: 'https://blog.millpondresearch.com/breaking-free-from-perpetual-proof-of-concept-purgatory',
+       link: 'https://blog.millpondresearch.com/breaking-free-from-perpetual-proof-of-concept-purgatory-8bcf991ba4d8',
        },
        {
        id: 21,
