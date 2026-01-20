@@ -26,7 +26,7 @@ import Masonry from "react-masonry-css";
 import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-securing-the-autonomous-enterprise.png';
 import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
 import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
-import XilosDataSheet from '../../assets/logos-resources/xilos-datasheet.PNG';
+import XilosDataSheet from '../../assets/logos-resources/xilos-data-sheet.PNG';
 
 
 // Define responsive breakpoints for Masonry columns.
