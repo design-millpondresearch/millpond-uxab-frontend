@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import WorkBenchDatasheet from '../../assets/logos-resources/workbench-data-sheet.png';
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
-import CompanyOverviewMillPondResearch from '../../assets/logos-resources/CompanyOverviewMillPondResearch.svg';
+import CompanyOverviewMillPondResearch from '../../assets/logos-resources/company-overview.png';
 import TheSecretWarofBigToken from '../../assets/logos-resources/TheSecretWarofBigToken.svg';
 import TheEmergenceofaShadowAICrisis from '../../assets/logos-resources/TheEmergenceofaShadowAICrisis.svg';
 import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
@@ -27,7 +27,7 @@ import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-sec
 import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
 import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
 import XilosDataSheet from '../../assets/logos-resources/xilos-data-sheet.png';
-
+import AIUnknown from '../../assets/logos-resources/ai-unknown.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -48,8 +48,29 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-       {
-       id: 25,
+          {
+       id: 30,
+       title: 'Company Overview - Mill Pond Research Inc',
+       category: 'Collateral',
+       topic: 'Product Collateral',
+       date: 'January 2025',
+       description:
+         "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through WorkBench and Xilos—patented solutions that enable CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
+       image: CompanyOverviewMillPondResearch,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/MPR_Company_Overview_012226.pdf',
+     }, 
+    {
+       id: 29,
+       title: 'Your Employees Are Already Using AI. The Question Is Whether You Know About It.',
+       category: 'Blog',
+       topic: 'AI Security & Governance',
+       date: 'January 2026',
+       description: 'Here’s an uncomfortable truth: right now, most of the people in your organization are pasting sensitive company data into ChatGPT or Gemini. Or Claude.',
+       image: AIUnknown,
+       link: 'https://blog.millpondresearch.com/your-employees-are-already-using-ai-the-question-is-whether-you-know-about-it-d135e00a17c6',
+       },
+      {
+       id: 28,
        title: 'Securing the Autonomous Enterprise',
        category: 'White Paper',
        topic: 'AI Security & Governance',
@@ -60,7 +81,7 @@ function FiltersNews() {
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Securing%20the%20Autonomous%20Enterprise.pdf',
        },
        {
-       id: 24,
+       id: 27,
        title: 'The Agentic Imperative',
        category: 'White Paper',
        topic: 'AI Strategy & Deployment',
@@ -71,7 +92,7 @@ function FiltersNews() {
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Agentic%20Imperative.pdf',
        },
        {
-       id: 23,
+       id: 26,
        title: 'Breaking Free from Perpetual Proof-of-Concept Purgatory',
        category: 'Blog',
        topic: 'AI Development Practices',
@@ -82,7 +103,7 @@ function FiltersNews() {
        link: 'https://blog.millpondresearch.com/breaking-free-from-perpetual-proof-of-concept-purgatory-8bcf991ba4d8',
        },
        {
-       id: 21,
+       id: 25,
        title: 'Xilos - Data Sheet',
        category: 'Collateral',
        topic: 'Product Collateral',
@@ -93,7 +114,7 @@ function FiltersNews() {
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Data%20Sheet%20-%2020260114.pdf',
      },
      {
-       id: 22,
+       id: 24,
        title: 'Workbench - Data Sheet',
        category: 'Collateral',
        topic: 'Product Collateral',
@@ -115,18 +136,7 @@ function FiltersNews() {
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Shadow%20AI%20Crisis%20-%20Xilos%20-%20Mill%20Pond%20Research.pdf',
      },
      {
-       id: 24,
-       title: 'Company Overview - Mill Pond Research Inc',
-       category: 'Collateral',
-       topic: 'Product Collateral',
-       date: 'October 2025',
-       description:
-         "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through WorkBench and Xilos—patented solutions that enable CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
-       image: CompanyOverviewMillPondResearch,
-       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Company%20Overview%20-%20Mill%20Pond%20Research%20Inc.pdf',
-     },
-     {
-       id: 23,
+       id: 22,
        title: 'The Secret War or "Big Token"',
        category: 'Blog',
        topic: 'AI Strategy',
@@ -137,7 +147,7 @@ function FiltersNews() {
        link: 'https://blog.millpondresearch.com/the-rise-of-big-token-a700f967edac',
      },
      {
-       id: 22,
+       id: 21,
        title: 'Mill Pond Research Capability Statement',
        category: 'Case Study',
        topic: 'Company Overview',
