@@ -4,7 +4,7 @@ import WorkBenchDatasheet from '../../assets/logos-resources/workbench-data-shee
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/company-overview.png';
-import TheSecretWarofBigToken from '../../assets/logos-resources/TheSecretWarofBigToken.svg';
+import TheSecretWarofBigToken from '../../assets/logos-resources/big-token.png';
 import TheEmergenceofaShadowAICrisis from '../../assets/logos-resources/TheEmergenceofaShadowAICrisis.svg';
 import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
 import MillPondResearch1MinutePitchTechCrunchDisrupt2025 from '../../assets/logos-resources/MillPondResearch1MinutePitchTechCrunchDisrupt2025.svg';
