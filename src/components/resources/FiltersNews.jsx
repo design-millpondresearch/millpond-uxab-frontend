@@ -53,7 +53,7 @@ function FiltersNews() {
        title: 'Company Overview - Mill Pond Research Inc',
        category: 'Collateral',
        topic: 'Product Collateral',
-       date: 'January 2025',
+       date: 'January 2026',
        description:
          "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through WorkBench and Xilos—patented solutions that enable CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
        image: CompanyOverviewMillPondResearch,
