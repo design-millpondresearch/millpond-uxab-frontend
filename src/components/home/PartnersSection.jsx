@@ -14,6 +14,7 @@ import invokeai from "../../assets/partners/invokeai.svg";
 //testimonial logos
 import jlinc from "../../assets/testimonials/JLINC Logo H Black.svg";
 import zealstrat from "../../assets/testimonials/ZealStrat.svg";
+import ibm from "../../assets/testimonials/IBM-logo.svg";
 
 //arrows
 import arrowLeft from "../../assets/icons/arrow-left.svg";
@@ -42,6 +43,14 @@ const marqueeRow1 = [...row1, ...row1];
 const marqueeRow2 = [...row2, ...row2];
 
 const testimonials = [
+  {
+    company: "IBM",
+    logo: ibm,
+    title: "Xilos + watsonx: a powerful combination",
+    body:
+      "“IBM is excited for our newly formed partnership with Mill Pond Research as their Xilos solution is resonating within the market by addressing the importance of managing shadow AI in the enterprise. The team is looking forward to augmenting Xilos with our enterprise AI platform, watsonx.”",
+    speaker: "Michael Boodee, US AI Partnership Sales Leader, IBM",
+  },
   {
     company: "JLINC",
     logo: jlinc,
