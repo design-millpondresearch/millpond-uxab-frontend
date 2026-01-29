@@ -28,6 +28,9 @@ import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imp
 import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
 import XilosDataSheet from '../../assets/logos-resources/xilos-data-sheet.png';
 import AIUnknown from '../../assets/logos-resources/ai-unknown.png';
+import WhenYourAIInvestment from '../../assets/logos-resources/WhenYourAIInvestment.png';
+import WhereDoesYouDataGo from '../../assets/logos-resources/WhereDoesYourDataGo.png';
+import ShadowAICrisis from '../../assets/logos-resources/ShadowAICrisis.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -48,7 +51,40 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-          {
+     {
+       id: 33,
+       title: 'When Does Your Data Go After You Hit Send',
+       category: 'Blog',
+       topic: 'AI Privacy',
+       date: 'January 2026',
+       description:
+         "Employees routinely surrender sensitive data to third-party AI systems where it becomes permanently embedded in training models and impossible to retrieve, creating an invisible exposure that traditional security tools cannot track or reverse. ",
+       image: WhereDoesYouDataGo,
+       link: 'https://blog.millpondresearch.com/where-does-your-data-go-after-you-hit-send-b1dbf4ce4750',
+      }, 
+     {
+       id: 32,
+       title: 'When Your AI Investment Becomes a Liability',
+       category: 'Blog',
+       topic: 'AI Investment',
+       date: 'January 2026',
+       description:
+         "Organizations that build deep operational expertise on specific AI platforms face a unique vendor lock-in trap where accumulated prompt engineering knowledge and institutional workarounds cannot transfer to new systems, unlike traditional software migrations.",
+       image: WhenYourAIInvestment,
+       link: 'https://blog.millpondresearch.com/when-your-ai-investment-becomes-a-liability-960ceb4b33f3',
+      },
+      {
+       id: 31,
+       title: 'The Shadow AI Crisis Is Already Here',
+       category: 'Blog',
+       topic: 'Shadow AI',
+       date: 'January 2026',
+       description:
+         "Your employees are already using AI tools you can’t see. The question isn’t whether you have a shadow AI problem — it’s how bad it’s gotten.",
+       image: ShadowAICrisis,
+       link: 'https://blog.millpondresearch.com/the-shadow-ai-crisis-is-already-here-02c0e95ba948',
+      },
+      {
        id: 30,
        title: 'Company Overview - Mill Pond Research Inc',
        category: 'Collateral',
@@ -59,7 +95,7 @@ function FiltersNews() {
        image: CompanyOverviewMillPondResearch,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/MPR_Company_Overview_012226.pdf',
      }, 
-    {
+     {
        id: 29,
        title: 'Your Employees Are Already Using AI. The Question Is Whether You Know About It.',
        category: 'Blog',
