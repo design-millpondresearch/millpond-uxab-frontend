@@ -53,7 +53,7 @@ function FiltersNews() {
   const [resources] = useState([
      {
        id: 33,
-       title: 'When Does Your Data Go After You Hit Send',
+       title: 'Where Does Your Data Go After You Hit Send',
        category: 'Blog',
        topic: 'AI Privacy',
        date: 'January 2026',
