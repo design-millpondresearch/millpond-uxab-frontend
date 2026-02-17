@@ -31,7 +31,7 @@ import WhenYourAIInvestment from '../../assets/logos-resources/WhenYourAIInvestm
 import WhereDoesYouDataGo from '../../assets/logos-resources/WhereDoesYourDataGo.png';
 import ShadowAICrisis from '../../assets/logos-resources/ShadowAICrisis.png';
 import Why40Percent from '../../assets/logos-resources/why40percent.png';
-import CeosUpdating2026 from '../../assets/logos-resources/ceosupdating2026.png';
+import CeosUpdating2026 from '../../assets/logos-resources/ceosupdated2026.png';
 import liberationinnovation from '../../assets/logos-resources/liberation-innovation.png'
 
 // Define responsive breakpoints for Masonry columns.
