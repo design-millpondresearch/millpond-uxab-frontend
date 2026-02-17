@@ -5,7 +5,6 @@ import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.sv
 import filtersIcon from '../../assets/filters.svg';
 import CompanyOverviewMillPondResearch from '../../assets/logos-resources/company-overview.png';
 import TheSecretWarofBigToken from '../../assets/logos-resources/big-token.png';
-import TheEmergenceofaShadowAICrisis from '../../assets/logos-resources/TheEmergenceofaShadowAICrisis.svg';
 import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
 import MillPondResearch1MinutePitchTechCrunchDisrupt2025 from '../../assets/logos-resources/MillPondResearch1MinutePitchTechCrunchDisrupt2025.svg';
 import SoWhatHappensAfterAGI from '../../assets/logos-resources/SoWhatHappensAfterAGI.svg';
@@ -31,6 +30,9 @@ import AIUnknown from '../../assets/logos-resources/ai-unknown.png';
 import WhenYourAIInvestment from '../../assets/logos-resources/WhenYourAIInvestment.png';
 import WhereDoesYouDataGo from '../../assets/logos-resources/WhereDoesYourDataGo.png';
 import ShadowAICrisis from '../../assets/logos-resources/ShadowAICrisis.png';
+import Why40Percent from '../../assets/logos-resources/why40percent.png';
+import CeosUpdating2026 from '../../assets/logos-resources/ceosupdated2026.png';
+import liberationinnovation from '../../assets/logos-resources/liberation-innovation.png'
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -51,7 +53,40 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-     {
+    {
+      id: 36,
+       title: 'When Infinite Possibilities Create Paralysis — Adding Constraints to Ignite Creativity',
+       category: 'Blog',
+       topic: 'AI Governance',
+       date: 'Februrary 2026',
+       description:
+         "How the writer’s blank page mirrors today’s AI adoption crisis — and why the path forward requires intentional limitation",
+       image: liberationinnovation,
+       link: 'https://blog.millpondresearch.com/when-infinite-possibilities-create-paralysis-why-constraints-liberate-innovation-8b175ee073ff',
+    }, 
+    {
+      id: 35,
+       title: 'CEOs Updated Their 2026 Priorities',
+       category: 'Blog',
+       topic: 'AI Corporate',
+       date: 'Februrary 2026',
+       description:
+         "For the first time, CEOs now rank cyber-enabled fraud as their top security concern — displacing ransomware from the #1 spot. This isn’t just a statistical shift; it’s a signal that cybersecurity has moved from the server room to the boardroom.",
+       image: CeosUpdating2026,
+       link: 'https://blog.millpondresearch.com/ceos-just-rewrote-their-cyber-priorities-and-cisos-are-fighting-a-different-battle-afc360055b05',
+    }, 
+    {
+      id: 34,
+       title: 'Why 40% of Agentic AI Projects Will Fail (And How to Beat the Odds)',
+       category: 'Blog',
+       topic: 'Agentic AI',
+       date: 'Februrary 2026',
+       description:
+         "The gap between AI pilots and production deployment has become an enterprise crisis. Here’s what separates the 60% that will survive from the 40% that won’t.",
+       image: Why40Percent,
+       link: 'https://blog.millpondresearch.com/why-40-of-agentic-ai-projects-will-fail-and-how-to-beat-the-odds-685d5e4cba1e',
+    }, 
+    {
        id: 33,
        title: 'Where Does Your Data Go After You Hit "Send"?',
        category: 'Blog',
@@ -191,18 +226,7 @@ function FiltersNews() {
        description:
          "Comprehensive overview of Mill Pond Research's capabilities, expertise, and proven track record in AI security and orchestration.",
        image: MillPondResearchCapabilityStatement,
-       link: 'https://www.millpondresearch.com/resources/files/Mill%20Pond%20Research%20Capability%20Statement.pdf',
-     },
-     {
-       id: 20,
-       title: 'The Emergence of a Shadow AI Crisis',
-       category: 'White Paper',
-       topic: 'Security',
-       date: 'August 2025',
-       description:
-         'A comprehensive White Paper examining the growing challenge of shadow AI in enterprise environments and strategies for mitigation.',
-       image: TheEmergenceofaShadowAICrisis,
-       link: '#top',
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Mill%20Pond%20Research%20Capability%20Statement.pdff',
      },
      {
        id: 19,
@@ -213,7 +237,7 @@ function FiltersNews() {
        description:
          'A quick introduction to Xilos, the AI security and orchestration platform that gives you complete control over your AI agents.',
        image: xilos3,
-       link: 'https://www.youtube.com/watch?v=nJ1YIbrTL3s&feature=youtu.be',
+       link: 'https://www.youtube.com/watch?v=9pIMw7NYxc4',
      },
      {
        id: 18,
@@ -256,7 +280,7 @@ function FiltersNews() {
        description:
          'Detailed product information for WorkBench, the unified AI authoring platform for enterprise teams.',
        image: workbench6,
-       link: 'https://www.millpondresearch.com/resources/files/Workbench%20-%20Brochure.pdf',
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Workbench%20-%20Brochure%20-%2020260217.pdf',
      },
      {
        id: 14,
@@ -267,7 +291,7 @@ function FiltersNews() {
        description:
          'Comprehensive overview of Xilos features, capabilities, and enterprise security solutions for AI orchestration.',
        image: xilos2,
-       link: 'https://www.millpondresearch.com/resources/files/Xilos%20-%20Brochure.pdf',
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Brochure%20-%2020260217.pdf',
      },
      {
        id: 13,
