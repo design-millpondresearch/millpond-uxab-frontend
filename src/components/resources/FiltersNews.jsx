@@ -37,6 +37,7 @@ import SecurityEfficiency from '../../assets/logos-resources/SecurityEfficiency.
 import HiddenCost from '../../assets/logos-resources/HiddenCost.webp';
 import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyramid.webp';
 import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
+import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
