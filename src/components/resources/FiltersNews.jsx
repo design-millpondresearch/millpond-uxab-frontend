@@ -35,7 +35,7 @@ import CeosUpdating2026 from '../../assets/logos-resources/ceosupdated2026.png';
 import liberationinnovation from '../../assets/logos-resources/liberation-innovation.png'
 import SecurityEfficiency from '../../assets/logos-resources/SecurityEfficiency.webp';
 import HiddenCost from '../../assets/logos-resources/HiddenCost.webp';
-import FlatteningThePyramid from '../../assets/logos-resources/flattening-the-pyramid.webp';
+import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyramid.webp';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
