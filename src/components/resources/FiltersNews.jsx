@@ -33,6 +33,11 @@ import ShadowAICrisis from '../../assets/logos-resources/ShadowAICrisis.png';
 import Why40Percent from '../../assets/logos-resources/why40percent.png';
 import CeosUpdating2026 from '../../assets/logos-resources/ceosupdated2026.png';
 import liberationinnovation from '../../assets/logos-resources/liberation-innovation.png'
+import SecurityEfficiency from '../../assets/logos-resources/SecurityEfficiency.webp';
+import HiddenCost from '../../assets/logos-resources/HiddenCost.webp';
+import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyramid.webp';
+import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
+import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -53,11 +58,66 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
+     {
+      id: 42,
+       title: 'Flattening the Pyramid',
+       category: 'Blog',
+       topic: 'Business Strategy',
+       date: 'Februrary 2026',
+       description:
+         "Why Identity and Access Management is blind to the agentic future.",
+       image: FlatteningThePyramid,
+       link: 'https://medium.com/@millpondresearch/flattening-the-pyramid-d43e7a8e67da',
+    },
+    {
+      id: 40,
+       title: 'Why Identity Access Management Is Blind to the Agentic Future',
+       category: 'Blog',
+       topic: 'AI Security',
+       date: 'Februrary 2026',
+       description:
+         "Why Identity and Access Management is blind to the agentic future.",
+       image: TheBlindSpot,
+       link: 'https://medium.com/@millpondresearch/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
+    },
+    {
+      id: 39,
+       title: 'AI Glossary for Non-Technical Users',
+       category: 'Getting Started',
+       topic: 'AI Fundamentals',
+       date: 'Februrary 2026',
+       description:
+         "A simple glossary of AI terms for non-technical users.",
+       image: AIGlossary,
+       link: 'https://blog.millpondresearch.com/ai-glossary-for-non-technical-users-78e9a02699d7',
+    }, 
+   { 
+      id: 38,
+       title: 'The Hidden Cost of Model Lock-in',
+       category: 'Blog',
+       topic: 'AI Strategy',
+       date: 'Februrary 2026',
+       description:
+         "When you switch LLMs, you shouldn’t have to start from scratch. Most organizations learn this lesson the hard way.",
+       image: HiddenCost,
+       link: 'https://blog.millpondresearch.com/the-hidden-cost-of-model-lock-in-037fbaac2772',
+    }, 
+    {
+      id: 37,
+       title: 'Security and Efficiency Aren’t Trade-offs — They’re Multipliers',
+       category: 'Blog',
+       topic: 'Data Governance',
+       date: 'Februrary 2026',
+       description:
+         "The organizations moving fastest on agentic AI aren’t the ones with the loosest controls. They’re the ones with the strongest governance",
+       image: SecurityEfficiency,
+       link: 'https://blog.millpondresearch.com/security-and-efficiency-arent-trade-offs-they-re-multipliers-77676eb57900',
+    }, 
     {
       id: 36,
        title: 'When Infinite Possibilities Create Paralysis — Adding Constraints to Ignite Creativity',
        category: 'Blog',
-       topic: 'AI Governance',
+       topic: 'Business Strategy',
        date: 'Februrary 2026',
        description:
          "How the writer’s blank page mirrors today’s AI adoption crisis — and why the path forward requires intentional limitation",
@@ -68,7 +128,7 @@ function FiltersNews() {
       id: 35,
        title: 'CEOs Updated Their 2026 Priorities',
        category: 'Blog',
-       topic: 'AI Corporate',
+       topic: 'AI Strategy',
        date: 'Februrary 2026',
        description:
          "For the first time, CEOs now rank cyber-enabled fraud as their top security concern — displacing ransomware from the #1 spot. This isn’t just a statistical shift; it’s a signal that cybersecurity has moved from the server room to the boardroom.",
@@ -79,7 +139,7 @@ function FiltersNews() {
       id: 34,
        title: 'Why 40% of Agentic AI Projects Will Fail (And How to Beat the Odds)',
        category: 'Blog',
-       topic: 'Agentic AI',
+       topic: 'AI Strategy',
        date: 'Februrary 2026',
        description:
          "The gap between AI pilots and production deployment has become an enterprise crisis. Here’s what separates the 60% that will survive from the 40% that won’t.",
@@ -90,7 +150,7 @@ function FiltersNews() {
        id: 33,
        title: 'Where Does Your Data Go After You Hit "Send"?',
        category: 'Blog',
-       topic: 'AI Privacy',
+       topic: 'Data Privacy',
        date: 'January 2026',
        description:
          "Employees routinely surrender sensitive data to third-party AI systems where it becomes permanently embedded in training models and impossible to retrieve, creating an invisible exposure that traditional security tools cannot track or reverse. ",
@@ -101,7 +161,7 @@ function FiltersNews() {
        id: 32,
        title: 'When Your AI Investment Becomes a Liability',
        category: 'Blog',
-       topic: 'AI Investment',
+       topic: 'Legal & Compliance',
        date: 'January 2026',
        description:
          "Organizations that build deep operational expertise on specific AI platforms face a unique vendor lock-in trap where accumulated prompt engineering knowledge and institutional workarounds cannot transfer to new systems, unlike traditional software migrations.",
@@ -112,7 +172,7 @@ function FiltersNews() {
        id: 31,
        title: 'The Shadow AI Crisis Is Already Here',
        category: 'Blog',
-       topic: 'Shadow AI',
+       topic: 'Future of AI',
        date: 'January 2026',
        description:
          "Your employees are already using AI tools you can’t see. The question isn’t whether you have a shadow AI problem — it’s how bad it’s gotten.",
@@ -134,7 +194,7 @@ function FiltersNews() {
        id: 29,
        title: 'Your Employees Are Already Using AI. The Question Is Whether You Know About It.',
        category: 'Blog',
-       topic: 'AI Security & Governance',
+       topic: 'Enterprise AI',
        date: 'January 2026',
        description: 'Here’s an uncomfortable truth: right now, most of the people in your organization are pasting sensitive company data into ChatGPT or Gemini. Or Claude.',
        image: AIUnknown,
@@ -144,7 +204,7 @@ function FiltersNews() {
        id: 28,
        title: 'Securing the Autonomous Enterprise',
        category: 'White Paper',
-       topic: 'AI Security & Governance',
+       topic: 'Enterprise AI',
        date: 'January 2026',
        description:
        'A field-guide for CIOs and CISOs to deploy agentic AI without falling victim to shadow-AI sprawl, data leakage, or compliance violations.',
@@ -155,7 +215,7 @@ function FiltersNews() {
        id: 27,
        title: 'The Agentic Imperative',
        category: 'White Paper',
-       topic: 'AI Strategy & Deployment',
+       topic: 'Enterprise AI',
        date: 'January 2026',
        description:
        'Why 40 % of agentic-AI projects will be canceled by 2027 and how to build the unified tooling that moves enterprises from pilot purgatory to production at pace.',
@@ -166,7 +226,7 @@ function FiltersNews() {
        id: 26,
        title: 'Breaking Free from Perpetual Proof-of-Concept Purgatory',
        category: 'Blog',
-       topic: 'AI Development Practices',
+       topic: 'AI Strategy',
        date: 'January 2026',
        description:
        'Stop rebuilding agents from scratch every time you swap a model—use authoring tools that turn weeks of tinkering into days of systematic, production-ready development.',
