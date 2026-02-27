@@ -65,7 +65,7 @@ function FiltersNews() {
        topic: 'Business Strategy',
        date: 'Februrary 2026',
        description:
-         "Why Identity and Access Management is blind to the agentic future.",
+         "How 'expertise' is going to evolve in the age of agentic AI.",
        image: FlatteningThePyramid,
        link: 'https://medium.com/@millpondresearch/flattening-the-pyramid-d43e7a8e67da',
     },
@@ -76,7 +76,7 @@ function FiltersNews() {
        topic: 'AI Security',
        date: 'Februrary 2026',
        description:
-         "Why Identity and Access Management is blind to the agentic future.",
+         "Why Identity and Access Management (IAM) is blind to the agentic future.",
        image: TheBlindSpot,
        link: 'https://medium.com/@millpondresearch/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
     },
