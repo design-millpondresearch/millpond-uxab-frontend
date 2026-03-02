@@ -1,22 +1,40 @@
 import techcrunch from "../../assets/TechCrunchLogo.svg";
 import bbc from "../../assets/BBCLogo.svg";
+import marketwatch from "../../assets/marketwatch.jpeg";
+import bankinfosecurity from "../../assets/bankinfosecurity.png";
 
 const stories = [
+  {
+    logo: marketwatch,
+    source: "MarketWatch",
+    title:
+      "Can China just steal America’s AI brain that’s costing trillions to develop?",
+    category: "News",
+    link: "https://www.marketwatch.com/story/can-china-just-steal-americas-ai-brain-thats-costing-trillions-to-develop-da126634",
+  },
   {
     logo: techcrunch,
     source: "TechCrunch",
     title:
-      "Mill Pond Research recognized among the most promising startups in the AI security and orchestration space.",
-    category: "Publication",
+      "The 2025 Startup Battlefield 200 is here — see who made the cut.",
+    category: "Event/Competition",
     link: "https://techcrunch.com/2025/08/27/the-2025-startup-battlefield-200-is-here-see-who-made-the-cut/#millpondresearch",
   },
   {
     logo: bbc,
-    source: "Press Release",
+    source: "BBC",
     title:
-      "Major analysis covering the AI market disruption and its impact on global AI development strategies.",
+      "It shocked the market but has China's DeepSeek changed AI?",
     category: "Publication",
     link: "https://www.bbc.com/news/articles/c4gez754mn6o",
+  },
+  {
+    logo: bankinfosecurity,
+    source: "BankInfoSecurity",
+    title:
+      "Hegseth's Anthropic Deadline Risks Severe Defense AI Gaps.",
+    category: "Publication",
+    link: "https://www.bankinfosecurity.com/hegseths-anthropic-deadline-risks-severe-defense-ai-gaps-a-30865",
   },
 ];
 
