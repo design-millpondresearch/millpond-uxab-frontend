@@ -1,7 +1,7 @@
 import techcrunch from "../../assets/TechCrunchLogo.svg";
 import bbc from "../../assets/BBCLogo.svg";
 import marketwatch from "../../assets/marketwatch.jpeg";
-import bankinfosecurity from "../../assets/bankinfosecurity.png";
+import bankinfosecurity from "../../assets/bankinfosecurity.webp";
 
 const stories = [
   {
