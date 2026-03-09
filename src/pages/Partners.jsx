@@ -1,5 +1,5 @@
-import HeroSection from "../components/contact-us/HeroSection.jsx";
-// import FormSection from "../components/contact-us/FormSection.jsx";
+import HeroSection from "../components/partners/HeroSection.jsx";
+// import FormSection from "../components/partners/FormSection.jsx";
 
 function Partners() {
   return (
