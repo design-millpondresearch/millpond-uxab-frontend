@@ -115,6 +115,11 @@ const Navbar = () => {
                         )}
                     </li>
                     <li className="navbar-item">
+                        <Link to="/partners" className="navbar-link">
+                            Partners
+                        </Link>
+                    </li>                    
+                    <li className="navbar-item">
                         <Link to="/resources" className="navbar-link">
                             Resources
                         </Link>
@@ -126,7 +131,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="navbar-cta">
-                    <Link to="/contactus" className="button-primary">
+                    <Link to="/contact" className="button-primary">
                         Get Started
                     </Link>
                 </div>
@@ -196,6 +201,11 @@ const Navbar = () => {
                             )}
                         </li>
                         <li className="mobile-menu-item">
+                            <Link to="/partners" className="mobile-menu-link" onClick={closeMobileMenu}>
+                                Partners
+                            </Link>
+                        </li>
+                        <li className="mobile-menu-item">
                             <Link to="/resources" className="mobile-menu-link" onClick={closeMobileMenu}>
                                 Resources
                             </Link>
@@ -207,7 +217,7 @@ const Navbar = () => {
                         </li>
                         <li className="mobile-menu-item mobile-cta-item">
                             <Link
-                                to="/contactus"
+                                to="/contact"
                                 className="button-primary mobile-cta-button"
                                 onClick={closeMobileMenu}
                             >
