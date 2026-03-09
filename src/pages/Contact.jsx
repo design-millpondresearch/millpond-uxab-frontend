@@ -1,7 +1,7 @@
 import HeroSection from "../components/contact-us/HeroSection.jsx";
 // import FormSection from "../components/contact-us/FormSection.jsx";
 
-function contact() {
+function Contact() {
   return (
     <main>
       <HeroSection />
