@@ -74,13 +74,13 @@ function HeroSection() {
             className="hero-title mb-4 text-3xl md:text-4xl lg:text-5xl"
             style={{ color: '#1F4E79' }}
           >
-            Get Started
+            Join the Partner Program
           </h1>
           <p
             className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl"
             style={{ color: '#4B4B4B' }}
           >
-            The Xilos Partner Program is an ecosystem program designed for technology vendors, system integrators, and implementation specialists who recognize that the future of enterprise AI is agentic—and that future requires governance.
+            Our Partner Program is an ecosystem program designed for technology vendors, system integrators, and implementation specialists who recognize that the future of enterprise AI is agentic—and that future requires governance.
           </p>
         </div>
 
