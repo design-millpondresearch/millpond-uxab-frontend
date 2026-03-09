@@ -38,7 +38,7 @@ function App() {
           <Route path="/partner" element={<Partner />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/company" element={<Company />} />
-          <Route path="/contactus" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
