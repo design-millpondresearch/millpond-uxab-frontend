@@ -80,8 +80,7 @@ function HeroSection() {
             className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl"
             style={{ color: '#4B4B4B' }}
           >
-            Ready to take control of your AI future? Get in touch with our team to discover how Mill Pond Research can
-            transform your organization's approach to AI security and orchestration.
+            The Xilos Partner Program is an ecosystem program designed for technology vendors, system integrators, and implementation specialists who recognize that the future of enterprise AI is agentic—and that future requires governance.
           </p>
         </div>
 
