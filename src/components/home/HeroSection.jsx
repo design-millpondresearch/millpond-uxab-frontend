@@ -66,7 +66,7 @@ function HeroSection() {
           Reduce your AI risk while maximizing operational efficiency
         </h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-          <Link to="/contactus" className="hero-button-primary">Request a Demo</Link>
+          <Link to="/contact" className="hero-button-primary">Request a Demo</Link>
           <Link to="/solutions/xilos" className="hero-button-tertiary">Explore Solutions</Link>
         </div>
       </div>

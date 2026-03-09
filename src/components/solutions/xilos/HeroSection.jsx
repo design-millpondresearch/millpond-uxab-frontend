@@ -63,7 +63,7 @@ function HeroSection() {
           </h3>
   
           <div className="mt-4 flex justify-center">
-            <Link to="/contactus" className="hero-button-primary">Learn More</Link>
+            <Link to="/contact" className="hero-button-primary">Learn More</Link>
           </div>
         </div>
       </section>

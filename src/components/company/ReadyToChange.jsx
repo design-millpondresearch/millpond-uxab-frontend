@@ -41,7 +41,7 @@ function ReadyToChange() {
           Contact us today to discover how Mill Pond Research can revolutionize your organization's approach to AI security and
           orchestration.
         </h3>
-        <Link to="/contactus" className="button-primary mt-8 md:mt-12">
+        <Link to="/contact" className="button-primary mt-8 md:mt-12">
           Learn More
         </Link>
       </div>

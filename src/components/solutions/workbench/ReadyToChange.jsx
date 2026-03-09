@@ -42,7 +42,7 @@ function ReadyToChange() {
         <h3 className="subheader mx-4" style={{ color: "#4B4B4B" }}>
           Contact us today to discover how Mill Pond Research can revolutionize your organization's approach to AI security and orchestration.
         </h3>
-        <Link to="/contactus" className="button-primary mt-8 md:mt-12">
+        <Link to="/contact" className="button-primary mt-8 md:mt-12">
           Learn More
         </Link>
       </div>
