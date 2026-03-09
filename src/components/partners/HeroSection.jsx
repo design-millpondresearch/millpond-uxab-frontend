@@ -103,7 +103,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-
-
-<script src="https://js-na2.hsforms.net/forms/embed/48049833.js" defer></script>
-<div class="hs-form-frame" data-region="na2" data-form-id="c1e864fd-fc0a-4e22-b2a0-05dc2c0c5f93" data-portal-id="48049833"></div>
