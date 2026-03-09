@@ -6,9 +6,10 @@ import './App.css';
 import Home from './pages/Home';
 import Workbench from './components/solutions/Workbench';
 import Xilos from './components/solutions/Xilos';
+import Partner from './pages/Partners';
 import Resources from './pages/Resources';
 import Company from './pages/Company';
-import Contactus from './pages/Contactus';
+import Contact from './pages/Contact';
 import Footer from "./components/Footer";
 
 /**
@@ -34,9 +35,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/solutions/workbench" element={<Workbench />} />
           <Route path="/solutions/xilos" element={<Xilos />} />
+          <Route path="/partner" element={<Partner />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/company" element={<Company />} />
-          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/contactus" element={<Contact />} />
         </Routes>
       </div>
       <Footer />

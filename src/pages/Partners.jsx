@@ -1,7 +1,7 @@
 import HeroSection from "../components/contact-us/HeroSection.jsx";
 // import FormSection from "../components/contact-us/FormSection.jsx";
 
-function Contactus() {
+function Partners() {
   return (
     <main>
       <HeroSection />
@@ -10,4 +10,4 @@ function Contactus() {
   );
 }
 
-export default Contactus;
+export default Partners;
