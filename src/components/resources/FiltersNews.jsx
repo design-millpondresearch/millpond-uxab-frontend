@@ -39,6 +39,7 @@ import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyra
 import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
 import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
 import IBMPartnershipAnnouncement from '../../assets/logos-resources/IBMPartnershipAnnouncement.jpg';
+import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAgenticFuture.jpg';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -60,7 +61,7 @@ const breakpointColumnsObj = {
 function FiltersNews() {
   const [resources] = useState([
     {
-      id: 42,
+      id: 43,
        title: 'Mill Pond Research brings Xilos to IBM watsonx',
        category: 'Blog',
        topic: 'Business Strategy',
@@ -69,6 +70,17 @@ function FiltersNews() {
          "Xilos is now a native IBM watsonx.governance AI Service, bringing security and orchestration to a completely invisible layer of your AI stack.",
        image: IBMPartnershipAnnouncement,
        link: 'https://blog.millpondresearch.com/the-end-of-shadow-ai-mill-pond-research-brings-xilos-to-ibm-watsonx-bf5af9df9267',
+    }, 
+      {
+      id: 42,
+       title: 'Securing the Agentic Future',
+       category: 'White Paper',
+       topic: 'Data Governancey',
+       date: 'March 2026',
+       description:
+         "Identity and Access Management (IAM) is the blind spot in enterprise AI security. This white paper explores how to secure the agentic future with a modern approach to AI governance that goes beyond traditional IAM controls.",
+       image: SecuringTheAgenticFuture,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Securing%20the%20Agentic%20Future%20-%20Mill%20Pond%20Research.pdf',
     }, 
     {
       id: 41,
