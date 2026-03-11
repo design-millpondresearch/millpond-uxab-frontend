@@ -34,11 +34,6 @@ const Footer = () => {
               About
             </Link>
           </li>
-           <li className="footer-item">
-            <Link to="/Partners" className="footer-link">
-              Partners
-            </Link>
-          </li>
           <li className="footer-item">
             <Link to="/Resources" className="footer-link">
               Resources
@@ -52,6 +47,11 @@ const Footer = () => {
           <li className="footer-item">
             <Link to="/solutions/xilos" className="footer-link">
               Xilos
+            </Link>
+          </li>
+           <li className="footer-item">
+            <Link to="/Partners" className="footer-link">
+              Partners
             </Link>
           </li>
           <li className="footer-item">

@@ -38,6 +38,7 @@ import HiddenCost from '../../assets/logos-resources/HiddenCost.webp';
 import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyramid.webp';
 import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
 import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
+import IBMPartnershipAnnouncement from '../../assets/logos-resources/IBMPartnershipAnnouncement.jpg';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -58,8 +59,19 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-     {
+    {
       id: 42,
+       title: 'The End of Shadow AI: Mill Pond Research Brings Xilos to IBM watsonx',
+       category: 'Blog',
+       topic: 'Business Strategy',
+       date: 'March 2026',
+       description:
+         "Xilos is now a native IBM watsonx.governance AI Service, bringing security and orchestration to a completely invisible layer of your AI stack.",
+       image: IBMPartnershipAnnouncement,
+       link: 'https://blog.millpondresearch.com/the-end-of-shadow-ai-mill-pond-research-brings-xilos-to-ibm-watsonx-bf5af9df9267',
+    }, 
+    {
+      id: 41,
        title: 'Flattening the Pyramid',
        category: 'Blog',
        topic: 'Business Strategy',
@@ -67,7 +79,7 @@ function FiltersNews() {
        description:
          "How 'expertise' is going to evolve in the age of agentic AI.",
        image: FlatteningThePyramid,
-       link: 'https://medium.com/@millpondresearch/flattening-the-pyramid-d43e7a8e67da',
+       link: 'https://blog.millpondresearch.com/flattening-the-pyramid-d43e7a8e67da',
     },
     {
       id: 40,
@@ -78,7 +90,7 @@ function FiltersNews() {
        description:
          "Why Identity and Access Management (IAM) is blind to the agentic future.",
        image: TheBlindSpot,
-       link: 'https://medium.com/@millpondresearch/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
+       link: 'https://blog.millpondresearch.com/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
     },
     {
       id: 39,
