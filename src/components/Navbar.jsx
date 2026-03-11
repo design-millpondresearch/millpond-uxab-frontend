@@ -113,12 +113,7 @@ const Navbar = () => {
                                 </ul>
                             </>
                         )}
-                    </li>
-                    <li className="navbar-item">
-                        <Link to="/partners" className="navbar-link">
-                            Partners
-                        </Link>
-                    </li>                    
+                    </li>                
                     <li className="navbar-item">
                         <Link to="/resources" className="navbar-link">
                             Resources
@@ -129,6 +124,11 @@ const Navbar = () => {
                             Company
                         </Link>
                     </li>
+                    <li className="navbar-item">
+                        <Link to="/partners" className="navbar-link">
+                            Partners
+                        </Link>
+                    </li>    
                 </ul>
                 <div className="navbar-cta">
                     <Link to="/contact" className="button-primary">
@@ -201,11 +201,6 @@ const Navbar = () => {
                             )}
                         </li>
                         <li className="mobile-menu-item">
-                            <Link to="/partners" className="mobile-menu-link" onClick={closeMobileMenu}>
-                                Partners
-                            </Link>
-                        </li>
-                        <li className="mobile-menu-item">
                             <Link to="/resources" className="mobile-menu-link" onClick={closeMobileMenu}>
                                 Resources
                             </Link>
@@ -213,6 +208,11 @@ const Navbar = () => {
                         <li className="mobile-menu-item">
                             <Link to="/company" className="mobile-menu-link" onClick={closeMobileMenu}>
                                 Company
+                            </Link>
+                        </li>
+                        <li className="mobile-menu-item">
+                            <Link to="/partners" className="mobile-menu-link" onClick={closeMobileMenu}>
+                                Partners
                             </Link>
                         </li>
                         <li className="mobile-menu-item mobile-cta-item">

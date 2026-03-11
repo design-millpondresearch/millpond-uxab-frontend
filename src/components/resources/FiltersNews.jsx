@@ -38,6 +38,8 @@ import HiddenCost from '../../assets/logos-resources/HiddenCost.webp';
 import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyramid.webp';
 import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
 import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
+import IBMPartnershipAnnouncement from '../../assets/logos-resources/IBMPartnershipAnnouncement.jpg';
+import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAgenticFuture.jpg';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -58,8 +60,30 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
-     {
+    {
+      id: 43,
+       title: 'Mill Pond Research brings Xilos to IBM watsonx',
+       category: 'Blog',
+       topic: 'Business Strategy',
+       date: 'March 2026',
+       description:
+         "Xilos is now a native IBM watsonx.governance AI Service, bringing security and orchestration to a completely invisible layer of your AI stack.",
+       image: IBMPartnershipAnnouncement,
+       link: 'https://blog.millpondresearch.com/the-end-of-shadow-ai-mill-pond-research-brings-xilos-to-ibm-watsonx-bf5af9df9267',
+    }, 
+      {
       id: 42,
+       title: 'Securing the Agentic Future',
+       category: 'White Paper',
+       topic: 'Data Governance',
+       date: 'March 2026',
+       description:
+         "Identity and Access Management (IAM) is the blind spot in enterprise AI security. This white paper explores how to secure the agentic future with a modern approach to AI governance that goes beyond traditional IAM controls.",
+       image: SecuringTheAgenticFuture,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Securing%20the%20Agentic%20Future%20-%20Mill%20Pond%20Research.pdf',
+    }, 
+    {
+      id: 41,
        title: 'Flattening the Pyramid',
        category: 'Blog',
        topic: 'Business Strategy',
@@ -67,7 +91,7 @@ function FiltersNews() {
        description:
          "How 'expertise' is going to evolve in the age of agentic AI.",
        image: FlatteningThePyramid,
-       link: 'https://medium.com/@millpondresearch/flattening-the-pyramid-d43e7a8e67da',
+       link: 'https://blog.millpondresearch.com/flattening-the-pyramid-d43e7a8e67da',
     },
     {
       id: 40,
@@ -78,7 +102,7 @@ function FiltersNews() {
        description:
          "Why Identity and Access Management (IAM) is blind to the agentic future.",
        image: TheBlindSpot,
-       link: 'https://medium.com/@millpondresearch/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
+       link: 'https://blog.millpondresearch.com/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
     },
     {
       id: 39,
