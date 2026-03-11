@@ -75,7 +75,7 @@ function FiltersNews() {
       id: 42,
        title: 'Securing the Agentic Future',
        category: 'White Paper',
-       topic: 'Data Governancey',
+       topic: 'Data Governance',
        date: 'March 2026',
        description:
          "Identity and Access Management (IAM) is the blind spot in enterprise AI security. This white paper explores how to secure the agentic future with a modern approach to AI governance that goes beyond traditional IAM controls.",
