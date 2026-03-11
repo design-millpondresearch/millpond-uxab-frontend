@@ -61,7 +61,7 @@ function FiltersNews() {
   const [resources] = useState([
     {
       id: 42,
-       title: 'The End of Shadow AI: Mill Pond Research Brings Xilos to IBM watsonx',
+       title: 'Mill Pond Research brings Xilos to IBM watsonx',
        category: 'Blog',
        topic: 'Business Strategy',
        date: 'March 2026',
