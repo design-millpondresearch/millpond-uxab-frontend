@@ -40,6 +40,7 @@ import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
 import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
 import IBMPartnershipAnnouncement from '../../assets/logos-resources/IBMPartnershipAnnouncement.jpg';
 import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAgenticFuture.jpg';
+import wbcasestudydigitalbank from '../../assets/logos-resources/wb-casestudy-bank.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -60,6 +61,17 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
+    {
+      id: 44,
+       title: 'WorkBench Case Study: Large Online Bank',
+       category: 'Case Study',
+       topic: 'WorkBench',
+       date: 'March 2026',
+       description:
+         "WorkBench has successfully been deployed at a large U.S.-based digital bank, enabling secure and efficient AI adoption across multiple departments while safeguarding sensitive data and ensuring compliance with industry regulations.",
+       image: wbcasestudydigitalbank,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/WorkBench%20-%20Case%20Study%20-%20U.S.-Based%20Digital%20Bank.pdf',
+    },
     {
       id: 43,
        title: 'Mill Pond Research brings Xilos to IBM watsonx',
