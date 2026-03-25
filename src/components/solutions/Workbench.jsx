@@ -1,6 +1,7 @@
 import HeroSection from "./workbench/HeroSection.jsx";
 import Revolutionize from "./workbench/Revolutionize.jsx";
 import Usages from "./workbench/Usages.jsx";
+import FAQ from "./workbench/FAQ.jsx";
 import ReadyToChange from "./workbench/ReadyToChange.jsx";
 
 function Workbench() {
@@ -9,6 +10,7 @@ function Workbench() {
       <HeroSection />
       <Revolutionize />
       <Usages />
+      <FAQ />
       <ReadyToChange />
     </main>
   );
