@@ -135,7 +135,7 @@ function FAQ() {
                 >
                   <div className="px-6 pb-5">
                     <div
-                      className="small-font whitespace-pre-line"
+                      className="small-font whitespace-pre-line text-left"
                       style={{ color: "#4B4B4B", lineHeight: "1.7" }}
                     >
                       {item.answer}
