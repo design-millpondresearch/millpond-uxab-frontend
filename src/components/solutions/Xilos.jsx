@@ -1,6 +1,7 @@
 import HeroSection from "./xilos/HeroSection.jsx";
 import TameShadowStorm from "./xilos/TameShadowStorm.jsx";
 import Usages from "./xilos/Usages.jsx";
+import FAQ from "./xilos/FAQ.jsx";
 import ReadyToChange from "./xilos/ReadyToChange.jsx";
 
 function Xilos() {
@@ -9,6 +10,7 @@ function Xilos() {
       <HeroSection />
       <TameShadowStorm />
       <Usages />
+      <FAQ />
       <ReadyToChange />
     </main>
   );
