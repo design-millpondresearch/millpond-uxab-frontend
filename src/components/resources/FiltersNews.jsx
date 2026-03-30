@@ -41,6 +41,8 @@ import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
 import IBMPartnershipAnnouncement from '../../assets/logos-resources/IBMPartnershipAnnouncement.jpg';
 import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAgenticFuture.jpg';
 import wbcasestudydigitalbank from '../../assets/logos-resources/wb-casestudy-bank.png';
+import broken from '../../assets/logos-resources/broken.png';
+import highcostofchaos from '../../assets/logos-resources/highcostofchaos.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -61,6 +63,28 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
+    {
+      id: 46,
+       title: 'The Hidden Cost of Fragmented Enterprise AI Adoption',
+       category: 'Blog',
+       topic: 'WorkBench',
+       date: 'March 2026',
+       description:
+         "As enterprises rush to adopt generative AI, many have fallen into the trap of fragmentation. Their individual departments — driven by urgent demands for innovation — are independently securing subscriptions to various model providers such as OpenAI, Anthropic, and Google.",
+       image: broken,
+       link: 'https://blog.millpondresearch.com/the-hidden-cost-of-fragmented-enterprise-ai-adoption-0861b1790be2',
+    },
+    {
+      id: 45,
+       title: 'The High Cost of Chaos',
+       category: 'White Paper',
+       topic: 'WorkBench',
+       date: 'March 2026',
+       description:
+         "The rush to adopt generative AI has triggered a wave of grassroots innovation across the enterprise.",
+       image: highcostofchaos,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20High%20Cost%20of%20Chaos%20-%20Whitepaper%20-%20Mill%20Pond%20Research.pdf',
+    },
     {
       id: 44,
        title: 'WorkBench Case Study: Large Online Bank',
