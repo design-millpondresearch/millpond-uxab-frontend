@@ -8,18 +8,11 @@ import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
 import linkedin from "../../assets/logos-headshots/reverse-linkedin-logo.svg";
 
 const team1 = [
-    {
-    name: "Christopher Caen",
-    title: "CEO",
-    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
-    icon: christophercaen,
-    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
-  },
   {
     name: "Andrew Shimshock",
-    title: "Co-founder, CTO",
+    title: "Co-founder, CEO",
     body:
-      "Andrew Shimshock, CTO and Co-Founder, leads our engineering teams and drives our technology vision and strategy for our cybersecurity and governance solutions.",
+      "Andrew Shimshock, CEO and Co-Founder, leads our engineering teams and drives our technology vision and strategy for our cybersecurity and governance solutions.",
     icon: andrewshimshock,
     linkedinUrl: "https://www.linkedin.com/in/andrewshimshock/",
   },
