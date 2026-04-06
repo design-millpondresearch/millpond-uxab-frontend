@@ -1,6 +1,5 @@
 import andrewshimshock from "../../assets/logos-headshots/andrew-shimshock.webp";
 import peteshimshock from "../../assets/logos-headshots/pete-shimshock.webp";
-import christophercaen from "../../assets/logos-headshots/christopher-caen.webp";
 import zacharygolden from "../../assets/logos-headshots/zach-golden.webp";
 import bradgarsten from "../../assets/logos-headshots/brad-garsten.webp";
 import jeffaboud from "../../assets/logos-headshots/jeff-aboud.webp";
@@ -77,7 +76,7 @@ function LeadershipTeam() {
       </div>
 
       {/* First grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto px-4 md:px-6 justify-items-center relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto px-4 md:px-6 justify-items-center relative z-10">
         {team1.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-2 md:px-4 w-full max-w-full md:max-w-[280px] lg:max-w-[320px]">
 
