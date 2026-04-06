@@ -1,6 +1,5 @@
 import andrewshimshock from "../../assets/logos-headshots/andrew-shimshock.webp";
 import peteshimshock from "../../assets/logos-headshots/pete-shimshock.webp";
-import christophercaen from "../../assets/logos-headshots/christopher-caen.webp";
 import zacharygolden from "../../assets/logos-headshots/zach-golden.webp";
 import bradgarsten from "../../assets/logos-headshots/brad-garsten.webp";
 import jeffaboud from "../../assets/logos-headshots/jeff-aboud.webp";
@@ -8,18 +7,11 @@ import trevorcurwin from "../../assets/logos-headshots/trevor-curwin.webp";
 import linkedin from "../../assets/logos-headshots/reverse-linkedin-logo.svg";
 
 const team1 = [
-    {
-    name: "Christopher Caen",
-    title: "CEO",
-    body: "Christopher Caen, CEO, brings to MPR decades of experience delivering innovative B2B technology solutions with both startups and large companies.",
-    icon: christophercaen,
-    linkedinUrl: "https://www.linkedin.com/in/christophercaen/",
-  },
   {
     name: "Andrew Shimshock",
-    title: "Co-founder, CTO",
+    title: "Co-founder, CEO",
     body:
-      "Andrew Shimshock, CTO and Co-Founder, leads our engineering teams and drives our technology vision and strategy for our cybersecurity and governance solutions.",
+      "Andrew Shimshock, CEO and Co-Founder, leads our engineering teams and drives our technology vision and strategy for our cybersecurity and governance solutions.",
     icon: andrewshimshock,
     linkedinUrl: "https://www.linkedin.com/in/andrewshimshock/",
   },
@@ -84,7 +76,7 @@ function LeadershipTeam() {
       </div>
 
       {/* First grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto px-4 md:px-6 justify-items-center relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start w-full mt-4 md:mt-8 max-w-6xl mx-auto px-4 md:px-6 justify-items-center relative z-10">
         {team1.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center px-2 md:px-4 w-full max-w-full md:max-w-[280px] lg:max-w-[320px]">
 
