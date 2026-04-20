@@ -88,7 +88,7 @@ function FiltersNews() {
        description:
          "The problem is, that knowledge exists solely within the specific vendor’s platform. So, when the organization inevitably needs to switch models — whether its due to cost, capability, or policy changes — that intellectual property is effectively trapped.",
        image: PermanentAsset,
-       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/From%20Transient%20Prompts%20to%20Permanent%20Assets.pdf',
+       link: 'https://blog.millpondresearch.com/stop-renting-your-ai-intelligence-turn-prompts-into-permanent-assets-e493f9c84ec4',
     },
         {
       id: 49,
