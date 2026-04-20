@@ -43,7 +43,7 @@ import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAg
 import wbcasestudydigitalbank from '../../assets/logos-resources/wb-casestudy-bank.png';
 import broken from '../../assets/logos-resources/broken.png';
 import highcostofchaos from '../../assets/logos-resources/highcostofchaos.png';
-import TransientPrompts from '../../assets/logos-resources/TransientPrompt.png';
+import TransientPrompts from '../../assets/logos-resources/TransientPrompts.png';
 import MovingFaster from '../../assets/logos-resources/MovingFaster.png';
 import PermanentAsset from '../../assets/logos-resources/PermanentAsset.png';
 import BreakingTheLimit from '../../assets/logos-resources/BreakingTheLimit.png';
