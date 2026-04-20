@@ -43,6 +43,10 @@ import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAg
 import wbcasestudydigitalbank from '../../assets/logos-resources/wb-casestudy-bank.png';
 import broken from '../../assets/logos-resources/broken.png';
 import highcostofchaos from '../../assets/logos-resources/highcostofchaos.png';
+import TransientPrompts from '../../assets/logos-resources/TransientPrompt.png';
+import MovingFaster from '../../assets/logos-resources/MovingFaster.png';
+import PermanentAsset from '../../assets/logos-resources/PermanentAsset.png';
+import BreakingTheLimit from '../../assets/logos-resources/BreakingTheLimit.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
@@ -63,6 +67,61 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
+    {
+      id: 52,
+       title: 'From Transient Prompts to Permanent Assets',
+       category: 'Whitepaper',
+       topic: 'WorkBench',
+       date: 'April 2026',
+       description:
+         "Every time you use external LLMs, you’re building a house on rented land. This whitepaper explores how to transition from transient prompts to permanent assets with a unified authoring platform that turns your AI knowledge into a secure, reusable, and shareable organizational resource.",
+       image: TransientPrompts,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/From%20Transient%20Prompts%20to%20Permanent%20Assets.pdf',
+    },
+       {
+      id: 51,
+       title: 'Stop Renting Your AI Intelligence: Turn Prompts into Permanent Assets',
+       category: 'Blog',
+       topic: 'WorkBench',
+       date: 'April 2026',
+       description:
+         "The problem is, that knowledge exists solely within the specific vendor’s platform. So, when the organization inevitably needs to switch models — whether its due to cost, capability, or policy changes — that intellectual property is effectively trapped.",
+       image: PermanentAsset,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/From%20Transient%20Prompts%20to%20Permanent%20Assets.pdf',
+    },
+        {
+      id: 49,
+       title: 'The Strategic Necessity of an AI Abstraction Layer',
+       category: 'Blog',
+       topic: 'WorkBench',
+       date: 'April 2026',
+       description:
+         "The pace of change in the Large Language Model (LLM) landscape is unprecedented. New models emerge weekly, claiming either superior performance or cost-efficiency. Meanwhile, existing providers frequently update capabilities and pricing. As a result, hard-coding enterprise applications to a single model provider is a high-risk strategy.",
+       image: AbstractionLayer,
+       link: 'https://blog.millpondresearch.com/the-strategic-necessity-of-an-ai-abstraction-layer-e079de1b9356',
+    },
+       {
+      id: 48,
+       title: 'Breaking the Speed Limite: Streamline the Agentic AI Lifecycle',
+       category: 'Whitepaper',
+       topic: 'WorkBench',
+       date: 'April 2026',
+       description:
+         "Organizations that built around security and govnerance are able to accelerate their AI deployments faster than those that built around specific models. This whitepaper explores how to break the speed limit and streamline the agentic AI lifecycle with unified authoring and orchestration tools that turn weeks of tinkering into days of systematic, production-ready development.",
+       image: BreakingTheLimit,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Breaking%20the%20Speed%20Limit%20Streamline%20the%20Agentic%20AI%20Lifecycle.pdf',
+    },
+    {
+      id: 47,
+       title: 'Moving Faster: Streamlining the Agentic AI Lifecycle',
+       category: 'Blog',
+       topic: 'WorkBench',
+       date: 'April 2026',
+       description:
+         "The race for AI adoption is intensifying. You are moving fast - but are you going in the right direction? This blog explores how to streamline the agentic AI lifecycle with unified authoring and orchestration tools that turn weeks of tinkering into days of systematic, production-ready development.",
+       image: MovingFaster,
+       link: 'https://blog.millpondresearch.com/moving-faster-streamlining-the-agentic-ai-lifecycle-b1d36ef8732a',
+    },
     {
       id: 46,
        title: 'The Hidden Cost of Fragmented Enterprise AI Adoption',
