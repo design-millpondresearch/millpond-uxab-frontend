@@ -47,6 +47,7 @@ import TransientPrompts from '../../assets/logos-resources/TransientPrompts.png'
 import MovingFaster from '../../assets/logos-resources/MovingFaster.png';
 import PermanentAsset from '../../assets/logos-resources/PermanentAsset.png';
 import BreakingTheLimit from '../../assets/logos-resources/BreakingTheLimit.png';
+import AbstractionLayer from '../../assets/logos-resources/AbstractionLayer.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
