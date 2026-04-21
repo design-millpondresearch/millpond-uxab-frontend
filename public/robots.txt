@@ -1,0 +1,36 @@
+# Allow all web crawlers and AI training bots to access all content
+User-agent: *
+Disallow:
+
+# Explicitly welcome major AI search and training crawlers
+User-agent: GPTBot
+Disallow:
+
+User-agent: ChatGPT-User
+Disallow:
+
+User-agent: Google-Extended
+Disallow:
+
+User-agent: anthropic-ai
+Disallow:
+
+User-agent: Claude-Web
+Disallow:
+
+User-agent: PerplexityBot
+Disallow:
+
+User-agent: Applebot
+Disallow:
+
+User-agent: Applebot-Extended
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+# Sitemap references
+Sitemap: https://millpondresearch.com/sitemap.xml
+Sitemap: https://millpondresearch.com/sitemap-pages.xml
+Sitemap: https://millpondresearch.com/sitemap-resources.xml
