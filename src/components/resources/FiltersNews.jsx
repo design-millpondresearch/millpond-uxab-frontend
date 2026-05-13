@@ -155,7 +155,7 @@ function FiltersNews() {
     },
        {
       id: 48,
-       title: 'Breaking the Speed Limite: Streamline the Agentic AI Lifecycle',
+       title: 'Breaking the Speed Limit: Streamline the Agentic AI Lifecycle',
        category: 'Whitepaper',
        topic: 'WorkBench',
        date: 'April 2026',
