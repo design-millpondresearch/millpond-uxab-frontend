@@ -22,6 +22,14 @@ import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/The
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
+import FallacySingleModel from '../../assets/logos-resources/fallacy-single-model.png';
+
+import BeyondPrompting from '../../assets/logos-resources/beyond-prompting.png';
+
+import SingleModelStrategy from '../../assets/logos-resources/single-model-strategy.png';
+
+import BeyondChatbots from '../../assets/logos-resources/beyond-chatbots.png';
+
 import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-securing-the-autonomous-enterprise.png';
 import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
 import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
@@ -68,6 +76,50 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
+    {
+      id: 56,
+       title: 'The Fallacy of the Single Model',
+       category: 'White Paper',
+       topic: 'WorkBench',
+       date: 'May 2026',
+       description:
+         "The pursuit of simplicity often leads enterprises to standardize on a single AI model providerfor all use cases. While administratively convenient, this \"one-size-fits-all\" approach isfundamentally flawed in the current AI landscape.",
+       image: FallacySingleModel,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Fallacy%20of%20the%20Single%20Model.pdf',
+    },
+    {
+      id: 55,
+       title: 'Beyond Prompting: A Strategic Guide to Building Agentic AI Workflows',
+       category: 'White Paper',
+       topic: 'WorkBench',
+       date: 'May 2026',
+       description:
+         "For many companies, \"Al adoption\" still means deploying internal chatbots.Employees ask questions, the Al retrieves information or drafts content, andthe conversation ends. It's useful. It saves time. But it's fundamentally limited.We're already in the middle of a transition from conversational Al to agenticAI. The difference isn't incremental - it's categorical.",
+       image: BeyondPrompting,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Beyond%20Prompting%20-%20Ebook.pdf',
+    },
+    {
+      id: 54,
+       title: 'Why a Single-Model Strategy Will Fail the Enterprise',
+       category: 'Blog',
+       topic: 'AI Strategy, WorkBench',
+       date: 'May 2026',
+       description:
+         "A pragmatic enterprise AI strategy recognizes the simple truth that no single AI model is the best for every task.",
+       image: SingleModelStrategy,
+       link: 'https://blog.millpondresearch.com/why-a-single-model-strategy-will-fail-the-enterprise-3695fc30fa34',
+    },
+    {
+      id: 53,
+       title: 'Beyond Chatbots: Preparing for the Era of Agentic AI',
+       category: 'Blog',
+       topic: 'AI Strategy',
+       date: 'May 2026',
+       description:
+         "For many organizations, “enterprise AI” still primarily means using internal chatbots. But while these are useful for basic information retrieval or content drafting, simple conversational interfaces barely scratch the surface of AI’s potential value.",
+       image: BeyondChatbots,
+       link: 'https://blog.millpondresearch.com/beyond-chatbots-preparing-for-the-era-of-agentic-ai-ff90dff5e789',
+    },
     {
       id: 52,
        title: 'From Transient Prompts to Permanent Assets',

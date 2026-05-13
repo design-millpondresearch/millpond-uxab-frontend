@@ -309,4 +309,32 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://blog.millpondresearch.com/beyond-chatbots-preparing-for-the-era-of-agentic-ai-ff90dff5e789</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://blog.millpondresearch.com/why-a-single-model-strategy-will-fail-the-enterprise-3695fc30fa34</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Beyond%20Prompting%20-%20Ebook.pdf</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Fallacy%20of%20the%20Single%20Model.pdf</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
