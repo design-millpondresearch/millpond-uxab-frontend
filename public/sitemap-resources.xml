@@ -337,4 +337,18 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Escaping%20Pilot%20Purgatory.pdf</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://blog.millpondresearch.com/crossing-the-chasm-from-pilot-purgatory-to-production-ai-65a03431d41f</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
