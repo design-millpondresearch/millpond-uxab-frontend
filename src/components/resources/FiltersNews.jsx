@@ -22,6 +22,10 @@ import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/The
 import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
 import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
+import CrossingTheChasm from '../../assets/logos-resources/crossing-the-chasm.png';
+
+import EscapingPp from '../../assets/logos-resources/escaping-pp.png';
+
 import FallacySingleModel from '../../assets/logos-resources/fallacy-single-model.png';
 
 import BeyondPrompting from '../../assets/logos-resources/beyond-prompting.png';
@@ -76,6 +80,28 @@ const breakpointColumnsObj = {
 
 function FiltersNews() {
   const [resources] = useState([
+    {
+      id: 58,
+       title: 'Crossing the Chasm from Pilot Purgatory to Production AI',
+       category: 'Blog',
+       topic: 'WorkBench',
+       date: 'May 2026',
+       description:
+         "“Pilot purgatory” is the defining challenge of the modern enterprise AI wave. Organizations are awash in successful proofs-of-concept that never seem to translate into scaled, production-grade capabilities. This disconnect is often because the tools used for experimentation are ill-suited for the rigor of production.",
+       image: CrossingTheChasm,
+       link: 'https://blog.millpondresearch.com/crossing-the-chasm-from-pilot-purgatory-to-production-ai-65a03431d41f',
+    },
+    {
+      id: 57,
+       title: 'Escaping Pilot Purgatory',
+       category: 'White Paper',
+       topic: 'WorkBench',
+       date: 'May 2026',
+       description:
+         "\"Pilot purgatory\" has become the defining challenge of themodern enterprise AI wave. Organizations are awash insuccessful proofs-of-concept (PoCs) and dazzling demos thatfail to translate into scaled, production-grade capabilities. Thisfailure is rarely due to a lack of ambition or ideas. Instead, itstems from a fundamental mismatch between the tools used forexperimentation and the rigorous demands of productionenvironments. To cross this chasm, enterprises must transitionfrom makeshift prototyping tools to an engineered infrastructurethat’s specifically designed to facilitate the journey from the labto a scaled deployment that emphasizes governance, reliability,and operational resilience.",
+       image: EscapingPp,
+       link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Escaping%20Pilot%20Purgatory.pdf',
+    },
     {
       id: 56,
        title: 'The Fallacy of the Single Model',
