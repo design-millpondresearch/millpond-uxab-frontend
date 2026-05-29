@@ -10,6 +10,7 @@ import Partner from './pages/Partners';
 import Resources from './pages/Resources';
 import Company from './pages/Company';
 import Contact from './pages/Contact';
+import Pricing from './pages/Pricing';
 import Footer from "./components/Footer";
 
 /**
@@ -39,6 +40,7 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/company" element={<Company />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </div>
       <Footer />
