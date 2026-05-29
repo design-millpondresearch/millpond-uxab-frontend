@@ -92,8 +92,8 @@ function HeroSection() {
           The unified AI platform that actually delivers results
         </h3>
         <div className="mt-4 flex justify-center">
-          <Link to="/contact" className="hero-button-primary">
-            Learn More
+          <Link to="/pricing" className="hero-button-primary">
+            View Pricing
           </Link>
         </div>
       </div>

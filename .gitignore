@@ -7,6 +7,8 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+.kilo
+
 node_modules
 dist
 dist-ssr
@@ -14,6 +16,7 @@ dist-ssr
 
 # Editor directories and files
 .vscode/*
+landing-page-project
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -24,3 +27,8 @@ dist-ssr
 *.sw?
 WorkBench FAQ_0236 (1).docx
 resource-tool/
+
+# Environment files
+.env
+.env.local
+.env.*.local

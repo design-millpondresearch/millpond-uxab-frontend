@@ -131,7 +131,7 @@ const Navbar = () => {
                     </li>    
                 </ul>
                 <div className="navbar-cta">
-                    <Link to="/contact" className="button-primary">
+                    <Link to="/pricing" className="button-primary">
                         Get Started
                     </Link>
                 </div>
@@ -217,7 +217,7 @@ const Navbar = () => {
                         </li>
                         <li className="mobile-menu-item mobile-cta-item">
                             <Link
-                                to="/contact"
+                                to="/pricing"
                                 className="button-primary mobile-cta-button"
                                 onClick={closeMobileMenu}
                             >
