@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import PricingCard from './PricingCard';
-import EnterpriseModal from './EnterpriseModal';
 import PaymentModal from './PaymentModal';
 
 const tiers = [
@@ -60,7 +60,7 @@ const tiers = [
  * Handles modal state for Enterprise contact and Stripe checkout.
  */
 export default function PricingTable({ inline = false }) {
-  const [enterpriseOpen, setEnterpriseOpen] = useState(false);
+  const navigate = useNavigate();
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [selectedTier, setSelectedTier] = useState(null);
   const [redirectSuccess, setRedirectSuccess] = useState(false);
@@ -80,7 +80,7 @@ export default function PricingTable({ inline = false }) {
 
   const handleCtaClick = (tier) => {
     if (tier.tier === 'enterprise') {
-      setEnterpriseOpen(true);
+      navigate('/contact');
     } else {
       setSelectedTier(tier);
       setPaymentOpen(true);
@@ -192,10 +192,7 @@ export default function PricingTable({ inline = false }) {
         </div>
       </section>
 
-      {/* Modals — conditionally rendered so they only mount when needed */}
-      {enterpriseOpen && (
-        <EnterpriseModal isOpen={enterpriseOpen} onClose={() => setEnterpriseOpen(false)} />
-      )}
+      {/* Payment modal — conditionally rendered so it only mounts when needed */}
       {paymentOpen && selectedTier && (
         <PaymentModal
           isOpen={paymentOpen}
