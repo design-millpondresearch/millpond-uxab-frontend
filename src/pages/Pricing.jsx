@@ -33,7 +33,7 @@ function Pricing() {
           </p>
         </div>
       </section>
-      <PricingTable />
+      <PricingTable showHeader={false} />
       <FAQ />
     </main>
   );

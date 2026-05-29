@@ -59,7 +59,7 @@ const tiers = [
  * PricingTable renders the three-tier pricing grid for WorkBench.
  * Handles modal state for Enterprise contact and Stripe checkout.
  */
-export default function PricingTable({ inline = false }) {
+export default function PricingTable({ inline = false, showHeader = true }) {
   const navigate = useNavigate();
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [selectedTier, setSelectedTier] = useState(null);
@@ -107,22 +107,24 @@ export default function PricingTable({ inline = false }) {
 
         <div className="w-full max-w-7xl mx-auto relative z-10">
           {/* Header */}
-          <div className="text-center mb-10 md:mb-14">
-            <h2
-              className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
-              style={{ color: '#1F4E79' }}
-            >
-              {inline ? 'Simple, Transparent Pricing' : 'WorkBench Pricing'}
-            </h2>
-            <p
-              className="subheader mx-auto max-w-3xl"
-              style={{ color: '#4B4B4B' }}
-            >
-              {inline
-                ? 'Choose the plan that fits your team. Scale up as you grow.'
-                : 'The comprehensive AI platform that empowers your team. Platform-layer intelligence with model and token visibility that enables you to test fast, switch simply, and control costs.'}
-            </p>
-          </div>
+          {showHeader && (
+            <div className="text-center mb-10 md:mb-14">
+              <h2
+                className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
+                style={{ color: '#1F4E79' }}
+              >
+                {inline ? 'Simple, Transparent Pricing' : 'WorkBench Pricing'}
+              </h2>
+              <p
+                className="subheader mx-auto max-w-3xl"
+                style={{ color: '#4B4B4B' }}
+              >
+                {inline
+                  ? 'Choose the plan that fits your team. Scale up as you grow.'
+                  : 'The comprehensive AI platform that empowers your team. Platform-layer intelligence with model and token visibility that enables you to test fast, switch simply, and control costs.'}
+              </p>
+            </div>
+          )}
 
           {/* Post-redirect success banner */}
           {redirectSuccess && (
