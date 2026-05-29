@@ -115,11 +115,6 @@ const Navbar = () => {
                         )}
                     </li>                
                     <li className="navbar-item">
-                        <Link to="/pricing" className="navbar-link">
-                            Pricing
-                        </Link>
-                    </li>
-                    <li className="navbar-item">
                         <Link to="/resources" className="navbar-link">
                             Resources
                         </Link>
@@ -204,11 +199,6 @@ const Navbar = () => {
                                     </li>
                                 </ul>
                             )}
-                        </li>
-                        <li className="mobile-menu-item">
-                            <Link to="/pricing" className="mobile-menu-link" onClick={closeMobileMenu}>
-                                Pricing
-                            </Link>
                         </li>
                         <li className="mobile-menu-item">
                             <Link to="/resources" className="mobile-menu-link" onClick={closeMobileMenu}>

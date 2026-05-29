@@ -8,7 +8,8 @@ import {
 } from '@stripe/react-stripe-js';
 
 // Load Stripe with your publishable key (set in environment variable)
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
+const PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
+const stripePromise = PUBLISHABLE_KEY ? loadStripe(PUBLISHABLE_KEY) : null;
 
 const PAYMENT_ELEMENT_OPTIONS = {
   layout: 'tabs',
@@ -100,7 +101,17 @@ export default function PaymentModal({ isOpen, onClose, tier }) {
   const [clientSecret, setClientSecret] = useState(null);
   const [fetchError, setFetchError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [configError, setConfigError] = useState(null);
   const modalRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen || !tier) return;
+    if (!PUBLISHABLE_KEY) {
+      setConfigError('Stripe publishable key is missing. Please check the site configuration.');
+    } else {
+      setConfigError(null);
+    }
+  }, [isOpen, tier]);
 
   useEffect(() => {
     if (!isOpen || !tier) return;
@@ -230,7 +241,30 @@ export default function PaymentModal({ isOpen, onClose, tier }) {
 
         {/* Body */}
         <div className="px-6 py-6">
-          {success ? (
+          {configError ? (
+            <div className="text-center space-y-4">
+              <div
+                className="text-sm px-4 py-3 rounded-lg"
+                style={{
+                  backgroundColor: '#FDE8E8',
+                  color: '#C81E1E',
+                  fontFamily: 'var(--font-geist)',
+                }}
+              >
+                {configError}
+              </div>
+              <p
+                className="text-sm"
+                style={{
+                  fontFamily: 'var(--font-geist)',
+                  color: '#4B4B4B',
+                  fontWeight: 300,
+                }}
+              >
+                The payment system is not fully configured. Please contact support or try again later.
+              </p>
+            </div>
+          ) : success ? (
             <div className="text-center space-y-4">
               <div
                 className="w-16 h-16 mx-auto rounded-full flex items-center justify-center"

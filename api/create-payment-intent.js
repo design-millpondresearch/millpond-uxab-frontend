@@ -10,11 +10,20 @@ import Stripe from 'stripe';
  * STRIPE_BUSINESS_PRICE_ID environment variables.
  */
 export default async function handler(req, res) {
-  // CORS — restrict to known origin if configured, otherwise reflect
-  // the request origin (safer than '*').
-  const allowedOrigin = process.env.ALLOWED_ORIGINS || req.headers.origin || '';
-  if (allowedOrigin) {
-    res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
+  // CORS — support comma-separated allowed origins (e.g. production + preview).
+  // If ALLOWED_ORIGINS is not set, fall back to reflecting the request origin.
+  const allowedOrigins = process.env.ALLOWED_ORIGINS
+    ? process.env.ALLOWED_ORIGINS.split(',').map((s) => s.trim())
+    : [];
+
+  const requestOrigin = req.headers.origin || '';
+  const corsOrigin =
+    allowedOrigins.length > 0
+      ? allowedOrigins.find((o) => o === requestOrigin) || allowedOrigins[0]
+      : requestOrigin;
+
+  if (corsOrigin) {
+    res.setHeader('Access-Control-Allow-Origin', corsOrigin);
   }
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -28,9 +37,19 @@ export default async function handler(req, res) {
   }
 
   const secretKey = process.env.STRIPE_SECRET_KEY;
+  const personalPriceId = process.env.STRIPE_PERSONAL_PRICE_ID;
+  const businessPriceId = process.env.STRIPE_BUSINESS_PRICE_ID;
+
   if (!secretKey) {
     console.error('Stripe secret key not configured');
-    return res.status(500).json({ error: 'Payment processing is not configured.' });
+    return res.status(500).json({ error: 'Payment processing is not configured. (Missing STRIPE_SECRET_KEY)' });
+  }
+
+  if (!personalPriceId || !businessPriceId) {
+    console.error('Stripe Price IDs not configured');
+    return res.status(500).json({
+      error: 'Payment processing is not configured for this plan. (Missing STRIPE_PERSONAL_PRICE_ID or STRIPE_BUSINESS_PRICE_ID)',
+    });
   }
 
   const stripe = new Stripe(secretKey, { apiVersion: '2024-12-18.acacia' });
@@ -42,15 +61,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const priceId =
-      tier === 'personal'
-        ? process.env.STRIPE_PERSONAL_PRICE_ID
-        : process.env.STRIPE_BUSINESS_PRICE_ID;
-
-    if (!priceId) {
-      console.error(`Stripe Price ID not configured for tier: ${tier}`);
-      return res.status(500).json({ error: 'Payment processing is not configured for this plan.' });
-    }
+    const priceId = tier === 'personal' ? personalPriceId : businessPriceId;
 
     const customer = await stripe.customers.create({
       metadata: { tier, product: 'workbench' },
