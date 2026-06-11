@@ -1,4 +1,5 @@
-﻿import { Routes, Route } from 'react-router-dom';
+﻿import { Analytics } from '@vercel/analytics/react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AnnouncementBar from './components/AnnouncementBar';
 import ScrollToTop from './components/ScrollToTop';
