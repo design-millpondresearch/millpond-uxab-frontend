@@ -54,7 +54,7 @@ function EndToEndAgenticSection() {
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            Unified Control Plane: End-to-End Agentic AI Infrastructure
+           Create, Deploy, Observe, Secure, Orchestrate, and Control Your Entire Agentic AI Ecosystem
           </h2>
           <h3 className="subheader" style={{ color: "#4B4B4B" }}>
             Mill Pond Research combines WorkBench and Xilos into a single operational and governance control plane. Built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
