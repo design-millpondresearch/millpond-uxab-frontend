@@ -1,4 +1,25 @@
 ﻿import element4 from "../../../assets/elements/element4.svg";
+import unified_policies from "../../../assets/icons/unified_policies.svg";
+import enhanced_security from "../../../assets/icons/enhanced_security.svg";
+import future_proof from "../../../assets/icons/future-proof.svg";
+
+const painPoints = [
+  {
+    icon: unified_policies,
+    title: "Fragmented tools",
+    body: "Teams juggle multiple models with different costs and constraints, creating data silos and inconsistent outputs.",
+  },
+  {
+    icon: enhanced_security,
+    title: "Broken security assumptions",
+    body: "Agentic AI operates continuously and generates prompts dynamically, making legacy controls ineffective.",
+  },
+  {
+    icon: future_proof,
+    title: "Unmanaged shadow AI",
+    body: "Employees bring outside AI onto the network without IT visibility, creating compliance and governance gaps.",
+  },
+];
 
 function ProblemOverview() {
   return (
@@ -8,7 +29,7 @@ function ProblemOverview() {
         <img
           src={element4}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-10"
         />
       </div>
 
@@ -28,7 +49,24 @@ function ProblemOverview() {
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {painPoints.map((point) => (
+            <div
+              key={point.title}
+              className="flex flex-col items-center text-center p-5 rounded-2xl bg-white shadow-sm ring-1 ring-[#E5E7EB]"
+            >
+              <img src={point.icon} alt="" className="w-10 h-10 mb-3" />
+              <h4 className="subheader mb-2" style={{ color: "#1F4E79" }}>
+                {point.title}
+              </h4>
+              <p className="small-font" style={{ color: "#4B4B4B" }}>
+                {point.body}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="max-w-4xl mx-auto text-left space-y-4">
           <p className="large-font" style={{ color: "#4B4B4B" }}>
             Every modern organization is racing to adopt agentic AI, but standard experimentation can not handle the complexity. Teams juggle multiple models across use cases and departments with different costs, performance characteristics, and operational constraints. That fragmentation creates disjointed initiatives, data silos, and integration gaps that prevent agents from working with a consistent business context.
           </p>

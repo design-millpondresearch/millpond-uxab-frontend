@@ -112,7 +112,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to="/solutions/unified-control-plane" className="dropdown-link">
-                                            The MPR Unified Control Plane
+                                            Unified Control Plane
                                         </Link>
                                     </li>
                                 </ul>
@@ -204,7 +204,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to="/solutions/unified-control-plane" className="mobile-dropdown-link" onClick={closeMobileMenu}>
-                                            The MPR Unified Control Plane
+                                            Unified Control Plane
                                         </Link>
                                     </li>
                                 </ul>

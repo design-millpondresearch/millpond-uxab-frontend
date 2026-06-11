@@ -10,12 +10,11 @@ const pillars = [
     title: "Deploy",
     benefit: "Seamlessly deploy across all major public and any corporate private models, and natively integrate with your existing systems.",
     points: [
-      "Seamless integrations with existing systems (Snowflake, Google Cloud, AWS, Slack, Microsoft 365, Salesforce, REST APIs)",
-      "Agents work seamlessly with any model on the platform",
-      "Model training occurs at the platform level and shares contextual intelligence with all models and agents",
-      "Universal compatibility ensures flexibility without redundant training",
+      "Integrations with Snowflake, Google Cloud, AWS, Slack, Microsoft 365, Salesforce, and REST APIs",
+      "Agents work with any model on the platform",
+      "Platform-level training shares contextual intelligence across all models and agents",
+      "Universal compatibility without redundant training",
       "Move quickly from prototyping to deployment",
-      "Create and edit agents that share knowledge across the organization",
     ],
     icon: deployIcon,
   },
@@ -24,9 +23,9 @@ const pillars = [
     benefit: "Secure the entire AI infrastructure to embrace agentic AI and maximize innovation while protecting private company and customer data.",
     points: [
       "Intercepts outbound LLM calls to determine which are allowed",
-      "Deconstructs and dynamically modifies queries on the fly to mask or remove unsafe components",
-      "Proprietary natural language model makes it easy for admins to secure enterprise AI",
-      "Proprietary query assessment determines intent, even when advanced methods circumvent guardrails",
+      "Dynamically modifies queries to mask or remove unsafe components",
+      "Proprietary natural language model for enterprise-grade security",
+      "Query assessment determines intent even when guardrails are circumvented",
     ],
     icon: secureIcon,
   },
@@ -34,9 +33,9 @@ const pillars = [
     title: "Orchestrate",
     benefit: "Get contextually relevant results across every model and agent to maximize the efficiency and precision of your AI program.",
     points: [
-      "Agents throughout the company learn from one another to deliver more precise, context-based answers",
-      "Learns about the company and the type of information each functional area requires",
-      "Enables organizations to host private, air-gapped LLMs and automatically route sensitive traffic to those LLMs",
+      "Agents learn from one another to deliver precise, context-based answers",
+      "Understands what information each functional area requires",
+      "Host private, air-gapped LLMs and route sensitive traffic automatically",
       "Dynamic model routing based on task requirements",
       "Private knowledge base stores every query and answer",
     ],
@@ -47,9 +46,9 @@ const pillars = [
     benefit: "Gain the transparency and control needed to support innovation while avoiding waste and optimizing spend.",
     points: [
       "At-a-glance visibility into token and model usage by user",
-      "Real-time visibility into spend drivers, including average cost per query and total spend by model, user, routing rule, and department",
-      "Repeat questions answered directly from knowledge base without requiring new token spend",
-      "At-a-glance visibility into fines avoided by maintaining compliance",
+      "Real-time visibility into spend drivers by model, user, routing rule, and department",
+      "Repeat questions answered from knowledge base without new token spend",
+      "Visibility into fines avoided by maintaining compliance",
       "Avoid defaulting to the most expensive models for every query",
       "Operational control that supports normalized spend",
     ],
@@ -92,7 +91,7 @@ function MessagePillars() {
             Deploy. Secure. Orchestrate. Control.
           </h2>
           <h3 className="subheader mt-2" style={{ color: "#4B4B4B" }}>
-            The four pillars of the MPR Unified Control Plane that turn AI complexity into competitive advantage.
+            The four pillars of the UCP that turn AI complexity into competitive advantage.
           </h3>
         </div>
 

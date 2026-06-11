@@ -62,7 +62,7 @@ function HeroSection() {
           className="hero-title text-5xl md:text-7xl lg:text-8xl"
           style={{ color: '#1F4E79' }}
         >
-          The MPR Unified Control Plane
+          Unified Control Plane
         </h1>
         <h3
           className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl"

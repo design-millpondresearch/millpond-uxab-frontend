@@ -24,10 +24,10 @@ function ReadyToChange() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Deploy the MPR Unified Control Plane
+          Deploy the UCP
         </h2>
-        <h3 className="subheader mx-4 max-w-4xl" style={{ color: "#4B4B4B" }}>
-          Organizations of all sizes should deploy the MPR Unified Control Plane as their comprehensive agentic AI workspace to maximize efficiency and innovation while retaining the visibility and control they need to maintain security and governance. All greenfield opportunities should consider the MPR Unified Control Plane to create and deploy, observe and secure, and orchestrate and control their emerging agentic AI tools and projects. All organizations that currently have one or more enterprise license agreements with individual models should import those models into the MPR Unified Control Plane to transition from multiple disjointed AI tools to a single, powerful platform.
+        <h3 className="subheader mx-4 max-w-3xl" style={{ color: "#4B4B4B" }}>
+          Transition from multiple disjointed AI tools to a single platform that deploys, observes, secures, orchestrates, and controls agentic AI at scale. Greenfield teams and existing enterprise license holders alike can import their models into the UCP for unified governance and cost control.
         </h3>
         <div className="mt-8 md:mt-12 flex flex-wrap justify-center gap-4 md:gap-8">
           <Link to="/contact" className="button-primary">Request a Demo</Link>
