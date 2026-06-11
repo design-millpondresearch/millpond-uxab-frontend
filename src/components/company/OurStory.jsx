@@ -15,19 +15,19 @@ const story = [
     year: "2023",
     title: "The Beginning of Mill Pond Research",
     body:
-      "Founded by brothers Andrew and Pete Shimshock with a vision to empower businesses to build secure, localized AI systems.",
+      "Founded by brothers Andrew and Pete Shimshock with a vision to empower businesses to build their own AI systems with enterprise-grade control.",
   },
   {
     year: "2024",
     title: "Launch of WorkBench",
     body:
-      "Introduced our AI development platform that enables organizations to build custom AI solutions with enhanced security and control.",
+      "Introduced our AI development platform that enables teams to prototype, test, and deploy AI agents with universal model compatibility.",
   },
   {
     year: "2025",
     title: "Patented Xilos, Launched Xilos",
     body:
-      "Successfully patented and launched our flagship AI security orchestration platform, addressing the critical shadow AI crisis.",
+      "Successfully patented and launched our flagship agentic AI control plane, turning AI complexity into competitive advantage.",
   },
 ];
 
@@ -82,7 +82,7 @@ function OurStory() {
           className="section-header mb-8 text-2xl md:text-3xl lg:text-4xl"
           style={{ color: "#1F4E79" }}
         >
-          Securing the Future of Agentic AI
+          Building the Unified Control Plane
         </h3>
       </div>
 
