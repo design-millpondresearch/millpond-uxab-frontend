@@ -15,7 +15,7 @@ const endtoendagentic = [
   },
   {
     title: "Control",
-    description: "Gain the transparency and policy control needed to support innovationâ€”while optimizing spend and preventing wasted tokens.",
+    description: "Gain the transparency and policy control needed to support innovation while optimizing spend and preventing wasted tokens.",
   },
 ];
 
@@ -57,7 +57,7 @@ function EndToEndAgenticSection() {
             Unified Control Plane: End-to-End Agentic AI Infrastructure
           </h2>
           <h3 className="subheader" style={{ color: "#4B4B4B" }}>
-            Mill Pond Research combines WorkBench and Xilos into a single operational and governance control planeâ€”built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
+            Mill Pond Research combines WorkBench and Xilos into a single operational and governance control plane. Built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
           </h3>
         </div>
 

@@ -106,7 +106,7 @@ function SolutionsSection() {
             The UCP
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            A comprehensive agentic AI workspace to create and deployâ€”observe and secureâ€”then orchestrate and control performance, cost, and compliance at scale.
+            A comprehensive agentic AI workspace to create and deploy, observe, secure, then orchestrate and control performance, cost, and compliance at scale.
           </h3>
         </div>
 
