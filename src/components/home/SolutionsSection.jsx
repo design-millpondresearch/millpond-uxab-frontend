@@ -103,7 +103,7 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            The UCP
+            Introducing: Unified Control Plane
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
             A comprehensive agentic AI workspace to create and deploy, observe, secure, then orchestrate and control performance, cost, and compliance at scale.
