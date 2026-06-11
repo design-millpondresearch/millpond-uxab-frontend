@@ -3,8 +3,8 @@ import warning from "../../assets/logos-general/alert-triangle.svg";
 import shield from "../../assets/logos-general/shield.svg";
 
 const metrics = [
-  { label: "30% â†“ AI Cost", icon: coinstack },
-  { label: "50% â†“ Data Risk", icon: warning },
+  { label: "50% Reduction in AI Cost", icon: coinstack },
+  { label: "50% Reduction in Data Risk", icon: warning },
   { label: "Zero Vendor Lock-In", icon: shield },
 ];
 
