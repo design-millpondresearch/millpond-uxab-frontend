@@ -1,11 +1,11 @@
-import coinstack from "../../assets/logos-general/coin-stack.svg";
+﻿import coinstack from "../../assets/logos-general/coin-stack.svg";
 import warning from "../../assets/logos-general/alert-triangle.svg";
 import shield from "../../assets/logos-general/shield.svg";
 
 const metrics = [
-  { label: "30% ↓ AI Cost", icon: coinstack },
-  { label: "50% ↓ Data Risk", icon: warning },
-  { label: "5M+ Protected Prompts", icon: shield },
+  { label: "50% Reduction in AI Cost", icon: coinstack },
+  { label: "50% Reduction in Data Risk", icon: warning },
+  { label: "Zero Vendor Lock-In", icon: shield },
 ];
 
 function RoiSection() {
@@ -25,14 +25,14 @@ function RoiSection() {
           className="section-header text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          ROI Metrics.
+          Measurable Impact Across Innovation and Governance
         </h2>
 
         <p
           className="subheader mt-2 text-lg md:text-2xl"
           style={{ color: "#4B4B4B" }}
         >
-          See measurable impact across your entire AI ecosystem.
+          The UCP delivers efficiency, security, and cost control at scale.
         </p>
 
         <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-4 md:gap-6 max-w-7xl mx-auto">

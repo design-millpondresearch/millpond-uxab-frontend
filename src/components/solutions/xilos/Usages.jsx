@@ -1,15 +1,15 @@
 const usages = [
     {
-        title: "Protect Your Sensitive Information.",
-        description: "Keep your sensitive information secure as Xilos automatically prevents confidential data from leaving your network through AI interactions.",
+        title: "Real-Time Cost Reporting",
+        description: "Granular, real-time visibility into token usage and spend drivers so finance leaders can see spikes as they occur and invoke the right policies immediately.",
     },
     {
-        title: "Maximize Output Relevance.",
-        description: "Your AI grows smarter every day as Xilos learns from each interaction, automatically refining queries to match your specific business needs.",
+        title: "Knowledge Base Reuse",
+        description: "Cache queries and answers in a private knowledge base so similar questions are served without re-triggering token charges.",
     },
     {
-        title: "Optimize Your Shared Knowledge.",
-        description: "Eliminate departmental knowledge barriers as Xilos ensures every team receives precisely the insights they need when they need them.",
+        title: "Dynamic Model Routing",
+        description: "Route each request to the most appropriate model so the organization does not default every prompt to the most expensive option.",
     },
 ];
 
@@ -27,7 +27,7 @@ function Usages() {
             
             <div className="text-center relative z-10">
                 <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-                    Harness the power of agentic AI without sacrificing security.
+                    How Xilos Controls Costs and Risk
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-16 my-12 max-w-6xl mx-auto">
                     {usages.map((usage) => (

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/millpond-research-logo-square.svg';
 import './Navbar.css';
@@ -6,7 +6,7 @@ import './Navbar.css';
 /**
  * The primary site navigation for Mill Pond Research.
  *
- * This version removes the redundant “Products” menu and relies solely on
+ * This version removes the redundant â€œProductsâ€ menu and relies solely on
  * the Solutions dropdown to surface the WorkBench (Efficient AI Authoring)
  * and Xilos (AI Security & Orchestration) pages. The component retains the
  * hamburger/mobile pattern for small screens and preserves the existing
@@ -102,12 +102,17 @@ const Navbar = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link to="/solutions/workbench" className="dropdown-link">
-                                            Efficient AI Authoring
+                                            Prototype, Test & Deploy Agents
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/solutions/xilos" className="dropdown-link">
-                                            AI Security & Orchestration
+                                            Observe, Secure & Control AI Costs
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/solutions/unified-control-plane" className="dropdown-link">
+                                            Unified Control Plane
                                         </Link>
                                     </li>
                                 </ul>
@@ -147,7 +152,7 @@ const Navbar = () => {
                         <li className="mobile-menu-item">
                             <button className="mobile-menu-link" onClick={toggleMobileProducts}>
                                 Products
-                                <span className={`mobile-arrow ${isMobileProductsOpen ? 'open' : ''}`}>▼</span>
+                                <span className={`mobile-arrow ${isMobileProductsOpen ? 'open' : ''}`}>â–¼</span>
                             </button>
                             {isMobileProductsOpen && (
                                 <ul className="mobile-dropdown">
@@ -175,7 +180,7 @@ const Navbar = () => {
                         <li className="mobile-menu-item">
                             <button className="mobile-menu-link" onClick={toggleMobileSolutions}>
                                 Solutions
-                                <span className={`mobile-arrow ${isMobileSolutionsOpen ? 'open' : ''}`}>▼</span>
+                                <span className={`mobile-arrow ${isMobileSolutionsOpen ? 'open' : ''}`}>â–¼</span>
                             </button>
                             {isMobileSolutionsOpen && (
                                 <ul className="mobile-dropdown">
@@ -185,7 +190,7 @@ const Navbar = () => {
                                             className="mobile-dropdown-link"
                                             onClick={closeMobileMenu}
                                         >
-                                            Efficient AI Authoring
+                                            Prototype, Test & Deploy Agents
                                         </Link>
                                     </li>
                                     <li>
@@ -194,7 +199,12 @@ const Navbar = () => {
                                             className="mobile-dropdown-link"
                                             onClick={closeMobileMenu}
                                         >
-                                            AI Security & Orchestration
+                                            Observe, Secure & Control AI Costs
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/solutions/unified-control-plane" className="mobile-dropdown-link" onClick={closeMobileMenu}>
+                                            Unified Control Plane
                                         </Link>
                                     </li>
                                 </ul>
@@ -232,3 +242,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+

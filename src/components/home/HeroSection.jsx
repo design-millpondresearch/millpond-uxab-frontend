@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import heroVideo from "../../assets/videos/HomeBGVL2.mp4";
 
@@ -52,18 +52,18 @@ function HeroSection() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(245, 239, 231, 0.85)' }}></div>
 
       {/* FOREGROUND CONTENT */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-3 md:gap-6 px-4 md:px-6 lg:px-12">
+      <div className="relative z-10 flex flex-col items-center text-center gap-6 md:gap-10 px-4 md:px-6 lg:px-12">
         <h1
-          className="hero-title max-w-[638px] leading-tight"
+          className="hero-title max-w-[900px] lg:max-w-[1100px] leading-[1.1]"
           style={{ color: '#1F4E79' }}
         >
-          Deploy, Secure, and Orchestrate Enterprise AI
+          Deploy, Secure, Orchestrate, and Control Agentic AI
         </h1>
         <h3
-          className="subheader max-w-[623px] mb-4 md:mb-10 text-lg md:text-2xl"
+          className="subheader max-w-[720px] lg:max-w-[880px] mb-6 md:mb-12 text-lg md:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          Reduce your AI risk while maximizing operational efficiency
+          Maximize efficiency and innovation while retaining the visibility and control you need to run agentic AI securely at enterprise scale.
         </h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           <Link to="/contact" className="hero-button-primary">Request a Demo</Link>

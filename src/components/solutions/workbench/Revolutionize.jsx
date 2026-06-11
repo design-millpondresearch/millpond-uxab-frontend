@@ -10,21 +10,21 @@ import blueBlob from "../../../assets/elements/element3.svg";
 const traits = [
   {
     icon: share,
-    title: "Unified",
+    title: "Prototype",
     description:
-      "Seamlessly consolidates every AI model into one intuitive interface, future-proofed for tomorrow's breakthroughs",
+      "Access state-of-the-art models with daily updates. Professional authoring tools and an extensive prompt library accelerate agent development in days, not weeks.",
   },
   {
     icon: watch,
-    title: "Efficient",
+    title: "Test",
     description:
-      "Saves time and resources by unifying all AI models in one platform, eliminating token limits and redundant queries",
+      "Validate tuned agents against available internal and public models to ensure the best model for each task.",
   },
   {
     icon: usercheck,
-    title: "Tailored",
+    title: "Deploy",
     description:
-      "Evolve generic AI into your organization's collective intelligence with specialized agents, custom knowledge, and tailored outputs",
+      "Seamless integrations with Snowflake, Google Cloud, AWS, Slack, Microsoft 365, Salesforce, and REST APIs. Universal compatibility supports flexible deployment without redundant retraining.",
   },
 ];
 
@@ -50,7 +50,7 @@ function Revolutionize() {
           className="section-header mb-4 text-3xl md:text-5xl lg:text-6xl"
           style={{ color: "#1F4E79" }}
         >
-          Revolutionize How Your Teams Work with AI
+          Build and Deploy AI Agents Faster
         </h2>
         <img
           src={workbenchSamplePic}
@@ -61,7 +61,7 @@ function Revolutionize() {
           className="subheader mx-4 w-full max-w-7xl mb-8 md:mb-18"
           style={{ color: "#4B4B4B" }}
         >
-         Stop juggling multiple AI tools. WorkBench gives your teams unlimited access to state-of-the-art AI models, specialized agents, and professional authoring tools — all in one powerful platform. The result is transformative: multiple subscriptions become one, vendor lock-in disappears, data silos that trap AI investments are eliminated, and shadow AI is elevated into enterprise-wide innovation.
+         WorkBench is a comprehensive AI platform empowering teams with access to state-of-the-art models, specialized agents, and customizable tools. By unifying AI interactions in one platform, WorkBench eliminates vendor lock-in and management complexity while streamlining organizational efficiency. Professional-grade authoring tools enable teams to prototype, test, and deploy agents in days rather than weeks. Unlike fragmented tools, WorkBench creates a knowledge-sharing ecosystem where company data, prompts, and interaction histories become institutional assets accessible across all models. Universal compatibility ensures agents operate with any model—turning multiple subscriptions into one durable system for lasting competitive advantage.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 my-8 md:my-12 max-w-7xl mx-auto">
           {traits.map((trait) => (

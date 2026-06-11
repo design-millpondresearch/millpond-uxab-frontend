@@ -1,17 +1,21 @@
-import element4 from "../../assets/elements/element4.svg";
+﻿import element4 from "../../assets/elements/element4.svg";
 
 const endtoendagentic = [
   {
-    title: "Single auditing and compliance platform",
-    description: "For all enterprise AI end points (human, agents, applications)",
+    title: "Deploy",
+    description: "Seamlessly deploy across major public and any corporate private models, and integrate with your existing systems.",
   },
   {
-    title: "Orchestration",
-    description: "Allows agents to learn from each other and break down silos across the organization",
+    title: "Secure",
+    description: "Secure the full agentic AI workflow with real-time, behavior-aware governance that protects private company and customer data.",
   },
   {
-    title: "Proprietary dataset",
-    description: "Built over time that is tuned specifically for the organization to drive differentiation",
+    title: "Orchestrate",
+    description: "Get contextually relevant results across every model and agent to maximize efficiency and output quality.",
+  },
+  {
+    title: "Control",
+    description: "Gain the transparency and policy control needed to support innovation while optimizing spend and preventing wasted tokens.",
   },
 ];
 
@@ -50,14 +54,14 @@ function EndToEndAgenticSection() {
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            The Industry’s First End-to-End Agentic AI Platform
+           Create, Deploy, Observe, Secure, Orchestrate, and Control Your Entire Agentic AI Ecosystem
           </h2>
           <h3 className="subheader" style={{ color: "#4B4B4B" }}>
-            Single integrated solution from building to securing agentic AI
+            Mill Pond Research combines WorkBench and Xilos into a single operational and governance control plane. Built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
           </h3>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-4">
           {endtoendagentic.map((role) => (
             <div
               key={role.title}

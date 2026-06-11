@@ -8,6 +8,7 @@ import StrategyRisksSection from "../components/home/StrategyRisksSection.jsx";
 import NewsHighlightsSection from "../components/home/NewsHighlightsSection.jsx";
 import SolutionsSection from "../components/home/SolutionsSection.jsx";
 import AdvantagesSection from "../components/home/AdvantagesSection.jsx";
+import ControlPlaneSection from "../components/home/ControlPlaneSection.jsx";
 import PartnersSection from "../components/home/PartnersSection.jsx";
 import RoiSection from "../components/home/RoiSection.jsx";
 import ContactSection from "../components/home/ContactSection.jsx";
@@ -41,6 +42,7 @@ function Home() {
         <StrategyRisksSection />
         <NewsHighlightsSection />
         <SolutionsSection />
+        <ControlPlaneSection />
         <AdvantagesSection />
         <PartnersSection />
         <RoiSection />

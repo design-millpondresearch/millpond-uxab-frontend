@@ -1,19 +1,19 @@
 // Cards content for usage section
 const usages = [
   {
-    title: "Rapid Agent Development",
+    title: "Unified Model Access",
     description:
-      "Access leading AI models and professional authoring tools with extensive prompt libraries — all unified in one powerful platform",
+      "Eliminate multiple subscriptions and inconsistent outputs. WorkBench provides unified access to major providers in one platform for consistent results.",
   },
   {
-    title: "Intelligent Model Optimization",
+    title: "Context & Relevance",
     description:
-      "Test agents across all models to make data-driven selection decisions to ensure optimal performance",
+      "Create context with knowledge base integration and over 100 specialized AI agents for more tuned answers—faster and at lower cost.",
   },
   {
-    title: "Universal Compatibility & Integration",
+    title: "Zero Vendor Lock-In",
     description:
-      "Deploy anywhere with universal compatibility, native integrations, and zero vendor lock-in for rapid production scaling",
+      "Platform-level training preserves institutional knowledge across every model. Switch models without rebuilding prompts or re-ingesting context.",
   },
 ];
 
@@ -54,7 +54,7 @@ function Usages() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          From Fragmented AI Tools to Unified Competitive Advantage
+          Why Teams Choose WorkBench
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 my-8 md:my-12 max-w-6xl mx-auto">
           {usages.map((usage) => (

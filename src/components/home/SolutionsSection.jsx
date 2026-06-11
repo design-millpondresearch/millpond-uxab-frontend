@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import workbenchPic from "../../assets/workbench-screenshot-v1-2026.PNG";
 import xilosPic from "../../assets/xilos-dashboard.PNG";
 import create from "../../assets/icons/create.svg";
@@ -13,29 +13,29 @@ import orchestrate from "../../assets/icons/orchestrate1.svg";
 // property used by Tailwind's `backdrop-blur` classes.  Instead of relying on
 // Tailwind for this effect, we explicitly set both the standard
 // `backdropFilter` and the vendor-prefixed `WebkitBackdropFilter` on the
-// component.  If the browser doesn’t support backdrop filters, the opaque
-// background color still provides good contrast on top of the page’s
-// gradient backgrounds.  See the README for details on cross‑browser
+// component.  If the browser doesnâ€™t support backdrop filters, the opaque
+// background color still provides good contrast on top of the pageâ€™s
+// gradient backgrounds.  See the README for details on crossâ€‘browser
 // compatibility.
 
 const workbenchFeatures = [
   {
     icon: create,
-    title: "Create.",
+    title: "Prototype.",
     body:
-      "Enables teams to rapidly develop and customize agents in days instead of weeks.",
+      "Enable everyone on the team to rapidly develop and customize agents in minutes instead of weeks.",
   },
   {
     icon: test,
     title: "Test.",
     body:
-      "Validates agent performance across all available internal and public models.",
+      "Validate agent performance across internal and public models to ensure optimal cost and quality.",
   },
   {
     icon: deploy,
     title: "Deploy.",
     body:
-      "Delivers seamless deployment across all platform models and native integrations.",
+      "Deliver seamless deployment with universal compatibility across models and native integrations with your existing systems.",
   },
 ];
 
@@ -44,28 +44,28 @@ const xilosFeatures = [
     icon: eye,
     title: "Observe.",
     body:
-      "Detects agentic AI activity across the network to monitor, assess, and manage usage.",
+      "Gain at-a-glance visibility into token and model usage by user, department, and routing rule.",
   },
   {
     icon: secure,
     title: "Secure.",
     body:
-      "Invokes rules and policies to ensure safe AI usage and protect sensitive data.",
+      "Enforce policy in real time by allowing, blocking, or dynamically modifying prompts based on intent and content.",
   },
   {
     icon: orchestrate,
     title: "Orchestrate.",
     body:
-      "Breaks down AI silos to deliver the most contextually relevant results.",
+      "Break down AI silos so agents learn from each other and deliver contextually relevant results across every model.",
   },
 ];
 
 function SolutionsSection() {
   // Common inline style for glass cards.  These styles ensure the cards are
   // visually translucent on modern browsers while falling back to a solid
-  // background when backdrop filters aren’t supported.  Do not modify
+  // background when backdrop filters arenâ€™t supported.  Do not modify
   // `backdropFilter` or `WebkitBackdropFilter` outside of this helper to
-  // guarantee consistent cross‑browser behaviour.
+  // guarantee consistent crossâ€‘browser behaviour.
   const glassCardStyle = {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
     backdropFilter: "blur(12px)",
@@ -103,14 +103,14 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            Our Solutions
+            Introducing: Unified Control Plane
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            Your complete AI governance ecosystem. From creation to security.
+            A comprehensive agentic AI workspace to create and deploy, observe, secure, then orchestrate and control performance, cost, and compliance at scale.
           </h3>
         </div>
 
-        <div className="mb-12 flex flex-col gap-16 md:gap-24">
+        <div className="mb-12 flex flex-col gap-8 md:gap-12">
           {/* WorkBench block */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
@@ -127,14 +127,14 @@ function SolutionsSection() {
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  From AI Chaos to Competitive Advantage in Days, Not Weeks
+                  Prototype, Test, and Deploy Agents Faster with WorkBench
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                 WorkBench enables teams to rapidly prototype, test, and deploy agents in days. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets across all models.
+                WorkBench unifies state-of-the-art AI models, specialized agents, and customizable tools in one platform, eliminating vendor lock-in and complexity. Professional-grade authoring tools enable teams to easily prototype, test, and deploy agents. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets, consolidating multiple subscriptions into one solution delivering lasting competitive advantage.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -215,14 +215,14 @@ function SolutionsSection() {
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Your AI Security and Orchestration Command Center
+                  Observe, Secure, and Orchestrate with Xilos
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Benefit from AI without compromising security. Xilos works with all your AI systems to enhance security while making your organization smarter, faster, and more efficient with every interaction.
+                  Xilos is the UCP governance layer that observes, secures, and orchestrates autonomous systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
                 </p>
 
                 <div className="mt-4 space-y-3">

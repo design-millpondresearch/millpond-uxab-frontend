@@ -1,4 +1,4 @@
-import { useHubspotForm } from "../../hooks/useHubspotForm";
+﻿import { useHubspotForm } from "../../hooks/useHubspotForm";
 
 /**
  * ContactSection
@@ -28,11 +28,10 @@ function ContactSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "#1F4E79" }}
           >
-            Ready to Take Control of Your AI Future?
+            Get Started Today
           </h2>
           <p className="subheader mx-2">
-            Contact us to discover how Mill Pond Research can evolve your
-            organization’s approach to AI security and orchestration.
+            Contact us to transition from multiple disjointed AI tools to a single platform that helps you deploy, observe, secure, orchestrate, and control agentic AI at scale.
           </p>
         </div>
 

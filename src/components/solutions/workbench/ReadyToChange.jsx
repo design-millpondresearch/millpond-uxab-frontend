@@ -37,10 +37,10 @@ function ReadyToChange() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Ready to Take Control of Your AI Future?
+          Start Prototyping and Deploying Agents Today
         </h2>
         <h3 className="subheader mx-4" style={{ color: "#4B4B4B" }}>
-          Contact us today to discover how Mill Pond Research can revolutionize your organization's approach to AI security and orchestration.
+          Organizations of all sizes should implement WorkBench as their unified AI workspace to provide teams with unlimited access to the latest AI models and maximize efficiency while enabling deep agentic customization.
         </h3>
         <Link to="/pricing" className="button-primary mt-8 md:mt-12">
           View Pricing

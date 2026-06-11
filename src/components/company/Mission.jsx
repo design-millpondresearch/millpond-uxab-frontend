@@ -10,21 +10,21 @@ import element10 from "../../assets/elements/element10.svg";
 // Data describing the three ideals highlighted in this section.
 const ideals = [
   {
-    title: "Revolutionary Power",
+    title: "Deploy",
     body:
-      "Unleash AI's transformative capabilities with complete organizational confidence and control.",
+      "Empower teams to prototype, test, and deploy agents with professional-grade authoring tools and universal model compatibility.",
     icon: rocket,
   },
   {
-    title: "Unified Security",
+    title: "Secure",
     body:
-      "Innovation and security work together as complementary forces, not opposing constraints.",
+      "Protect private company and customer data with real-time, behavior-based governance that understands intent and enforces policy at the prompt layer.",
     icon: shield,
   },
   {
-    title: "Network Intelligence",
+    title: "Orchestrate & Control",
     body:
-      "AI systems that collaborate as a unified network, enhancing performance while maintaining protection.",
+      "Break down AI silos with a knowledge-sharing ecosystem across every model, while delivering granular visibility and cost-aware routing to optimize spend.",
     icon: target,
   },
 ];
@@ -68,15 +68,13 @@ function Mission() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl mx-4 md:mx-0 max-w-7xl"
           style={{ color: "#1F4E79" }}
         >
-          Uniting Power, Protection, and Performance
+          Uniting Deploy, Secure, Orchestrate, and Control
         </h2>
         <h3
           className="subheader mx-2 md:mx-6 text-base md:text-xl lg:text-2xl max-w-7xl"
           style={{ color: "#4B4B4B" }}
         >
-          We envision a world where organizations harness the revolutionary power of AI with complete confidence,
-          where innovation and security strengthen rather than oppose each other, and where AI systems operate as
-          a unified intelligence network that continuously enhances business performance while protecting what matters most.
+          We envision a world where organizations harness agentic AI with confidence—where innovation and control strengthen each other. The MPR Unified Control Plane brings together WorkBench and Xilos so a single platform manages the entire agentic AI ecosystem—from creation to governance—turning every deployment into a building block for organizational intelligence.
         </h3>
       </div>
 
