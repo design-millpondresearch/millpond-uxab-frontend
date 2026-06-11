@@ -3,7 +3,7 @@ import xilosLogo from "../../../assets/xilos-logo-name-blue.svg";
 
 function HeroSection() {
     return (
-      <section className="regular-banner-blue flex items-center justify-center px-6 md:px-8 lg:px-12 relative overflow-hidden" style={{ paddingTop: '45px', paddingBottom: '45px' }}>
+      <section className="regular-banner-blue flex items-center justify-center px-6 md:px-8 lg:px-12 relative overflow-hidden" style={{ paddingTop: '128px', paddingBottom: '45px' }}>
         {/* Off-white gradient blob in center */}
         <div
           className="pointer-events-none absolute inset-0"

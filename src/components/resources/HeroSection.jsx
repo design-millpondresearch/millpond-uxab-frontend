@@ -1,6 +1,6 @@
 function HeroSection() {
   return (
-    <section className="relative regular-banner-white flex items-center justify-center resources-hero-banner px-4 md:px-6 lg:px-12 py-8 md:py-12 overflow-hidden">
+    <section className="relative regular-banner-white flex items-center justify-center resources-hero-banner px-4 md:px-6 lg:px-12 py-8 md:py-12 overflow-hidden" style={{ paddingTop: '128px' }}>
       {/* Curved line across the page */}
       <svg
         className="absolute inset-x-0 top-3/4 -translate-y-1/2 pointer-events-none w-full"

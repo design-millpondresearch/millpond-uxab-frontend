@@ -152,7 +152,7 @@ const Navbar = () => {
                         <li className="mobile-menu-item">
                             <button className="mobile-menu-link" onClick={toggleMobileProducts}>
                                 Products
-                                <span className={`mobile-arrow ${isMobileProductsOpen ? 'open' : ''}`}>â–¼</span>
+                                <span className={`mobile-arrow ${isMobileProductsOpen ? 'open' : ''}`}>▼</span>
                             </button>
                             {isMobileProductsOpen && (
                                 <ul className="mobile-dropdown">
@@ -180,7 +180,7 @@ const Navbar = () => {
                         <li className="mobile-menu-item">
                             <button className="mobile-menu-link" onClick={toggleMobileSolutions}>
                                 Solutions
-                                <span className={`mobile-arrow ${isMobileSolutionsOpen ? 'open' : ''}`}>â–¼</span>
+                                <span className={`mobile-arrow ${isMobileSolutionsOpen ? 'open' : ''}`}>▼</span>
                             </button>
                             {isMobileSolutionsOpen && (
                                 <ul className="mobile-dropdown">

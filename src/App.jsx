@@ -1,4 +1,4 @@
-﻿import { Routes, Route, useLocation } from 'react-router-dom';
+﻿import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AnnouncementBar from './components/AnnouncementBar';
 import ScrollToTop from './components/ScrollToTop';
@@ -14,25 +14,13 @@ import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
 import Footer from "./components/Footer";
 
-/**
- * Root application component with conditional announcement bar.
- *
- * The announcement bar previously rendered on every page, but we now check
- * the current route via `useLocation` and display the bar only on the
- * home page ("/"). This approach preserves the original routing
- * structure while keeping the bar accessible for future page-specific
- * messages if needed.
- */
 function App() {
-  const location = useLocation();
-
   return (
     <>
       <ScrollToTop />
       <div className="min-h-screen">
         <Navbar />
-        {/* Show the announcement bar only on the home page */}
-        {location.pathname === '/' && <AnnouncementBar />}
+        <AnnouncementBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/solutions/workbench" element={<Workbench />} />

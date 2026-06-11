@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <section
       className="relative regular-banner-blue flex items-center justify-center px-4 md:px-6 lg:px-12 overflow-hidden"
-      style={{ paddingTop: '65px', paddingBottom: '65px' }}
+      style={{ paddingTop: '128px', paddingBottom: '65px' }}
     >
       <div
         className="pointer-events-none absolute inset-0"
