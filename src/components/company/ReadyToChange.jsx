@@ -35,11 +35,10 @@ function ReadyToChange() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: '#1F4E79' }}
         >
-          Ready to Take Control of Your AI Future?
+          Join the Agentic AI Infrastructure Shift
         </h2>
         <h3 className="subheader mx-4" style={{ color: '#4B4B4B' }}>
-          Contact us today to discover how Mill Pond Research can revolutionize your organization's approach to AI security and
-          orchestration.
+          Discover how the MPR Unified Control Plane can help your organization deploy, observe, secure, orchestrate, and control agentic AI at scale—with measurable efficiency, predictable spend, and auditable governance.
         </h3>
         <Link to="/contact" className="button-primary mt-8 md:mt-12">
           Learn More

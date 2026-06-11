@@ -83,13 +83,13 @@ function HeroSection() {
           className="hero-title text-5xl md:text-7xl lg:text-8xl"
           style={{ color: '#1F4E79' }}
         >
-          From AI Chaos to Competitive Advantage
+          Prototype, Test, and Deploy Agentic AI at Scale
         </h1>
         <h3
           className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          The unified AI platform that actually delivers results
+          WorkBench is a comprehensive AI platform that empowers teams with access to state-of-the-art models, specialized agents, and customizable tools. It eliminates vendor lock-in, breaks down data silos, and turns AI complexity into competitive advantage—so you can move from experimentation to enterprise deployment.
         </h3>
         <div className="mt-4 flex justify-center">
           <Link to="/pricing" className="hero-button-primary">

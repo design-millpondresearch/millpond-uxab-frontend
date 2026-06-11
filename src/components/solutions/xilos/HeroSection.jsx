@@ -55,11 +55,11 @@ function HeroSection() {
         />
 
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl" style={{ color: "#1F4E79" }}>
-            Extraordinary Efficiency. Real-Time Decisions. Safe and Secure.
+            Observe, Secure, and Control Agentic AI Costs
           </h1>
   
           <h3 className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
-            Xilos gives you complete control over your AI agents, protecting sensitive data while maximizing efficiency and business value across your organization.
+            Xilos is the agentic AI control plane that helps CFOs and finance leaders save money and avoid cost surprises. It observes, secures, and orchestrates autonomous systems with granular, real-time visibility into token and model usage, behavior-based intent governance, and dynamic routing that selects the right model for each job.
           </h3>
   
           <div className="mt-4 flex justify-center">

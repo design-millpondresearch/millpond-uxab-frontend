@@ -21,21 +21,21 @@ import orchestrate from "../../assets/icons/orchestrate1.svg";
 const workbenchFeatures = [
   {
     icon: create,
-    title: "Create.",
+    title: "Prototype.",
     body:
-      "Enables teams to rapidly develop and customize agents in days instead of weeks.",
+      "Enable everyone on the team to rapidly develop and customize agents in minutes instead of weeks.",
   },
   {
     icon: test,
     title: "Test.",
     body:
-      "Validates agent performance across all available internal and public models.",
+      "Validate agent performance across internal and public models to ensure optimal cost and quality.",
   },
   {
     icon: deploy,
     title: "Deploy.",
     body:
-      "Delivers seamless deployment across all platform models and native integrations.",
+      "Deliver seamless deployment with universal compatibility across models and native integrations with your existing systems.",
   },
 ];
 
@@ -44,19 +44,19 @@ const xilosFeatures = [
     icon: eye,
     title: "Observe.",
     body:
-      "Detects agentic AI activity across the network to monitor, assess, and manage usage.",
+      "Gain at-a-glance visibility into token and model usage by user, department, and routing rule.",
   },
   {
     icon: secure,
     title: "Secure.",
     body:
-      "Invokes rules and policies to ensure safe AI usage and protect sensitive data.",
+      "Enforce policy in real time by allowing, blocking, or dynamically modifying prompts based on intent and content.",
   },
   {
     icon: orchestrate,
     title: "Orchestrate.",
     body:
-      "Breaks down AI silos to deliver the most contextually relevant results.",
+      "Break down AI silos so agents learn from each other and deliver contextually relevant results across every model.",
   },
 ];
 
@@ -103,10 +103,10 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            Our Solutions
+            The MPR Unified Control Plane
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            Your complete AI governance ecosystem. From creation to security.
+            A comprehensive agentic AI workspace to create and deploy—observe and secure—then orchestrate and control performance, cost, and compliance at scale.
           </h3>
         </div>
 
@@ -127,14 +127,14 @@ function SolutionsSection() {
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  From AI Chaos to Competitive Advantage in Days, Not Weeks
+                  Prototype, Test, and Deploy Agents Faster with WorkBench
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                 WorkBench enables teams to rapidly prototype, test, and deploy agents in days. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets across all models.
+                WorkBench unifies state-of-the-art AI models, specialized agents, and customizable tools in one platform, eliminating vendor lock-in and complexity. Professional-grade authoring tools enable teams to easily prototype, test, and deploy agents. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets, consolidating multiple subscriptions into one solution delivering lasting competitive advantage.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -215,14 +215,14 @@ function SolutionsSection() {
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Your AI Security and Orchestration Command Center
+                  Observe, Secure, and Orchestrate with Xilos
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Benefit from AI without compromising security. Xilos works with all your AI systems to enhance security while making your organization smarter, faster, and more efficient with every interaction.
+                  Xilos is the agentic AI control plane that observes, secures, and orchestrates autonomous systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
                 </p>
 
                 <div className="mt-4 space-y-3">

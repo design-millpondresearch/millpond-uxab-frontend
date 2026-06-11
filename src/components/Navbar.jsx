@@ -102,12 +102,12 @@ const Navbar = () => {
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link to="/solutions/workbench" className="dropdown-link">
-                                            Efficient AI Authoring
+                                            Prototype, Test & Deploy Agents
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="/solutions/xilos" className="dropdown-link">
-                                            AI Security & Orchestration
+                                            Observe, Secure & Control AI Costs
                                         </Link>
                                     </li>
                                 </ul>
@@ -185,7 +185,7 @@ const Navbar = () => {
                                             className="mobile-dropdown-link"
                                             onClick={closeMobileMenu}
                                         >
-                                            Efficient AI Authoring
+                                            Prototype, Test & Deploy Agents
                                         </Link>
                                     </li>
                                     <li>
@@ -194,7 +194,7 @@ const Navbar = () => {
                                             className="mobile-dropdown-link"
                                             onClick={closeMobileMenu}
                                         >
-                                            AI Security & Orchestration
+                                            Observe, Secure & Control AI Costs
                                         </Link>
                                     </li>
                                 </ul>

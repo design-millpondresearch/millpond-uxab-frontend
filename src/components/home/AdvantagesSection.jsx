@@ -7,33 +7,33 @@ import ai_gov_ecosystem from "../../assets/icons/ai_gov_ecosystem.svg";
 
 const advantages = [
   {
-    title: "Rapid Development",
-    body: "Accelerate production cycles to minimize time-to-value",
+    title: "Rapid Agent Development",
+    body: "Accelerate from prototype to deployment in days instead of weeks.",
     icon: rapid_development,
   },
   {
     title: "Complete Visibility",
-    body: "Know exactly what's happening in your AI ecosystem",
+    body: "Real-time insight into token usage, model spend, and compliance by user and department.",
     icon: eye,
   },
   {
-    title: "Enhanced Security",
-    body: "Automatically protect your most valuable information",
+    title: "Intent-Based Security",
+    body: "Behavior-based governance understands intent to enforce policies at the prompt layer.",
     icon: enhanced_security,
   },
   {
     title: "Organizational Intelligence",
-    body: "Convert isolated tools into a unified knowledge network",
+    body: "Platform-level training preserves learned intelligence across models and agents.",
     icon: organizational_intelligence,
   },
   {
     title: "Regulatory Compliance",
-    body: "Simplify governance with automatic policy enforcement",
+    body: "Modular rule engine with vertical-specific controls for GDPR, HIPAA, and more.",
     icon: regulatory_compliance,
   },
   {
-    title: "AI Governance Ecosystem",
-    body: "Maximize security, compliance, and business outcomes",
+    title: "Cost Optimization",
+    body: "Dynamic model routing and private knowledge base prevent waste and normalize spend.",
     icon: ai_gov_ecosystem,
   },
 ];
@@ -106,7 +106,7 @@ function AdvantagesSection() {
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            Essential AI Governance Advantages.
+            What the MPR Unified Control Plane Delivers
           </h2>
         </div>
 

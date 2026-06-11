@@ -57,13 +57,13 @@ function HeroSection() {
           className="hero-title max-w-[638px] leading-tight"
           style={{ color: '#1F4E79' }}
         >
-          Deploy, Secure, and Orchestrate Enterprise AI
+          Deploy, Secure, Orchestrate, and Control Agentic AI with the MPR Unified Control Plane
         </h1>
         <h3
           className="subheader max-w-[623px] mb-4 md:mb-10 text-lg md:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          Reduce your AI risk while maximizing operational efficiency
+          Maximize efficiency and innovation while retaining the visibility and control you need to run agentic AI securely at enterprise scale.
         </h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           <Link to="/contact" className="hero-button-primary">Request a Demo</Link>

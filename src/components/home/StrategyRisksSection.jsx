@@ -5,23 +5,23 @@ import future_proof from "../../assets/icons/future-proof.svg";
 
 const risks = [
   {
-    title: "Unified Policies",
-    body: "Delivers a single source of truth for AI governance and compliance",
+    title: "Unified Platform Access",
+    body: "Eliminate multiple subscriptions and inconsistent outputs with unified access to major providers in a single platform.",
     icon: unified_policies,
   },
   {
     title: "Connected Intelligence",
-    body: "Breaks down AI silos to create seamless auditing and governance flows",
+    body: "Break down AI silos as agents share organizational context and learned strategies across every model.",
     icon: connected_intelligence,
   },
   {
-    title: "Simplified Security",
-    body: "Transforms complex AI security management into streamlined confidence",
+    title: "Real-Time Governance",
+    body: "Understand intent and enforce policies at the prompt layer, dynamically allowing, blocking, or modifying prompts to keep usage compliant.",
     icon: simplified_security,
   },
   {
-    title: "Future-Proof Management",
-    body: "Purpose-built for tomorrow's agent-driven enterprise environment",
+    title: "Future-Proof & Cost-Optimized",
+    body: "Switch models and providers instantly without losing institutional knowledge. Intent-based routing selects the right model for the job to control costs without sacrificing quality.",
     icon: future_proof,
   },
 ];
@@ -35,13 +35,13 @@ function StrategyRisksSection() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Evolve Your AI Strategy with Complete Control
+          Why Organizations Need a Unified Control Plane for Agentic AI
         </h2>
         <h3
           className="subheader text-base md:text-xl lg:text-2xl"
           style={{ color: "#4B4B4B" }}
         >
-          Supercharge your AI initiatives with streamlined management and robust compliance. Mill Pond Research makes AI management complexity a thing of the past:
+          Agentic AI introduces new complexity that standard experimentation can't handle. Fragmented initiatives, data silos, and unmanaged shadow AI create governance gaps that lead to compliance and security exposure—and cost surprises. The MPR Unified Control Plane turns AI complexity into your competitive advantage.
         </h3>
       </div>
 

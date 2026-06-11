@@ -10,7 +10,7 @@ More dangerously, this fragmentation leads to vendor lock-in. By building workfl
   {
     id: 2,
     question: "What is WorkBench and how does it accelerate our ability to deploy AI agents?",
-    answer: `WorkBench is Mill Pond Research's premier platform designed to streamline the entire lifecycle of agentic AI — from initial authoring and rapid prototyping to rigorous testing and enterprise-scale deployment. It transforms AI from a series of disjointed experiments into a scalable, manageable production capability.
+    answer: `WorkBench is Mill Pond Research's premier platform designed to streamline the entire lifecycle of agentic AI — from initial authoring and rapid prototyping to rigorous testing and enterprise-scale deployment. It transforms AI from a series of disjointed experiments into a scalable, manageable production capability, turning AI complexity into competitive advantage.
 
 For innovation leaders and department heads pressed to show speed-to-value, WorkBench removes the friction that typically stalls AI projects. It provides intuitive authoring tools for creating specialized agents, integrated testing environments to validate performance against different underlying models, and seamless deployment mechanisms to quickly get agents into the hands of users.`
   },
@@ -26,7 +26,7 @@ The platform then routes these interactions to whichever model provides the best
     question: "How does WorkBench protect us from losing institutional knowledge every time we switch models?",
     answer: `This is one of the most significant, yet often overlooked, costs of the current AI landscape. When teams spend months refining prompts and building context within a specific vendor's platform, that intellectual property is effectively trapped there. Switching models often means starting from scratch.
 
-WorkBench transforms temporary AI interactions into permanent institutional assets. By centralizing agent authoring and prompt management in a model-agnostic environment, the context and relevance you build persist regardless of the underlying LLM. Your organization's "prompt engineering" expertise becomes a compounding asset that grows with every interaction, rather than a depreciating resource tied to a specific vendor's lifecycle.`
+WorkBench transforms temporary AI interactions into permanent institutional assets. By centralizing agent authoring and prompt management in a model-agnostic environment, the context and relevance you build persist regardless of the underlying LLM. Your organization's prompt engineering expertise becomes a compounding institutional asset that grows with every interaction, rather than a depreciating resource tied to a specific vendor's lifecycle.`
   },
   {
     id: 5,
