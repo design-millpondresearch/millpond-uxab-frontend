@@ -1,4 +1,4 @@
-import element4 from "../../assets/elements/element4.svg";
+﻿import element4 from "../../assets/elements/element4.svg";
 
 const endtoendagentic = [
   {
@@ -15,7 +15,7 @@ const endtoendagentic = [
   },
   {
     title: "Control",
-    description: "Gain the transparency and policy control needed to support innovation—while optimizing spend and preventing wasted tokens.",
+    description: "Gain the transparency and policy control needed to support innovationâ€”while optimizing spend and preventing wasted tokens.",
   },
 ];
 
@@ -54,10 +54,10 @@ function EndToEndAgenticSection() {
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            The MPR Unified Control Plane: End-to-End Agentic AI Infrastructure
+            Unified Control Plane: End-to-End Agentic AI Infrastructure
           </h2>
           <h3 className="subheader" style={{ color: "#4B4B4B" }}>
-            Mill Pond Research combines WorkBench and Xilos into a single operational and governance control plane—built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
+            Mill Pond Research combines WorkBench and Xilos into a single operational and governance control planeâ€”built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
           </h3>
         </div>
 

@@ -8,6 +8,7 @@ import element10 from "../../../assets/elements/element10.svg";
 const pillars = [
   {
     title: "Deploy",
+    color: "#1F4E79",
     benefit: "Seamlessly deploy across all major public and any corporate private models, and natively integrate with your existing systems.",
     points: [
       "Integrations with Snowflake, Google Cloud, AWS, Slack, Microsoft 365, Salesforce, and REST APIs",
@@ -20,6 +21,7 @@ const pillars = [
   },
   {
     title: "Secure",
+    color: "#567C8D",
     benefit: "Secure the entire AI infrastructure to embrace agentic AI and maximize innovation while protecting private company and customer data.",
     points: [
       "Intercepts outbound LLM calls to determine which are allowed",
@@ -31,6 +33,7 @@ const pillars = [
   },
   {
     title: "Orchestrate",
+    color: "#1F4E79",
     benefit: "Get contextually relevant results across every model and agent to maximize the efficiency and precision of your AI program.",
     points: [
       "Agents learn from one another to deliver precise, context-based answers",
@@ -43,6 +46,7 @@ const pillars = [
   },
   {
     title: "Control",
+    color: "#567C8D",
     benefit: "Gain the transparency and control needed to support innovation while avoiding waste and optimizing spend.",
     points: [
       "At-a-glance visibility into token and model usage by user",
@@ -59,13 +63,10 @@ const pillars = [
 function MessagePillars() {
   return (
     <section className="relative regular-banner-white px-4 md:px-6 py-12 md:py-16 overflow-hidden">
-      {/* Decorative shapes */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
         <img src={element2} alt="" className="absolute top-0 right-0 w-64 md:w-80 opacity-30" />
         <img src={element10} alt="" className="absolute bottom-0 left-0 w-64 md:w-80 opacity-30" />
       </div>
-
-      {/* Top right ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -74,8 +75,6 @@ function MessagePillars() {
           top: 0,
         }}
       />
-
-      {/* Bottom left ellipse gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -99,11 +98,14 @@ function MessagePillars() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="rounded-2xl bg-[#F5EFE7] hover:bg-[#C8D9E6] p-4 md:p-6 shadow-sm ring-1 ring-[#E5E7EB] hover:shadow-lg transition-all duration-300 flex flex-col"
+              className="rounded-2xl bg-white p-5 md:p-6 shadow-sm ring-1 ring-[#E5E7EB] hover:shadow-lg transition-all duration-300"
+              style={{ borderTop: `4px solid ${pillar.color}` }}
             >
-              <div className="flex items-center gap-3 mb-3">
-                <img src={pillar.icon} alt={pillar.title} className="w-10 h-10" />
-                <h4 className="large-font-bold" style={{ color: "#1F4E79" }}>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: `${pillar.color}15` }}>
+                  <img src={pillar.icon} alt={pillar.title} className="w-6 h-6" />
+                </div>
+                <h4 className="large-font-bold" style={{ color: pillar.color }}>
                   {pillar.title}
                 </h4>
               </div>
@@ -112,8 +114,8 @@ function MessagePillars() {
               </p>
               <ul className="space-y-2">
                 {pillar.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="text-[#567C8D] mt-1">&bull;</span>
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: pillar.color }} />
                     <span className="small-font" style={{ color: "#4B4B4B" }}>
                       {point}
                     </span>

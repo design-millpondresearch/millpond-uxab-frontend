@@ -1,4 +1,4 @@
-import rapid_development from "../../assets/icons/rapid_development.svg";
+﻿import rapid_development from "../../assets/icons/rapid_development.svg";
 import eye from "../../assets/icons/eye.svg";
 import enhanced_security from "../../assets/icons/enhanced_security.svg";
 import organizational_intelligence from "../../assets/icons/organizational_intelligence.svg";
@@ -106,7 +106,7 @@ function AdvantagesSection() {
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            What the MPR Unified Control Plane Delivers
+            What the UCP Delivers
           </h2>
         </div>
 

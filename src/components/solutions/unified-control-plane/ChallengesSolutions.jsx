@@ -25,29 +25,28 @@ const challenges = [
   {
     icon: enhanced_security,
     challenge: "Employees routinely bring outside AI systems onto the network without the knowledge, visibility, or control of security or IT.",
-    solution: "The UCP is a multi-modal platform that supports all major public LLMs and any organizational private models, eliminating the need to bring models from the outside. All models share learned intelligence across the platform so every model benefits from shared organizational context.",
+    solution: "The UCP is a multi-modal platform that supports all major public LLMs and any organizational private models, eliminating the need to bring models from the outside. All models share learned intelligence across the platform.",
   },
   {
     icon: regulatory_compliance,
     challenge: "Agents require access to sensitive information across multiple repositories, potentially creating compliance issues with regulations like GDPR or HIPAA.",
-    solution: "The UCP Rules Engine is built from the ground up as a modular system supported by a deep ecosystem of third-party partners, enabling vertical-specific rule sets to resolve any agentic AI breaches of external policies such as GDPR.",
+    solution: "The UCP Rules Engine is built as a modular system supported by a deep ecosystem of third-party partners, enabling vertical-specific rule sets to resolve any agentic AI breaches of external policies such as GDPR.",
   },
   {
     icon: simplified_security,
     challenge: "The organization's security systems lack the capability to detect and remediate sensitive company and customer information in real time.",
-    solution: "The UCP can deconstruct and modify queries to mask or remove any components deemed unsafe or that violate existing regulations or policies, while enabling the remainder of the query to pass through so agents can continue to operate without interruption.",
+    solution: "The UCP can deconstruct and modify queries to mask or remove any components deemed unsafe or that violate existing regulations, while enabling the remainder of the query to pass through so agents continue operating without interruption.",
   },
   {
     icon: future_proof,
     challenge: "Due to the company's intensive need for privacy, the usage of any public LLM presents an unacceptable level of risk. However, disallowing AI renders the organization incapable of taking advantage of its benefits.",
-    solution: "The UCP can simultaneously host public and private LLMs, enabling highly regulated organizations and those with a deep need for data privacy to reap the extraordinary benefits of AI without the risk of exposing sensitive data to the outside world.",
+    solution: "The UCP can simultaneously host public and private LLMs, enabling highly regulated organizations to reap the extraordinary benefits of AI without the risk of exposing sensitive data to the outside world.",
   },
 ];
 
 function ChallengesSolutions() {
   return (
     <section className="regular-banner-sand px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
-      {/* Center blob gradient */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -69,17 +68,29 @@ function ChallengesSolutions() {
           {challenges.map((item, index) => (
             <div
               key={index}
-              className="rounded-xl bg-white p-5 md:p-6 shadow-sm ring-1 ring-[#E5E7EB] hover:shadow-md transition-all duration-300"
+              className="rounded-xl bg-white shadow-sm ring-1 ring-[#E5E7EB] hover:shadow-md transition-all duration-300 overflow-hidden"
             >
-              <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
-                <div className="flex items-start gap-3 md:w-2/5">
-                  <img src={item.icon} alt="" className="w-8 h-8 mt-0.5 flex-shrink-0" />
+              <div className="flex flex-col md:flex-row">
+                {/* Left: challenge */}
+                <div className="md:w-2/5 p-5 md:p-6 bg-[#F8F6F3] relative">
+                  <div className="flex items-center gap-2 mb-2">
+                    <img src={item.icon} alt="" className="w-6 h-6" />
+                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: "#567C8D" }}>
+                      Challenge
+                    </span>
+                  </div>
                   <p className="small-font" style={{ color: "#4B4B4B" }}>
                     {item.challenge}
                   </p>
                 </div>
-                <div className="hidden md:block w-px bg-[#E5E7EB] self-stretch" />
-                <div className="md:w-3/5">
+
+                {/* Right: solution */}
+                <div className="md:w-3/5 p-5 md:p-6 relative border-t md:border-t-0 md:border-l border-[#E5E7EB]">
+                  <div className="mb-2">
+                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: "#1F4E79" }}>
+                      Solution
+                    </span>
+                  </div>
                   <p className="small-font" style={{ color: "#1F4E79" }}>
                     <strong>{item.solution}</strong>
                   </p>

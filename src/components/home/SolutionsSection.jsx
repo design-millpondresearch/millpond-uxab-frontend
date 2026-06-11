@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import workbenchPic from "../../assets/workbench-screenshot-v1-2026.PNG";
 import xilosPic from "../../assets/xilos-dashboard.PNG";
 import create from "../../assets/icons/create.svg";
@@ -13,9 +13,9 @@ import orchestrate from "../../assets/icons/orchestrate1.svg";
 // property used by Tailwind's `backdrop-blur` classes.  Instead of relying on
 // Tailwind for this effect, we explicitly set both the standard
 // `backdropFilter` and the vendor-prefixed `WebkitBackdropFilter` on the
-// component.  If the browser doesn’t support backdrop filters, the opaque
-// background color still provides good contrast on top of the page’s
-// gradient backgrounds.  See the README for details on cross‑browser
+// component.  If the browser doesnâ€™t support backdrop filters, the opaque
+// background color still provides good contrast on top of the pageâ€™s
+// gradient backgrounds.  See the README for details on crossâ€‘browser
 // compatibility.
 
 const workbenchFeatures = [
@@ -63,9 +63,9 @@ const xilosFeatures = [
 function SolutionsSection() {
   // Common inline style for glass cards.  These styles ensure the cards are
   // visually translucent on modern browsers while falling back to a solid
-  // background when backdrop filters aren’t supported.  Do not modify
+  // background when backdrop filters arenâ€™t supported.  Do not modify
   // `backdropFilter` or `WebkitBackdropFilter` outside of this helper to
-  // guarantee consistent cross‑browser behaviour.
+  // guarantee consistent crossâ€‘browser behaviour.
   const glassCardStyle = {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
     backdropFilter: "blur(12px)",
@@ -103,14 +103,14 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            The MPR Unified Control Plane
+            The UCP
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            A comprehensive agentic AI workspace to create and deploy—observe and secure—then orchestrate and control performance, cost, and compliance at scale.
+            A comprehensive agentic AI workspace to create and deployâ€”observe and secureâ€”then orchestrate and control performance, cost, and compliance at scale.
           </h3>
         </div>
 
-        <div className="mb-12 flex flex-col gap-16 md:gap-24">
+        <div className="mb-12 flex flex-col gap-8 md:gap-12">
           {/* WorkBench block */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
@@ -222,7 +222,7 @@ function SolutionsSection() {
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Xilos is the agentic AI control plane that observes, secures, and orchestrates autonomous systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
+                  Xilos is the UCP governance layer that observes, secures, and orchestrates autonomous systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
                 </p>
 
                 <div className="mt-4 space-y-3">

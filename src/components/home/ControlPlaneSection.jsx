@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 function ControlPlaneSection() {
   return (
@@ -37,7 +37,7 @@ function ControlPlaneSection() {
             className="subheader mt-4 max-w-4xl mx-auto text-base md:text-xl lg:text-2xl"
             style={{ color: "#4B4B4B" }}
           >
-            The MPR Unified Control Plane deploys, secures, orchestrates, and controls agentic AI at scale. It enables rapid agent creation with granular model and token visibility, platform-layer intelligence for effortless model switching, and real-time intent-based governance that allows, blocks, or modifies prompts. A private knowledge base prevents repeat token spend, and dynamic routing minimizes costs.
+            The UCP deploys, secures, orchestrates, and controls agentic AI at scale. It enables rapid agent creation with granular model and token visibility, platform-layer intelligence for effortless model switching, and real-time intent-based governance that allows, blocks, or modifies prompts. A private knowledge base prevents repeat token spend, and dynamic routing minimizes costs.
           </h3>
         </div>
 
@@ -58,14 +58,11 @@ function ControlPlaneSection() {
           </Link>
 
           <div className="flex flex-col items-center gap-2 px-4">
-            <div className="w-12 h-12 rounded-full bg-[#1F4E79] flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
+            <div className="w-px h-8 bg-[#1F4E79] opacity-40 hidden md:block" />
             <span className="text-sm font-semibold" style={{ color: "#1F4E79" }}>
-              Unified Control Plane
+              UCP
             </span>
+            <div className="w-px h-8 bg-[#1F4E79] opacity-40 hidden md:block" />
           </div>
 
           <Link
@@ -89,3 +86,4 @@ function ControlPlaneSection() {
 }
 
 export default ControlPlaneSection;
+

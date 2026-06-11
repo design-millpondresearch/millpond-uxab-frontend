@@ -1,4 +1,4 @@
-import unified_policies from "../../assets/icons/unified_policies.svg";
+﻿import unified_policies from "../../assets/icons/unified_policies.svg";
 import connected_intelligence from "../../assets/icons/connected_intelligence.svg";
 import simplified_security from "../../assets/icons/simplified_security.svg";
 import future_proof from "../../assets/icons/future-proof.svg";
@@ -35,13 +35,13 @@ function StrategyRisksSection() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Why Organizations Need a Unified Control Plane for Agentic AI
+          Organizations Need Unified Control for Agentic AI
         </h2>
         <h3
           className="subheader text-base md:text-xl lg:text-2xl"
           style={{ color: "#4B4B4B" }}
         >
-          Agentic AI introduces new complexity that standard experimentation can't handle. Fragmented initiatives, data silos, and unmanaged shadow AI create governance gaps that lead to compliance and security exposure—and cost surprises. The MPR Unified Control Plane turns AI complexity into your competitive advantage.
+          Agentic AI introduces new complexity that standard experimentation can't handle. Fragmented initiatives, data silos, and unmanaged shadow AI create governance gaps that lead to compliance and security exposureâ€”and cost surprises. The UCP turns AI complexity into your competitive advantage.
         </h3>
       </div>
 
@@ -79,7 +79,7 @@ function StrategyRisksSection() {
                 />
               </div>
 
-              {/* Subheader — EXACT Figma size 28px */}
+              {/* Subheader â€” EXACT Figma size 28px */}
               <h4
                 className="subheader mb-3 text-center relative z-10"
                 style={{ color: "#1F4E79" }}

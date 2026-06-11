@@ -8,7 +8,6 @@ function HeroSection() {
       className="relative regular-banner-blue flex items-center justify-center px-4 md:px-6 lg:px-12 overflow-hidden"
       style={{ paddingTop: '65px', paddingBottom: '65px' }}
     >
-      {/* Off-white gradient blob in center */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -16,8 +15,6 @@ function HeroSection() {
           zIndex: 0,
         }}
       />
-
-      {/* Glass orb - top left */}
       <div
         className="pointer-events-none absolute"
         style={{
@@ -34,8 +31,6 @@ function HeroSection() {
           zIndex: 4,
         }}
       />
-
-      {/* Glass orb - bottom right */}
       <div
         className="pointer-events-none absolute"
         style={{
@@ -52,8 +47,6 @@ function HeroSection() {
           zIndex: 4,
         }}
       />
-
-      {/* Decorative shapes */}
       <img src={element2} alt="" className="pointer-events-none absolute top-0 left-0 w-40 md:w-72 opacity-30" />
       <img src={element10} alt="" className="pointer-events-none absolute bottom-0 right-0 w-40 md:w-72 opacity-30" />
 
@@ -70,9 +63,8 @@ function HeroSection() {
         >
           Deploy, secure, orchestrate, and control agentic AI at scale. One platform that unites WorkBench and Xilos into a single operational and governance control plane for your entire agentic AI ecosystem.
         </h3>
-        <div className="mt-4 flex justify-center gap-4 md:gap-8">
+        <div className="mt-4 flex justify-center">
           <Link to="/contact" className="hero-button-primary">Request a Demo</Link>
-          <Link to="/pricing" className="hero-button-tertiary">View Pricing</Link>
         </div>
       </div>
     </section>

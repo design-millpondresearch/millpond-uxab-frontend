@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import heroVideo from "../../assets/videos/HomeBGVL2.mp4";
 
@@ -57,7 +57,7 @@ function HeroSection() {
           className="hero-title max-w-[900px] lg:max-w-[1100px] leading-[1.1]"
           style={{ color: '#1F4E79' }}
         >
-          Deploy, Secure, Orchestrate, and Control Agentic AI with the MPR Unified Control Plane
+          Deploy, Secure, Orchestrate, and Control Agentic AI
         </h1>
         <h3
           className="subheader max-w-[720px] lg:max-w-[880px] mb-6 md:mb-12 text-lg md:text-2xl"
