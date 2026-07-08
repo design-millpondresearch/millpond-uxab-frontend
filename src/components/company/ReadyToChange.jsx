@@ -38,7 +38,7 @@ function ReadyToChange() {
           Join the Agentic AI Infrastructure Shift
         </h2>
         <h3 className="subheader mx-4" style={{ color: '#4B4B4B' }}>
-          Discover how the MPR Unified Control Plane can help your organization deploy, observe, secure, orchestrate, and control agentic AI at scale—with measurable efficiency, predictable spend, and auditable governance.
+          Discover how Mill Pond Research can help your organization deploy, observe, secure, orchestrate, and control agentic AI at scale—with measurable efficiency, predictable spend, and auditable governance.
         </h3>
         <Link to="/contact" className="button-primary mt-8 md:mt-12">
           Learn More

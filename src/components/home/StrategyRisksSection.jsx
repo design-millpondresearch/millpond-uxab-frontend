@@ -41,7 +41,7 @@ function StrategyRisksSection() {
           className="subheader text-base md:text-xl lg:text-2xl"
           style={{ color: "#4B4B4B" }}
         >
-          Agentic AI introduces new complexity that standard experimentation can't handle. Fragmented initiatives, data silos, and unmanaged shadow AI create governance gaps that lead to compliance and security exposure and cost surprises. The UCP turns AI complexity into your competitive advantage.
+          Agentic AI introduces new complexity that standard experimentation can't handle. Fragmented initiatives, data silos, and unmanaged shadow AI create governance gaps that lead to compliance and security exposure and cost surprises. Mill Pond Research turns AI complexity into your competitive advantage.
         </h3>
       </div>
 

@@ -82,7 +82,7 @@ function OurStory() {
           className="section-header mb-8 text-2xl md:text-3xl lg:text-4xl"
           style={{ color: "#1F4E79" }}
         >
-          Building the Unified Control Plane
+          Building Secure AI Infrastructure
         </h3>
       </div>
 
@@ -104,7 +104,7 @@ function OurStory() {
               Founded in 2023 by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a vision to empower businesses to build their own AI systems. Challenging "Big Token" models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.
             </p>
             <p className="large-font text-lg md:text-xl leading-relaxed mt-6" style={{ color: "#4B4B4B" }}>
-              As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. The MPR Unified Control Plane—combining WorkBench and Xilos—enables organizations to embrace agentic AI benefits with visibility, control, and auditable governance. As US AI Safety Institute Consortium members, they're committed to developing frameworks that enable companies to deploy, secure, orchestrate, and control agentic AI at scale while maintaining measurable efficiency and predictable spend.
+              As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. Combining WorkBench and Xilos, Mill Pond Research enables organizations to embrace agentic AI benefits with visibility, control, and auditable governance. As US AI Safety Institute Consortium members, they're committed to developing frameworks that enable companies to deploy, secure, orchestrate, and control agentic AI at scale while maintaining measurable efficiency and predictable spend.
             </p>
           </div>
         </div>

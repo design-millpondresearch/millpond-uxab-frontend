@@ -74,7 +74,7 @@ function Mission() {
           className="subheader mx-2 md:mx-6 text-base md:text-xl lg:text-2xl max-w-7xl"
           style={{ color: "#4B4B4B" }}
         >
-          We envision a world where organizations harness agentic AI with confidence—where innovation and control strengthen each other. The MPR Unified Control Plane brings together WorkBench and Xilos so a single platform manages the entire agentic AI ecosystem—from creation to governance—turning every deployment into a building block for organizational intelligence.
+          We envision a world where organizations harness agentic AI with confidence—where innovation and control strengthen each other. Mill Pond Research brings together WorkBench and Xilos so a single platform manages the entire agentic AI ecosystem—from creation to governance—turning every deployment into a building block for organizational intelligence.
         </h3>
       </div>
 

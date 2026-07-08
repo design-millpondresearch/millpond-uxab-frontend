@@ -1,15 +1,15 @@
 const usages = [
     {
-        title: "Real-Time Cost Reporting",
-        description: "Granular, real-time visibility into token usage and spend drivers so finance leaders can see spikes as they occur and invoke the right policies immediately.",
+        title: "Multi-Model Workflows",
+        description: "Chain LLMs sequentially, run in parallel, merge outputs. Build multi-stage pipelines — search with one model, reason with another, summarize with a third.",
     },
     {
-        title: "Knowledge Base Reuse",
-        description: "Cache queries and answers in a private knowledge base so similar questions are served without re-triggering token charges.",
+        title: "Cost Visibility",
+        description: "Per-agent, per-model, per-department cost tracking. Know exactly what your autonomous agents are spending, in real time.",
     },
     {
-        title: "Dynamic Model Routing",
-        description: "Route each request to the most appropriate model so the organization does not default every prompt to the most expensive option.",
+        title: "Context Engine",
+        description: "Every answered query becomes a searchable knowledge asset. Your agents' collective experience compounds — same questions get smarter answers over time.",
     },
 ];
 
@@ -27,7 +27,7 @@ function Usages() {
             
             <div className="text-center relative z-10">
                 <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-                    How Xilos Controls Costs and Risk
+                    How Xilos Secures and Optimizes Your AI
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-16 my-12 max-w-6xl mx-auto">
                     {usages.map((usage) => (

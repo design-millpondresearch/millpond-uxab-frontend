@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import xilosLogo from "../../../assets/xilos-logo-name-blue.svg";
 
 function HeroSection() {
@@ -55,15 +54,16 @@ function HeroSection() {
         />
 
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl" style={{ color: "#1F4E79" }}>
-            Observe, Secure, and Control Agentic AI Costs
+            Point your agents at Xilos. We handle the rest.
           </h1>
   
           <h3 className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
-            Xilos is the agentic AI control plane that helps CFOs and finance leaders save money and avoid cost surprises. It observes, secures, and orchestrates autonomous systems with granular, real-time visibility into token and model usage, behavior-based intent governance, and dynamic routing that selects the right model for each job.
+            Routing. Guardrails. Caching. Workflows. Knowledge. Audit logs. Every LLM call your agents make — secured, optimized, and logged through a single OpenAI-compatible endpoint. Change one URL, get full visibility and control. No SDK. No vendor lock-in.
           </h3>
   
-          <div className="mt-4 flex justify-center">
-            <Link to="/contact" className="hero-button-primary">Learn More</Link>
+          <div className="mt-4 flex justify-center gap-4 flex-wrap">
+            <a href="https://xilos.ai" className="hero-button-primary">Explore Xilos</a>
+            <a href="https://xilos.ai/login" className="hero-button-tertiary">Get Started</a>
           </div>
         </div>
       </section>

@@ -110,11 +110,6 @@ const Navbar = () => {
                                             Observe, Secure & Control AI Costs
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link to="/solutions/unified-control-plane" className="dropdown-link">
-                                            Unified Control Plane
-                                        </Link>
-                                    </li>
                                 </ul>
                             </>
                         )}
@@ -200,11 +195,6 @@ const Navbar = () => {
                                             onClick={closeMobileMenu}
                                         >
                                             Observe, Secure & Control AI Costs
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/solutions/unified-control-plane" className="mobile-dropdown-link" onClick={closeMobileMenu}>
-                                            Unified Control Plane
                                         </Link>
                                     </li>
                                 </ul>
