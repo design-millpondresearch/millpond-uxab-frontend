@@ -37,7 +37,7 @@ function ControlPlaneSection() {
             className="subheader mt-4 max-w-4xl mx-auto text-base md:text-xl lg:text-2xl"
             style={{ color: "#4B4B4B" }}
           >
-            The UCP deploys, secures, orchestrates, and controls agentic AI at scale. It enables rapid agent creation with granular model and token visibility, platform-layer intelligence for effortless model switching, and real-time intent-based governance that allows, blocks, or modifies prompts. A private knowledge base prevents repeat token spend, and dynamic routing minimizes costs.
+            Mill Pond Research deploys, secures, orchestrates, and controls agentic AI at scale. WorkBench enables rapid agent creation while Xilos provides granular model and token visibility, platform-layer intelligence for effortless model switching, and real-time intent-based governance that allows, blocks, or modifies prompts. A private knowledge base prevents repeat token spend, and dynamic routing minimizes costs.
           </h3>
         </div>
 
@@ -60,7 +60,7 @@ function ControlPlaneSection() {
           <div className="flex flex-col items-center gap-2 px-4">
             <div className="w-px h-8 bg-[#1F4E79] opacity-40 hidden md:block" />
             <span className="text-sm font-semibold" style={{ color: "#1F4E79" }}>
-              UCP
+              MPR
             </span>
             <div className="w-px h-8 bg-[#1F4E79] opacity-40 hidden md:block" />
           </div>

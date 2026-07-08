@@ -103,10 +103,10 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            Introducing: Unified Control Plane
+            One Platform. Two Products. Total Control.
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            A comprehensive agentic AI workspace to create and deploy, observe, secure, then orchestrate and control performance, cost, and compliance at scale.
+            Mill Pond Research combines WorkBench and Xilos to help you create, deploy, observe, secure, orchestrate, and control agentic AI at scale.
           </h3>
         </div>
 
@@ -222,7 +222,7 @@ function SolutionsSection() {
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Xilos is the UCP governance layer that observes, secures, and orchestrates autonomous systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
+                  Xilos observes, secures, and orchestrates autonomous AI systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -255,17 +255,18 @@ function SolutionsSection() {
                 </div>
 
                 <div className="mt-5 flex flex-wrap justify-end gap-3">
-                  <Link
-                    to="/solutions/xilos#top"
-                    onClick={() => {
-                      setTimeout(() => {
-                        window.scrollTo({ top: 0, behavior: "auto" });
-                      }, 0);
-                    }}
+                  <a
+                    href="https://xilos.ai"
                     className="button-primary"
                   >
                     Explore Xilos
-                  </Link>
+                  </a>
+                  <a
+                    href="https://xilos.ai/login"
+                    className="button-primary"
+                  >
+                    Get Started
+                  </a>
                 </div>
               </div>
             </div>

@@ -106,7 +106,7 @@ function AdvantagesSection() {
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="mb-8 md:mb-10 text-center">
           <h2 className="section-header text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            What the UCP Delivers
+            What Mill Pond Research Delivers
           </h2>
         </div>
 

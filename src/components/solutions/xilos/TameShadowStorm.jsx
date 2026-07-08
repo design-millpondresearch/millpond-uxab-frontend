@@ -5,18 +5,18 @@ import pencil from "../../../assets/logos-general/pencil.svg";
 const traits = [
     {
         icon: shield,
-        title: "Cost Visibility",
-        description: "Gain at-a-glance visibility into token and model usage by user, department, and routing rule. Real-time insight into spend drivers keeps budgets predictable.",
+        title: "Smart Routing",
+        description: "Route every query to the right model based on cost, latency, or capability. Define rules in natural language — no code required.",
     },
     {
         icon: share,
-        title: "Cost Avoidance",
-        description: "A private knowledge base stores every query and answer, so repeated questions can be answered without triggering new token consumption—and with audit-ready governance.",
+        title: "Agent Guardrails",
+        description: "Local PII detection, jailbreak prevention, and content filters. Keep your autonomous agents safe — no data leaves your infrastructure.",
     },
     {
         icon: pencil,
-        title: "Cost Optimization",
-        description: "Dynamic routing selects the right model for each job, ensuring the most expensive models are used only when warranted. Operational control supports normalized spend.",
+        title: "Semantic Cache",
+        description: "Patented caching that learns from every interaction. Cache hits bypass LLMs entirely — lower cost, faster responses, smarter over time.",
     },
 ];
 
@@ -25,7 +25,7 @@ function TameShadowStorm() {
         <section className="regular-banner-white px-6 flex flex-col items-center">
             <div className="text-center">
                 <h2 className="section-header mb-4 text-3xl md:text-5xl lg:text-6xl" style={{ color: "#1F4E79" }}>
-                    Govern Agentic AI with Cost-Aware Controls
+                    Everything your agents need. Own your AI.
                 </h2>
                 <div className="w-full max-w-[320px] md:max-w-xl lg:max-w-2xl my-12 mx-auto aspect-video">
                     <iframe
@@ -37,7 +37,7 @@ function TameShadowStorm() {
                     ></iframe>
                 </div>
                 <h3 className="subheader mx-4 w-full max-w-7xl text-base md:text-xl lg:text-2xl mb-18" style={{ color: "#4B4B4B" }}>
-                    Agentic AI is moving from experimentation to production faster than finance teams can establish cost controls. Xilos makes AI costs predictable by turning governance into a control plane that enables finance to control spend without impeding innovation. It prevents repeat token waste, routes work to the most cost-effective model, and provides granular, real-time visibility into token usage and costs across the organization—so you can scale with confidence.
+                    One platform for routing, caching, guardrails, and cost visibility — with an API your agents already speak. Smart routing sends simple queries to cheap models. Semantic cache skips the LLM entirely on repeats. PII detection and guardrails run locally before any model is called. Stop paying frontier prices for work a smaller model handles perfectly.
                 </h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-12 max-w-7xl mx-auto">

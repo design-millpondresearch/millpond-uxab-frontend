@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 function ReadyToChange() {
   return (
     <section className="regular-banner-white px-6 flex flex-col items-center relative overflow-hidden">
@@ -14,12 +12,15 @@ function ReadyToChange() {
       
       <div className="text-center relative z-10">
         <h2 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ color: "#1F4E79" }}>
-            Make AI Costs Predictable
+            Own Your AI Infrastructure
         </h2>
         <h3 className="subheader mx-4" style={{ color: "#4B4B4B" }}>
-        CFOs should implement Xilos to govern agentic AI usage with cost-aware controls, so the organization can minimize waste, normalize spend, and keep AI costs aligned with business priorities.
+        Point your existing agents at Xilos. One base_url change gives you routing, caching, guardrails, cost tracking, and full audit logs. No SDK required. No vendor lock-in.
         </h3>
-        <Link to="/contact" className="button-primary mt-12">Learn More</Link>
+        <div className="flex gap-4 mt-12 justify-center flex-wrap">
+          <a href="https://xilos.ai" className="button-primary">Explore Xilos</a>
+          <a href="https://xilos.ai/login" className="button-primary">Get Started</a>
+        </div>
       </div>
     </section>
   );
