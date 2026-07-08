@@ -35,7 +35,7 @@ function StrategyRisksSection() {
           className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
           style={{ color: "#1F4E79" }}
         >
-          Organizations Need Unified Control for Agentic AI
+          Organizations Need Comprehensive Control for Agentic AI
         </h2>
         <h3
           className="subheader text-base md:text-xl lg:text-2xl"

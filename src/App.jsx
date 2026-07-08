@@ -13,7 +13,6 @@ import Company from './pages/Company';
 import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (

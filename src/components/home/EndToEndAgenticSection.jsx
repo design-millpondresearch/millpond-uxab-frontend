@@ -57,7 +57,7 @@ function EndToEndAgenticSection() {
            Create, Deploy, Observe, Secure, Orchestrate, and Control Your Entire Agentic AI Ecosystem
           </h2>
           <h3 className="subheader" style={{ color: "#4B4B4B" }}>
-            Mill Pond Research combines WorkBench and Xilos into a single operational and governance control plane. Built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
+            Mill Pond Research combines WorkBench and Xilos into a single platform for building and governing agentic AI. Built to help you create, deploy, observe, secure, orchestrate, and control your entire agentic AI ecosystem.
           </h3>
         </div>
 

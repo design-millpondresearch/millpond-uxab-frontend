@@ -27,7 +27,7 @@ const story = [
     year: "2025",
     title: "Patented Xilos, Launched Xilos",
     body:
-      "Successfully patented and launched our flagship agentic AI control plane, turning AI complexity into competitive advantage.",
+      "Successfully patented and launched Xilos, our flagship agentic AI security and governance platform, turning AI complexity into competitive advantage.",
   },
 ];
 
