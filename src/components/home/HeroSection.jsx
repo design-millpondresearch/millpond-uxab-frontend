@@ -1,73 +1,30 @@
 ﻿import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
-import heroVideo from "../../assets/videos/HomeBGVL2.mp4";
-
-/*
- * Home page hero section featuring a background video. This updated
- * version adjusts horizontal padding and spacing for the text content
- * container to improve readability on smaller screens. Vertical margins
- * for the subheader are tightened on mobile, and the button group
- * remains responsive.
- */
+import xilosDashboard from "../../assets/xilos-dashboard.PNG";
 
 function HeroSection() {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-
-    const t = setTimeout(() => {
-      v.play().catch(() => {});
-    }, 150);
-
-    return () => clearTimeout(t);
-  }, []);
-
-  const tryPlay = () => {
-    videoRef.current?.play().catch(() => {});
-  };
-
   return (
-    <section
-      className="relative w-full min-h-[90vh] overflow-hidden flex items-center justify-center pb-16"
-      style={{ marginTop: '65px' }}
-      onTouchStart={tryPlay}
-      onClick={tryPlay}
-    >
-      {/* BACKGROUND VIDEO */}
-      <video
-        ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        playsInline
-        preload="auto"
-        muted
-      >
-        <source src={heroVideo} type="video/mp4" />
-      </video>
+    <section className="hero-dark" style={{ marginTop: '65px' }}>
+      <div className="hero-dark-gradient" />
+      <div className="hero-dark-grid" />
 
-      {/* SOFT SAND OVERLAY LAYER*/}
-      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(245, 239, 231, 0.85)' }}></div>
-
-      {/* FOREGROUND CONTENT */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-6 md:gap-10 px-4 md:px-6 lg:px-12">
-        <h1
-          className="hero-title max-w-[900px] lg:max-w-[1100px] leading-[1.1]"
-          style={{ color: '#1F4E79' }}
-        >
-          Deploy, Secure, Orchestrate, and Control Agentic AI
+      <div className="hero-dark-content">
+        <h1 className="hero-dark-title">
+          Point your agents at Xilos.
+          <br />
+          <span className="accent">We handle the rest.</span>
         </h1>
-        <h3
-          className="subheader max-w-[720px] lg:max-w-[880px] mb-6 md:mb-12 text-lg md:text-2xl"
-          style={{ color: '#4B4B4B' }}
-        >
-          Xilos is the only end-to-end platform that lets you deploy, secure, and orchestrate agentic AI. One base_url change. No SDK rewrite. Works with any model.
-        </h3>
-        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-          <Link to="/contact" className="hero-button-primary">Request a Demo</Link>
-          <Link to="/solutions/xilos" className="hero-button-tertiary">Explore Solutions</Link>
+        <p className="hero-dark-subtitle">
+          Routing. Guardrails. Caching. Cost visibility. Audit logs. Every LLM call your agents make — secured, optimized, and logged through a single OpenAI-compatible endpoint. The only platform that does all of this.
+        </p>
+        <div className="hero-dark-cta">
+          <Link to="/contact" className="btn-hero-primary">Request a Demo</Link>
+          <Link to="/solutions/xilos" className="btn-hero-ghost">Explore Xilos</Link>
+        </div>
+
+        <div className="hero-dashboard">
+          <div className="hero-dashboard-frame">
+            <img src={xilosDashboard} alt="Xilos dashboard showing real-time AI usage, cost tracking, and model routing" />
+          </div>
         </div>
       </div>
     </section>

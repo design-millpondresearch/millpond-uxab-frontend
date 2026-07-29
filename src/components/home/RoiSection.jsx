@@ -1,66 +1,24 @@
-﻿import coinstack from "../../assets/logos-general/coin-stack.svg";
-import warning from "../../assets/logos-general/alert-triangle.svg";
-import shield from "../../assets/logos-general/shield.svg";
-
-const metrics = [
-  { label: "50% Reduction in AI Cost", icon: coinstack },
-  { label: "50% Reduction in Data Risk", icon: warning },
-  { label: "Zero Vendor Lock-In", icon: shield },
+﻿const metrics = [
+  { label: "50% Reduction in AI Cost", icon: "60-73%" },
+  { label: "50% Reduction in Data Risk", icon: "100%" },
+  { label: "Zero Vendor Lock-In", icon: "0" },
 ];
 
 function RoiSection() {
   return (
-    <section className="regular-banner-sand px-4 md:px-6 py-12 md:py-16 relative overflow-hidden">
-      {/* Center blob gradient */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(ellipse 1500px 150% at center center, rgba(86, 124, 141, 0.12) 0%, transparent 70%)',
-        }}
-      />
+    <section className="dark-section">
+      <h2>Measurable impact.</h2>
+      <p className="dark-sub">
+        Efficiency, security, and cost control at scale. The only platform that does all of this.
+      </p>
 
-      <div className="mx-auto max-w-6xl text-center relative z-10">
-        <h2
-          className="section-header text-3xl md:text-4xl lg:text-5xl"
-          style={{ color: "#1F4E79" }}
-        >
-          Measurable Impact Across Innovation and Governance
-        </h2>
-
-        <p
-          className="subheader mt-2 text-lg md:text-2xl"
-          style={{ color: "#4B4B4B" }}
-        >
-          Our platform delivers efficiency, security, and cost control at scale.
-        </p>
-
-        <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-4 md:gap-6 max-w-7xl mx-auto">
-          {metrics.map((metric) => (
-            <div
-              key={metric.label}
-              className="
-                flex items-center justify-center gap-4
-                bg-white
-                px-6 md:px-10 py-4 md:py-5
-                rounded-2xl
-                shadow-sm
-                ring-1 ring-[#E5E7EB]
-                transition-all duration-300 hover:drop-shadow-lg
-                min-w-[280px] md:min-w-[320px]
-              "
-            >
-              <img
-                src={metric.icon}
-                alt={metric.label}
-                className="h-7 w-7 md:h-8 md:w-8"
-              />
-              <p className="text-lg md:text-xl font-semibold text-[#1F4E79]">
-                {metric.label}
-              </p>
-            </div>
-          ))}
-        </div>
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-center gap-6">
+        {metrics.map((m) => (
+          <div key={m.label} className="flex items-center gap-4 px-8 py-6 rounded-2xl" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(200,217,230,0.08)" }}>
+            <span className="text-3xl font-bold" style={{ color: "#C8D9E6", fontFamily: "var(--font-sora)" }}>{m.icon}</span>
+            <span className="text-base font-medium" style={{ color: "rgba(255,255,255,0.8)", fontFamily: "var(--font-sora)" }}>{m.label}</span>
+          </div>
+        ))}
       </div>
     </section>
   );

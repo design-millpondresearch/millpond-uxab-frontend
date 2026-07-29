@@ -1,51 +1,52 @@
+const stats = [
+  { value: "18+", label: "LLM Providers" },
+  { value: "60-73%", label: "Lower Token Costs" },
+  { value: "<1ms", label: "Cache Response Time" },
+  { value: "100%", label: "OpenAI-Compatible" },
+];
+
 const credentials = [
-  {
-    label: "Patented Technology",
-    detail: "9-step orchestration pipeline",
-  },
-  {
-    label: "IBM Silver Business Partner",
-    detail: "Enterprise go-to-market",
-  },
-  {
-    label: "TechCrunch Battlefield 200",
-    detail: "Class of 2025",
-  },
+  { label: "Patented Technology", detail: "9-step orchestration pipeline" },
+  { label: "IBM Silver Business Partner", detail: "Enterprise go-to-market" },
+  { label: "TechCrunch Battlefield 200", detail: "Class of 2025" },
 ];
 
 function CredibilityBar() {
   return (
-    <section className="regular-banner-white px-4 md:px-6 py-8 md:py-10 border-y border-[#E5E7EB]">
-      <div className="mx-auto max-w-6xl">
-        <p
-          className="text-center text-sm font-semibold uppercase tracking-widest mb-6 md:mb-8"
-          style={{ color: "#567C8D" }}
-        >
-          Trusted &amp; Recognized
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {credentials.map((cred) => (
-            <div
-              key={cred.label}
-              className="flex flex-col items-center text-center"
-            >
-              <p
-                className="subheader text-lg md:text-xl"
-                style={{ color: "#1F4E79" }}
-              >
-                {cred.label}
-              </p>
-              <p
-                className="small-font text-sm mt-1"
-                style={{ color: "#4B4B4B" }}
-              >
-                {cred.detail}
-              </p>
+    <>
+      {/* Dark stat bar — flows from hero */}
+      <div className="stat-bar-dark">
+        <div className="stat-bar-dark-grid">
+          {stats.map((s) => (
+            <div key={s.label} className="stat-bar-item">
+              <div className="stat-bar-number">{s.value}</div>
+              <div className="stat-bar-label">{s.label}</div>
             </div>
           ))}
         </div>
       </div>
-    </section>
+
+      {/* Light credibility bar */}
+      <section className="px-6 py-10 border-b border-[#E5E7EB] bg-white">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-center text-xs font-semibold uppercase tracking-widest mb-6" style={{ color: "#567C8D" }}>
+            Trusted & Recognized
+          </p>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12">
+            {credentials.map((cred) => (
+              <div key={cred.label} className="text-center">
+                <p className="text-base md:text-lg font-semibold" style={{ color: "#1F4E79", fontFamily: "var(--font-sora)" }}>
+                  {cred.label}
+                </p>
+                <p className="text-sm mt-0.5" style={{ color: "#4B4B4B", fontFamily: "var(--font-geist)" }}>
+                  {cred.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
