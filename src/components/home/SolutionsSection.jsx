@@ -10,12 +10,12 @@ import orchestrate from "../../assets/icons/orchestrate1.svg";
 
 // A small utility to build the glass effect.  Many browsers (Safari and some
 // older Android browsers) do not fully support the backdrop-filter CSS
-// property used by Tailwind's `backdrop-blur` classes.  Instead of relying on
-// Tailwind for this effect, we explicitly set both the standard
+// property used by Tailwind's `backdrop-blur` classes.  Instead of relying
+// on Tailwind for this effect, we explicitly set both the standard
 // `backdropFilter` and the vendor-prefixed `WebkitBackdropFilter` on the
-// component.  If the browser doesnâ€™t support backdrop filters, the opaque
-// background color still provides good contrast on top of the pageâ€™s
-// gradient backgrounds.  See the README for details on crossâ€‘browser
+// component.  If the browser doesn't support backdrop filters, the opaque
+// background color still provides good contrast on top of the page's
+// gradient backgrounds.  See the README for details on cross-browser
 // compatibility.
 
 const workbenchFeatures = [
@@ -63,9 +63,9 @@ const xilosFeatures = [
 function SolutionsSection() {
   // Common inline style for glass cards.  These styles ensure the cards are
   // visually translucent on modern browsers while falling back to a solid
-  // background when backdrop filters arenâ€™t supported.  Do not modify
+  // background when backdrop filters aren't supported.  Do not modify
   // `backdropFilter` or `WebkitBackdropFilter` outside of this helper to
-  // guarantee consistent crossâ€‘browser behaviour.
+  // guarantee consistent cross-browser behaviour.
   const glassCardStyle = {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
     backdropFilter: "blur(12px)",
@@ -103,15 +103,100 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            One Platform. Two Products. Total Control.
+            One Platform. Three Products. Total Control.
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            Mill Pond Research combines WorkBench and Xilos to help you create, deploy, observe, secure, orchestrate, and control agentic AI at scale.
+            Xilos is the platform. WorkBench is the application layer. Spotlight is pricing transparency. Together, they let you deploy, observe, secure, orchestrate, and control agentic AI at scale.
           </h3>
         </div>
 
         <div className="mb-12 flex flex-col gap-8 md:gap-12">
-          {/* WorkBench block */}
+          {/* Xilos block — the platform (shown first to reinforce hierarchy) */}
+          <div className="px-2 md:px-4">
+            <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
+              {/* Left column (image) */}
+              <div className="flex items-center justify-center rounded-2xl p-4 md:p-6">
+                <img
+                  src={xilosPic}
+                  alt="Xilos Product Shot"
+                  className="h-auto max-w-full rounded-2xl shadow-sm"
+                />
+              </div>
+
+              {/* Right column */}
+              <div
+                className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left"
+                style={glassCardStyle}
+              >
+                <p className="subheader" style={{ color: "var(--color-slate)" }}>
+                  Xilos <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; The Platform</span>
+                </p>
+
+                <h2
+                  className="section-header text-3xl md:text-4xl lg:text-5xl"
+                  style={{ color: "var(--color-primary)" }}
+                >
+                  Observe, Secure, and Orchestrate with Xilos
+                </h2>
+
+                <p
+                  className="mt-3 text-sm leading-relaxed"
+                  style={{ color: "var(--color-slate)" }}
+                >
+                  Xilos is the platform that sits between your employees (and their AI agents) and every LLM provider. One base_url change. No SDK changes, no code rewrite. It works with any model &mdash; OpenAI, Anthropic, Google, Meta, 18+ providers. Bring your own keys. Self-hostable. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a patent-backed semantic caching pipeline.
+                </p>
+
+                <div className="mt-4 space-y-3">
+                  {xilosFeatures.map((feature, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-4 md:flex-row"
+                    >
+                      <img
+                        src={feature.icon}
+                        alt={feature.title}
+                        className="h-6 w-6 flex-shrink-0"
+                      />
+                      <div className="flex-1">
+                        <span
+                          className="small-font-bold"
+                          style={{ color: "var(--color-primary-alt)" }}
+                        >
+                          {feature.title}{" "}
+                        </span>
+                        <span
+                          className="small-font"
+                          style={{ color: "var(--color-slate)" }}
+                        >
+                          {feature.body}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a
+                    href="https://xilos.ai"
+                    className="button-primary"
+                  >
+                    Explore Xilos
+                  </a>
+                  <a
+                    href="https://xilos.ai/login"
+                    className="button-primary"
+                  >
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t" style={{ borderColor: "rgba(0,0,0,0.06)" }} />
+
+          {/* WorkBench block — application layer */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
               {/* Left column */}
@@ -120,7 +205,7 @@ function SolutionsSection() {
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  WorkBench
+                  WorkBench <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; Application Layer</span>
                 </p>
 
                 <h2
@@ -134,7 +219,7 @@ function SolutionsSection() {
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                WorkBench unifies state-of-the-art AI models, specialized agents, and customizable tools in one platform, eliminating vendor lock-in and complexity. Professional-grade authoring tools enable teams to easily prototype, test, and deploy agents. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets, consolidating multiple subscriptions into one solution delivering lasting competitive advantage.
+                  WorkBench is the employee-facing AI workspace built on top of Xilos. It unifies state-of-the-art AI models, specialized agents, and customizable tools in one platform, eliminating vendor lock-in and complexity. Professional-grade authoring tools enable teams to easily prototype, test, and deploy agents. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets, consolidating multiple subscriptions into one solution delivering lasting competitive advantage.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -190,83 +275,73 @@ function SolutionsSection() {
           {/* Divider */}
           <div className="border-t" style={{ borderColor: "rgba(0,0,0,0.06)" }} />
 
-          {/* Xilos block */}
+          {/* Spotlight block — pricing transparency */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
-              {/* Left column (image) */}
-              <div className="flex items-center justify-center rounded-2xl p-4 md:p-6">
-                <img
-                  src={xilosPic}
-                  alt="Xilos Product Shot"
-                  className="h-auto max-w-full rounded-2xl shadow-sm"
-                />
-              </div>
-
-              {/* Right column */}
+              {/* Left column */}
               <div
                 className="rounded-2xl px-4 py-6 md:px-6 md:py-8 text-left"
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  Xilos
+                  Spotlight <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; Pricing Transparency</span>
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Observe, Secure, and Orchestrate with Xilos
+                  Prove the Value with Spotlight
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Xilos observes, secures, and orchestrates autonomous AI systems. It delivers granular, real-time visibility into token and model usage, governs every interaction with behavior-based intent analysis, and prevents repeat token waste through a private knowledge base. Dynamic routing selects the right model for each job to control costs without sacrificing quality or compliance.
+                  Spotlight is the pricing transparency tool that proves Xilos&rsquo;s value proposition publicly. It surfaces real-time model pricing across providers, compares costs, and demonstrates the savings Xilos delivers through semantic caching and intelligent routing. No more guessing what your AI spend actually buys &mdash; Spotlight shows you, down to the token.
                 </p>
 
                 <div className="mt-4 space-y-3">
-                  {xilosFeatures.map((feature, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-4 md:flex-row"
-                    >
-                      <img
-                        src={feature.icon}
-                        alt={feature.title}
-                        className="h-6 w-6 flex-shrink-0"
-                      />
-                      <div className="flex-1">
-                        <span
-                          className="small-font-bold"
-                          style={{ color: "var(--color-primary-alt)" }}
-                        >
-                          {feature.title}{" "}
-                        </span>
-                        <span
-                          className="small-font"
-                          style={{ color: "var(--color-slate)" }}
-                        >
-                          {feature.body}
-                        </span>
-                      </div>
+                  <div className="flex items-center gap-4">
+                    <div className="flex-1">
+                      <span className="small-font-bold" style={{ color: "var(--color-primary-alt)" }}>Compare. </span>
+                      <span className="small-font" style={{ color: "var(--color-slate)" }}>See real-time per-token pricing across 18+ providers side by side.</span>
                     </div>
-                  ))}
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="flex-1">
+                      <span className="small-font-bold" style={{ color: "var(--color-primary-alt)" }}>Quantify. </span>
+                      <span className="small-font" style={{ color: "var(--color-slate)" }}>Calculate the exact savings Xilos caching and routing deliver.</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="flex-1">
+                      <span className="small-font-bold" style={{ color: "var(--color-primary-alt)" }}>Decide. </span>
+                      <span className="small-font" style={{ color: "var(--color-slate)" }}>Make data-driven model selection and budget allocation decisions.</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="mt-5 flex flex-wrap justify-end gap-3">
-                  <a
-                    href="https://xilos.ai"
-                    className="button-primary"
-                  >
-                    Explore Xilos
-                  </a>
-                  <a
-                    href="https://xilos.ai/login"
-                    className="button-primary"
-                  >
-                    Get Started
-                  </a>
+                <a
+                  href="https://xilos.ai"
+                  className="mt-5 inline-block button-primary"
+                >
+                  Explore Spotlight
+                </a>
+              </div>
+
+              {/* Right column — visual placeholder using sand card */}
+              <div className="flex items-center justify-center rounded-2xl p-4 md:p-6">
+                <div className="flex flex-col items-center justify-center w-full rounded-2xl bg-[#F5EFE7] py-12 md:py-16 px-6 text-center shadow-sm">
+                  <p className="subheader text-2xl md:text-3xl" style={{ color: "var(--color-primary)" }}>
+                    60&ndash;73% Cost Reduction
+                  </p>
+                  <p className="small-font mt-2" style={{ color: "var(--color-slate)" }}>
+                    Patent-backed semantic caching via pgvector
+                  </p>
+                  <p className="small-font mt-4 text-sm" style={{ color: "var(--color-slate)" }}>
+                    US Patent 12,332,878 B1
+                  </p>
                 </div>
               </div>
             </div>

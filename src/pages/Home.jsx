@@ -3,10 +3,14 @@ import Footer from "../components/Footer";
 
 // Section components for the home page
 import HeroSection from "../components/home/HeroSection.jsx";
+import CredibilityBar from "../components/home/CredibilityBar.jsx";
+import MarketContext from "../components/home/MarketContext.jsx";
 import EndToEndAgenticSection from "../components/home/EndToEndAgenticSection.jsx";
 import StrategyRisksSection from "../components/home/StrategyRisksSection.jsx";
 import NewsHighlightsSection from "../components/home/NewsHighlightsSection.jsx";
 import SolutionsSection from "../components/home/SolutionsSection.jsx";
+import CompetitiveLandscape from "../components/home/CompetitiveLandscape.jsx";
+import DeploymentModels from "../components/home/DeploymentModels.jsx";
 import AdvantagesSection from "../components/home/AdvantagesSection.jsx";
 import PartnersSection from "../components/home/PartnersSection.jsx";
 import RoiSection from "../components/home/RoiSection.jsx";
@@ -37,10 +41,14 @@ function Home() {
 
         {/* Home page content sections */}
         <HeroSection />
+        <CredibilityBar />
+        <MarketContext />
         <EndToEndAgenticSection />
         <StrategyRisksSection />
         <NewsHighlightsSection />
         <SolutionsSection />
+        <CompetitiveLandscape />
+        <DeploymentModels />
         <AdvantagesSection />
         <PartnersSection />
         <RoiSection />

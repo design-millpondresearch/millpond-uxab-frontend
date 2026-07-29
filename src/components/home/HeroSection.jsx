@@ -63,7 +63,7 @@ function HeroSection() {
           className="subheader max-w-[720px] lg:max-w-[880px] mb-6 md:mb-12 text-lg md:text-2xl"
           style={{ color: '#4B4B4B' }}
         >
-          Maximize efficiency and innovation while retaining the visibility and control you need to run agentic AI securely at enterprise scale.
+          Xilos is the only end-to-end platform that lets you deploy, secure, and orchestrate agentic AI. One base_url change. No SDK rewrite. Works with any model.
         </h3>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           <Link to="/contact" className="hero-button-primary">Request a Demo</Link>
