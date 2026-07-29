@@ -337,10 +337,10 @@ function SolutionsSection() {
                     60&ndash;73% Cost Reduction
                   </p>
                   <p className="small-font mt-2" style={{ color: "var(--color-slate)" }}>
-                    Patent-backed semantic caching via pgvector
+                    Patented semantic caching via pgvector
                   </p>
                   <p className="small-font mt-4 text-sm" style={{ color: "var(--color-slate)" }}>
-                    US Patent 12,332,878 B1
+                    The only platform that does all of this
                   </p>
                 </div>
               </div>

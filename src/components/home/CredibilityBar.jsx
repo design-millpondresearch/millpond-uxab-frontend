@@ -1,6 +1,6 @@
 const credentials = [
   {
-    label: "US Patent 12,332,878 B1",
+    label: "Patented Technology",
     detail: "9-step orchestration pipeline",
   },
   {
