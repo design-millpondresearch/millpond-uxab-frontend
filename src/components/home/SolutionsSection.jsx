@@ -103,10 +103,10 @@ function SolutionsSection() {
             className="section-header text-3xl md:text-4xl lg:text-5xl"
             style={{ color: "var(--color-primary)" }}
           >
-            One Platform. Three Products. Total Control.
+            One Platform. Total Control.
           </h2>
           <h3 className="subheader" style={{ color: "var(--color-slate)" }}>
-            Xilos is the platform. WorkBench is the application layer. Spotlight is pricing transparency. Together, they let you deploy, observe, secure, orchestrate, and control agentic AI at scale.
+            Xilos is the platform &mdash; governance, intelligence, and the application layer all in one. WorkBench is built in as the application layer for prototyping, testing, and deploying agents. Spotlight is a free pricing transparency tool that proves the value publicly. Deploy, observe, secure, orchestrate, and control agentic AI at scale.
           </h3>
         </div>
 
@@ -196,7 +196,7 @@ function SolutionsSection() {
           {/* Divider */}
           <div className="border-t" style={{ borderColor: "rgba(0,0,0,0.06)" }} />
 
-          {/* WorkBench block — application layer */}
+          {/* WorkBench block — application layer built into Xilos */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
               {/* Left column */}
@@ -205,21 +205,21 @@ function SolutionsSection() {
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  WorkBench <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; Application Layer</span>
+                  WorkBench <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; Included with Xilos</span>
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Prototype, Test, and Deploy Agents Faster with WorkBench
+                  The Application Layer Built into Xilos
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  WorkBench is the employee-facing AI workspace built on top of Xilos. It unifies state-of-the-art AI models, specialized agents, and customizable tools in one platform, eliminating vendor lock-in and complexity. Professional-grade authoring tools enable teams to easily prototype, test, and deploy agents. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets, consolidating multiple subscriptions into one solution delivering lasting competitive advantage.
+                  WorkBench is the employee-facing AI workspace built into Xilos. It is the application layer &mdash; not a separate product &mdash; that unifies state-of-the-art AI models, specialized agents, and customizable tools in one platform, eliminating vendor lock-in and complexity. Professional-grade authoring tools enable teams to easily prototype, test, and deploy agents. A knowledge-sharing ecosystem transforms company data and prompts into institutional assets, consolidating multiple subscriptions into one solution delivering lasting competitive advantage.
                 </p>
 
                 <div className="mt-4 space-y-3">
@@ -275,7 +275,7 @@ function SolutionsSection() {
           {/* Divider */}
           <div className="border-t" style={{ borderColor: "rgba(0,0,0,0.06)" }} />
 
-          {/* Spotlight block — pricing transparency */}
+          {/* Spotlight block — free pricing transparency tool */}
           <div className="px-2 md:px-4">
             <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 md:grid-cols-2">
               {/* Left column */}
@@ -284,21 +284,21 @@ function SolutionsSection() {
                 style={glassCardStyle}
               >
                 <p className="subheader" style={{ color: "var(--color-slate)" }}>
-                  Spotlight <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; Pricing Transparency</span>
+                  Spotlight <span style={{ color: "var(--color-primary-alt)", fontSize: "0.85em" }}>&mdash; Free Pricing Transparency Tool</span>
                 </p>
 
                 <h2
                   className="section-header text-3xl md:text-4xl lg:text-5xl"
                   style={{ color: "var(--color-primary)" }}
                 >
-                  Prove the Value with Spotlight
+                  See the Value with Spotlight
                 </h2>
 
                 <p
                   className="mt-3 text-sm leading-relaxed"
                   style={{ color: "var(--color-slate)" }}
                 >
-                  Spotlight is the pricing transparency tool that proves Xilos&rsquo;s value proposition publicly. It surfaces real-time model pricing across providers, compares costs, and demonstrates the savings Xilos delivers through semantic caching and intelligent routing. No more guessing what your AI spend actually buys &mdash; Spotlight shows you, down to the token.
+                  Spotlight is a free, informational tool &mdash; not a product &mdash; that surfaces real-time model pricing across providers, compares costs, and demonstrates the savings Xilos delivers through semantic caching and intelligent routing. It&rsquo;s a marketing resource that proves the value proposition publicly. No more guessing what your AI spend actually buys &mdash; Spotlight shows you, down to the token.
                 </p>
 
                 <div className="mt-4 space-y-3">
