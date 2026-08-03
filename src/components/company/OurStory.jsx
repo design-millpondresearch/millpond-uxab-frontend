@@ -21,7 +21,7 @@ const story = [
     year: "2024",
     title: "Launch of WorkBench",
     body:
-      "Introduced our AI development platform that enables teams to prototype, test, and deploy AI agents with universal model compatibility.",
+      "Introduced our AI application layer — the workspace that enables teams to prototype, test, and deploy AI agents with universal model compatibility.",
   },
   {
     year: "2025",
@@ -104,7 +104,7 @@ function OurStory() {
               Founded in 2023 by brothers Andrew and Pete Shimshock, Mill Pond Research emerged from a vision to empower businesses to build their own AI systems. Challenging "Big Token" models, they championed AI that's localized, distributed, and personalized while maintaining privacy and security.
             </p>
             <p className="large-font text-lg md:text-xl leading-relaxed mt-6" style={{ color: "#4B4B4B" }}>
-              As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. Combining WorkBench and Xilos, Mill Pond Research enables organizations to embrace agentic AI benefits with visibility, control, and auditable governance. As US AI Safety Institute Consortium members, they're committed to developing frameworks that enable companies to deploy, secure, orchestrate, and control agentic AI at scale while maintaining measurable efficiency and predictable spend.
+              As agentic AI revolutionizes business operations, Mill Pond evolved from services to pioneering software development. With Xilos — including WorkBench as the application layer — Mill Pond Research enables organizations to embrace agentic AI benefits with visibility, control, and auditable governance. As US AI Safety Institute Consortium members, they're committed to developing frameworks that enable companies to deploy, secure, orchestrate, and control agentic AI at scale while maintaining measurable efficiency and predictable spend.
             </p>
           </div>
         </div>

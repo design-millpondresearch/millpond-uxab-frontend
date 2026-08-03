@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import xilosDashboard from "../../assets/xilos-dashboard.PNG";
-import workbenchScreenshot from "../../assets/workbench-screenshot-v1-2026.PNG";
 
 function ProductShowcase() {
   return (
@@ -10,8 +8,8 @@ function ProductShowcase() {
         Xilos sits between your agents and every LLM provider. One base_url change gives you real-time visibility, governance, and cost control.
       </p>
 
-      {/* Xilos showcase */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center mb-16">
+      {/* Xilos — full-width showcase */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center mb-12">
         <div className="rounded-2xl overflow-hidden shadow-lg border border-[#E5E7EB]">
           <img src={xilosDashboard} alt="Xilos dashboard — real-time token usage, cost tracking, model routing" className="w-full h-auto block" />
         </div>
@@ -30,23 +28,17 @@ function ProductShowcase() {
         </div>
       </div>
 
-      {/* WorkBench showcase */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-        <div className="text-left px-2 md:order-1">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: "#567C8D" }}>WorkBench — Included with Xilos</p>
-          <h3 className="text-2xl md:text-3xl font-semibold mb-3" style={{ color: "#1F4E79", fontFamily: "var(--font-sora)" }}>
-            The Application Layer
-          </h3>
-          <p className="text-base mb-4" style={{ color: "#4B4B4B", fontFamily: "var(--font-geist)", lineHeight: 1.6 }}>
-            The employee-facing AI workspace built into Xilos. Prototype, test, and deploy agents in minutes. Knowledge-sharing transforms company data into institutional assets. Not a separate product — part of the platform.
+      {/* WorkBench — slim banner, not a co-equal product */}
+      <div className="max-w-6xl mx-auto rounded-2xl px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4" style={{ background: "#F8FAFC", border: "1px solid #E5E7EB" }}>
+        <div className="text-left">
+          <p className="text-sm font-semibold" style={{ color: "#1F4E79", fontFamily: "var(--font-sora)" }}>
+            WorkBench — the application layer, included with every Xilos account
           </p>
-          <Link to="/solutions/workbench#top" onClick={() => setTimeout(() => window.scrollTo({ top: 0, behavior: "auto" }), 0)} className="button-primary">
-            Explore WorkBench
-          </Link>
+          <p className="text-sm mt-1" style={{ color: "#4B4B4B", fontFamily: "var(--font-geist)" }}>
+            Prototype, test, and deploy agents. Knowledge-sharing that turns company data into institutional assets.
+          </p>
         </div>
-        <div className="rounded-2xl overflow-hidden shadow-lg border border-[#E5E7EB] md:order-2">
-          <img src={workbenchScreenshot} alt="WorkBench — agent prototyping, testing, and deployment workspace" className="w-full h-auto block" />
-        </div>
+        <a href="https://xilos.ai" className="button-secondary" style={{ whiteSpace: "nowrap" }}>Explore at xilos.ai</a>
       </div>
     </section>
   );

@@ -8,13 +8,8 @@ import linkedin from '../assets/logos-footer/Linkedin.svg';
 import './Footer.css';
 
 /**
- * Footer component preserving the original design while introducing
- * responsive tweaks for smaller screens. The layout and styling are
- * controlled primarily through `Footer.css`, which now includes media
- * queries to adjust padding, gaps, and element sizes on mobile. A new
- * `footer-socials` class is added to the social links container to
- * facilitate responsive spacing via CSS. The logo image is also given
- * a class (`footer-logo-img`) so its size can be adjusted responsively.
+ * Footer — Xilos-only. No WorkBench link.
+ * Xilos links externally to https://xilos.ai.
  */
 const Footer = () => {
   return (
@@ -30,27 +25,22 @@ const Footer = () => {
 
         <ul className="footer-menu">
           <li className="footer-item">
-            <Link to="/Company" className="footer-link">
+            <Link to="/company" className="footer-link">
               About
             </Link>
           </li>
           <li className="footer-item">
-            <Link to="/Resources" className="footer-link">
+            <Link to="/resources" className="footer-link">
               Resources
             </Link>
           </li>
           <li className="footer-item">
-            <Link to="/solutions/workbench" className="footer-link">
-              WorkBench
-            </Link>
+            <a href="https://xilos.ai" className="footer-link">
+              Xilos
+            </a>
           </li>
           <li className="footer-item">
-            <Link to="/solutions/xilos" className="footer-link">
-              Xilos
-            </Link>
-          </li>
-           <li className="footer-item">
-            <Link to="/Partners" className="footer-link">
+            <Link to="/partners" className="footer-link">
               Partners
             </Link>
           </li>

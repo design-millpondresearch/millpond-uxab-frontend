@@ -56,7 +56,7 @@ const tiers = [
 ];
 
 /**
- * PricingTable renders the three-tier pricing grid for WorkBench.
+ * PricingTable renders the three-tier pricing grid for Xilos.
  * Handles modal state for Enterprise contact and Stripe checkout.
  */
 export default function PricingTable({ inline = false, showHeader = true }) {
@@ -113,7 +113,7 @@ export default function PricingTable({ inline = false, showHeader = true }) {
                 className="section-header mb-4 text-3xl md:text-4xl lg:text-5xl"
                 style={{ color: '#1F4E79' }}
               >
-                {inline ? 'Simple, Transparent Pricing' : 'WorkBench Pricing'}
+                {inline ? 'Simple, Transparent Pricing' : 'Xilos Pricing'}
               </h2>
               <p
                 className="subheader mx-auto max-w-3xl"

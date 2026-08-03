@@ -1,9 +1,8 @@
-﻿import { Routes, Route } from 'react-router-dom';
+﻿import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 import Home from './pages/Home';
-import Workbench from './components/solutions/Workbench';
 import Xilos from './components/solutions/Xilos';
 import Partner from './pages/Partners';
 import Resources from './pages/Resources';
@@ -21,7 +20,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/solutions/workbench" element={<Workbench />} />
+          {/* Redirect old WorkBench URL to Xilos page */}
+          <Route path="/solutions/workbench" element={<Navigate to="/solutions/xilos" replace />} />
           <Route path="/solutions/xilos" element={<Xilos />} />
           <Route path="/partners" element={<Partner />} />
           <Route path="/resources" element={<Resources />} />

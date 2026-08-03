@@ -6,7 +6,7 @@ import Stripe from 'stripe';
  * Vercel serverless function: POST /api/create-payment-intent
  *
  * Creates a Stripe Subscription (with an incomplete first payment) for the
- * selected WorkBench tier.  Requires STRIPE_PERSONAL_PRICE_ID and
+ * selected Xilos tier.  Requires STRIPE_PERSONAL_PRICE_ID and
  * STRIPE_BUSINESS_PRICE_ID environment variables.
  */
 export default async function handler(req, res) {
@@ -64,7 +64,7 @@ export default async function handler(req, res) {
     const priceId = tier === 'personal' ? personalPriceId : businessPriceId;
 
     const customer = await stripe.customers.create({
-      metadata: { tier, product: 'workbench' },
+      metadata: { tier, product: 'xilos' },
     });
 
     const subscription = await stripe.subscriptions.create({

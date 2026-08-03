@@ -84,7 +84,7 @@ function FiltersNews() {
       id: 58,
        title: 'Crossing the Chasm from Pilot Purgatory to Production AI',
        category: 'Blog',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'May 2026',
        description:
          "“Pilot purgatory” is the defining challenge of the modern enterprise AI wave. Organizations are awash in successful proofs-of-concept that never seem to translate into scaled, production-grade capabilities. This disconnect is often because the tools used for experimentation are ill-suited for the rigor of production.",
@@ -95,7 +95,7 @@ function FiltersNews() {
       id: 57,
        title: 'Escaping Pilot Purgatory',
        category: 'White Paper',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'May 2026',
        description:
          "\"Pilot purgatory\" has become the defining challenge of themodern enterprise AI wave. Organizations are awash insuccessful proofs-of-concept (PoCs) and dazzling demos thatfail to translate into scaled, production-grade capabilities. Thisfailure is rarely due to a lack of ambition or ideas. Instead, itstems from a fundamental mismatch between the tools used forexperimentation and the rigorous demands of productionenvironments. To cross this chasm, enterprises must transitionfrom makeshift prototyping tools to an engineered infrastructurethat’s specifically designed to facilitate the journey from the labto a scaled deployment that emphasizes governance, reliability,and operational resilience.",
@@ -106,7 +106,7 @@ function FiltersNews() {
       id: 56,
        title: 'The Fallacy of the Single Model',
        category: 'White Paper',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'May 2026',
        description:
          "The pursuit of simplicity often leads enterprises to standardize on a single AI model providerfor all use cases. While administratively convenient, this \"one-size-fits-all\" approach isfundamentally flawed in the current AI landscape.",
@@ -117,7 +117,7 @@ function FiltersNews() {
       id: 55,
        title: 'Beyond Prompting: A Strategic Guide to Building Agentic AI Workflows',
        category: 'White Paper',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'May 2026',
        description:
          "For many companies, \"Al adoption\" still means deploying internal chatbots.Employees ask questions, the Al retrieves information or drafts content, andthe conversation ends. It's useful. It saves time. But it's fundamentally limited.We're already in the middle of a transition from conversational Al to agenticAI. The difference isn't incremental - it's categorical.",
@@ -128,7 +128,7 @@ function FiltersNews() {
       id: 54,
        title: 'Why a Single-Model Strategy Will Fail the Enterprise',
        category: 'Blog',
-       topic: 'AI Strategy, WorkBench',
+       topic: 'AI Strategy, Xilos',
        date: 'May 2026',
        description:
          "A pragmatic enterprise AI strategy recognizes the simple truth that no single AI model is the best for every task.",
@@ -150,7 +150,7 @@ function FiltersNews() {
       id: 52,
        title: 'From Transient Prompts to Permanent Assets',
        category: 'Whitepaper',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'April 2026',
        description:
          "Every time you use external LLMs, you’re building a house on rented land. This whitepaper explores how to transition from transient prompts to permanent assets with a unified authoring platform that turns your AI knowledge into a secure, reusable, and shareable organizational resource.",
@@ -161,7 +161,7 @@ function FiltersNews() {
       id: 51,
        title: 'Stop Renting Your AI Intelligence: Turn Prompts into Permanent Assets',
        category: 'Blog',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'April 2026',
        description:
          "The problem is, that knowledge exists solely within the specific vendor’s platform. So, when the organization inevitably needs to switch models — whether its due to cost, capability, or policy changes — that intellectual property is effectively trapped.",
@@ -172,7 +172,7 @@ function FiltersNews() {
       id: 49,
        title: 'The Strategic Necessity of an AI Abstraction Layer',
        category: 'Blog',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'April 2026',
        description:
          "The pace of change in the Large Language Model (LLM) landscape is unprecedented. New models emerge weekly, claiming either superior performance or cost-efficiency. Meanwhile, existing providers frequently update capabilities and pricing. As a result, hard-coding enterprise applications to a single model provider is a high-risk strategy.",
@@ -183,7 +183,7 @@ function FiltersNews() {
       id: 48,
        title: 'Breaking the Speed Limit: Streamline the Agentic AI Lifecycle',
        category: 'Whitepaper',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'April 2026',
        description:
          "Organizations that built around security and govnerance are able to accelerate their AI deployments faster than those that built around specific models. This whitepaper explores how to break the speed limit and streamline the agentic AI lifecycle with unified authoring and orchestration tools that turn weeks of tinkering into days of systematic, production-ready development.",
@@ -194,7 +194,7 @@ function FiltersNews() {
       id: 47,
        title: 'Moving Faster: Streamlining the Agentic AI Lifecycle',
        category: 'Blog',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'April 2026',
        description:
          "The race for AI adoption is intensifying. You are moving fast - but are you going in the right direction? This blog explores how to streamline the agentic AI lifecycle with unified authoring and orchestration tools that turn weeks of tinkering into days of systematic, production-ready development.",
@@ -205,7 +205,7 @@ function FiltersNews() {
       id: 46,
        title: 'The Hidden Cost of Fragmented Enterprise AI Adoption',
        category: 'Blog',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'March 2026',
        description:
          "As enterprises rush to adopt generative AI, many have fallen into the trap of fragmentation. Their individual departments — driven by urgent demands for innovation — are independently securing subscriptions to various model providers such as OpenAI, Anthropic, and Google.",
@@ -216,7 +216,7 @@ function FiltersNews() {
       id: 45,
        title: 'The High Cost of Chaos',
        category: 'White Paper',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'March 2026',
        description:
          "The rush to adopt generative AI has triggered a wave of grassroots innovation across the enterprise.",
@@ -227,7 +227,7 @@ function FiltersNews() {
       id: 44,
        title: 'WorkBench Case Study: Large Online Bank',
        category: 'Case Study',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'March 2026',
        description:
          "WorkBench has successfully been deployed at a large U.S.-based digital bank, enabling secure and efficient AI adoption across multiple departments while safeguarding sensitive data and ensuring compliance with industry regulations.",
@@ -384,7 +384,7 @@ function FiltersNews() {
        topic: 'Product Collateral',
        date: 'January 2026',
        description:
-         "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through WorkBench and Xilos—patented solutions that enable CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
+         "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through Xilos—patented technology that enables CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
        image: CompanyOverviewMillPondResearch,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/MPR_Company_Overview_012226.pdf',
      }, 
@@ -533,7 +533,7 @@ function FiltersNews() {
        id: 15,
        title: 'WorkBench Brochure',
        category: 'Collateral',
-       topic: 'WorkBench',
+       topic: 'Xilos',
        date: 'July 2025',
        description:
          'Detailed product information for WorkBench, the unified AI authoring platform for enterprise teams.',
@@ -662,7 +662,6 @@ function FiltersNews() {
     'Product Collateral',
     'Security',
     'Technology',
-    'WorkBench',
     'Xilos',
   ];
 

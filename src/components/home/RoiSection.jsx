@@ -1,7 +1,7 @@
 ﻿const metrics = [
-  { label: "50% Reduction in AI Cost", icon: "60-73%" },
-  { label: "50% Reduction in Data Risk", icon: "100%" },
-  { label: "Zero Vendor Lock-In", icon: "0" },
+  { label: "Cost Reduction", icon: "60-73%" },
+  { label: "Reduction in Data Risk", icon: "100%" },
+  { label: "Vendor Lock-In", icon: "0" },
 ];
 
 function RoiSection() {

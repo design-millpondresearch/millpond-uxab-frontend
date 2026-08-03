@@ -1,9 +1,8 @@
 import PricingTable from '../components/pricing/PricingTable';
-import FAQ from '../components/solutions/workbench/FAQ';
 
 /**
- * Standalone Pricing page for WorkBench.
- * Reuses the PricingTable and FAQ sections from the WorkBench page.
+ * Xilos Pricing page.
+ * Reuses the PricingTable (tiers are Xilos tiers: Personal/Business/Enterprise).
  */
 function Pricing() {
   return (
@@ -22,7 +21,7 @@ function Pricing() {
             className="hero-title text-4xl md:text-6xl lg:text-7xl"
             style={{ color: '#1F4E79' }}
           >
-            WorkBench Pricing
+            Xilos Pricing
           </h1>
           <p
             className="subheader mx-auto max-w-3xl mt-4"
@@ -34,7 +33,6 @@ function Pricing() {
         </div>
       </section>
       <PricingTable showHeader={false} />
-      <FAQ />
     </main>
   );
 }
