@@ -54,11 +54,11 @@ function HeroSection() {
         />
 
           <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl" style={{ color: "#1F4E79" }}>
-            Point your agents at Xilos. We handle the rest.
+            Your business runs on AI. Xilos runs the AI.
           </h1>
   
           <h3 className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
-            Routing. Guardrails. Caching. Workflows. Knowledge. Audit logs. Every LLM call your agents make — secured, optimized, and logged through a single OpenAI-compatible endpoint. Change one URL, get full visibility and control. No SDK. No vendor lock-in.
+            One platform behind every LLM call your company makes — agent routing, governance, cost control, and now full business applications. CRM, email, support, websites, and more, all powered by the same engine. The only platform that does what we do.
           </h3>
   
           <div className="mt-4 flex justify-center gap-4 flex-wrap">
