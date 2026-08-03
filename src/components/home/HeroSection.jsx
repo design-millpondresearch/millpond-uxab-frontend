@@ -14,7 +14,7 @@ function HeroSection() {
           <span className="accent">Xilos runs the AI.</span>
         </h1>
         <p className="hero-dark-subtitle">
-          One platform behind every LLM call your company makes — agent routing, governance, cost control, and now full business applications. CRM, email, support, websites, and more, all powered by the same engine. The only platform that does what we do.
+          One platform behind every LLM call your company makes — agent routing, governance, cost control, and now full business applications. CRM, email, support, websites, and more, all powered by the same engine.
         </p>
         <div className="hero-dark-cta">
           <Link to="/contact" className="btn-hero-primary">Request a Demo</Link>

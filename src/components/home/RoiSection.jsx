@@ -9,7 +9,7 @@ function RoiSection() {
     <section className="dark-section">
       <h2>Measurable impact.</h2>
       <p className="dark-sub">
-        Efficiency, security, and cost control at scale. The only platform that does all of this.
+        Efficiency, security, and cost control at scale.
       </p>
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-center gap-6">

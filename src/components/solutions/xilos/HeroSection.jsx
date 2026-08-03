@@ -58,7 +58,7 @@ function HeroSection() {
           </h1>
   
           <h3 className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
-            One platform behind every LLM call your company makes — agent routing, governance, cost control, and now full business applications. CRM, email, support, websites, and more, all powered by the same engine. The only platform that does what we do.
+            One platform behind every LLM call your company makes — agent routing, governance, cost control, and now full business applications. CRM, email, support, websites, and more, all powered by the same engine.
           </h3>
   
           <div className="mt-4 flex justify-center gap-4 flex-wrap">
