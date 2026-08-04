@@ -6,7 +6,7 @@ const stats = [
 ];
 
 const credentials = [
-  { label: "Patented Technology", detail: "9-step orchestration pipeline" },
+  { label: "AI Gateway Technology", detail: "9-step orchestration pipeline" },
   { label: "IBM Silver Business Partner", detail: "Enterprise go-to-market" },
   { label: "TechCrunch Battlefield 200", detail: "Class of 2025" },
 ];

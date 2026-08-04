@@ -24,7 +24,7 @@ const features = [
   {
     icon: connect,
     title: "Semantic Cache",
-    body: "Patented caching that learns from every interaction. Cache hits bypass LLMs entirely — 60-73% lower costs.",
+    body: "Semantic caching that learns from every interaction. Cache hits bypass LLMs entirely — 60-73% lower costs.",
   },
   {
     icon: organizational_intelligence,

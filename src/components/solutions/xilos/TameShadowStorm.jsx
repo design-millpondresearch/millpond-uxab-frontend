@@ -16,7 +16,7 @@ const traits = [
     {
         icon: pencil,
         title: "Semantic Cache",
-        description: "Patented caching that learns from every interaction. Cache hits bypass LLMs entirely — lower cost, faster responses, smarter over time.",
+        description: "Semantic caching that learns from every interaction. Cache hits bypass LLMs entirely — lower cost, faster responses, smarter over time.",
     },
 ];
 
