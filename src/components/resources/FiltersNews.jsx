@@ -1,66 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ResourceThumbnail from './ResourceThumbnail';
-import WorkBenchDatasheet from '../../assets/logos-resources/workbench-data-sheet.png';
-import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
-import filtersIcon from '../../assets/filters.svg';
-import CompanyOverviewMillPondResearch from '../../assets/logos-resources/company-overview.png';
-import TheSecretWarofBigToken from '../../assets/logos-resources/big-token.png';
-import MillPondResearchCapabilityStatement from '../../assets/logos-resources/MillPondResearchCapabilityStatement.svg';
-import MillPondResearch1MinutePitchTechCrunchDisrupt2025 from '../../assets/logos-resources/MillPondResearch1MinutePitchTechCrunchDisrupt2025.svg';
-import SoWhatHappensAfterAGI from '../../assets/logos-resources/SoWhatHappensAfterAGI.svg';
-import HowEnterprisesCanSecurelyUnlockAIsPower from '../../assets/logos-resources/HowEnterprisesCanSecurelyUnlockAIsPower.svg';
-import TheCanaryLeavingTheCoalMine from '../../assets/logos-resources/TheCanaryLeavingTheCoalMine.svg';
-import TheContextDilemma from '../../assets/logos-resources/TheContextDilemma.svg';
-import NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines from '../../assets/logos-resources/NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines.svg';
-import HarnessingthePowerofAIwithSecureInfrastructure from '../../assets/logos-resources/HarnessingthePowerofAIwithSecureInfrastructure.svg';
-import xilos1 from '../../assets/logos-resources/xilos-1.png';
-import xilos2 from '../../assets/logos-resources/xilos-2.png';
-import xilos3 from '../../assets/logos-resources/xilos-3.png';
-import xilos4 from '../../assets/logos-resources/xilos-4.png';
-import workbench6 from '../../assets/logos-resources/workbench-6.png';
-import TheDataHarvestTheBiggestThreatinAI from '../../assets/logos-resources/TheDataHarvestTheBiggestThreatinAI.svg';
-import TheIntelligenceSolution from '../../assets/logos-resources/TheIntelligenceSolution.svg';
-import AnImportantLimitationofAI from '../../assets/logos-resources/AnImportantLimitationofAI.svg';
 import Masonry from "react-masonry-css";
-import CrossingTheChasm from '../../assets/logos-resources/crossing-the-chasm.png';
 
-import EscapingPp from '../../assets/logos-resources/escaping-pp.png';
 
-import FallacySingleModel from '../../assets/logos-resources/fallacy-single-model.png';
 
-import BeyondPrompting from '../../assets/logos-resources/beyond-prompting.png';
 
-import SingleModelStrategy from '../../assets/logos-resources/single-model-strategy.png';
 
-import BeyondChatbots from '../../assets/logos-resources/beyond-chatbots.png';
 
-import SecuringTheAutonomousEnterprise from '../../assets/logos-resources/wb-securing-the-autonomous-enterprise.png';
-import TheAgenticImperative from '../../assets/logos-resources/xilos-agentic-imperative.png';
-import BreakingFreePOC from '../../assets/logos-resources/breaking-free.jpeg';
-import XilosDataSheet from '../../assets/logos-resources/xilos-data-sheet.png';
-import AIUnknown from '../../assets/logos-resources/ai-unknown.png';
-import WhenYourAIInvestment from '../../assets/logos-resources/WhenYourAIInvestment.png';
-import WhereDoesYouDataGo from '../../assets/logos-resources/WhereDoesYourDataGo.png';
-import ShadowAICrisis from '../../assets/logos-resources/ShadowAICrisis.png';
-import Why40Percent from '../../assets/logos-resources/why40percent.png';
-import CeosUpdating2026 from '../../assets/logos-resources/ceosupdated2026.png';
-import liberationinnovation from '../../assets/logos-resources/liberation-innovation.png'
-import SecurityEfficiency from '../../assets/logos-resources/SecurityEfficiency.webp';
-import HiddenCost from '../../assets/logos-resources/HiddenCost.webp';
-import FlatteningThePyramid from '../../assets/logos-resources/FlatteningThePyramid.webp';
-import TheBlindSpot from '../../assets/logos-resources/TheBlindSpot.webp';
-import AIGlossary from '../../assets/logos-resources/AIGlossary.webp';
-import IBMPartnershipAnnouncement from '../../assets/logos-resources/IBMPartnershipAnnouncement.jpg';
-import SecuringTheAgenticFuture from '../../assets/logos-resources/SecuringTheAgenticFuture.jpg';
-import wbcasestudydigitalbank from '../../assets/logos-resources/wb-casestudy-bank.png';
-import broken from '../../assets/logos-resources/broken.png';
-import highcostofchaos from '../../assets/logos-resources/highcostofchaos.png';
-import TransientPrompts from '../../assets/logos-resources/TransientPrompts.png';
-import MovingFaster from '../../assets/logos-resources/MovingFaster.png';
-import PermanentAsset from '../../assets/logos-resources/PermanentAsset.png';
-import BreakingTheLimit from '../../assets/logos-resources/BreakingTheLimit.png';
-import AbstractionLayer from '../../assets/logos-resources/AbstractionLayer.png';
 
 // Define responsive breakpoints for Masonry columns.
 const breakpointColumnsObj = {
