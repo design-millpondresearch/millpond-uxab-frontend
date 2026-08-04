@@ -36,7 +36,6 @@ function FiltersNews() {
        date: 'May 2026',
        description:
          "“Pilot purgatory” is the defining challenge of the modern enterprise AI wave. Organizations are awash in successful proofs-of-concept that never seem to translate into scaled, production-grade capabilities. This disconnect is often because the tools used for experimentation are ill-suited for the rigor of production.",
-       image: CrossingTheChasm,
        link: 'https://blog.millpondresearch.com/crossing-the-chasm-from-pilot-purgatory-to-production-ai-65a03431d41f',
     },
     {
@@ -47,7 +46,6 @@ function FiltersNews() {
        date: 'May 2026',
        description:
          "\"Pilot purgatory\" has become the defining challenge of themodern enterprise AI wave. Organizations are awash insuccessful proofs-of-concept (PoCs) and dazzling demos thatfail to translate into scaled, production-grade capabilities. Thisfailure is rarely due to a lack of ambition or ideas. Instead, itstems from a fundamental mismatch between the tools used forexperimentation and the rigorous demands of productionenvironments. To cross this chasm, enterprises must transitionfrom makeshift prototyping tools to an engineered infrastructurethat’s specifically designed to facilitate the journey from the labto a scaled deployment that emphasizes governance, reliability,and operational resilience.",
-       image: EscapingPp,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Escaping%20Pilot%20Purgatory.pdf',
     },
     {
@@ -58,7 +56,6 @@ function FiltersNews() {
        date: 'May 2026',
        description:
          "The pursuit of simplicity often leads enterprises to standardize on a single AI model providerfor all use cases. While administratively convenient, this \"one-size-fits-all\" approach isfundamentally flawed in the current AI landscape.",
-       image: FallacySingleModel,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Fallacy%20of%20the%20Single%20Model.pdf',
     },
     {
@@ -69,7 +66,6 @@ function FiltersNews() {
        date: 'May 2026',
        description:
          "For many companies, \"Al adoption\" still means deploying internal chatbots.Employees ask questions, the Al retrieves information or drafts content, andthe conversation ends. It's useful. It saves time. But it's fundamentally limited.We're already in the middle of a transition from conversational Al to agenticAI. The difference isn't incremental - it's categorical.",
-       image: BeyondPrompting,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Beyond%20Prompting%20-%20Ebook.pdf',
     },
     {
@@ -80,7 +76,6 @@ function FiltersNews() {
        date: 'May 2026',
        description:
          "A pragmatic enterprise AI strategy recognizes the simple truth that no single AI model is the best for every task.",
-       image: SingleModelStrategy,
        link: 'https://blog.millpondresearch.com/why-a-single-model-strategy-will-fail-the-enterprise-3695fc30fa34',
     },
     {
@@ -91,7 +86,6 @@ function FiltersNews() {
        date: 'May 2026',
        description:
          "For many organizations, “enterprise AI” still primarily means using internal chatbots. But while these are useful for basic information retrieval or content drafting, simple conversational interfaces barely scratch the surface of AI’s potential value.",
-       image: BeyondChatbots,
        link: 'https://blog.millpondresearch.com/beyond-chatbots-preparing-for-the-era-of-agentic-ai-ff90dff5e789',
     },
     {
@@ -102,7 +96,6 @@ function FiltersNews() {
        date: 'April 2026',
        description:
          "Every time you use external LLMs, you’re building a house on rented land. This whitepaper explores how to transition from transient prompts to permanent assets with a unified authoring platform that turns your AI knowledge into a secure, reusable, and shareable organizational resource.",
-       image: TransientPrompts,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/From%20Transient%20Prompts%20to%20Permanent%20Assets.pdf',
     },
        {
@@ -113,7 +106,6 @@ function FiltersNews() {
        date: 'April 2026',
        description:
          "The problem is, that knowledge exists solely within the specific vendor’s platform. So, when the organization inevitably needs to switch models — whether its due to cost, capability, or policy changes — that intellectual property is effectively trapped.",
-       image: PermanentAsset,
        link: 'https://blog.millpondresearch.com/stop-renting-your-ai-intelligence-turn-prompts-into-permanent-assets-e493f9c84ec4',
     },
         {
@@ -124,7 +116,6 @@ function FiltersNews() {
        date: 'April 2026',
        description:
          "The pace of change in the Large Language Model (LLM) landscape is unprecedented. New models emerge weekly, claiming either superior performance or cost-efficiency. Meanwhile, existing providers frequently update capabilities and pricing. As a result, hard-coding enterprise applications to a single model provider is a high-risk strategy.",
-       image: AbstractionLayer,
        link: 'https://blog.millpondresearch.com/the-strategic-necessity-of-an-ai-abstraction-layer-e079de1b9356',
     },
        {
@@ -135,7 +126,6 @@ function FiltersNews() {
        date: 'April 2026',
        description:
          "Organizations that built around security and govnerance are able to accelerate their AI deployments faster than those that built around specific models. This whitepaper explores how to break the speed limit and streamline the agentic AI lifecycle with unified authoring and orchestration tools that turn weeks of tinkering into days of systematic, production-ready development.",
-       image: BreakingTheLimit,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Breaking%20the%20Speed%20Limit%20Streamline%20the%20Agentic%20AI%20Lifecycle.pdf',
     },
     {
@@ -146,7 +136,6 @@ function FiltersNews() {
        date: 'April 2026',
        description:
          "The race for AI adoption is intensifying. You are moving fast - but are you going in the right direction? This blog explores how to streamline the agentic AI lifecycle with unified authoring and orchestration tools that turn weeks of tinkering into days of systematic, production-ready development.",
-       image: MovingFaster,
        link: 'https://blog.millpondresearch.com/moving-faster-streamlining-the-agentic-ai-lifecycle-b1d36ef8732a',
     },
     {
@@ -157,7 +146,6 @@ function FiltersNews() {
        date: 'March 2026',
        description:
          "As enterprises rush to adopt generative AI, many have fallen into the trap of fragmentation. Their individual departments — driven by urgent demands for innovation — are independently securing subscriptions to various model providers such as OpenAI, Anthropic, and Google.",
-       image: broken,
        link: 'https://blog.millpondresearch.com/the-hidden-cost-of-fragmented-enterprise-ai-adoption-0861b1790be2',
     },
     {
@@ -168,7 +156,6 @@ function FiltersNews() {
        date: 'March 2026',
        description:
          "The rush to adopt generative AI has triggered a wave of grassroots innovation across the enterprise.",
-       image: highcostofchaos,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20High%20Cost%20of%20Chaos%20-%20Whitepaper%20-%20Mill%20Pond%20Research.pdf',
     },
     {
@@ -179,7 +166,6 @@ function FiltersNews() {
        date: 'March 2026',
        description:
          "WorkBench has successfully been deployed at a large U.S.-based digital bank, enabling secure and efficient AI adoption across multiple departments while safeguarding sensitive data and ensuring compliance with industry regulations.",
-       image: wbcasestudydigitalbank,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/WorkBench%20-%20Case%20Study%20-%20U.S.-Based%20Digital%20Bank.pdf',
     },
     {
@@ -190,7 +176,6 @@ function FiltersNews() {
        date: 'March 2026',
        description:
          "Xilos is now a native IBM watsonx.governance AI Service, bringing security and orchestration to a completely invisible layer of your AI stack.",
-       image: IBMPartnershipAnnouncement,
        link: 'https://blog.millpondresearch.com/the-end-of-shadow-ai-mill-pond-research-brings-xilos-to-ibm-watsonx-bf5af9df9267',
     }, 
       {
@@ -201,7 +186,6 @@ function FiltersNews() {
        date: 'March 2026',
        description:
          "Identity and Access Management (IAM) is the blind spot in enterprise AI security. This white paper explores how to secure the agentic future with a modern approach to AI governance that goes beyond traditional IAM controls.",
-       image: SecuringTheAgenticFuture,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Securing%20the%20Agentic%20Future%20-%20Mill%20Pond%20Research.pdf',
     }, 
     {
@@ -212,7 +196,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "How 'expertise' is going to evolve in the age of agentic AI.",
-       image: FlatteningThePyramid,
        link: 'https://blog.millpondresearch.com/flattening-the-pyramid-d43e7a8e67da',
     },
     {
@@ -223,7 +206,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "Why Identity and Access Management (IAM) is blind to the agentic future.",
-       image: TheBlindSpot,
        link: 'https://blog.millpondresearch.com/why-identity-access-management-is-blind-to-the-agentic-future-3d2e29789ddd',
     },
     {
@@ -234,7 +216,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "A simple glossary of AI terms for non-technical users.",
-       image: AIGlossary,
        link: 'https://blog.millpondresearch.com/ai-glossary-for-non-technical-users-78e9a02699d7',
     }, 
    { 
@@ -245,7 +226,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "When you switch LLMs, you shouldn’t have to start from scratch. Most organizations learn this lesson the hard way.",
-       image: HiddenCost,
        link: 'https://blog.millpondresearch.com/the-hidden-cost-of-model-lock-in-037fbaac2772',
     }, 
     {
@@ -256,7 +236,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "The organizations moving fastest on agentic AI aren’t the ones with the loosest controls. They’re the ones with the strongest governance",
-       image: SecurityEfficiency,
        link: 'https://blog.millpondresearch.com/security-and-efficiency-arent-trade-offs-they-re-multipliers-77676eb57900',
     }, 
     {
@@ -267,7 +246,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "How the writer’s blank page mirrors today’s AI adoption crisis — and why the path forward requires intentional limitation",
-       image: liberationinnovation,
        link: 'https://blog.millpondresearch.com/when-infinite-possibilities-create-paralysis-why-constraints-liberate-innovation-8b175ee073ff',
     }, 
     {
@@ -278,7 +256,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "For the first time, CEOs now rank cyber-enabled fraud as their top security concern — displacing ransomware from the #1 spot. This isn’t just a statistical shift; it’s a signal that cybersecurity has moved from the server room to the boardroom.",
-       image: CeosUpdating2026,
        link: 'https://blog.millpondresearch.com/ceos-just-rewrote-their-cyber-priorities-and-cisos-are-fighting-a-different-battle-afc360055b05',
     }, 
     {
@@ -289,7 +266,6 @@ function FiltersNews() {
        date: 'Februrary 2026',
        description:
          "The gap between AI pilots and production deployment has become an enterprise crisis. Here’s what separates the 60% that will survive from the 40% that won’t.",
-       image: Why40Percent,
        link: 'https://blog.millpondresearch.com/why-40-of-agentic-ai-projects-will-fail-and-how-to-beat-the-odds-685d5e4cba1e',
     }, 
     {
@@ -300,7 +276,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
          "Employees routinely surrender sensitive data to third-party AI systems where it becomes permanently embedded in training models and impossible to retrieve, creating an invisible exposure that traditional security tools cannot track or reverse. ",
-       image: WhereDoesYouDataGo,
        link: 'https://blog.millpondresearch.com/where-does-your-data-go-after-you-hit-send-b1dbf4ce4750',
       }, 
      {
@@ -311,7 +286,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
          "Organizations that build deep operational expertise on specific AI platforms face a unique vendor lock-in trap where accumulated prompt engineering knowledge and institutional workarounds cannot transfer to new systems, unlike traditional software migrations.",
-       image: WhenYourAIInvestment,
        link: 'https://blog.millpondresearch.com/when-your-ai-investment-becomes-a-liability-960ceb4b33f3',
       },
       {
@@ -322,7 +296,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
          "Your employees are already using AI tools you can’t see. The question isn’t whether you have a shadow AI problem — it’s how bad it’s gotten.",
-       image: ShadowAICrisis,
        link: 'https://blog.millpondresearch.com/the-shadow-ai-crisis-is-already-here-02c0e95ba948',
       },
       {
@@ -333,7 +306,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
          "Mill Pond Research delivers the world's only end-to-end platform for deploying, securing, and orchestrating agentic AI at enterprise scale through Xilos—patented technology that enables CIOs and CISOs to safely harness AI efficiency while protecting proprietary data and ensuring compliance across their networks.",
-       image: CompanyOverviewMillPondResearch,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/MPR_Company_Overview_012226.pdf',
      }, 
      {
@@ -343,7 +315,6 @@ function FiltersNews() {
        topic: 'Enterprise AI',
        date: 'January 2026',
        description: 'Here’s an uncomfortable truth: right now, most of the people in your organization are pasting sensitive company data into ChatGPT or Gemini. Or Claude.',
-       image: AIUnknown,
        link: 'https://blog.millpondresearch.com/your-employees-are-already-using-ai-the-question-is-whether-you-know-about-it-d135e00a17c6',
        },
       {
@@ -354,7 +325,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
        'A field-guide for CIOs and CISOs to deploy agentic AI without falling victim to shadow-AI sprawl, data leakage, or compliance violations.',
-       image: SecuringTheAutonomousEnterprise,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Securing%20the%20Autonomous%20Enterprise.pdf',
        },
        {
@@ -365,7 +335,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
        'Why 40 % of agentic-AI projects will be canceled by 2027 and how to build the unified tooling that moves enterprises from pilot purgatory to production at pace.',
-       image: TheAgenticImperative,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Agentic%20Imperative.pdf',
        },
        {
@@ -376,7 +345,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
        'Stop rebuilding agents from scratch every time you swap a model—use authoring tools that turn weeks of tinkering into days of systematic, production-ready development.',
-       image: BreakingFreePOC,
        link: 'https://blog.millpondresearch.com/breaking-free-from-perpetual-proof-of-concept-purgatory-8bcf991ba4d8',
        },
        {
@@ -387,7 +355,6 @@ function FiltersNews() {
        date: 'January 2026',
        description:
          "Xilos: Mill Pond Research's comprehensive AI governance platform that provides complete visibility, security, and orchestration for enterprise agentic AI systems while preventing data leakage, reducing costs, and enabling secure cross-departmental collaboration.",
-       image: XilosDataSheet,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Data%20Sheet%20-%2020260114.pdf',
      },
      {
@@ -398,7 +365,6 @@ function FiltersNews() {
        date: 'January 2025',
        description:
          "Workbench: Mill Pond Research's universal LLM workspace - a frontend for using LLM models, creating agents, writing and sharing prompts, built on your context.",
-       image: WorkBenchDatasheet,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/WorkBench%20-%20Data%20Sheet%20-%2020260114.pdf',
      },
      {
@@ -409,7 +375,6 @@ function FiltersNews() {
        date: 'November 2025',
        description:
          "Mill Pond Research's comprehensive analysis of the shadow AI crisis, revealing critical enterprise vulnerabilities and introducing Xilos.AI as an integrated governance platform that observes, secures, and orchestrates AI deployments across organizations.",
-       image: TheShadowAICrisis,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/The%20Shadow%20AI%20Crisis%20-%20Xilos%20-%20Mill%20Pond%20Research.pdf',
      },
      {
@@ -420,7 +385,6 @@ function FiltersNews() {
        date: 'September 2025',
        description:
          'The arrival of "Big Token" AI models has revolutionized enterprise capabilities, enabling unprecedented efficiency and insight extraction…',
-       image: TheSecretWarofBigToken,
        link: 'https://blog.millpondresearch.com/the-rise-of-big-token-a700f967edac',
      },
      {
@@ -431,7 +395,6 @@ function FiltersNews() {
        date: 'August 2025',
        description:
          "Comprehensive overview of Mill Pond Research's capabilities, expertise, and proven track record in AI security and orchestration.",
-       image: MillPondResearchCapabilityStatement,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Mill%20Pond%20Research%20Capability%20Statement.pdff',
      },
      {
@@ -442,7 +405,6 @@ function FiltersNews() {
        date: 'August2025',
        description:
          'A quick introduction to Xilos, the AI security and orchestration platform that gives you complete control over your AI agents.',
-       image: xilos3,
        link: 'https://www.youtube.com/watch?v=9pIMw7NYxc4',
      },
      {
@@ -453,7 +415,6 @@ function FiltersNews() {
        date: 'July 2025',
        description:
          'The $670,000 Question: Why Shadow AI Is the Fastest-Growing Line Item in Your Next Breach.',
-       image: xilos4,
        link: 'https://devsecopsai.today/xilos-a-definitive-answer-to-the-shadow-ai-crisis-4793463779ec',
      },
      {
@@ -463,7 +424,6 @@ function FiltersNews() {
        topic: 'Security',
        date: 'July 2025',
        description: 'The Unseen Crisis in Enterprise AI Adoption.',
-       image: xilos1,
        link: 'https://blog.millpondresearch.com/xilos-the-missing-piece-for-secure-enterprise-ai-in-an-agentic-world-a631f714347f',
      },
      {
@@ -474,7 +434,6 @@ function FiltersNews() {
        date: 'July 2025',
        description:
          "Watch Mill Pond Research's 1-minute pitch presentation from TechCrunch Disrupt 2025, showcasing our AI security and orchestration solutions.",
-       image: MillPondResearch1MinutePitchTechCrunchDisrupt2025,
        link: 'https://www.youtube.com/watch?v=IvWfC_ELe-w',
      },
      {
@@ -485,7 +444,6 @@ function FiltersNews() {
        date: 'July 2025',
        description:
          'Detailed product information for WorkBench, the unified AI authoring platform for enterprise teams.',
-       image: workbench6,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Workbench%20-%20Brochure%20-%2020260217.pdf',
      },
      {
@@ -496,7 +454,6 @@ function FiltersNews() {
        date: 'July 2025',
        description:
          'Comprehensive overview of Xilos features, capabilities, and enterprise security solutions for AI orchestration.',
-       image: xilos2,
        link: 'https://48049833.fs1.hubspotusercontent-na2.net/hubfs/48049833/Xilos%20-%20Brochure%20-%2020260217.pdf',
      },
      {
@@ -507,7 +464,6 @@ function FiltersNews() {
        date: 'June 2025',
        description:
          "The digital landscape is transforming before our eyes. AI isn't merely a passing trend; it's the foundation upon which every application…",
-       image: SoWhatHappensAfterAGI,
        link: 'https://blog.millpondresearch.com/so-what-happens-after-agi-a6aecac21b6a',
      },
      {
@@ -518,7 +474,6 @@ function FiltersNews() {
        date: 'May 2025',
        description:
          "Navigating the complexities of AI governance isn't just about avoiding pitfalls; it's about building a foundation for innovation. Here's a…",
-       image: HowEnterprisesCanSecurelyUnlockAIsPower,
        link: 'https://devsecopsai.today/how-enterprises-can-securely-unlock-ais-power-aa2e02329852',
      },
      {
@@ -528,7 +483,6 @@ function FiltersNews() {
        topic: 'Business Strategy',
        date: 'May 2025',
        description: "The Existential Threat That Most Businesses Won't Survive.",
-       image: TheCanaryLeavingTheCoalMine,
        link: 'https://blog.millpondresearch.com/the-canary-leaving-the-coal-mine-7e589d8822d0',
      },
      {
@@ -538,7 +492,6 @@ function FiltersNews() {
        topic: 'Technology',
        date: 'May 2025',
        description: 'How Fragmented Digital Experiences Are Undermining Our AI Future.',
-       image: TheContextDilemma,
        link: 'https://devsecopsai.today/the-context-dilemma-2c53a8a9a68f',
      },
      {
@@ -548,7 +501,6 @@ function FiltersNews() {
        topic: 'Legal & Compliance',
        date: 'May 2025',
        description: 'The New AI Copyright Landscape.',
-       image: NavigatingAICopyrightComplianceUnderTheNewUSPTOGuidelines,
        link: 'https://blog.millpondresearch.com/how-to-navigate-ai-copyright-compliance-under-the-new-uspto-guidelines-25bc63505549',
      },
      {
@@ -559,7 +511,6 @@ function FiltersNews() {
        date: 'May 2025',
        description:
          'A detailed White Paper exploring how organizations can leverage AI capabilities while maintaining robust security and intelligent orchestration.',
-       image: HarnessingthePowerofAIwithSecureInfrastructure,
        link: '#top',
      },
      {
@@ -569,7 +520,6 @@ function FiltersNews() {
        topic: 'Data Privacy',
        date: 'April 2025',
        description: 'State of the User + Provider Agreement.',
-       image: TheDataHarvestTheBiggestThreatinAI,
        link: 'https://devsecopsai.today/the-data-harvest-how-llm-providers-leverage-user-interactions-for-model-improvement-75384c878b69',
      },
      {
@@ -580,7 +530,6 @@ function FiltersNews() {
        date: 'March 2025',
        description:
          'A comprehensive eBook exploring the future of artificial intelligence and how organizations can harness its transformative power.',
-       image: TheIntelligenceSolution,
        link: 'https://www.theintelligencesolution.com',
      },
      {
@@ -591,7 +540,6 @@ function FiltersNews() {
        date: 'February 2025',
        description:
          'In the pursuit of understanding artificial intelligence (AI) and its limitations, we must properly frame AI in our collective…',
-       image: AnImportantLimitationofAI,
        link: 'https://blog.millpondresearch.com/an-important-limitation-of-ai-457324951af7',
      },
    ]);
@@ -769,9 +717,7 @@ function FiltersNews() {
                     </p>
                   </div>
 
-                  {resource.image && (
-                    <div className="relative">
-                      <ResourceThumbnail
+                  <ResourceThumbnail
                         title={resource.title}
                         category={resource.category}
                       />
@@ -801,10 +747,8 @@ function FiltersNews() {
                             Read More →
                           </a>
                         ))}
-                    </div>
-                  )}
-                </article>
-              ))}
+                  </article>
+                ))}
             </Masonry>
           ) : (
             <p className="text-center py-12 text-gray-500">No resources match the selected filters.</p>
