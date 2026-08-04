@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ResourceThumbnail from './ResourceThumbnail';
 import WorkBenchDatasheet from '../../assets/logos-resources/workbench-data-sheet.png';
 import TheShadowAICrisis from '../../assets/logos-resources/TheShadowAICrisis.svg';
 import filtersIcon from '../../assets/filters.svg';
@@ -823,10 +824,9 @@ function FiltersNews() {
 
                   {resource.image && (
                     <div className="relative">
-                      <img
-                        src={resource.image}
-                        alt={resource.title}
-                        className="w-full min-h-[200px] object-cover"
+                      <ResourceThumbnail
+                        title={resource.title}
+                        category={resource.category}
                       />
 
                       {resource.link &&
