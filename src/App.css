@@ -645,9 +645,9 @@ body {
 
 .hero-dark-title {
   font-family: var(--font-sora);
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2rem, 4.5vw, 3.75rem);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   color: #fff;
   margin: 0;
@@ -843,6 +843,14 @@ body {
   color: #4B4B4B;
   margin-top: 0.5rem;
   line-height: 1.5;
+}
+
+.market-stat-source {
+  font-family: var(--font-geist);
+  font-size: 0.7rem;
+  color: #9CA3AF;
+  margin-top: 0.4rem;
+  font-style: italic;
 }
 
 /* FEATURE GRID */

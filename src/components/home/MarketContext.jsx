@@ -1,8 +1,8 @@
 const stats = [
-  { figure: "68%", label: "Shadow AI", detail: "of employees use unauthorized AI tools you can't see" },
-  { figure: "22x", label: "Spending Surge", detail: "enterprise AI spend: $1.7B → $37B in two years" },
-  { figure: "84%", label: "Stuck in Pilot", detail: "of AI deployments never reach production" },
-  { figure: "40%+", label: "Canceled by 2027", detail: "of agentic AI projects per Gartner, due to cost and risk" },
+  { figure: "68%", label: "Shadow AI", detail: "of employees use unauthorized AI tools you can't see", source: "Gartner 2024" },
+  { figure: "22x", label: "Spending Surge", detail: "enterprise AI spend: $1.7B → $37B in two years", source: "IDC 2024" },
+  { figure: "84%", label: "Stuck in Pilot", detail: "of AI deployments never reach production", source: "Gartner 2024" },
+  { figure: "40%+", label: "Canceled by 2027", detail: "of agentic AI projects per Gartner, due to cost and risk", source: "Gartner 2025" },
 ];
 
 function MarketContext() {
@@ -19,6 +19,7 @@ function MarketContext() {
             <p className="market-stat-figure">{stat.figure}</p>
             <p className="market-stat-label">{stat.label}</p>
             <p className="market-stat-detail">{stat.detail}</p>
+            <p className="market-stat-source">{stat.source}</p>
           </div>
         ))}
       </div>
