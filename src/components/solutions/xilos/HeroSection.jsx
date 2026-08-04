@@ -58,7 +58,7 @@ function HeroSection() {
           </h1>
   
           <h3 className="subheader w-full max-w-4xl text-sm md:text-xl lg:text-2xl" style={{ color: "#4B4B4B" }}>
-            One platform behind every LLM call your company makes — agent routing, governance, cost control, and now full business applications. CRM, email, support, websites, and more, all powered by the same engine.
+            Xilos is an AI Gateway. Route every LLM call through intelligent rules. Govern with content filters, PII detection, and full audit trails. Cache semantically to cut costs. WorkBench is the first application on the AI Gateway — an AI-native workspace for documents, spreadsheets, presentations, and agents. Open source version coming soon.
           </h3>
   
           <div className="mt-4 flex justify-center gap-4 flex-wrap">
