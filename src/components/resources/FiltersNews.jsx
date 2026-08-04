@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ResourceThumbnail from './ResourceThumbnail';
+import filtersIcon from '../../assets/filters.svg';
 import Masonry from "react-masonry-css";
 
 
