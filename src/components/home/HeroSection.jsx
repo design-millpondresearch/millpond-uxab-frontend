@@ -18,7 +18,7 @@ function HeroSection() {
         </p>
         <div className="hero-dark-cta">
           <Link to="/contact" className="btn-hero-primary">Request a Demo</Link>
-          <Link to="/solutions/xilos" className="btn-hero-ghost">Explore Xilos</Link>
+          <a href="https://xilos.ai" className="btn-hero-ghost">Explore Xilos</a>
         </div>
 
         <div className="hero-dashboard">
