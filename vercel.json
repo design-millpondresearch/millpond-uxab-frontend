@@ -5,5 +5,11 @@
       "destination": "/solutions/xilos",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
