@@ -3,7 +3,7 @@ import xilosDashboard from "../../assets/xilos-dashboard.PNG";
 
 function HeroSection() {
   return (
-    <section className="hero-dark" style={{ marginTop: '65px' }}>
+    <section className="hero-dark" style={{ marginTop: '80px' }}>
       <div className="hero-dark-gradient" />
       <div className="hero-dark-grid" />
 
