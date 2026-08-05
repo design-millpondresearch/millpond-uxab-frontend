@@ -44,6 +44,7 @@ function Privacy() {
         marginTop: "80px",
         backgroundColor: "#F5EFE7",
         minHeight: "calc(100vh - 80px)",
+        textAlign: "left",
       }}
     >
       <div
