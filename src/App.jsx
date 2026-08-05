@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Xilos from './components/solutions/Xilos';
 import Partner from './pages/Partners';
 import Resources from './pages/Resources';
+import Privacy from './pages/Privacy';
 import Company from './pages/Company';
 import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
@@ -28,6 +29,7 @@ function App() {
           <Route path="/company" element={<Company />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </div>
       <Footer />

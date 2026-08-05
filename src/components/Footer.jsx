@@ -120,6 +120,9 @@ const Footer = () => {
         </div>
 
         <p className="footer-rights">© 2024-2026 Mill Pond Research, Inc. All rights reserved.</p>
+        <p style={{ fontSize: '13px', color: '#555', marginTop: '8px', fontFamily: "'Roboto', serif" }}>
+          <Link to="/privacy" style={{ color: '#1F4E79', textDecoration: 'none' }}>Privacy Policy</Link>
+        </p>
       </div>
     </footer>
   );
