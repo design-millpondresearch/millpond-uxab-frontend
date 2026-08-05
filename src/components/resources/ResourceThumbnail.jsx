@@ -1,42 +1,70 @@
 /**
- * ResourceThumbnail — standardized SVG thumbnails for resource cards.
+ * ResourceThumbnail — consistent SVG thumbnails using the MPR brand palette.
  *
- * Generates a consistent visual placeholder based on the resource's category
- * and title. No external images needed — every thumbnail is inline SVG.
+ * Each thumbnail uses the cream-and-blue editorial palette from the design
+ * system, with a simple technical illustration derived from the article
+ * category. The goal is to visually summarize the content rather than
+ * signal "technology" or "AI" generically.
  */
-
-const CATEGORY_COLORS = {
-  Blog:        { bg: "#DBEAFE", fg: "#1E40AF" },
-  "White Paper": { bg: "#D1FAE5", fg: "#065F46" },
-  "Case Study": { bg: "#FEE2E2", fg: "#991B1B" },
-  News:        { bg: "#E2E8F0", fg: "#334155" },
-  Press:       { bg: "#FEF3C7", fg: "#92400E" },
-  Video:       { bg: "#EDE9FE", fg: "#5B21B6" },
-  Datasheet:   { bg: "#E0E7FF", fg: "#3730A3" },
-  Podcast:     { bg: "#FCE7F3", fg: "#9D174D" },
+const BRAND_COLORS = {
+  bg: '#F5EFE7',    /* sand */
+  fg: '#1F4E79',    /* primary blue */
+  accent: '#C8D9E6', /* sky */
+  subtle: '#FBFAF8', /* surface */
 };
 
-const DEFAULT_COLOR = { bg: "#F3F4F6", fg: "#4B5563" };
-
-const PATTERNS = {
-  Blog:        "M0 0l20 20M20 0l-20 20",
-  "White Paper": "M10 0v20M0 10h20",
-  "Case Study": "M0 0h20M0 20h20",
-  News:        "M0 0l10 10 10-10M0 20l10-10 10 10",
-  Press:       "M0 10a10 10 0 1010-10",
-  Video:       "M5 5l10 5-10 5z",
-  Datasheet:   "M3 3h14v14H3zM3 10h14M10 3v14",
-  Podcast:     "M10 3a7 7 0 010 14M7 7a4 4 0 010 6",
+const CATEGORY_DIAGRAMS = {
+  Blog: {
+    icon: 'M4 4h16v16H4z',                             /* square bracket */
+    iconX: 10, iconY: 10,
+    label: 'Blog',
+  },
+  'White Paper': {
+    icon: 'M4 4h12v4M4 10h12M4 16h8',                   /* document lines */
+    iconX: 10, iconY: 11,
+    label: 'Paper',
+  },
+  'Case Study': {
+    icon: 'M8 4l8 8-8 8',                                /* diamond / study */
+    iconX: 12, iconY: 10,
+    label: 'Study',
+  },
+  News: {
+    icon: 'M4 4l12 12M16 4L4 16',                         /* cross / news */
+    iconX: 10, iconY: 10,
+    label: 'News',
+  },
+  Press: {
+    icon: 'M4 4h16v12H4zM4 10h16',                       /* quote box */
+    iconX: 10, iconY: 10,
+    label: 'Press',
+  },
+  Video: {
+    icon: 'M6 4l12 8-12 8z',                               /* play triangle */
+    iconX: 10, iconY: 10,
+    label: 'Video',
+  },
+  Datasheet: {
+    icon: 'M4 4h16v16H4zM10 4v16M4 10h16',              /* grid / table */
+    iconX: 10, iconY: 10,
+    label: 'Data',
+  },
+  Podcast: {
+    icon: 'M6 6a10 10 0 0112 0M8 9a6 6 0 018 0',        /* sound waves */
+    iconX: 10, iconY: 9,
+    label: 'Audio',
+  },
 };
+
+const DEFAULT_DIAGRAM = CATEGORY_DIAGRAMS.Blog;
 
 function ResourceThumbnail({ title, category }) {
-  const colors = CATEGORY_COLORS[category] || DEFAULT_COLOR;
-  const pattern = PATTERNS[category] || PATTERNS.Blog;
+  const diagram = CATEGORY_DIAGRAMS[category] || DEFAULT_DIAGRAM;
   const initials = title
-    .split(" ")
+    .split(' ')
     .slice(0, 2)
     .map((w) => w[0])
-    .join("")
+    .join('')
     .toUpperCase();
 
   return (
@@ -47,49 +75,56 @@ function ResourceThumbnail({ title, category }) {
       role="img"
       aria-label={`${category} thumbnail for ${title}`}
     >
-      {/* Background */}
-      <rect width="400" height="260" rx="8" fill={colors.bg} />
+      {/* Background — brand sand */}
+      <rect width="400" height="260" rx="16" fill={BRAND_COLORS.bg} />
 
-      {/* Subtle pattern overlay */}
-      <g opacity="0.1" stroke={colors.fg} strokeWidth="1" fill="none">
-        {Array.from({ length: 10 }, (_, i) =>
-          Array.from({ length: 10 }, (_, j) => (
-            <path key={`${i}-${j}`}
-              d={pattern}
-              transform={`translate(${i * 40}, ${j * 30}) scale(1.2)`}
-            />
-          ))
-        )}
+      {/* Subtle accent circle top-left */}
+      <circle cx="60" cy="60" r="120" fill={BRAND_COLORS.accent} opacity="0.15" />
+
+      {/* Subtle accent circle bottom-right */}
+      <circle cx="340" cy="200" r="80" fill={BRAND_COLORS.accent} opacity="0.1" />
+
+      {/* Category icon — clean geometric shape */}
+      <g
+        transform={`translate(${diagram.iconX}, ${diagram.iconY})`}
+        stroke={BRAND_COLORS.fg}
+        strokeWidth="2"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.2"
+      >
+        <path d={diagram.icon} />
       </g>
 
-      {/* Category badge */}
-      <rect x="16" y="16" rx="4" fill={colors.fg} opacity="0.15" />
+      {/* Small category bar at top */}
+      <rect x="0" y="0" width="400" height="4" fill={BRAND_COLORS.accent} opacity="0.3" />
+
+      {/* Category label */}
       <text
-        x="24" y="30"
+        x="20" y="28"
         fontSize="11"
         fontFamily="system-ui, sans-serif"
         fontWeight="600"
-        fill={colors.fg}
+        fill={BRAND_COLORS.fg}
+        opacity="0.35"
       >
-        {category}
+        {diagram.label}
       </text>
 
-      {/* Large initials watermark */}
+      {/* Large initials watermark — bottom right */}
       <text
-        x="360"
-        y="200"
+        x="380"
+        y="220"
         textAnchor="end"
-        fontSize="80"
+        fontSize="72"
         fontFamily="system-ui, sans-serif"
-        fontWeight="800"
-        fill={colors.fg}
-        opacity="0.06"
+        fontWeight="700"
+        fill={BRAND_COLORS.fg}
+        opacity="0.04"
       >
         {initials}
       </text>
-
-      {/* Bottom bar */}
-      <rect y="210" width="400" height="50" fill={colors.fg} opacity="0.04" />
     </svg>
   );
 }

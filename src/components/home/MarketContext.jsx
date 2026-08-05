@@ -15,7 +15,7 @@ function MarketContext() {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {stats.map((stat) => (
-          <div key={stat.label} className="market-stat-card">
+          <div key={stat.label} className="market-stat-card text-left">
             <p className="market-stat-figure">{stat.figure}</p>
             <p className="market-stat-label">{stat.label}</p>
             <p className="market-stat-detail">{stat.detail}</p>

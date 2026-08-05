@@ -176,15 +176,15 @@ function PartnersSection() {
             {/* Card */}
             <div
               className="
-                flex-1 flex flex-col items-center justify-center gap-2
+                flex-1 flex flex-col items-start justify-center gap-2
                 rounded-2xl bg-[#F5EFE7]
                 px-4 py-4 md:px-6 md:py-6
-                text-center shadow-sm
+                text-left shadow-sm
                 transition-all duration-500
                 h-[320px] md:h-[340px]
               "
             >
-              <div className="flex h-full flex-col items-center justify-center gap-2">
+              <div className="flex h-full flex-col items-start justify-center gap-2">
                 {currentTestimonial.logo ? (
                   <img
                     src={currentTestimonial.logo}

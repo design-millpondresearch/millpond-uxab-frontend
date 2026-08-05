@@ -8,6 +8,9 @@
   --color-white: #FFFFFF;
   --color-slate: #4B4B4B;       /* Body text */
 
+  /* SECTION HEADER TOKENS ----------------------------------------------------------------------------------------------------------------------------------------- */
+  --section-header-ls: 0.02em;
+
   /* TYPE TOKENS ---------------------------------------------------------------------------------------------------------------------------------------------------- */
   --font-sora: "Sora", sans-serif;
   --font-geist: "Geist", sans-serif;
@@ -18,6 +21,16 @@
   --fs-body-lg: 18px;  /* Large body */
   --fs-body: 16px;     /* Regular body */
   --fs-caption: 14px;  /* Meta text */
+
+  /* RADIUS TOKENS ------------------------------------------------------------------------------------------------------------------------------------------------- */
+  --radius-card: 16px;
+  --radius-button: 8px;
+  --radius-button-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* BUTTON HEIGHT TOKENS ------------------------------------------------------------------------------------------------------------------------------------------ */
+  --btn-height: 38px;
+  --btn-height-lg: 52px;
 }
 
 /* ROOT LAYOUT ----------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -82,19 +95,28 @@ body {
   color: #888;
 }
 
-/* BUTTONS --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* BUTTON SYSTEM --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Three tiers: Primary (solid), Secondary (outline), and Ghost (text/transparent).
+   Size modifier: .btn-lg for hero/featured CTAs. */
+
+.button-primary,
+.button-secondary,
+.button-ghost {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: var(--radius-button);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  line-height: 1.4;
+}
 
 .button-primary {
   background-color: var(--color-primary-alt);
-  padding: 8px 16px;
-  border-radius: 8px;
   color: var(--color-white);
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.1s ease;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
 }
 
 .button-primary:hover {
@@ -103,27 +125,39 @@ body {
 }
 
 .button-secondary {
-  background-color: transparent;
-  padding: 8px 16px;
-  border-radius: 8px;
+  background: transparent;
   color: var(--color-primary-alt);
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
   border: 1px solid var(--color-primary-alt);
-  cursor: pointer;
-  display: inline-block;
 }
 
 .button-secondary:hover {
   background-color: rgba(86, 124, 141, 0.1);
 }
 
-/* HERO BUTTONS --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.button-ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.button-ghost:hover {
+  opacity: 0.7;
+}
+
+/* Large button modifier — for hero sections and featured CTAs */
+.btn-lg {
+  padding: 14px 32px;
+  font-size: 1.125rem;
+  border-radius: var(--radius-button-lg);
+}
+
+/* HERO BUTTONS (deprecated — use .button-primary / .button-secondary + .btn-lg instead) ---------------------------------------------------------------------- */
 .hero-button-primary {
   background-color: var(--color-primary-alt);
   padding: 14px 28px;
-  border-radius: 12px;
+  border-radius: var(--radius-button-lg);
   color: var(--color-white);
   font-size: 1.25rem;
   font-weight: 500;
@@ -132,6 +166,7 @@ body {
   border: none;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
 }
 
 .hero-button-primary:hover {
@@ -142,7 +177,7 @@ body {
 .hero-button-secondary {
   background-color: transparent;
   padding: 14px 28px;
-  border-radius: 12px;
+  border-radius: var(--radius-button-lg);
   color: var(--color-primary-alt);
   font-size: 1.25rem;
   font-weight: 500;
@@ -151,6 +186,7 @@ body {
   border: 1px solid var(--color-primary-alt);
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
 }
 
 .hero-button-secondary:hover {
@@ -160,7 +196,7 @@ body {
 .hero-button-tertiary {
   background-color: rgba(200, 217, 230, 0.45);
   padding: 14px 28px;
-  border-radius: 12px;
+  border-radius: var(--radius-button-lg);
   color: #1F4E79;
   font-size: 1.25rem;
   font-weight: 500;
@@ -169,6 +205,7 @@ body {
   border: 1px solid #1F4E79;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
 }
 
 .hero-button-tertiary:hover {
@@ -179,7 +216,7 @@ body {
 .button-ghost {
   background-color: transparent;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: var(--radius-button);
   color: var(--color-white);
   font-size: 0.875rem;
   font-weight: 500;
@@ -195,7 +232,7 @@ body {
 .button-filter {
   background-color: #C8D9E6;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   color: var(--color-primary);
   font-size: 0.875rem;
   font-weight: 500;
@@ -255,7 +292,7 @@ body {
   font-size: var(--fs-h2);
   font-family: var(--font-sora);
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--section-header-ls);
   color: var(--color-primary);
 }
 
@@ -527,7 +564,7 @@ body {
 .risk-icon-circle {
   width: 56px;
   height: 56px;
-  border-radius: 9999px;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--color-primary);
   display: flex;
   align-items: center;
@@ -578,7 +615,7 @@ body {
   right: 1rem;
   background: white;
   padding: 0.5rem 1rem;
-  border-radius: 9999px;
+  border-radius: var(--radius-pill);
   font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.3s;
@@ -615,6 +652,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: var(--navbar-height);
+  box-sizing: border-box;
 }
 
 .hero-dark-gradient {
@@ -645,9 +684,9 @@ body {
 
 .hero-dark-title {
   font-family: var(--font-sora);
-  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   color: #fff;
   margin: 0;
@@ -681,7 +720,7 @@ body {
   background: #567C8D;
   color: #fff;
   padding: 14px 32px;
-  border-radius: 12px;
+  border-radius: var(--radius-button-lg);
   font-size: 1.125rem;
   font-weight: 500;
   font-family: var(--font-geist);
@@ -701,7 +740,7 @@ body {
   background: rgba(255, 255, 255, 0.08);
   color: #C8D9E6;
   padding: 14px 32px;
-  border-radius: 12px;
+  border-radius: var(--radius-button-lg);
   font-size: 1.125rem;
   font-weight: 500;
   font-family: var(--font-geist);
@@ -729,7 +768,7 @@ body {
 }
 
 .hero-dashboard-frame {
-  border-radius: 16px;
+  border-radius: var(--radius-card);
   overflow: hidden;
   box-shadow:
     0 0 0 1px rgba(200, 217, 230, 0.1),
@@ -807,10 +846,10 @@ body {
 
 /* MARKET STATS (light) */
 .market-stat-card {
-  border-radius: 16px;
+  border-radius: var(--radius-card);
   background: #fff;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
   border: 1px solid #E5E7EB;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -855,7 +894,7 @@ body {
 
 /* FEATURE GRID */
 .feature-card-dark {
-  border-radius: 16px;
+  border-radius: var(--radius-card);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(200, 217, 230, 0.08);
   padding: 1.75rem;
@@ -902,7 +941,7 @@ body {
 
 /* COMPETITIVE CARDS (compact) */
 .compact-tier-card {
-  border-radius: 16px;
+  border-radius: var(--radius-card);
   background: #F5EFE7;
   padding: 1.5rem;
   border: 1px solid #E5E7EB;
@@ -910,7 +949,7 @@ body {
 
 .compact-tier-badge {
   display: inline-block;
-  border-radius: 9999px;
+  border-radius: var(--radius-pill);
   padding: 4px 12px;
   font-size: 0.75rem;
   font-weight: 600;
@@ -950,6 +989,16 @@ body {
 }
 
 /* SECTION UTILITY */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(200, 217, 230, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 217, 230, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
 .dark-section {
   background: #0a1628;
   padding: 5rem 1.5rem;
@@ -965,7 +1014,7 @@ body {
   text-align: center;
   margin: 0 auto 1rem;
   max-width: 700px;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--section-header-ls);
 }
 
 .dark-section .dark-sub {
@@ -991,7 +1040,8 @@ body {
   text-align: center;
   margin: 0 auto 1rem;
   max-width: 700px;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--section-header-ls);
+  line-height: var(--section-header-lh);
 }
 
 .light-section .light-sub {
