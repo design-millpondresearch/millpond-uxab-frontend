@@ -650,10 +650,8 @@ body {
   background: #0a1628;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding-top: var(--navbar-height);
-  box-sizing: border-box;
 }
 
 .hero-dark-gradient {
@@ -679,7 +677,7 @@ body {
   z-index: 10;
   max-width: 900px;
   text-align: center;
-  padding: 0 1.5rem;
+  padding: clamp(140px, 15vh, 160px) 1.5rem 0;
 }
 
 .hero-dark-title {
@@ -705,7 +703,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.7);
-  margin: 1.5rem auto 2.5rem;
+  margin: 1rem auto 1.5rem;
   max-width: 640px;
 }
 
